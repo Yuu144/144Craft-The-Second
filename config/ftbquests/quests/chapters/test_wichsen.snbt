@@ -1,0 +1,10 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "test_wichsen"
+	group: ""
+	id: "19FB9F564904C328"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+}
