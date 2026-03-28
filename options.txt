@@ -58,7 +58,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
@@ -144,12 +144,12 @@ key_keybindings.spell_engine.spell_hotbar_8:key.keyboard.unknown
 key_keybindings.spell_engine.spell_hotbar_9:key.keyboard.unknown
 key_key.mapping.compactmachines.exit_room:key.keyboard.unknown
 key_key.mapping.compactmachines.open_upgrade_screen:key.keyboard.unknown
-key_key.push_to_talk:key.keyboard.unknown
+key_key.push_to_talk:key.keyboard.v
 key_key.whisper:key.keyboard.unknown
 key_key.mute_microphone:key.keyboard.m
 key_key.disable_voice_chat:key.keyboard.n
 key_key.hide_icons:key.keyboard.h
-key_key.voice_chat:key.keyboard.v
+key_key.voice_chat:key.keyboard.v:CONTROL
 key_key.voice_chat_settings:key.keyboard.unknown
 key_key.voice_chat_group:key.keyboard.g
 key_key.voice_chat_toggle_recording:key.keyboard.unknown
@@ -241,7 +241,7 @@ key_key.draconicevolution.dislocator_blink:key.keyboard.unknown
 key_key.draconicevolution.dislocator_gui:key.keyboard.unknown
 key_key.draconicevolution.dislocator_up:key.keyboard.unknown
 key_key.draconicevolution.dislocator_down:key.keyboard.unknown
-key_crafting_on_a_stick.key.open_curios:key.keyboard.v
+key_crafting_on_a_stick.key.open_curios:key.keyboard.unknown
 key_key.jei.toggleOverlay:key.keyboard.o:CONTROL
 key_key.jei.focusSearch:key.keyboard.f:CONTROL
 key_key.jei.previousPage:key.keyboard.unknown
