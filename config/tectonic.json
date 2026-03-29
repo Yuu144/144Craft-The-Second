@@ -22,7 +22,7 @@
     "erosion_scale": 0.24,
     "flat_terrain_skew": 0.4,
     "jungle_pillars": true,
-    "ocean_offset": -0.38,
+    "ocean_offset": -0.2,
     "ridge_scale": 0.34,
     "river_ice": false,
     "river_lanterns": true,
