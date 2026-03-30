@@ -2,7 +2,7 @@
 	#ME Extend Import/Export Bus speed multiplier
 	# Default: 8
 	# Range: 2 ~ 128
-	extended_io_bus_multiplier = 16
+	extended_io_bus_multiplier = 64
 	#The max range between two wireless connector
 	# Default: 1000.0
 	# Range: 10.0 ~ 10000.0
