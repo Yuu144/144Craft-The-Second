@@ -1,11 +1,11 @@
 {
   "biomes": {
-    "temperature_multiplier": 1.0,
+    "temperature_multiplier": 1.1,
     "temperature_offset": 0.0,
-    "temperature_scale": 0.25,
-    "vegetation_multiplier": 1.0,
-    "vegetation_offset": 0.0,
-    "vegetation_scale": 0.25
+    "temperature_scale": 0.1,
+    "vegetation_multiplier": 1.1,
+    "vegetation_offset": -0.2,
+    "vegetation_scale": 0.1
   },
   "caves": {
     "carvers_enabled": true,
@@ -18,28 +18,28 @@
     "spaghetti_enabled": true
   },
   "continents": {
-    "continents_scale": 0.68,
-    "erosion_scale": 0.24,
-    "flat_terrain_skew": 0.4,
-    "jungle_pillars": true,
-    "ocean_offset": -0.2,
-    "ridge_scale": 0.34,
+    "continents_scale": 0.05,
+    "erosion_scale": 0.12,
+    "flat_terrain_skew": 0.3,
+    "jungle_pillars": false,
+    "ocean_offset": -0.5,
+    "ridge_scale": 0.12,
     "river_ice": false,
-    "river_lanterns": true,
-    "rolling_hills": true,
-    "underground_rivers": true
+    "river_lanterns": false,
+    "rolling_hills": false,
+    "underground_rivers": false
   },
   "general": {
     "mod_enabled": true,
-    "snow_start_offset": 128
+    "snow_start_offset": 186
   },
   "global_terrain": {
-    "elevation_boost": 0.18,
-    "lava_tunnels": true,
-    "max_y": 448,
+    "elevation_boost": 0.25,
+    "lava_tunnels": false,
+    "max_y": 480,
     "min_y": -64,
-    "ultrasmooth": false,
-    "vertical_scale": 1.75
+    "ultrasmooth": true,
+    "vertical_scale": 1.7
   },
   "islands": {
     "enabled": true,
