@@ -18,9 +18,9 @@
     "spaghetti_enabled": true
   },
   "continents": {
-    "continents_scale": 0.05,
-    "erosion_scale": 0.12,
-    "flat_terrain_skew": 0.3,
+    "continents_scale": 0.08,
+    "erosion_scale": 0.15,
+    "flat_terrain_skew": 0.35,
     "jungle_pillars": false,
     "ocean_offset": -0.5,
     "ridge_scale": 0.12,
@@ -35,12 +35,12 @@
     "snow_start_offset": 186
   },
   "global_terrain": {
-    "elevation_boost": 0.25,
+    "elevation_boost": 0.35,
     "lava_tunnels": false,
     "max_y": 480,
     "min_y": -64,
     "ultrasmooth": true,
-    "vertical_scale": 1.7
+    "vertical_scale": 2.0
   },
   "islands": {
     "enabled": true,
