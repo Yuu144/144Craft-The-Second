@@ -156,7 +156,7 @@ key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
 key_quark.keybind.change_hotbar:key.keyboard.z
 key_quark.keybind.sort_player:key.keyboard.unknown
 key_quark.keybind.sort_container:key.keyboard.unknown
-key_quark.keybind.lock_rotation:key.keyboard.k
+key_quark.keybind.lock_rotation:key.keyboard.unknown
 key_quark.keybind.narrator_readout:key.keyboard.unknown
 key_quark.keybind.narrator_full_readout:key.keyboard.unknown
 key_quark.keybind.variant_selector:key.keyboard.r
