@@ -1,15 +1,16 @@
 {
   "type": "minecraft:jigsaw",
   "biomes": "#minecraft:has_structure/village_plains",
-  "max_distance_from_center": 160,
-  "project_start_to_heightmap": "WORLD_SURFACE_WG",
-  "size": 12,
+  "liquid_settings": "ignore_waterlogging",
+  "step": "surface_structures",
   "spawn_overrides": {},
+  "terrain_adaptation": "beard_thin",
+  "start_pool": "revampedvillages:start",
+  "size": 10,
   "start_height": {
     "absolute": 0
   },
-  "start_pool": "minecraft:village/plains/town_centers",
-  "step": "surface_structures",
-  "terrain_adaptation": "beard_thin",
-  "use_expansion_hack": true
+  "project_start_to_heightmap": "WORLD_SURFACE",
+  "max_distance_from_center": 130,
+  "use_expansion_hack": false
 }
