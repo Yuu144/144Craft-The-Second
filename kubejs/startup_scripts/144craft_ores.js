@@ -1,10 +1,10 @@
 StartupEvents.registry('item', event => {
-  event.create('ruby')
-    .displayName('Ruby')
+  event.create('144_ium')
+    .displayName('144-Ium')
     .maxStackSize(64)
 
-  event.create('sapphire')
-    .displayName('Sapphire')
+  event.create('13_ium')
+    .displayName('13-Ium')
     .maxStackSize(64)
 })
 
