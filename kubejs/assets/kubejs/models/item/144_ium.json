@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "ores144craft:item/144-ium"
+    "layer0": "kubejs:item/144-ium"
   }
 }
