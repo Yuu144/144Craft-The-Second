@@ -5,6 +5,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanismgenerators:gas_burning_generator' })
     event.remove({ output: 'mekanism:electrolytic_core' })
     event.remove({ output: 'bfr:fusion_reactor_controller' })
+    event.remove({ output: 'mekanism:digital_miner' })
 
     event.shaped('mekanism:metallurgic_infuser', [
         'ACA',
@@ -116,6 +117,19 @@ ServerEvents.recipes(event => {
         B: 'tfmg:circuit_board',
         C: 'bfr:fusion_reactor_frame',
         D: 'mekanism:ultimate_chemical_tank'
+    })
+
+    event.shaped('mekanism:digital_miner', [
+        'ABA',
+        'CDC',
+        'EFE'
+    ], {
+        A: 'mekanism:alloy_atomic',
+        B: 'tfmg:circuit_board',
+        C: 'mekanism:logistical_sorter',
+        D: 'mekanism:robit',
+        E: 'mekanism:teleportation_core',
+        F: 'create:precision_mechanism'
     })
 
 
