@@ -3,14 +3,24 @@
 	chapter.1343E1B2C0206494.title: "Create"
 	chapter.19FB9F564904C328.title: "test wichsen"
 	chapter.5F90DDF43BAE564C.title: "Mekanism: Part 2"
+	quest.015400B8CD7EF364.quest_desc: ["To get to planets you will need to observe them like in real life, 3 different points need to be found and made into a map using the"]
 	quest.0BA3A51C1A59AFC1.title: "Mechanical Belt"
-	quest.0E1ECD1C3FD827A1.title: "Brass Casing"
+	quest.0E1ECD1C3FD827A1.title: "Copper Casing"
 	quest.0E304A303952855C.title: "Steel Ingot"
 	quest.1D6161E11E4584DD.title: "Polonium Pellet"
 	quest.21F8F4DE6C8CA622.title: "Shaft"
 	quest.30747A8C69D4B633.title: "Thermal Evaporation Plant"
+	quest.308C7DFE28EB1DBC.quest_desc: ["The hungi rocket is to be fed A LOT of liquid nitrogren in a fluid tank attached to the rocket"]
+	quest.3AD545C1EBAD7744.quest_desc: [
+		"Hey kid! You want to feel, smell and work the AMERICAN spirit? You might just get your chance to do it boy! GET YOURSELF SOME OIL!!!"
+		""
+		"To find out more about Oil just ponder the following Items"
+	]
+	quest.3F3D39A84AFB2579.quest_desc: ["YEEHAW YOU GOT YOURSELF THAT LIQUID GOLD!"]
+	quest.3F3D39A84AFB2579.title: "HELL YEA!!!"
 	quest.4966767AD45E59E9.title: "Reinforced Alloy"
 	quest.51363CD2644743FB.title: "Train Casing"
+	quest.54D2E3B573E8C59B.quest_desc: ["You will need to get some Titanium Tetrachloride and some Obsidian this might do the trick"]
 	quest.667268734FC8C44C.title: "Brass Ingot"
 	quest.667F3B294E62CA36.title: "Sturdy Sheet"
 	quest.66B9FE3871DEA62E.title: "Andesite Alloy"
@@ -30,11 +40,13 @@
 	task.4D6E1248322D9D33.title: "Fusion Reactor"
 	task.4E19B83246B044DD.title: "Fission Reactor"
 	task.5229B72DD9BB96B1.title: "Fissile Energy"
+	task.5A7BC06607D2C9CC.title: "AMERICA!!!!"
 	task.608D10C492AE75C9.title: "Fusion Fuel"
 	task.6AE190D17FF215DF.title: "Plutonium Pellet"
 	task.6C84F2AD9A25AA4E.title: "Lithium"
 	task.703EDECD4E437A94.title: "Turbine"
 	task.72EFA5BD5BB32DBA.title: "DT-Fuel"
+	task.7954587460A7E00A.title: "Check out Create Enchantment Industry"
 	task.7A39F60EE4ED8246.title: "Next Step"
 	task.7D092FAE8746E347.title: "Create"
 	task.7E33A5D0F37FC5C8.title: "Create Train"

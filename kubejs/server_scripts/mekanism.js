@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
         'EFE'
     ], {
         A: 'mekanism:alloy_atomic',
-        B: 'tfmg:circuit_board',
+        B: 'northstar:advanced_circuit',
         C: 'mekanism:logistical_sorter',
         D: 'mekanism:robit',
         E: 'mekanism:teleportation_core',
