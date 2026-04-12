@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanism:electrolytic_core' })
     event.remove({ output: 'bfr:fusion_reactor_controller' })
     event.remove({ output: 'mekanism:digital_miner' })
+    event.remove({ output: 'mekanism:steel_casing' })
 
     event.shaped('mekanism:metallurgic_infuser', [
         'ACA',
@@ -125,12 +126,44 @@ ServerEvents.recipes(event => {
         'EFE'
     ], {
         A: 'mekanism:alloy_atomic',
-        B: 'northstar:advanced_circuit',
+        B: 'northstar:lunar_sapphire_crystal',
         C: 'mekanism:logistical_sorter',
         D: 'mekanism:robit',
         E: 'mekanism:teleportation_core',
         F: 'create:precision_mechanism'
     })
+
+    event.shaped('mekanism:crusher', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        A: 'minecraft:redstone',
+        B: 'mekanism:basic_control_circuit',
+        C: 'create:crushing_wheel',
+        D: 'mekanism:steel_casing'
+    })
+
+    event.custom({
+        type: 'create:compacting',
+        ingredients: [
+            { item: 'alltheores:steel_ingot' },
+            { item: 'alltheores:steel_ingot' },
+            { item: 'alltheores:steel_ingot' },
+            { item: 'alltheores:steel_ingot' },
+            { item: 'alltheores:osmium_ingot' },
+            { item: 'alltheores:osmium_ingot' },
+            { item: 'alltheores:osmium_ingot' },
+            { item: 'alltheores:osmium_ingot' },
+            { item: 'minecraft:sand' },
+            { item: 'minecraft:sand' },
+            { item: 'minecraft:sand' },
+            { item: 'minecraft:sand' }
+        ],
+        results: [
+            { id: 'mekanism:steel_casing', count: 1 }
+        ]
+    }).heated()
 
 
 })

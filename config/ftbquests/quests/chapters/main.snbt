@@ -1,0 +1,165 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "main"
+	group: ""
+	id: "08FA5D4FB221A697"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7DFBC946FD79B188"
+			tasks: [{
+				id: "10617EEDDEE20107"
+				item: { count: 1, id: "minecraft:stone_pickaxe" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DFBC946FD79B188"]
+			id: "6F68AF03BFDA3F6B"
+			tasks: [{
+				count: 32L
+				id: "00E164220F1A7C49"
+				item: { count: 1, id: "minecraft:andesite" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7DFBC946FD79B188"]
+			id: "24A9DF2401262628"
+			tasks: [{
+				count: 16L
+				id: "3AD46679F01200A6"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"24A9DF2401262628"
+				"6F68AF03BFDA3F6B"
+			]
+			id: "16674D52BE63DDC5"
+			tasks: [{
+				count: 32L
+				id: "24D22806E961C1CF"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["24A9DF2401262628"]
+			id: "6D9B0A0E9D4220AC"
+			tasks: [{
+				count: 16L
+				id: "0B617E915BF4A890"
+				item: { count: 1, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16674D52BE63DDC5"]
+			id: "71070E97678594DC"
+			tasks: [{
+				id: "13E5CB60B00BE38B"
+				item: { count: 1, id: "create:andesite_casing" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6D9B0A0E9D4220AC"
+				"71070E97678594DC"
+			]
+			id: "7A62D402E839F71C"
+			tasks: [{
+				id: "4BA8C9ADF56BEC56"
+				item: { count: 1, id: "create:copper_casing" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A62D402E839F71C"]
+			id: "6D3035DF9216ACD8"
+			tasks: [{
+				id: "652C7E5CB99BF462"
+				item: { count: 1, id: "create_sa:hydraulic_engine" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6D3035DF9216ACD8"]
+			id: "046BAEA3B5CBC781"
+			tasks: [{
+				id: "07B74AC7C0825C56"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["71070E97678594DC"]
+			id: "039C048A9DCC463C"
+			tasks: [{
+				id: "0A83B5BB9E668CC2"
+				item: { count: 1, id: "create:brass_casing" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["71070E97678594DC"]
+			id: "43D26830B2AB464C"
+			tasks: [{
+				id: "5B1FE72E51A28CC8"
+				item: { count: 1, id: "create:electron_tube" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"43D26830B2AB464C"
+				"039C048A9DCC463C"
+			]
+			id: "62D860F400D44E3F"
+			tasks: [{
+				count: 25L
+				id: "2BC74C84DE6A9A4A"
+				item: { count: 1, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["62D860F400D44E3F"]
+			id: "2C3D5CF922C26025"
+			tasks: [{
+				id: "07AB9DC4F6E3EC8E"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: -5.0d
+		}
+	]
+}
