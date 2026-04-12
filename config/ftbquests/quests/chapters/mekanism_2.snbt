@@ -20,11 +20,6 @@
 					xp: 250
 				}
 				{
-					exclude_from_claim_all: true
-					id: "28900F2D3D5F85D1"
-					type: "loot"
-				}
-				{
 					id: "046B5D901B0C5AB2"
 					item: {
 						count: 1
@@ -44,6 +39,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["046BAEA3B5CBC781"]
 			id: "75E600FC98B65B67"
 			rewards: [
 				{
@@ -59,11 +55,6 @@
 						id: "mekanism:alloy_infused"
 					}
 					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "4F93E64796D67CD6"
-					type: "loot"
 				}
 			]
 			shape: "square"
@@ -210,11 +201,6 @@
 					}
 					type: "item"
 				}
-				{
-					exclude_from_claim_all: true
-					id: "645E8B647B2804B8"
-					type: "loot"
-				}
 			]
 			shape: "hexagon"
 			tasks: [{
@@ -233,11 +219,6 @@
 					id: "7F927AA530E1534B"
 					type: "xp"
 					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7AEEE99AF76C1114"
-					type: "loot"
 				}
 				{
 					id: "008B5469E0FB0919"
@@ -293,11 +274,6 @@
 					xp: 100
 				}
 				{
-					exclude_from_claim_all: true
-					id: "0A281428367453A4"
-					type: "loot"
-				}
-				{
 					id: "70D92F3858CBAC9D"
 					item: {
 						count: 1
@@ -332,11 +308,6 @@
 						id: "mekanism:ingot_osmium"
 					}
 					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "24E1F16F154FB5E5"
-					type: "loot"
 				}
 			]
 			shape: "hexagon"
@@ -380,11 +351,6 @@
 					id: "2145C480C886FF14"
 					type: "xp"
 					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "249E3CC91C78BE13"
-					type: "loot"
 				}
 				{
 					id: "220ECC82D34FEA18"
@@ -441,18 +407,11 @@
 		{
 			dependencies: ["3FF0F692BFF1DFD5"]
 			id: "1B5857A082E5E40F"
-			rewards: [
-				{
-					id: "6233A68B493CEF34"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "4BDEC348EB147ACC"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "6233A68B493CEF34"
+				type: "xp"
+				xp: 250
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "757FBA2F3ADF6C5C"
@@ -465,18 +424,11 @@
 		{
 			dependencies: ["304F2342DDF83DF6"]
 			id: "70887217591E7E4C"
-			rewards: [
-				{
-					id: "48471CA6C5B5B8AA"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "700E640C732C3B0E"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "48471CA6C5B5B8AA"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "3A09E709738636D5"
@@ -506,18 +458,11 @@
 		{
 			dependencies: ["304F2342DDF83DF6"]
 			id: "5E02FDAAF5302091"
-			rewards: [
-				{
-					id: "44D3704EDB89097A"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "4362B138A9140218"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "44D3704EDB89097A"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "2D2D0BA884471D2D"
@@ -533,18 +478,11 @@
 				"70887217591E7E4C"
 			]
 			id: "1DF67637B192D7A0"
-			rewards: [
-				{
-					id: "7D78F5C6DA13E9A4"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "5EDE925E9C2B0D1C"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "7D78F5C6DA13E9A4"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "09B179D8E0E6481C"
@@ -585,18 +523,11 @@
 		{
 			dependencies: ["086ACDADCB7780FC"]
 			id: "2EC7EC4E16D4E16C"
-			rewards: [
-				{
-					id: "3F1D101E0A741D30"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3EA9005503428F2E"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "3F1D101E0A741D30"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "05B181AFFC8F2CE4"
@@ -613,18 +544,11 @@
 				"0EB02F4C74FFBCDF"
 			]
 			id: "7DF9E406B61B7C24"
-			rewards: [
-				{
-					id: "68AD2F63C785D95C"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "5E329F5B172D3861"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "68AD2F63C785D95C"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "40BB336327C9811F"
@@ -756,18 +680,11 @@
 		{
 			dependencies: ["1B0A4887C72DC307"]
 			id: "48A7F8183860B6A5"
-			rewards: [
-				{
-					id: "0C83B32B5E593201"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7E261D0C195219BA"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "0C83B32B5E593201"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "788B7A71B4091F9A"
@@ -831,18 +748,11 @@
 		{
 			dependencies: ["3D94C011BE2B6B26"]
 			id: "00CE5347558E8FF6"
-			rewards: [
-				{
-					id: "49CBBC73F681FBFE"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "5A0EF45DC0B77D5A"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "49CBBC73F681FBFE"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "4CCDA6D17ED11818"
@@ -906,18 +816,11 @@
 		{
 			dependencies: ["7650DEF3B2AF419E"]
 			id: "2B4B7C8D7D2C7F9D"
-			rewards: [
-				{
-					id: "2F797459F5F2F069"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "4CABFA28548851DA"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "2F797459F5F2F069"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "33CE9C7C218321AF"
@@ -981,18 +884,11 @@
 		{
 			dependencies: ["103A7AA76DD32352"]
 			id: "14B11DBC1A996CA7"
-			rewards: [
-				{
-					id: "3C46A9144D56092B"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "25AC761E31305C02"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "3C46A9144D56092B"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "6BF804ADAAC78026"
@@ -1056,18 +952,11 @@
 		{
 			dependencies: ["0D042AB4762558BC"]
 			id: "5DDD618C7AB4083A"
-			rewards: [
-				{
-					id: "27145BC5F17FA537"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "75170AAFBF92BA22"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "27145BC5F17FA537"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "61CAB46607525ED6"
@@ -1085,11 +974,6 @@
 					id: "5AC0D4CB7FE068BC"
 					type: "xp"
 					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "1C884E793F489896"
-					type: "loot"
 				}
 				{
 					id: "3A045DC04DF9F813"
@@ -1112,18 +996,11 @@
 		{
 			dependencies: ["18EABB8503D8949E"]
 			id: "39AEEB2E23303E04"
-			rewards: [
-				{
-					id: "7FA0572351C4C0B0"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "459AE8FE61244741"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "7FA0572351C4C0B0"
+				type: "xp"
+				xp: 250
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "792B6B177D851A48"
@@ -1419,18 +1296,11 @@
 		{
 			dependencies: ["4D1733CE069FA3DB"]
 			id: "6B7CFDCD0E283148"
-			rewards: [
-				{
-					id: "6A131E4640AAEDA3"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3222E13762A04787"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "6A131E4640AAEDA3"
+				type: "xp"
+				xp: 250
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "79283C8AEEBDD3F1"
@@ -1494,18 +1364,11 @@
 		{
 			dependencies: ["41D9ACD0E91B8E00"]
 			id: "0AF395EA2755DAA6"
-			rewards: [
-				{
-					id: "254DC057C2F17D30"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "663BE507917A2465"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "254DC057C2F17D30"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "542D34252357E9C8"

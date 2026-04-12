@@ -1,14 +1,17 @@
 {
+	chapter.08FA5D4FB221A697.title: "Start"
 	chapter.0EBC9B8BF95312C7.title: "Mekanism"
 	chapter.1343E1B2C0206494.title: "Create"
-	chapter.19FB9F564904C328.title: "test wichsen"
 	chapter.5F90DDF43BAE564C.title: "Mekanism: Part 2"
 	quest.015400B8CD7EF364.quest_desc: ["To get to planets you will need to observe them like in real life, 3 different points need to be found and made into a map using the"]
+	quest.039C048A9DCC463C.title: "Encased ass"
 	quest.0BA3A51C1A59AFC1.title: "Mechanical Belt"
 	quest.0E1ECD1C3FD827A1.title: "Copper Casing"
 	quest.0E304A303952855C.title: "Steel Ingot"
+	quest.16674D52BE63DDC5.title: "Allo(y), how are you doing"
 	quest.1D6161E11E4584DD.title: "Polonium Pellet"
 	quest.21F8F4DE6C8CA622.title: "Shaft"
+	quest.24A9DF2401262628.title: "The Irony"
 	quest.30747A8C69D4B633.title: "Thermal Evaporation Plant"
 	quest.308C7DFE28EB1DBC.quest_desc: ["The hungi rocket is to be fed A LOT of liquid nitrogren in a fluid tank attached to the rocket"]
 	quest.3AD545C1EBAD7744.quest_desc: [
@@ -18,16 +21,26 @@
 	]
 	quest.3F3D39A84AFB2579.quest_desc: ["YEEHAW YOU GOT YOURSELF THAT LIQUID GOLD!"]
 	quest.3F3D39A84AFB2579.title: "HELL YEA!!!"
+	quest.43D26830B2AB464C.title: "Elec meine Eier"
 	quest.4966767AD45E59E9.title: "Reinforced Alloy"
 	quest.51363CD2644743FB.title: "Train Casing"
 	quest.54D2E3B573E8C59B.quest_desc: ["You will need to get some Titanium Tetrachloride and some Obsidian this might do the trick"]
+	quest.62D860F400D44E3F.title: "Kraterr"
 	quest.667268734FC8C44C.title: "Brass Ingot"
 	quest.667F3B294E62CA36.title: "Sturdy Sheet"
 	quest.66B9FE3871DEA62E.title: "Andesite Alloy"
+	quest.6D3035DF9216ACD8.title: "How ima pump yo mama"
+	quest.6D9B0A0E9D4220AC.title: "The opps be searching for that (C)opper"
+	quest.6F68AF03BFDA3F6B.title: "Andesite Andesite and more Andesite"
+	quest.71070E97678594DC.title: "Encased"
 	quest.75FC9AAF70110E36.title: "Polished Rose Quartz"
 	quest.770421C740C88EDD.title: "Atomic Alloy"
+	quest.7A62D402E839F71C.title: "Opps Encased"
 	quest.7C74B419FF217015.quest_desc: ["There are many Create addons for trains, loot for it in JEI @create"]
 	quest.7D5D71D4AFCA190E.title: "Now you'll become ONE with the Cell"
+	quest.7DFBC946FD79B188.title: "Dont be a pick(axe) me"
+	task.07AB9DC4F6E3EC8E.title: "Applied Energistics"
+	task.07B74AC7C0825C56.title: "Mekanism :3"
 	task.17D3E72034A08362.title: "Fissile Fuel"
 	task.2374926746945985.title: "Bio Fuel"
 	task.2D6D0693E1F9803C.title: "Induction Cell"
