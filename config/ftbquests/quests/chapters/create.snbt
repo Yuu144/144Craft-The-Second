@@ -432,8 +432,8 @@
 				item: { count: 1, id: "create:deployer" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.0d
+			x: 7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["49CD3E302707A41B"]
@@ -464,8 +464,8 @@
 				item: { count: 1, id: "create:clutch" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: 3.5d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["49CD3E302707A41B"]
@@ -490,8 +490,8 @@
 				item: { count: 1, id: "create:gearbox" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 2.5d
+			x: 6.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["49CD3E302707A41B"]
@@ -823,8 +823,8 @@
 				item: { count: 1, id: "create:brass_ingot" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 3.5d
+			x: 11.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["667268734FC8C44C"]
@@ -839,7 +839,7 @@
 				item: { count: 1, id: "create:brass_funnel" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 10.0d
 			y: 4.0d
 		}
 		{
@@ -855,8 +855,8 @@
 				item: { count: 1, id: "create:brass_tunnel" }
 				type: "item"
 			}]
-			x: 11.0d
-			y: 5.5d
+			x: 10.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["66B9FE3871DEA62E"]
@@ -882,11 +882,14 @@
 				item: { count: 1, id: "create:mechanical_crafter" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 3.5d
+			x: 12.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["2476AE6BB0BAB81A"]
+			dependencies: [
+				"2476AE6BB0BAB81A"
+				"24BBDBCF110AC88F"
+			]
 			id: "18EDCFC5042237B3"
 			rewards: [{
 				id: "391CDD3FC923E575"
@@ -898,8 +901,8 @@
 				item: { count: 1, id: "create:mechanical_arm" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: 3.0d
+			x: 15.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["667268734FC8C44C"]
@@ -914,8 +917,8 @@
 				item: { count: 1, id: "create:brass_casing" }
 				type: "item"
 			}]
-			x: 13.0d
-			y: 5.0d
+			x: 12.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5AE6E5C8286B980E"]
@@ -930,8 +933,8 @@
 				item: { count: 1, id: "create:portable_storage_interface" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: 5.0d
+			x: 14.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["1E4DFE75DE3ABD13"]
@@ -997,14 +1000,14 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "6115EBFAD12C9B12"
 				item: { count: 1, id: "create:precision_mechanism" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 6.0d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["51363CD2644743FB"]
@@ -1243,6 +1246,20 @@
 			}]
 			x: 9.0d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"24BBDBCF110AC88F"
+				"5AE6E5C8286B980E"
+			]
+			id: "26F6C5BC25FA4753"
+			tasks: [{
+				id: "4F6735D27DA4A5D3"
+				item: { count: 1, id: "create:rotation_speed_controller" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 3.0d
 		}
 	]
 }

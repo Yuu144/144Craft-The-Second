@@ -22,18 +22,11 @@
 		{
 			dependencies: ["5268EF69DB9A3298"]
 			id: "30747A8C69D4B633"
-			rewards: [
-				{
-					id: "26B2DEB277CBE42A"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3D109C2A94A3CC22"
-					type: "loot"
-				}
-			]
+			rewards: [{
+				id: "26B2DEB277CBE42A"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
