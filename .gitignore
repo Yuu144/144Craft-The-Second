@@ -1,5 +1,6 @@
 .mixin.out/
 backup/
+backups/
 crash-reports/
 logs/
 screenshots/
