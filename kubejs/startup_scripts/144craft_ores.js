@@ -42,3 +42,9 @@ StartupEvents.registry('block', event => {
       item.displayName('Larpium Ore')
     })
 })
+
+StartupEvents.registry('fluid', event => {
+
+    event.create('ctl', 'thin').tint(0x000000).displayName('CTL').noBlock()
+
+})

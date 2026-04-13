@@ -7,6 +7,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'bfr:fusion_reactor_controller' })
     event.remove({ output: 'mekanism:digital_miner' })
     event.remove({ output: 'mekanism:steel_casing' })
+    event.remove({ output: 'mekanismgenerators:fission_fuel_assembly' })
 
     event.shaped('mekanism:metallurgic_infuser', [
         'ACA',
@@ -164,6 +165,16 @@ ServerEvents.recipes(event => {
             { id: 'mekanism:steel_casing', count: 1 }
         ]
     }).heated()
+
+    event.shaped('mekanismgenerators:fission_fuel_assembly',[
+        'ABA',
+        'ACA',
+        'ABA'
+    ],{
+        A:'#forge:ingots/lead',
+        B:'#forge:ingots/steel',
+        C:'bigreactors:blutonium_block'
+    })
 
 
 })
