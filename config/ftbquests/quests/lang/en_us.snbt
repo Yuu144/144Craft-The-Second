@@ -1,64 +1,196 @@
 {
+	chapter.07210DDF872160BA.title: "Applied Energistics 2"
 	chapter.08FA5D4FB221A697.title: "Start"
+	chapter.0B826D13BAD43EEB.title: "Draconic Evolution"
 	chapter.0EBC9B8BF95312C7.title: "Mekanism"
 	chapter.1343E1B2C0206494.title: "Create"
 	chapter.5F90DDF43BAE564C.title: "Mekanism: Part 2"
 	quest.015400B8CD7EF364.quest_desc: ["To get to planets you will need to observe them like in real life, 3 different points need to be found and made into a map using the"]
+	quest.01612963DBBAC9A1.title: "Chaotic Chestpiece"
 	quest.039C048A9DCC463C.title: "Encased ass"
+	quest.03E6FA4DCB71162E.title: "Color Aplicator"
+	quest.04BF68E4554D69AA.quest_desc: [""]
+	quest.04BF68E4554D69AA.quest_subtitle: "Stores: way too much"
+	quest.04BF68E4554D69AA.title: "Tier 8 Energy Core"
+	quest.0817FD6E45C127E8.quest_desc: [""]
+	quest.0817FD6E45C127E8.title: "More Pylons"
+	quest.0AE930BA037DC565.quest_desc: [""]
+	quest.0AE930BA037DC565.title: "Wyvern Tools"
 	quest.0BA3A51C1A59AFC1.title: "Mechanical Belt"
 	quest.0E1ECD1C3FD827A1.title: "Copper Casing"
 	quest.0E304A303952855C.title: "Steel Ingot"
+	quest.129E09C03E40BA57.quest_desc: [""]
+	quest.129E09C03E40BA57.title: "Reactor Fuel"
+	quest.12BDE512C734D19A.title: "Basic Draconium Core"
+	quest.131AA933D59D3017.quest_desc: [""]
+	quest.131AA933D59D3017.quest_subtitle: "Stores: 59,300,000,000 RF"
+	quest.131AA933D59D3017.title: "Tier 5 Energy Core"
 	quest.16674D52BE63DDC5.title: "Allo(y), how are you doing"
+	quest.1B686954D34A0F23.title: "Wrench"
+	quest.1D3E2363CFD4C5E0.quest_desc: ["{atm9.quest.draconic.desc.basic}"]
+	quest.1D3E2363CFD4C5E0.title: "Basic Tier"
 	quest.1D6161E11E4584DD.title: "Polonium Pellet"
+	quest.1F7D147C9AF6A4FC.quest_desc: [""]
+	quest.1F7D147C9AF6A4FC.quest_subtitle: "Stores: 9,880,000,000 RF"
+	quest.1F7D147C9AF6A4FC.title: "Tier 4 Energy Core"
 	quest.21F8F4DE6C8CA622.title: "Shaft"
 	quest.24A9DF2401262628.title: "The Irony"
+	quest.26DF1427AC3966DE.quest_desc: [
+		"Draconium can be found in every Vanilla Dimension."
+		"Most often in the End"
+	]
+	quest.26DF1427AC3966DE.title: "Find Draconium"
+	quest.295EB6CFEC029AE2.quest_desc: [""]
+	quest.295EB6CFEC029AE2.title: "Energy Transfuser"
+	quest.2B6D71DAF72EAFA4.quest_desc: [""]
+	quest.2B6D71DAF72EAFA4.title: "Wyvern Capacitor"
+	quest.2D9AF97C03C5AEC7.title: "More Stabilizers"
+	quest.2DB2A4A1182FE0BB.quest_desc: [""]
+	quest.2DB2A4A1182FE0BB.quest_subtitle: "Stores: 356,000,000,000 RF"
+	quest.2DB2A4A1182FE0BB.title: "Tier 6 Energy Core"
+	quest.2E74B5149D4BD0A0.quest_desc: [""]
+	quest.2E74B5149D4BD0A0.title: "Basic Relay Crystal"
 	quest.30747A8C69D4B633.title: "Thermal Evaporation Plant"
 	quest.308C7DFE28EB1DBC.quest_desc: ["The hungi rocket is to be fed A LOT of liquid nitrogren in a fluid tank attached to the rocket"]
+	quest.35767977FB9E0B1B.quest_subtitle: "Stores: 273 Million RF"
+	quest.35767977FB9E0B1B.title: "Tier 2 Energy Core"
+	quest.36DAFC3FECC67406.quest_desc: [""]
+	quest.36DAFC3FECC67406.title: "Chaotic Capacitor"
+	quest.36F123B2A6B52A01.quest_desc: [""]
+	quest.36F123B2A6B52A01.title: "Draconic Energy Relay Crystal"
+	quest.389655CD41C7A691.quest_desc: ["Tier 1 only needs the Core and 4 Stabilizers to be made"]
+	quest.389655CD41C7A691.quest_subtitle: "Stores: 45.5 Million RF"
+	quest.389655CD41C7A691.title: "Tier 1 Energy Core"
 	quest.3AD545C1EBAD7744.quest_desc: [
 		"Hey kid! You want to feel, smell and work the AMERICAN spirit? You might just get your chance to do it boy! GET YOURSELF SOME OIL!!!"
 		""
 		"To find out more about Oil just ponder the following Items"
 	]
+	quest.3B4CEE8A8CE0D6CB.quest_desc: [""]
+	quest.3B4CEE8A8CE0D6CB.quest_subtitle: "Stores: 2,140,000,000,000 RF"
+	quest.3B4CEE8A8CE0D6CB.title: "Tier 7 Energy Core"
 	quest.3F3D39A84AFB2579.quest_desc: ["YEEHAW YOU GOT YOURSELF THAT LIQUID GOLD!"]
 	quest.3F3D39A84AFB2579.title: "HELL YEA!!!"
+	quest.41BD497108CA109F.quest_desc: [""]
+	quest.41BD497108CA109F.title: "Awakened Draconium"
+	quest.421954D7D46FAAD6.quest_desc: ["These Stabilizers...uhm yeah...stabilize"]
+	quest.421954D7D46FAAD6.title: "Energy Core Stabilizers"
+	quest.43C2B07AB25C708E.quest_desc: [""]
+	quest.43C2B07AB25C708E.title: "Draconic Tools"
 	quest.43D26830B2AB464C.title: "Elec meine Eier"
+	quest.45EE60207C466D6C.title: "Visit the End"
 	quest.4966767AD45E59E9.title: "Reinforced Alloy"
+	quest.4AB564420C48579B.quest_desc: [""]
+	quest.4AB564420C48579B.title: "Wyvern Chestpiece"
+	quest.4B7840F1A8CF1378.quest_desc: [""]
+	quest.4B7840F1A8CF1378.title: "Draconic Fusion Crafting"
+	quest.4E27182763DA83DC.quest_desc: [""]
+	quest.4E27182763DA83DC.title: "Draconic Chestpiece"
 	quest.51363CD2644743FB.title: "Train Casing"
+	quest.51CF09EC333DB1A3.quest_desc: [""]
+	quest.51CF09EC333DB1A3.title: "Wyvern Tier"
+	quest.51DE3157DE3E57B8.title: "ME Pattern Provider"
+	quest.5233A447BAA4593C.title: "Smart Cables"
+	quest.5443E15E226DFC86.quest_desc: ["These pylons are a kind of Input and Output of the &5Energy Core&r"]
+	quest.5443E15E226DFC86.title: "Energy Pylon"
 	quest.54D2E3B573E8C59B.quest_desc: ["You will need to get some Titanium Tetrachloride and some Obsidian this might do the trick"]
+	quest.5ADFC45B03BAB852.quest_desc: [""]
+	quest.5ADFC45B03BAB852.title: "Draconic Tier"
+	quest.5BC6CC3C09F512A7.quest_desc: [""]
+	quest.5BC6CC3C09F512A7.title: "Building the Reactor"
+	quest.5C22E3103544B120.title: "Cables"
+	quest.5C2CF51D28F84CBE.quest_desc: ["10000 ~ 10000 will be showdown"]
+	quest.5C2CF51D28F84CBE.title: "Defeat the Chaos Guardian"
+	quest.5D87088E8D71DB9B.quest_desc: [""]
+	quest.5D87088E8D71DB9B.title: "I/O Crystals"
+	quest.5E0D78B7B2CF1729.quest_desc: [""]
+	quest.5E0D78B7B2CF1729.title: "Draconic Core"
+	quest.6144202A97C6CD1C.title: "Useful Items"
 	quest.62D860F400D44E3F.title: "Kraterr"
+	quest.6601ACCDDF6CA5FF.quest_desc: [""]
+	quest.6601ACCDDF6CA5FF.title: "Starting the Reactor"
+	quest.6616A62426ED4D15.quest_desc: [""]
+	quest.6616A62426ED4D15.title: "Reactor Energy Injector"
 	quest.667268734FC8C44C.title: "Brass Ingot"
 	quest.667F3B294E62CA36.title: "Sturdy Sheet"
 	quest.66B9FE3871DEA62E.title: "Andesite Alloy"
+	quest.69986817D58AC8BE.quest_desc: [""]
+	quest.69986817D58AC8BE.title: "Reactor Stabilizers"
+	quest.69B7DE2283B4EE6C.title: "Co-Processing Unit"
+	quest.6B8F2E05429C185F.quest_desc: [""]
+	quest.6B8F2E05429C185F.title: "Chaos Shards"
 	quest.6D3035DF9216ACD8.title: "How ima pump yo mama"
 	quest.6D9B0A0E9D4220AC.title: "The opps be searching for that (C)opper"
+	quest.6DBD81BA83B1D0A5.quest_desc: [""]
+	quest.6DBD81BA83B1D0A5.title: "Draconic Capacitor"
 	quest.6F68AF03BFDA3F6B.title: "Andesite Andesite and more Andesite"
 	quest.71070E97678594DC.title: "Encased"
+	quest.713D3B3954E58C4A.quest_desc: [""]
+	quest.713D3B3954E58C4A.quest_subtitle: "Stores: 1,640,000,000 RF"
+	quest.713D3B3954E58C4A.title: "Tier 3 Energy Core"
+	quest.715F9F7107374299.quest_desc: [""]
+	quest.715F9F7107374299.title: "Wyvern Energy Relay Crystal"
+	quest.74FC0DDDB91DB172.title: "ME Interface"
+	quest.75F0405FFAB9C080.quest_desc: [""]
+	quest.75F0405FFAB9C080.title: "Chaotic Core"
 	quest.75FC9AAF70110E36.title: "Polished Rose Quartz"
+	quest.763EB5C911D7E78C.quest_desc: [""]
+	quest.763EB5C911D7E78C.title: "Chaotic Tier"
 	quest.770421C740C88EDD.title: "Atomic Alloy"
+	quest.7A4ABFCD12202A91.quest_desc: [""]
+	quest.7A4ABFCD12202A91.title: "Crystal Binder"
 	quest.7A62D402E839F71C.title: "Opps Encased"
 	quest.7C74B419FF217015.quest_desc: ["There are many Create addons for trains, loot for it in JEI @create"]
+	quest.7D159D333B2AC57E.quest_desc: ["Please I beg you, DON'T LET THIS THING HAVE A MELTDOWN JUST DON'T"]
+	quest.7D159D333B2AC57E.title: "The Draconic Reactor"
 	quest.7D5D71D4AFCA190E.title: "Now you'll become ONE with the Cell"
 	quest.7DFBC946FD79B188.title: "Dont be a pick(axe) me"
+	quest.7EB97C0DDE60DED4.quest_desc: [""]
+	quest.7EB97C0DDE60DED4.title: "Chaotic Tools"
+	quest.7F757CD6F8C57733.quest_desc: [
+		"The largest energy storage system in all of minecraft tech modding."
+		"And in the heart of it all the &5Energy Core&r"
+		""
+		"By right clicking the Core it'll show you what you need to do"
+	]
+	quest.7F757CD6F8C57733.quest_subtitle: "Draconic Power Storage"
+	quest.7F757CD6F8C57733.title: "Energy Core Multiblock"
 	task.07AB9DC4F6E3EC8E.title: "Applied Energistics"
 	task.07B74AC7C0825C56.title: "Mekanism :3"
+	task.08DA73B1AC17E5F5.title: "Crafting Storage"
+	task.14DEFFB80CC96BC1.title: "Dense "
 	task.17D3E72034A08362.title: "Fissile Fuel"
 	task.2374926746945985.title: "Bio Fuel"
+	task.2B98FC08B942E789.title: "Chaotic Tools"
+	task.2D386EFC23C45581.title: "Crafting Monitor"
 	task.2D6D0693E1F9803C.title: "Induction Cell"
+	task.2E518009E0D04D28.title: "ATM als Template genutzt hihi :3"
 	task.303EF38379CC9F5D.title: "Deuterium"
 	task.30A2D223660B10D2.title: "SPS Chamber"
+	task.338A6DA0D711B7DC.title: "ME Pattern Provider"
 	task.36F4F30579B76E39.title: "The next Step"
 	task.37DE2F91B6F78DA6.title: "Tritium"
+	task.38E290AC5E011888.title: "Dense "
 	task.3F5051AD439261AE.title: "Nuclear Waste"
+	task.40A7CC56DACC2623.title: "ME Glass Cable"
 	task.40D7112413778B05.title: "Starter Energy"
 	task.4D6E1248322D9D33.title: "Fusion Reactor"
 	task.4E19B83246B044DD.title: "Fission Reactor"
+	task.4EF3D2E03F9DD5D1.title: "Draconic Tools"
 	task.5229B72DD9BB96B1.title: "Fissile Energy"
 	task.5A7BC06607D2C9CC.title: "AMERICA!!!!"
+	task.5EC8D891031E34EF.title: "Co-Processing Unit"
 	task.608D10C492AE75C9.title: "Fusion Fuel"
+	task.61CCAD2018478894.title: "Activation"
+	task.61D93B13D496547D.title: "Fluid Storage Cell"
+	task.64EAD3DE84E94F02.title: "Covered Cable"
+	task.65C439FD14C5EEB9.title: "Portable Item Cell"
 	task.6AE190D17FF215DF.title: "Plutonium Pellet"
 	task.6C84F2AD9A25AA4E.title: "Lithium"
 	task.703EDECD4E437A94.title: "Turbine"
+	task.7241918F270CA402.title: "ME Interface"
 	task.72EFA5BD5BB32DBA.title: "DT-Fuel"
+	task.75924053D6F5B242.title: "Spatial Storage Cell"
 	task.7954587460A7E00A.title: "Check out Create Enchantment Industry"
 	task.7A39F60EE4ED8246.title: "Next Step"
 	task.7D092FAE8746E347.title: "Create"
