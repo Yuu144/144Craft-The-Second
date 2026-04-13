@@ -3,6 +3,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'ae2:controller' })
     event.remove({ output: 'ae2:formation_core' })
     event.remove({ output: 'ae2:annihilation_core' })
+    event.remove({ output: 'ae2:inscriber' })
 
     event.custom({
         type: 'create:compacting',
@@ -65,4 +66,14 @@ ServerEvents.recipes(event => {
         },
         "show_notification": false
     }).id("144craft2:ae2/controller")
+
+    event.shaped('ae2:inscriber', [
+        'ABA',
+        'C A',
+        'ABA'
+    ],{
+        A:'minecraft:iron_ingot',
+        B:'create:mechanical_press',
+        C:'minecraft:copper_ingot'
+    })
 })
