@@ -546,8 +546,8 @@
 				}
 			]
 			tasks: [{
-				id: "4EF3D2E03F9DD5D1"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				id: "2A0E0F6C82782694"
+				item: { components: { "ftbfiltersystem:filter": "or(item(draconicevolution:draconic_axe)item(draconicevolution:draconic_bow)item(draconicevolution:draconic_pickaxe)item(draconicevolution:draconic_shovel)item(draconicevolution:draconic_staff)item(draconicevolution:draconic_sword))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -572,8 +572,8 @@
 				}
 			]
 			tasks: [{
-				id: "2B98FC08B942E789"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				id: "3C202B420ADC5A69"
+				item: { components: { "ftbfiltersystem:filter": "or(item(draconicevolution:chaotic_pickaxe)item(draconicevolution:chaotic_shovel)item(draconicevolution:chaotic_axe)item(draconicevolution:chaotic_sword)item(draconicevolution:chaotic_staff)item(draconicevolution:chaotic_bow))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -1340,8 +1340,8 @@
 			}]
 			shape: "pentagon"
 			tasks: [{
-				id: "664130FB28E419EF"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				id: "42596D10DBA9A698"
+				item: { components: { "ftbfiltersystem:filter": "or(item(draconicevolution:basic_io_crystal)item(draconicevolution:draconic_io_crystal)item(draconicevolution:wyvern_io_crystal))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 4.5d

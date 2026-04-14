@@ -7,7 +7,6 @@
 	chapter.5F90DDF43BAE564C.title: "Mekanism: Part 2"
 	quest.015400B8CD7EF364.quest_desc: ["To get to planets you will need to observe them like in real life, 3 different points need to be found and made into a map using the"]
 	quest.01612963DBBAC9A1.title: "Chaotic Chestpiece"
-	quest.039C048A9DCC463C.title: "Encased ass"
 	quest.03E6FA4DCB71162E.title: "Color Aplicator"
 	quest.04BF68E4554D69AA.quest_desc: [""]
 	quest.04BF68E4554D69AA.quest_subtitle: "Stores: way too much"
@@ -52,12 +51,15 @@
 	quest.2E74B5149D4BD0A0.title: "Basic Relay Crystal"
 	quest.30747A8C69D4B633.title: "Thermal Evaporation Plant"
 	quest.308C7DFE28EB1DBC.quest_desc: ["The hungi rocket is to be fed A LOT of liquid nitrogren in a fluid tank attached to the rocket"]
+	quest.348D521E5B8A500C.title: "This quest is delayed for about 15 minutes"
 	quest.35767977FB9E0B1B.quest_subtitle: "Stores: 273 Million RF"
 	quest.35767977FB9E0B1B.title: "Tier 2 Energy Core"
+	quest.365D16CED9279DE5.quest_desc: ["INFO Der Condenser hat kein Recipe und ist auch aus EMI entfernt. Alle Rezepte sind angemessen angepasst. Für Matter Ball und Singularity einfach EMI nutzen und nachschauen"]
 	quest.36DAFC3FECC67406.quest_desc: [""]
 	quest.36DAFC3FECC67406.title: "Chaotic Capacitor"
 	quest.36F123B2A6B52A01.quest_desc: [""]
 	quest.36F123B2A6B52A01.title: "Draconic Energy Relay Crystal"
+	quest.37DFA2338FA71957.title: "Encased ass"
 	quest.389655CD41C7A691.quest_desc: ["Tier 1 only needs the Core and 4 Stabilizers to be made"]
 	quest.389655CD41C7A691.quest_subtitle: "Stores: 45.5 Million RF"
 	quest.389655CD41C7A691.title: "Tier 1 Energy Core"
@@ -77,7 +79,6 @@
 	quest.421954D7D46FAAD6.title: "Energy Core Stabilizers"
 	quest.43C2B07AB25C708E.quest_desc: [""]
 	quest.43C2B07AB25C708E.title: "Draconic Tools"
-	quest.43D26830B2AB464C.title: "Elec meine Eier"
 	quest.45EE60207C466D6C.title: "Visit the End"
 	quest.4966767AD45E59E9.title: "Reinforced Alloy"
 	quest.4AB564420C48579B.quest_desc: [""]
@@ -106,7 +107,6 @@
 	quest.5E0D78B7B2CF1729.quest_desc: [""]
 	quest.5E0D78B7B2CF1729.title: "Draconic Core"
 	quest.6144202A97C6CD1C.title: "Useful Items"
-	quest.62D860F400D44E3F.title: "Kraterr"
 	quest.6601ACCDDF6CA5FF.quest_desc: [""]
 	quest.6601ACCDDF6CA5FF.title: "Starting the Reactor"
 	quest.6616A62426ED4D15.quest_desc: [""]
@@ -119,7 +119,6 @@
 	quest.69B7DE2283B4EE6C.title: "Co-Processing Unit"
 	quest.6B8F2E05429C185F.quest_desc: [""]
 	quest.6B8F2E05429C185F.title: "Chaos Shards"
-	quest.6D3035DF9216ACD8.title: "How ima pump yo mama"
 	quest.6D9B0A0E9D4220AC.title: "The opps be searching for that (C)opper"
 	quest.6DBD81BA83B1D0A5.quest_desc: [""]
 	quest.6DBD81BA83B1D0A5.title: "Draconic Capacitor"
@@ -161,7 +160,6 @@
 	task.14DEFFB80CC96BC1.title: "Dense "
 	task.17D3E72034A08362.title: "Fissile Fuel"
 	task.2374926746945985.title: "Bio Fuel"
-	task.2B98FC08B942E789.title: "Chaotic Tools"
 	task.2D386EFC23C45581.title: "Crafting Monitor"
 	task.2D6D0693E1F9803C.title: "Induction Cell"
 	task.2E518009E0D04D28.title: "ATM als Template genutzt hihi :3"
@@ -171,13 +169,15 @@
 	task.36F4F30579B76E39.title: "The next Step"
 	task.37DE2F91B6F78DA6.title: "Tritium"
 	task.38E290AC5E011888.title: "Dense "
+	task.3E1494E05F573B0C.title: "Extreme Reactors"
 	task.3F5051AD439261AE.title: "Nuclear Waste"
 	task.40A7CC56DACC2623.title: "ME Glass Cable"
 	task.40D7112413778B05.title: "Starter Energy"
 	task.4D6E1248322D9D33.title: "Fusion Reactor"
 	task.4E19B83246B044DD.title: "Fission Reactor"
-	task.4EF3D2E03F9DD5D1.title: "Draconic Tools"
+	task.50158E960742A801.title: "Immersive Engineering"
 	task.5229B72DD9BB96B1.title: "Fissile Energy"
+	task.573F100945C6D43C.title: "Any #c:ingots/brass"
 	task.5A7BC06607D2C9CC.title: "AMERICA!!!!"
 	task.5EC8D891031E34EF.title: "Co-Processing Unit"
 	task.608D10C492AE75C9.title: "Fusion Fuel"
@@ -190,6 +190,7 @@
 	task.703EDECD4E437A94.title: "Turbine"
 	task.7241918F270CA402.title: "ME Interface"
 	task.72EFA5BD5BB32DBA.title: "DT-Fuel"
+	task.751114E514E3A44F.title: "Matter Condenser"
 	task.75924053D6F5B242.title: "Spatial Storage Cell"
 	task.7954587460A7E00A.title: "Check out Create Enchantment Industry"
 	task.7A39F60EE4ED8246.title: "Next Step"
