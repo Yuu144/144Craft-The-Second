@@ -4,6 +4,9 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'ae2:formation_core' })
     event.remove({ output: 'ae2:annihilation_core' })
     event.remove({ output: 'ae2:inscriber' })
+    event.remove({ output: 'ae2:condenser' })
+    event.remove({ output: 'extendedae:void_cell' })
+    event.remove({ output: 'advanced_ae:reaction_chamber' })
 
     event.custom({
         type: 'create:compacting',
@@ -76,4 +79,67 @@ ServerEvents.recipes(event => {
         B:'create:mechanical_press',
         C:'minecraft:copper_ingot'
     })
+
+    event.custom({
+    
+        "type": "oritech:particle_collision",
+            "fluidInput": {
+            "amount": 0,
+            "fluid": "minecraft:empty"
+        },
+            "fluidOutputs": [],
+            "ingredients": [
+        {
+            "tag": "allthecompressed:5x"
+        },
+        {
+            "tag": "allthecompressed:5x"
+        }
+        ],
+            "results": [
+        {
+            "count": 1,
+            "id": "ae2:singularity"
+        }
+        ],
+            "time": 40000
+
+    })
+
+    event.custom({
+
+        type: 'create:pressing',
+        ingredients: [
+            { tag: 'allthecompressed:2x' }
+        ],
+        results: [
+            { id: 'ae2:matter_ball', count: 8 }
+        ]
+
+    })
+
+    event.shaped('extendedae:void_cell', [
+        'ABA',
+        'CDC',
+        'EEE'
+    ],{
+        A:'ae2:quartz_glass',
+        B:'trashcans:ultimate_trash_can',
+        C:'ae2:void_card',
+        D:'ae2:cell_component_16k',
+        E:'minecraft:amethyst_shard'
+    })
+
+    event.shaped('advanced_ae:reaction_chamber', [
+        'ABA',
+        'ACA',
+        'DED'
+    ],{
+        A:'ae2:fluix_dust',
+        B:'create:precision_mechanism',
+        C:'ae2:vibration_chamber',
+        D:'minecraft:glowstone',
+        E:'minecraft:bucket'
+    })
+
 })

@@ -8,6 +8,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanism:digital_miner' })
     event.remove({ output: 'mekanism:steel_casing' })
     event.remove({ output: 'mekanismgenerators:fission_fuel_assembly' })
+    event.remove({ output: 'mekanism:supercharged_coil' })
 
     event.shaped('mekanism:metallurgic_infuser', [
         'ACA',
@@ -174,6 +175,124 @@ ServerEvents.recipes(event => {
         A:'#forge:ingots/lead',
         B:'#forge:ingots/steel',
         C:'bigreactors:blutonium_block'
+    })
+
+    event.custom({
+
+        "type": "create:sequenced_assembly",
+        "ingredient": {
+            "item": "mekanism:laser"
+        },
+        "loops": 2,
+        "results": [
+            {
+                "chance": 60.0,
+                "id": "mekanism:supercharged_coil"
+            },
+            {
+                "chance": 10.0,
+                "id": "tfmg:coal_coke_dust"
+            },
+            {       
+                "chance": 10.0,
+                "id": "mekanism:dust_coal"
+            },
+            {
+                "chance": 10.0,
+                "id": "mekanism:dust_sulfur"
+            },
+            {
+                "chance": 5.0,
+                "id": "ae2:singularity"
+            },
+            {
+                "chance": 5.0,
+                "id": "advanced_ae:quantum_infused_dust"
+            }
+        ],
+        "sequence": [
+            {
+                "type": "create:deploying",
+                "ingredients": [
+                    {
+                        "item": "mekanism:supercharged_coil"
+                    },
+                    {
+                        "item": "minecraft:copper_block"
+                    }
+                ],
+                "results": [
+                    {
+                        "id": "mekanism:supercharged_coil"
+                    }
+                ]
+            },
+            {
+                "type": "create:deploying",
+                "ingredients": [
+                    {
+                        "item": "mekanism:supercharged_coil"
+                    },
+                    {
+                        "item": "mekanism:pellet_polonium"
+                    }
+                ],
+                "results": [
+                    {
+                        "id": "mekanism:supercharged_coil"
+                    }
+                ]
+            },
+            {
+                "type": "create:pressing",
+                "ingredients": [
+                    {
+                        "item": "mekanism:supercharged_coil"
+                    }
+                ],
+                "results": [
+                    {
+                        "id": "mekanism:supercharged_coil"
+                    }
+                ]
+            },
+            {
+                "type": "create:filling",
+                "ingredients": [
+                    {
+                        "item": "mekanism:supercharged_coil"
+                    },
+                    {
+                        "type": "neoforge:single",
+                        "amount": 250,
+                        "fluid": "oritech:still_strange_matter"
+                    }
+                ],
+                "results": [
+                    {
+                        "id": "mekanism:supercharged_coil"
+                    }
+                ]
+            },
+            {
+                "type": "northstar:engraving",
+                "ingredients": [
+                    {
+                        "item": "mekanism:supercharged_coil"
+                    }
+                ],
+                "processing_time": 200,
+                "results": [
+                    {
+                        "id": "mekanism:supercharged_coil"
+                    }
+                ]         
+            }
+        ],
+        "transitional_item": {
+            "id": "mekanism:supercharged_coil"
+        }
+    
     })
 
 
