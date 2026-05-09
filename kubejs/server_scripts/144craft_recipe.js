@@ -10,19 +10,19 @@ ServerEvents.recipes(event => {
             "fluidOutputs": [],
             "ingredients": [
         {
-            "tag": "allthecompressed:9x"
+            "item": "kubejs:larp_crystal"
         },
         {
-            "tag": "allthecompressed:9x"
+            "item": "kubejs:larp_crystal"
         }
         ],
             "results": [
         {
             "count": 1,
-            "id": "oritech:black_hole_block"
+            "id": "kubejs:144_ium"
         }
         ],
-            "time": 100000
+            "time": 15000
 
     })
 

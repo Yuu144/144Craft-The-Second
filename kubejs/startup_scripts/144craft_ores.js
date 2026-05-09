@@ -6,6 +6,10 @@ StartupEvents.registry('item', event => {
   event.create('13_ium')
     .displayName('13-Ium')
     .maxStackSize(64)
+
+  event.create('larp_crystal')
+    .displayName('Larp Crystal')
+    .maxStackSize(13)
 })
 
 StartupEvents.registry('block', event => {

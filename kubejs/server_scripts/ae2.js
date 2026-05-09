@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
             "id": "ae2:singularity"
         }
         ],
-            "time": 40000
+            "time": 10000
 
     })
 
