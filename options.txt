@@ -48,8 +48,8 @@ mouseSensitivity:0.2975352112676056
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:["vanilla","fabric","mod_resources","moonlight:merged_pack","file/LowOnFire 1.21.3.zip","file/AE2Blackout-V1.2.5.zip","file/RPG_Series_Icons-1.4.0+1.21.1.zip","file/[1.5] Enhanced Boss Bars.zip","white_icons","file/Unique Dark - Lite - 1.20.2-26.1.zip","file/SimplySwordsWhimscape_v1.1.zip","file/Simply Swords Reforged v1.zip","file/Slightly-Improved-Font-1.1.5.zip"]
-incompatibleResourcePacks:["file/Simply Swords Reforged v1.zip"]
+resourcePacks:["vanilla","fabric","mod_resources","moonlight:merged_pack","file/RPG_Series_Icons-1.4.0+1.21.1.zip","file/LowOnFire 1.21.3.zip","file/Slightly-Improved-Font-1.1.5.zip","file/Unique Dark - Lite - 1.20.2-26.x.zip","file/[1.6] Enhanced Boss Bars.zip"]
+incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
 chatVisibility:0
