@@ -257,24 +257,6 @@ ServerEvents.recipes(event => {
                 ]
             },
             {
-                "type": "create:filling",
-                "ingredients": [
-                    {
-                        "item": "mekanism:supercharged_coil"
-                    },
-                    {
-                        "type": "neoforge:single",
-                        "amount": 250,
-                        "fluid": "oritech:still_strange_matter"
-                    }
-                ],
-                "results": [
-                    {
-                        "id": "mekanism:supercharged_coil"
-                    }
-                ]
-            },
-            {
                 "type": "northstar:engraving",
                 "ingredients": [
                     {
