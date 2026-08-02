@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         'BDB',
         'ACA'
     ], {
-        A: 'minecraft:iron_ingot',
+        A: '#c:ingots/steel',
         B: 'minecraft:redstone',
         C: 'alltheores:osmium_ingot',
         D: 'create_sa:hydraulic_engine'
