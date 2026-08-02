@@ -9,6 +9,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanism:steel_casing' })
     event.remove({ output: 'mekanismgenerators:fission_fuel_assembly' })
     event.remove({ output: 'mekanism:supercharged_coil' })
+    event.remove({ output: 'mekanism:crusher' })
+    event.remove({ output: 'mekanism:wind_generator' })
 
     event.shaped('mekanism:metallurgic_infuser', [
         'ACA',
@@ -21,6 +23,18 @@ ServerEvents.recipes(event => {
         D: 'create_sa:hydraulic_engine'
     })
 
+    event.shaped('mekanism:wind_generator', [
+        ' A ',
+        'EBE',
+        'CDC'
+    ], {
+        A: '#c:ingots/osmium',
+        B: 'mekanism:alloy_infused',
+        C: 'mekanism:energy_tablet',
+        D: 'mekanism:basic_control_circuit',
+        E: 'mekanism:steel_casing'
+    })
+
     event.shaped('mekanismgenerators:bio_generator', [
         'ABA',
         'CDC',
@@ -30,7 +44,7 @@ ServerEvents.recipes(event => {
         B: 'mekanism:alloy_infused',
         C: '#c:fuels/bio',
         D: 'mekanism:basic_control_circuit',
-        E: 'alltheores:steel_ingot'
+        E: '#c:ingots/steel'
     })
 
     event.shaped('mekanismgenerators:gas_burning_generator', [

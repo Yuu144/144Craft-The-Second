@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: '#c:ingots/steel' })
     event.remove({ output: '#c:dusts/steel' })
     event.remove({ output: '#c:dusts/coal' })
-    event.remove({ output: 'alltheores:steel_ingot' })
+    event.remove({ output: 'jei:/alltheores/alloy_smelting/steel_ingot' }) // Wollte einfach nicht verschwinden mit event.remove({ output: '#c:ingots/steel' })
 
     // === Early Game Steel Production ===
     // Coal Dust
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         },
         duration: 80,
         item_output: {
-            count: 1,
+            count: 2,
             id: 'mekanism:dust_steel'
         }
     })
