@@ -162,11 +162,12 @@ ServerEvents.recipes(event => {
 
     event.custom({
         type: 'create:compacting',
+        heatRequirement: 'heated',
         ingredients: [
-            { item: '#c:plates/steel' },
-            { item: '#c:plates/steel' },
-            { item: '#c:plates/steel' },
-            { item: '#c:plates/steel' },
+            { tag: 'c:plates/steel' },
+            { tag: 'c:plates/steel' },
+            { tag: 'c:plates/steel' },
+            { tag: 'c:plates/steel' },
             { item: 'alltheores:osmium_ingot' },
             { item: 'alltheores:osmium_ingot' },
             { item: 'alltheores:osmium_ingot' },
@@ -177,9 +178,9 @@ ServerEvents.recipes(event => {
             { item: 'minecraft:sand' }
         ],
         results: [
-            { id: 'mekanism:steel_casing', count: 1 }
+            { item: 'mekanism:steel_casing', count: 1 }
         ]
-    }).heated()
+    })
 
     event.shaped('mekanismgenerators:fission_fuel_assembly',[
         'ABA',
