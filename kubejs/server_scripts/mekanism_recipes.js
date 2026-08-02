@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
             { item: 'minecraft:sand' }
         ],
         results: [
-            { item: 'mekanism:steel_casing', count: 1 }
+            { id: 'mekanism:steel_casing', count: 1 }
         ]
     })
 
