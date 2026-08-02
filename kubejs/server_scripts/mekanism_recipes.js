@@ -163,10 +163,10 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'create:compacting',
         ingredients: [
-            { item: 'alltheores:steel_ingot' },
-            { item: 'alltheores:steel_ingot' },
-            { item: 'alltheores:steel_ingot' },
-            { item: 'alltheores:steel_ingot' },
+            { item: '#c:plates/steel' },
+            { item: '#c:plates/steel' },
+            { item: '#c:plates/steel' },
+            { item: '#c:plates/steel' },
             { item: 'alltheores:osmium_ingot' },
             { item: 'alltheores:osmium_ingot' },
             { item: 'alltheores:osmium_ingot' },
