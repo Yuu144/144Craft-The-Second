@@ -2,7 +2,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: '#c:ingots/steel' })
     event.remove({ output: '#c:dusts/steel' })
     event.remove({ output: '#c:dusts/coal' })
-    event.remove({ output: 'jei:/alltheores/alloy_smelting/steel_ingot' }) // Wollte einfach nicht verschwinden mit event.remove({ output: '#c:ingots/steel' })
+    event.remove({ output: 'alltheores:alloy_smelting/steel_ingot' })
+    event.remove({ type: 'alltheores:alloy_smelting', output: 'alltheores:steel_ingot' }) // Wollte einfach nicht verschwinden mit event.remove({ output: '#c:ingots/steel' })
 
     // === Early Game Steel Production ===
     // Coal Dust
@@ -21,6 +22,7 @@ ServerEvents.recipes(event => {
         type: 'create:mixing',
         heat_requirement: 'heated',
         ingredients: [
+            { tag: 'c:ingots/iron' },
             { tag: 'c:ingots/iron' },
             { tag: 'c:dusts/coal' },
             { tag: 'c:dusts/coal' },
