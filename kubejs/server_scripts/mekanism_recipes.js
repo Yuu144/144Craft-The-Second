@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanismgenerators:fission_fuel_assembly' })
     event.remove({ output: 'mekanism:supercharged_coil' })
     event.remove({ output: 'mekanism:crusher' })
-    event.remove({ output: 'mekanism:wind_generator' })
+    event.remove({ output: 'mekanismgenerators:wind_generator' })
 
     event.shaped('mekanism:metallurgic_infuser', [
         'ACA',
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         D: 'create_sa:hydraulic_engine'
     })
 
-    event.shaped('mekanism:wind_generator', [
+    event.shaped('mekanismgenerators:wind_generator', [
         ' A ',
         'EBE',
         'CDC'
