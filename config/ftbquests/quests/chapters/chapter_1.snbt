@@ -1,0 +1,209 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1"
+	group: ""
+	id: "494AE1A2C6EBC2AD"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["51F4B9BF7F187743"]
+			id: "2E67DB4FFBF5C8F9"
+			tasks: [{
+				id: "3A327CA9DECF8FF1"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["51F4B9BF7F187743"]
+			id: "6A367D219D19CB14"
+			tasks: [{
+				id: "5C1D5EF1CE891787"
+				item: { count: 1, id: "minecraft:coal" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0F6978EE1C2060EC"]
+			dependency_requirement: "all_started"
+			id: "2CACEBCB8DCA0223"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				count: 2L
+				id: "77CD8C8CE82D0E08"
+				item: { count: 1, id: "create:crushing_wheel" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2CACEBCB8DCA0223"]
+			id: "2092A9E006805FBF"
+			tasks: [{
+				id: "1B3F9CDE901F44AD"
+				item: { count: 1, id: "oritech:coal_dust" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4A82CA987C4DF548"]
+			id: "0485F8341BD93E71"
+			tasks: [{
+				id: "601D9BA18B370811"
+				item: { count: 1, id: "create:mechanical_mixer" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["51F4B9BF7F187743"]
+			id: "2DCBF1BDB7DCA042"
+			tasks: [{
+				id: "34704078EE2876F8"
+				item: { count: 1, id: "minecraft:calcite" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			id: "51F4B9BF7F187743"
+			tasks: [{
+				id: "516D985A9A711E23"
+				item: { count: 1, id: "minecraft:stone_pickaxe" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["51F4B9BF7F187743"]
+			id: "48D95F109B11E1A8"
+			tasks: [{
+				id: "4CB73D5C039BBAAD"
+				item: { count: 1, id: "minecraft:andesite" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"66A7D2FB69E1FE59"
+				"48D95F109B11E1A8"
+			]
+			id: "27A7E7309A818B9A"
+			tasks: [{
+				id: "1F5365FC750E8350"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2E67DB4FFBF5C8F9"]
+			id: "66A7D2FB69E1FE59"
+			tasks: [{
+				id: "247CAEF81EE08C87"
+				item: { count: 1, id: "minecraft:iron_nugget" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["27A7E7309A818B9A"]
+			id: "4A82CA987C4DF548"
+			tasks: [{
+				id: "18218D94BAA021F0"
+				item: { count: 1, id: "create:andesite_casing" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4A82CA987C4DF548"]
+			id: "02DA899B88C696D5"
+			tasks: [{
+				id: "55E02E3D34802AE4"
+				item: { count: 1, id: "create:mechanical_press" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4A82CA987C4DF548"]
+			id: "458F41FC6C378D38"
+			tasks: [{
+				id: "1CF371D52F61D3D6"
+				item: { count: 1, id: "create:deployer" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0485F8341BD93E71"]
+			id: "0F6978EE1C2060EC"
+			tasks: [{
+				count: 21L
+				id: "6D43143C090B1EC6"
+				item: { count: 1, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2DCBF1BDB7DCA042"
+				"2092A9E006805FBF"
+			]
+			id: "134AF019F3A7635A"
+			tasks: [{
+				id: "793CE3C4987430C5"
+				item: { count: 1, id: "kubejs:pig_iron_ingot" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["134AF019F3A7635A"]
+			id: "076C709814BCE0DB"
+			tasks: [{
+				id: "2156FBA1ED027198"
+				item: { count: 1, id: "kubejs:unforged_steel_ingot" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["076C709814BCE0DB"]
+			id: "4281AE5CE66D1728"
+			tasks: [{
+				id: "51FBF2506C25FC4D"
+				item: { count: 1, id: "mekanism:ingot_steel" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.0d
+		}
+	]
+}
