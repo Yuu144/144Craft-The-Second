@@ -4,21 +4,21 @@
       "color": "#CCCCCC",
       "texture": "raritycore:textures/border/rarity_1.png",
       "tooltips": true,
-      "renderer": false,
+      "renderer": true,
       "nameColor": true
     },
     "2": {
       "color": "#55FF55",
       "texture": "raritycore:textures/border/rarity_2.png",
       "tooltips": true,
-      "renderer": false,
+      "renderer": true,
       "nameColor": true
     },
     "3": {
       "color": "#55FFFF",
       "texture": "raritycore:textures/border/rarity_3.png",
       "tooltips": true,
-      "renderer": false,
+      "renderer": true,
       "nameColor": true
     },
     "4": {
