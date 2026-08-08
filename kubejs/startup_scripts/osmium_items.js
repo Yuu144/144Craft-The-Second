@@ -1,7 +1,7 @@
 StartupEvents.registry('item', event => {
-    event.create('acid_treated_osmium')
-        .displayName('Acid-Treated Osmium')
-        .tooltip('§7Raw crushed osmium ore dissolved in sulfuric acid.')
+    event.create('treated_osmium')
+        .displayName('Treated Osmium')
+        .tooltip('§7Raw crushed osmium ore dissolved in kerosene.')
 
     event.create('osmium_tetroxide_dust')
         .displayName('Osmium Tetroxide Powder')
