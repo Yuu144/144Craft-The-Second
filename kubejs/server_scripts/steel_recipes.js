@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-    // --- REMOVE OLD STEEL & COAL DUST RECIPES ---
     event.remove({ output: '#c:ingots/steel' })
     event.remove({ output: '#c:dusts/steel' })
     event.remove({ output: '#c:dusts/coal' })
@@ -10,7 +9,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'enderio:powdered_coal' })
     event.remove({ output: 'oritech:coal_dust' })
 
-    // === Early Game Steel Production ===
     // Coal Dust
     event.custom({
         type: 'create:crushing',
@@ -51,7 +49,6 @@ ServerEvents.recipes(event => {
         results: [ { id: 'alltheores:steel_ingot', count: 1 } ]
     })
 
-    // === Late Game Steel Production ===
     event.custom({
         type: 'mekanism:reaction',
         item_input: {
@@ -73,7 +70,6 @@ ServerEvents.recipes(event => {
         }
     })
 
-    // Smelting/Blasting (Output changed to AllTheOres Steel Ingot)
     event.smelting('alltheores:steel_ingot', 'mekanism:dust_steel')
     event.blasting('alltheores:steel_ingot', 'mekanism:dust_steel')
 })
