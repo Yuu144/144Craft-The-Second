@@ -4,6 +4,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: '#c:dusts/coal' })
     event.remove({ output: 'alltheores:alloy_smelting/steel_ingot' })
     event.remove({ type: 'alltheores:alloy_smelting', output: 'alltheores:steel_ingot' })
+    event.remove({ id: 'oritech:compat/enderio/alloy/steel' })
 
     // Explicitly remove all recipes for alternative coal dusts to prevent bypasses
     event.remove({ output: 'enderio:powdered_coal' })
