@@ -18,15 +18,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'alltheores:arcfurnace/osmium/from_raw_block' })
     event.remove({ id: 'alltheores:arcfurnace/osmium/from_dust' })
 
-    // --- MANUAL ORE HAMMER CRUSHING (Early Game) ---
-    // 2x Raw Osmium + Hammer -> 1x ATO Osmium Dust (Hammer takes damage)
     event.shapeless('alltheores:osmium_dust', [
         '#alltheores:ore_hammers',
         '#c:raw_materials/osmium',
         '#c:raw_materials/osmium'
     ]).damageIngredient('#alltheores:ore_hammers')
 
-    // --- STEP 1: Crushing (Create) ---
     // Raw Osmium -> ATO Osmium Dust
     event.custom({
         type: 'create:crushing',
@@ -38,7 +35,6 @@ ServerEvents.recipes(event => {
         processingTime: 200
     })
 
-    // --- STEP 2: Dissolution (Create Heated Mixer) ---
     // Osmium Dust + Oritech Sulfuric Acid -> Acid-Treated Osmium
     event.custom({
         type: 'create:mixing',
@@ -55,11 +51,6 @@ ServerEvents.recipes(event => {
             { id: 'kubejs:acid_treated_osmium', count: 1 }
         ]
     })
-
-
-    // ==========================================================
-    // = TIER 1: EARLY-GAME CREATE METHOD (Low Yield, 1x Output) =
-    // ==========================================================
 
     // Step 3 (Early Oxidation): Acid-Treated Osmium + Glowstone (Oxidizer) -> Osmium Tetroxide Powder
     event.custom({
@@ -87,11 +78,6 @@ ServerEvents.recipes(event => {
             { id: 'kubejs:purified_osmium_dust', count: 1 }
         ]
     })
-
-
-    // ==========================================================
-    // = TIER 2: LATE-GAME MEKANISM METHOD (High Yield, 2x Output) =
-    // ==========================================================
 
     // Step 3 (Late Oxidation): Acid-Treated Osmium + Water + Oxygen -> 2x Osmium Tetroxide Powder
     event.custom({
@@ -137,8 +123,6 @@ ServerEvents.recipes(event => {
         }
     })
 
-
-    // --- STEP 5: Smelting/Blasting (Purified Dust -> Ingot) ---
     // Only the chemically purified dust can be smelted into the actual usable ingot.
     event.smelting('alltheores:osmium_ingot', 'kubejs:purified_osmium_dust')
     event.blasting('alltheores:osmium_ingot', 'kubejs:purified_osmium_dust')
