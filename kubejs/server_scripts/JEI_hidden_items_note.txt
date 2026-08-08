@@ -1,0 +1,14 @@
+Ich trag mal hier alles ein was hidden ist damit man den Überblick hat, wenn du was hidest trags bitte nach.
+
+In controls erstmal "toggle hide ingredients mode" auf etwas binden und dann hiden mit Control-linksclick
+WICHTIG: Nichts anderes drücken denn das wäre alle item variationen hiden oder ganzte mod hiden
+
+
+-----------
+
+Mekanism - Osmium Ingot
+Mekanism - Steel Ingot
+Tfmg - Steel Ingot
+Blocks You Need - Steel Ingot
+Immers Engine. - Steel Ingot
+(Oritech - Steel Ingot)
