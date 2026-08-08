@@ -1,9 +1,14 @@
 ServerEvents.recipes(event => {
+    // --- REMOVE OLD STEEL & COAL DUST RECIPES ---
     event.remove({ output: '#c:ingots/steel' })
     event.remove({ output: '#c:dusts/steel' })
     event.remove({ output: '#c:dusts/coal' })
     event.remove({ output: 'alltheores:alloy_smelting/steel_ingot' })
-    event.remove({ type: 'alltheores:alloy_smelting', output: 'alltheores:steel_ingot' }) // Wollte einfach nicht verschwinden mit event.remove({ output: '#c:ingots/steel' })
+    event.remove({ type: 'alltheores:alloy_smelting', output: 'alltheores:steel_ingot' })
+
+    // Explicitly remove all recipes for alternative coal dusts to prevent bypasses
+    event.remove({ output: 'enderio:powdered_coal' })
+    event.remove({ output: 'oritech:coal_dust' })
 
     // === Early Game Steel Production ===
     // Coal Dust
@@ -39,11 +44,11 @@ ServerEvents.recipes(event => {
         results: [ { id: 'kubejs:unforged_steel_ingot', count: 1 } ]
     })
 
-    // Steel Ingot
+    // Steel Ingot (Output changed to AllTheOres Steel Ingot)
     event.custom({
         type: 'create:pressing',
         ingredients: [ { item: 'kubejs:unforged_steel_ingot' } ],
-        results: [ { id: 'mekanism:ingot_steel', count: 1 } ]
+        results: [ { id: 'alltheores:steel_ingot', count: 1 } ]
     })
 
     // === Late Game Steel Production ===
@@ -68,6 +73,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.smelting('mekanism:ingot_steel', 'mekanism:dust_steel')
-    event.blasting('mekanism:ingot_steel', 'mekanism:dust_steel')
+    // Smelting/Blasting (Output changed to AllTheOres Steel Ingot)
+    event.smelting('alltheores:steel_ingot', 'mekanism:dust_steel')
+    event.blasting('alltheores:steel_ingot', 'mekanism:dust_steel')
 })
