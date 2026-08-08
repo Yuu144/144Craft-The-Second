@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'alltheores:arcfurnace/osmium/from_raw' })
     event.remove({ id: 'alltheores:arcfurnace/osmium/from_raw_block' })
     event.remove({ id: 'alltheores:arcfurnace/osmium/from_dust' })
+    event.remove({ type: 'create:crushing', output: 'create:crushed_raw_osmium' })
 
     event.shapeless('alltheores:osmium_dust', [
         '#alltheores:ore_hammers',

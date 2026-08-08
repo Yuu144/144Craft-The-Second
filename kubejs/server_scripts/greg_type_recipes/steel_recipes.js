@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
     // Unforged Steel Ingot
     event.custom({
         type: 'create:mixing',
-        heat_requirement: 'superheated',
+        heat_requirement: 'heated',
         ingredients: [ { item: 'kubejs:pig_iron_ingot' } ],
         results: [ { id: 'kubejs:unforged_steel_ingot', count: 1 } ]
     })
