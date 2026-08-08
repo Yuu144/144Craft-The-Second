@@ -1,19 +1,11 @@
 ServerEvents.recipes(event => {
-    // --- REMOVE DIRECT SMELTING/BLASTING OF RAW OSMIUM & ORES ---
     event.remove({ type: 'minecraft:smelting', input: '#c:raw_materials/osmium' })
     event.remove({ type: 'minecraft:blasting', input: '#c:raw_materials/osmium' })
     event.remove({ type: 'minecraft:smelting', input: '#c:ores/osmium' })
     event.remove({ type: 'minecraft:blasting', input: '#c:ores/osmium' })
-
-    // --- REMOVE SMELTING/BLASTING OF REGULAR DUSTS ---
     event.remove({ type: 'minecraft:smelting', input: '#c:dusts/osmium' })
     event.remove({ type: 'minecraft:blasting', input: '#c:dusts/osmium' })
-
-    // --- REMOVE MEKANISM ENRICHMENT CHAMBER OSMIUM RECIPES ---
-    // Disables turning Raw Osmium / Osmium Ore into dust inside the Enrichment Chamber.
     event.remove({ type: 'mekanism:enriching', output: '#c:dusts/osmium' })
-
-    // --- REMOVE ALLTHEORES ARC FURNACE OSMIUM RECIPES ---
     event.remove({ id: 'alltheores:arcfurnace/osmium/from_raw' })
     event.remove({ id: 'alltheores:arcfurnace/osmium/from_raw_block' })
     event.remove({ id: 'alltheores:arcfurnace/osmium/from_dust' })
@@ -43,12 +35,12 @@ ServerEvents.recipes(event => {
             { tag: 'c:dusts/osmium' },
             { 
                 type: 'neoforge:single',
-                fluid: 'oritech:still_sulfuric_acid', 
+                fluid: 'tfmg:kerosene', 
                 amount: 250 
             }
         ],
         results: [
-            { id: 'kubejs:acid_treated_osmium', count: 1 }
+            { id: 'kubejs:treated_osmium', count: 1 }
         ]
     })
 
@@ -57,7 +49,7 @@ ServerEvents.recipes(event => {
         type: 'create:mixing',
         heat_requirement: 'heated',
         ingredients: [
-            { item: 'kubejs:acid_treated_osmium' },
+            { item: 'kubejs:treated_osmium' },
             { item: 'minecraft:glowstone_dust' }
         ],
         results: [
@@ -84,7 +76,7 @@ ServerEvents.recipes(event => {
         type: 'mekanism:reaction',
         item_input: {
             count: 1,
-            item: 'kubejs:acid_treated_osmium'
+            item: 'kubejs:treated_osmium'
         },
         fluid_input: {
             amount: 500,
