@@ -6,9 +6,13 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'minecraft:smelting', input: '#c:dusts/osmium' })
     event.remove({ type: 'minecraft:blasting', input: '#c:dusts/osmium' })
     event.remove({ type: 'mekanism:enriching', output: '#c:dusts/osmium' })
+    event.remove({ output: '#c:dusts/osmium' })
+    //event.remove({ id: 'oritech:pulverizer/compat/mekanism/dust/osmium' })
+    event.remove({ id: 'oritech:pulverizer/compat/mekanism/raw/osmium' })
     event.remove({ id: 'alltheores:arcfurnace/osmium/from_raw' })
     event.remove({ id: 'alltheores:arcfurnace/osmium/from_raw_block' })
     event.remove({ id: 'alltheores:arcfurnace/osmium/from_dust' })
+    event.remove({ type: 'create:crushing', output: 'create:crushed_raw_osmium' })
 
     event.shapeless('alltheores:osmium_dust', [
         '#alltheores:ore_hammers',
