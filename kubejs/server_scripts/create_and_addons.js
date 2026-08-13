@@ -6,14 +6,17 @@ ServerEvents.recipes(event => {
 
     // Aus irgendeinem Grund sonst gone. Probably wegen Northstar
     event.custom({
-        'type': 'minecraft:stonecutting',
-        'ingredient': {
-            'item': 'tfmg:lime_concrete'
-        },
-        'result': {
-            'count': 2,
-            'id': 'tfmg:lime_concrete_slab'
-        }
+        "type": "create:crushing",
+        "ingredients": [
+            {
+            "item": "create:limestone"
+            }
+        ],
+        "results": [
+            {
+            "id": "tfmg:limesand"
+            }
+        ]
     })
 
     event.shaped('dndesires:hydraulic_press', [
