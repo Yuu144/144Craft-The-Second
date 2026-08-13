@@ -4,6 +4,18 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'create:copper_casing' })
     event.remove({ output: 'create:railway_casing' })
 
+    // Aus irgendeinem Grund sonst gone. Probably wegen Northstar
+    event.custom({
+        'type': 'minecraft:stonecutting',
+        'ingredient': {
+            'item': 'tfmg:lime_concrete'
+        },
+        'result': {
+            'count': 2,
+            'id': 'tfmg:lime_concrete_slab'
+        }
+    })
+
     event.shaped('dndesires:hydraulic_press', [
         ' A ',
         ' B ',
@@ -25,129 +37,129 @@ ServerEvents.recipes(event => {
     })
 
     event.custom({
-        "type": "create:sequenced_assembly",
-        "ingredient": {
-            "item": "create:andesite_casing"
+        'type': 'create:sequenced_assembly',
+        'ingredient': {
+            'item': 'create:andesite_casing'
         },
-        "loops": 1,
-        "results": [
+        'loops': 1,
+        'results': [
             {
-                "id": "create:copper_casing"
+                'id': 'create:copper_casing'
             }
         ],
-        "sequence": [
+        'sequence': [
             {
-                "type": "create:deploying",
-                "ingredients": [
+                'type': 'create:deploying',
+                'ingredients': [
                     {
-                        "item": "create:andesite_casing"
+                        'item': 'create:andesite_casing'
                     },
                     {
-                        "item": "minecraft:copper_ingot"
+                        'item': 'minecraft:copper_ingot'
                     }
                 ],
-                "results": [
+                'results': [
                     {
-                        "id": "create:andesite_casing"
+                        'id': 'create:andesite_casing'
                     }
                 ]
             },
             {
-                "type": "create:deploying",
-                "ingredients": [
+                'type': 'create:deploying',
+                'ingredients': [
                     {
-                        "item": "create:andesite_casing"
+                        'item': 'create:andesite_casing'
                     },
                     {
-                        "item": "minecraft:copper_ingot"
+                        'item': 'minecraft:copper_ingot'
                     }
                 ],
-                "results": [
+                'results': [
                     {
-                        "id": "create:andesite_casing"
+                        'id': 'create:andesite_casing'
                     }
                 ]
             },
             {
-                "type": "create:pressing",
-                "ingredients": [
+                'type': 'create:pressing',
+                'ingredients': [
                     {
-                        "item": "create:andesite_casing"
+                        'item': 'create:andesite_casing'
                     }
                 ],
-                "results": [
+                'results': [
                     {
-                        "id": "create:andesite_casing"
+                        'id': 'create:andesite_casing'
                     }
                 ]
             }
         ],
-        "transitional_item": {
-            "id": "create:andesite_casing"
+        'transitional_item': {
+            'id': 'create:andesite_casing'
         }
 
     })
 
     event.custom({
-        "type": "create:sequenced_assembly",
-        "ingredient": {
-            "item": "create:brass_casing"
+        'type': 'create:sequenced_assembly',
+        'ingredient': {
+            'item': 'create:brass_casing'
         },
-        "loops": 1,
-        "results": [
+        'loops': 1,
+        'results': [
             {
-                "id": "create:railway_casing"
+                'id': 'create:railway_casing'
             }
         ],
-        "sequence": [
+        'sequence': [
             {
-                "type": "create:deploying",
-                "ingredients": [
+                'type': 'create:deploying',
+                'ingredients': [
                     {
-                        "item": "create:brass_casing"
+                        'item': 'create:brass_casing'
                     },
                     {
-                        "item": "create:sturdy_sheet"
+                        'item': 'create:sturdy_sheet'
                     }
                 ],
-                "results": [
+                'results': [
                     {
-                        "id": "create:andesite_casing"
+                        'id': 'create:andesite_casing'
                     }
                 ]
             },
             {
-                "type": "create:deploying",
-                "ingredients": [
+                'type': 'create:deploying',
+                'ingredients': [
                     {
-                        "item": "create:brass_casing"
+                        'item': 'create:brass_casing'
                     },
                     {
-                        "item": "create:sturdy_sheet"
+                        'item': 'create:sturdy_sheet'
                     }
                 ],
-                "results": [
+                'results': [
                     {
-                        "id": "create:andesite_casing"
+                        'id': 'create:andesite_casing'
                     }
                 ]
             },
             {
-                "type": "create:pressing",
-                "ingredients": [
+                'type': 'create:pressing',
+                'ingredients': [
                     {
-                        "item": "create:brass_casing"
+                        'item': 'create:brass_casing'
                     }
                 ],
-                "results": [
+                'results': [
                     {
-                        "id": "create:brass_casing"
+                        'id': 'create:brass_casing'
                     }
                 ]
             }
         ],
-        "transitional_item": {
-            "id": "create:brass_casing"
+        'transitional_item': {
+            'id': 'create:brass_casing'
         }
 
     })
