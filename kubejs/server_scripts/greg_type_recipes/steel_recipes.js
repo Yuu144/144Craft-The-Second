@@ -51,11 +51,11 @@ ServerEvents.recipes(event => {
         processing_time: 30,
         results: [
             {
-                amount: 100,
+                amount: 250,
                 id: 'tfmg:molten_steel'
             },
             {
-                amount: 100,
+                amount: 250,
                 id: 'tfmg:molten_slag'
             },
             {
@@ -92,11 +92,11 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:coal_coke_dust'
             },
             {
-                amount: 200,
+                amount: 350,
                 id: 'tfmg:molten_steel'
             },
             {
-                amount: 200,
+                amount: 350,
                 id: 'tfmg:molten_slag'
             }
         ]
@@ -104,8 +104,7 @@ ServerEvents.recipes(event => {
 
     // Unforged Steel Ingot
     event.custom({
-        type: 'create:mixing',
-        heat_requirement: 'heated',
+        type: 'create:filling',
         ingredients: [
             { 
                 type: 'neoforge:single',
