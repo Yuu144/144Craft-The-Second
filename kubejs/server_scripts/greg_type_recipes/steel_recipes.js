@@ -6,8 +6,10 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'alltheores:alloy_smelting', output: 'alltheores:steel_ingot' })
     event.remove({ id: 'oritech:compat/enderio/alloy/steel' })
     event.remove({ id: 'tfmg:industrial_blasting/steel' })
+    event.remove({ id: 'tfmg:industrial_blasting/steel_from_dust' })
+    event.remove({ id: 'tfmg:industrial_blasting/steel_from_raw_iron' })
     event.remove({ id: 'tfmg:vat_machine_recipe/arc_furnace_steel' })
-    
+        
     // Explicitly remove all recipes for alternative coal dusts to prevent bypasses
     event.remove({ output: 'enderio:powdered_coal' })
     event.remove({ output: 'oritech:coal_dust' })
