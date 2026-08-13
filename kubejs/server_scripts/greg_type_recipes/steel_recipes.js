@@ -105,7 +105,13 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'create:mixing',
         heat_requirement: 'heated',
-        ingredients: [{ fluid: 'tfmg:molten_steel', amount: 250 }],
+        ingredients: [
+            { 
+                type: 'neoforge:single',
+                fluid: 'tfmg:molten_steel',
+                amount: 250 
+            }
+        ],
         results: [{ id: 'kubejs:unforged_steel_ingot', count: 1 }]
     })
 
