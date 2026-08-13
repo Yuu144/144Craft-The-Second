@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#minecraft:has_structure/desert_pyramid",
+  "features": "oritech:oil_spring_desert",
+  "steps": "lakes"
+}
