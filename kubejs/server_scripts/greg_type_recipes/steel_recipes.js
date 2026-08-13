@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
 
     // Unforged Steel Ingot
     event.custom({
-        type: 'create:filling',
+        type: 'create:compacting',
         ingredients: [
             { 
                 type: 'neoforge:single',
