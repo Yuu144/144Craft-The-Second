@@ -3,6 +3,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: '#c:dusts/steel' })
     event.remove({ output: '#c:dusts/coal' })
     event.remove({ output: 'alltheores:alloy_smelting/steel_ingot' })
+    event.remove({ output: 'tfmg:molten_steel' })
     event.remove({ type: 'alltheores:alloy_smelting', output: 'alltheores:steel_ingot' })
     event.remove({ id: 'oritech:compat/enderio/alloy/steel' })
 
@@ -13,7 +14,7 @@ ServerEvents.recipes(event => {
     // Coal Dust
     event.custom({
         type: 'create:crushing',
-        ingredients: [ { item: 'minecraft:coal' } ],
+        ingredients: [{ item: 'minecraft:coal' }],
         results: [
             { id: 'mekanism:dust_coal', count: 1 },
             { id: 'mekanism:dust_coal', chance: 0.5, count: 1 }
@@ -29,25 +30,90 @@ ServerEvents.recipes(event => {
             { tag: 'c:ingots/iron' },
             { tag: 'c:ingots/iron' },
             { tag: 'c:dusts/coal' },
-            { tag: 'c:dusts/coal' },
-            { item: 'minecraft:calcite' }
+            { tag: 'c:dusts/coal' }
         ],
-        results: [ { id: 'kubejs:pig_iron_ingot', count: 1 } ]
+        results: [{ id: 'kubejs:pig_iron_ingot', count: 1 }]
+    })
+
+    // Molten Steel
+    event.custom({
+        type: 'tfmg:industrial_blasting',
+        hot_air_usage: 20,
+        ingredients: [
+            {
+                item: 'kubejs:pig_iron_ingot'
+            },
+            {
+                tag: 'tfmg:flux'
+            }
+        ],
+        processing_time: 30,
+        results: [
+            {
+                amount: 100,
+                id: 'tfmg:molten_steel'
+            },
+            {
+                amount: 100,
+                id: 'tfmg:molten_slag'
+            },
+            {
+                amount: 200,
+                id: 'tfmg:furnace_gas'
+            }
+        ]
+    })
+
+    // Molten Steel Tier II
+    event.custom({
+        type: 'tfmg:vat_machine_recipe',
+        allowed_vat_types: [
+            'tfmg:firebrick_lined_vat'
+        ],
+        ingredients: [
+            {
+                item: 'kubejs:pig_iron_ingot'
+            },
+            {
+                tag: 'tfmg:flux'
+            }
+        ],
+        machines: [
+            'tfmg:graphite_electrode',
+            'tfmg:graphite_electrode',
+            'tfmg:graphite_electrode'
+        ],
+        min_size: 9,
+        processing_time: 20,
+        results: [
+            {
+                chance: 0.9,
+                id: 'tfmg:coal_coke_dust'
+            },
+            {
+                amount: 200,
+                id: 'tfmg:molten_steel'
+            },
+            {
+                amount: 200,
+                id: 'tfmg:molten_slag'
+            }
+        ]
     })
 
     // Unforged Steel Ingot
     event.custom({
         type: 'create:mixing',
         heat_requirement: 'heated',
-        ingredients: [ { item: 'kubejs:pig_iron_ingot' } ],
-        results: [ { id: 'kubejs:unforged_steel_ingot', count: 1 } ]
+        ingredients: [{ fluid: 'tfmg:molten_steel', amount: 250 }],
+        results: [{ id: 'kubejs:unforged_steel_ingot', count: 1 }]
     })
 
     // Steel Ingot (Output changed to AllTheOres Steel Ingot)
     event.custom({
         type: 'create:pressing',
-        ingredients: [ { item: 'kubejs:unforged_steel_ingot' } ],
-        results: [ { id: 'alltheores:steel_ingot', count: 1 } ]
+        ingredients: [{ item: 'kubejs:unforged_steel_ingot' }],
+        results: [{ id: 'alltheores:steel_ingot', count: 1 }]
     })
 
     event.custom({
