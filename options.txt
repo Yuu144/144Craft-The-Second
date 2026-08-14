@@ -48,8 +48,8 @@ mouseSensitivity:0.2975352112676056
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:["vanilla","fabric","mod_resources","C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft The Second\\config\\hordes","mod/create_train_physics:resourcepacks/cee_sound_overrides","moonlight:merged_pack","file/LowOnFire 1.21.3.zip","file/RPG_Series_Icons-1.4.0+1.21.1.zip","file/Slightly-Improved-Font-1.1.5.zip","file/Unique Dark - Lite - 1.20.2-26.x.zip","file/[1.6] Enhanced Boss Bars.zip"]
-incompatibleResourcePacks:["C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft The Second\\config\\hordes"]
+resourcePacks:["vanilla","fabric","mod_resources","C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft The Second\\config\\hordes","mod/create_train_physics:resourcepacks/cee_sound_overrides","moonlight:merged_pack","file/LowOnFire 1.21.3.zip","file/RPG_Series_Icons-1.4.0+1.21.1.zip","file/Slightly-Improved-Font-1.1.5.zip","file/Unique Dark - Lite - 1.20.2-26.x.zip","file/[1.6] Enhanced Boss Bars.zip","file/SimplySwordsWhimscape_v1.1.zip","file/Simply Swords Reforged v1.zip"]
+incompatibleResourcePacks:["C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft The Second\\config\\hordes","file/Simply Swords Reforged v1.zip"]
 lastServer:
 lang:en_us
 chatVisibility:0
@@ -176,10 +176,10 @@ key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
 key_key.carry.desc:key.keyboard.unknown
 key_key.tempad.shortcut:key.keyboard.unknown
 key_key.tempad.macro:key.keyboard.unknown
@@ -305,10 +305,7 @@ key_lazy_utilities.core.key.render_details_screen:key.keyboard.x
 key_keybinds.bettercombat.feint:key.keyboard.unknown
 key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown
 key_lzm_bettercombat.key.ultimate_skill:key.keyboard.unknown
-key_key.immersiveengineering.magnetEquip:key.keyboard.s
-key_key.immersiveengineering.railgunZoom:key.mouse.middle
-key_key.immersiveengineering.chemthrowerSwitch:key.keyboard.unknown
-key_keybinds.combat_roll.roll:key.keyboard.r
+key_keybinds.combat_roll.roll:key.mouse.5
 key_key.integrateddynamics.logic_programmer_focus_search:key.keyboard.f:ALT
 key_key.integrateddynamics.logic_programmer_open_rename:key.keyboard.r:ALT
 key_gnetum.config.keyMapping:key.keyboard.end
@@ -327,10 +324,10 @@ key_simulated.keyinfo.scroll_up:key.keyboard.unknown
 key_simulated.keyinfo.scroll_down:key.keyboard.unknown
 key_railways.keyinfo.bogey_menu:key.keyboard.left.alt
 key_railways.keyinfo.cycle_menu:key.keyboard.left.alt
-key_key.twilightforest.item_display_map_cycle:key.keyboard.unknown
-key_key.twilightforest.zoom:key.keyboard.z
 key_key.twilightforest.swap_hotbar:key.keyboard.v
+key_key.twilightforest.item_display_map_cycle:key.keyboard.unknown
 key_key.twilightforest.red_thread_vision:key.keyboard.unknown
+key_key.twilightforest.zoom:key.keyboard.z
 key_key.ok_zoomer.zoom:key.keyboard.c
 key_key.ok_zoomer.decrease_zoom:key.keyboard.unknown
 key_key.ok_zoomer.increase_zoom:key.keyboard.unknown
@@ -340,7 +337,7 @@ key_key.deeperdarker.transmit:key.keyboard.v
 key_justdirethings.key.toggle_tool:key.keyboard.v
 key_justdirethings.key.toolUI:key.keyboard.unknown
 key_key.kubejs.kubedex:key.keyboard.k
-key_key.pingwheel.ping_location:key.mouse.5
+key_key.pingwheel.ping_location:key.keyboard.y
 key_key.pingwheel.open_settings:key.keyboard.unknown
 key_key.journeymap.minimap_preset:key.keyboard.backslash
 key_key.journeymap.toggle_entity_names:key.keyboard.g
@@ -424,7 +421,7 @@ key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
 key_quark.keybind.change_hotbar:key.keyboard.z
 key_quark.keybind.sort_player:key.keyboard.unknown
 key_quark.keybind.sort_container:key.keyboard.unknown
-key_quark.keybind.lock_rotation:key.keyboard.k
+key_quark.keybind.lock_rotation:key.keyboard.unknown
 key_quark.keybind.narrator_readout:key.keyboard.unknown
 key_quark.keybind.narrator_full_readout:key.keyboard.unknown
 key_quark.keybind.variant_selector:key.keyboard.r
