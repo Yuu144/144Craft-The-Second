@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     event.shaped('mekanism:metallurgic_infuser', [
         'ACA',
         'BDB',
-        'ACA'
+        'ECE'
     ], {
         A: '#c:ingots/steel',
         B: 'minecraft:redstone',
@@ -152,12 +152,13 @@ ServerEvents.recipes(event => {
     event.shaped('mekanism:crusher', [
         'ABA',
         'CDC',
-        'ABA'
+        'EBE'
     ], {
         A: 'minecraft:redstone',
         B: 'mekanism:basic_control_circuit',
         C: 'create:crushing_wheel',
-        D: 'mekanism:steel_casing'
+        D: 'mekanism:steel_casing',
+        E: '#c:plates/electrum'
     })
 
     event.custom({
