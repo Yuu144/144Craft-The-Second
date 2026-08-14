@@ -167,4 +167,13 @@ ServerEvents.recipes(event => {
 
     })
 
+    event.custom({
+        type: 'create:splashing',
+        ingredients: [ { item: 'minecraft:sand' } ],
+        results: [
+            { id: 'alltheores:zinc_nugget', chance: 0.08, count: 1 },
+            { id: 'alltheores:nickel_nugget', chance: 0.08, count: 1 }
+        ],
+        processingTime: 200
+    })
 })

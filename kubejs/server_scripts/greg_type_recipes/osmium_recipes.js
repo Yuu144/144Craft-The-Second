@@ -122,4 +122,13 @@ ServerEvents.recipes(event => {
     // Only the chemically purified dust can be smelted into the actual usable ingot.
     event.smelting('alltheores:osmium_ingot', 'kubejs:purified_osmium_dust')
     event.blasting('alltheores:osmium_ingot', 'kubejs:purified_osmium_dust')
+
+    event.custom({
+        type: 'create:splashing',
+        ingredients: [ { item: 'minecraft:gravel' } ],
+        results: [
+            { id: 'alltheores:osmium_nugget', chance: 0.08, count: 1 }
+        ],
+        processingTime: 200
+    })
 })
