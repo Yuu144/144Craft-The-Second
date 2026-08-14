@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     event.shaped('mekanism:metallurgic_infuser', [
         'ACA',
         'BDB',
-        'ECE'
+        'ACA'
     ], {
         A: '#c:ingots/steel',
         B: 'minecraft:redstone',
