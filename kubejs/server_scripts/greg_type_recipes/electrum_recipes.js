@@ -10,7 +10,6 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'minecraft:smelting', input: '#c:dusts/electrum' })
     event.remove({ type: 'minecraft:blasting', input: '#c:dusts/electrum' })
     event.remove({ output: 'alltheores:electrum_dust' })
-    event.remove({ output: 'oritech:electrum_ingot' })
     event.remove({ output: 'createaddition:electrum_sheet' })
 
     event.custom({
