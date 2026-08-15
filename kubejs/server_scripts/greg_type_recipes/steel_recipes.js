@@ -76,8 +76,7 @@ ServerEvents.recipes(event => {
             { tag: 'c:ingots/iron' },
             { tag: 'c:ingots/iron' },
             { tag: 'c:dusts/coal' },
-            { tag: 'c:dusts/coal' },
-            { tag: 'tfmg:flux' }
+            { tag: 'c:dusts/coal' }
         ],
         machines: [
             'tfmg:graphite_electrode',
@@ -92,7 +91,7 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:coal_coke_dust'
             },
             {
-                amount: 350,
+                amount: 500,
                 id: 'tfmg:molten_steel'
             },
             {

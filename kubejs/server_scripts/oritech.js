@@ -26,4 +26,16 @@ ServerEvents.recipes(event => {
 
     })
 
+    // Foundry Alloying Machine Recipe
+    event.remove({ output: 'oritech:foundry_block' })
+    event.shaped('oritech:foundry_block', [
+        'AAA',
+        'ABA',
+        'CDC'
+    ],{
+        A: 'minecraft:copper_ingot',
+        B: 'oritech:motor',
+        C: '#c:ingots/electrum',
+        D: 'tfmg:circuit_board'
+    })
 })
