@@ -1,5 +1,8 @@
 ServerEvents.recipes(event => {
     event.remove({ output: 'alltheores:electrum_ingot' })
+    event.remove({ id: 'alltheores:crafting/electrum/alloy_blending_from_dust' })
+    event.remove({ id: 'oritech:compat/mekanism/infusing/electrum_dust' })
+    event.remove({ id: 'alltheores:alloy_smelting/electrum_ingot' })
     //event.remove({ output: 'alltheores:electrum_dust' })
     //event.remove({ output: '#c:dusts/electrum' })
     //event.remove({ id: 'alltheores:crafting/electrum/alloy_blending_from_dust' })
@@ -19,8 +22,6 @@ ServerEvents.recipes(event => {
         ],
         ingredients: [
             { tag: 'c:dusts/gold' },
-            { tag: 'c:dusts/gold' },
-            { tag: 'c:dusts/silver' },
             { tag: 'c:dusts/silver' },
             { tag: 'tfmg:flux' }
         ],
@@ -37,7 +38,7 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:coal_coke_dust'
             },
             {
-                amount: 500,
+                amount: 250,
                 id: 'alltheores:molten_electrum'
             }
         ]
@@ -50,11 +51,11 @@ ServerEvents.recipes(event => {
             {
                 type: 'neoforge:single',
                 fluid: 'alltheores:molten_electrum',
-                amount: 1000
+                amount: 250
             }
         ],
         results: [
-            { id: 'alltheores:electrum_ingot', count: 4 }
+            { id: 'alltheores:electrum_ingot', count: 1 }
         ]
     })
 
