@@ -13,12 +13,11 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'oritech:electrum_ingot' })
     event.remove({ output: 'createaddition:electrum_sheet' })
 
-    // Use a representative 50/50 gold-silver blend.  Requiring dusts keeps
-    // direct ingot mixing and the stock alloy recipes from bypassing the
-    // pack's ore-processing progression.
     event.custom({
-        type: 'create:mixing',
-        heat_requirement: 'heated',
+        type: 'tfmg:vat_machine_recipe',
+        allowed_vat_types: [
+            'tfmg:firebrick_lined_vat'
+        ],
         ingredients: [
             { tag: 'c:dusts/gold' },
             { tag: 'c:dusts/gold' },
@@ -26,31 +25,20 @@ ServerEvents.recipes(event => {
             { tag: 'c:dusts/silver' },
             { tag: 'tfmg:flux' }
         ],
-        results: [
-            { id: 'alltheores:electrum_dust', count: 4 }
-        ]
-    })
-
-    // Remelt the blended powder with slag.  This represents fluxing and
-    // skimming impurities before the alloy is ready to cast.
-    event.custom({
-        type: 'create:mixing',
-        heat_requirement: 'heated',
-        ingredients: [
-            { item: 'alltheores:electrum_dust' },
-            { item: 'alltheores:electrum_dust' },
-            { item: 'alltheores:electrum_dust' },
-            { item: 'alltheores:electrum_dust' },
-            { tag: 'tfmg:flux' },
-            {
-                type: 'neoforge:single',
-                fluid: 'tfmg:molten_slag',
-                amount: 250
-            }
+        machines: [
+            'tfmg:graphite_electrode',
+            'tfmg:graphite_electrode',
+            'tfmg:graphite_electrode'
         ],
+        min_size: 9,
+        processing_time: 20,
         results: [
             {
-                amount: 1000,
+                chance: 0.5,
+                id: 'tfmg:coal_coke_dust'
+            },
+            {
+                amount: 500,
                 id: 'alltheores:molten_electrum'
             }
         ]

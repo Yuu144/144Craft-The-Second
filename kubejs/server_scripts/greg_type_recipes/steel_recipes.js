@@ -74,12 +74,11 @@ ServerEvents.recipes(event => {
             'tfmg:firebrick_lined_vat'
         ],
         ingredients: [
-            {
-                item: 'kubejs:pig_iron_ingot'
-            },
-            {
-                tag: 'tfmg:flux'
-            }
+            { tag: 'c:ingots/iron' },
+            { tag: 'c:ingots/iron' },
+            { tag: 'c:dusts/coal' },
+            { tag: 'c:dusts/coal' },
+            { tag: 'tfmg:flux' }
         ],
         machines: [
             'tfmg:graphite_electrode',
