@@ -1,7 +1,6 @@
 ServerEvents.recipes(event => {
     event.remove({ output: '#c:ingots/steel' })
     event.remove({ output: '#c:dusts/steel' })
-    event.remove({ output: '#c:dusts/coal' })
     event.remove({ type: 'alltheores:alloy_smelting', output: 'alltheores:steel_ingot' })
     event.remove({ id: 'alltheores:alloy_smelting/steel_ingot' })
     event.remove({ id: 'oritech:compat/enderio/alloy/steel' })
