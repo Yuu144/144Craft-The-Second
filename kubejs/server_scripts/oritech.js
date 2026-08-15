@@ -38,4 +38,17 @@ ServerEvents.recipes(event => {
         C: '#c:ingots/electrum',
         D: 'tfmg:circuit_board'
     })
+
+    // Motor
+    event.remove({ output: 'oritech:motor' })
+    event.shaped('oritech:motor', [
+        'ACA',
+        'BDB',
+        'BCB'
+    ],{
+        A: '#c:ingots/nickel',
+        B: '#c:ingots/steel',
+        C: 'oritech:magnetic_coil',
+        D: 'mekanism:steel_casing'
+    })
 })
