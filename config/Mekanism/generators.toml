@@ -64,11 +64,11 @@
 	#Minimum energy generation in Joules/t that the Wind Generator can produce.
 	# Default: 60
 	# Range: 0 ~ 9223372036854775807
-	generationMin = 60
+	generationMin = 160
 	#Maximum energy generation in Joules/t that the Wind Generator can produce.
 	# Default: 480
 	# Range: 0 ~ 9223372036854775807
-	generationMax = 480
+	generationMax = 640
 	#The minimum Y value that affects the Wind Generators Power generation. This value gets clamped at the world's minimum height.
 	# Default: 24
 	# Range: -2032 ~ 2030
