@@ -13,14 +13,15 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanismgenerators:wind_generator' })
 
     event.shaped('mekanism:metallurgic_infuser', [
-        'ACA',
+        'AEA',
         'BDB',
         'ACA'
     ], {
         A: '#c:ingots/steel',
         B: 'minecraft:redstone',
         C: 'alltheores:osmium_ingot',
-        D: 'create_sa:hydraulic_engine'
+        D: 'create_sa:hydraulic_engine',
+        E: 'tfmg:steel_casing'
     })
 
     event.shaped('mekanismgenerators:wind_generator', [
@@ -32,7 +33,7 @@ ServerEvents.recipes(event => {
         B: 'mekanism:alloy_infused',
         C: 'mekanism:energy_tablet',
         D: 'mekanism:basic_control_circuit',
-        E: 'mekanism:steel_casing'
+        E: 'tfmg:steel_casing'
     })
 
     event.shaped('mekanismgenerators:bio_generator', [
@@ -44,18 +45,19 @@ ServerEvents.recipes(event => {
         B: 'mekanism:alloy_infused',
         C: '#c:fuels/bio',
         D: 'mekanism:basic_control_circuit',
-        E: '#c:ingots/steel'
+        E: 'tfmg:steel_casing'
     })
 
     event.shaped('mekanismgenerators:gas_burning_generator', [
         'ABA',
         'CDC',
-        'ABA'
+        'EBE'
     ], {
         A: 'alltheores:osmium_ingot',
         B: 'mekanism:alloy_infused',
         C: 'mekanismgenerators:bio_generator',
-        D: 'mekanism:electrolytic_core'
+        D: 'mekanism:electrolytic_core',
+        E: 'mekanism:steel_casing'
     })
 
     event.custom({
@@ -157,7 +159,7 @@ ServerEvents.recipes(event => {
         A: 'minecraft:redstone',
         B: 'mekanism:basic_control_circuit',
         C: 'create:crushing_wheel',
-        D: 'mekanism:steel_casing',
+        D: 'tfmg:steel_casing',
         E: '#c:plates/electrum'
     })
 
