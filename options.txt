@@ -16,7 +16,7 @@ fullscreen:false
 gamma:1.0
 graphicsMode:1
 guiScale:3
-maxFps:100
+maxFps:120
 mipmapLevels:4
 narrator:0
 particles:0
@@ -48,8 +48,8 @@ mouseSensitivity:0.2975352112676056
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:["vanilla","fabric","mod_resources","C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft The Second\\config\\hordes","mod/create_train_physics:resourcepacks/cee_sound_overrides","moonlight:merged_pack","file/LowOnFire 1.21.3.zip","file/RPG_Series_Icons-1.4.0+1.21.1.zip","file/Slightly-Improved-Font-1.1.5.zip","file/Unique Dark - Lite - 1.20.2-26.x.zip","file/[1.6] Enhanced Boss Bars.zip","file/SimplySwordsWhimscape_v1.1.zip","file/Simply Swords Reforged v1.zip"]
-incompatibleResourcePacks:["C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft The Second\\config\\hordes","file/Simply Swords Reforged v1.zip"]
+resourcePacks:["vanilla","fabric","mod_resources","mod/create_train_physics:resourcepacks/cee_sound_overrides","moonlight:merged_pack","file/LowOnFire 1.21.3.zip","file/RPG_Series_Icons-1.4.0+1.21.1.zip","file/Slightly-Improved-Font-1.1.5.zip","file/[1.6] Enhanced Boss Bars.zip","file/SimplySwordsWhimscape_v1.1.zip","file/Simply Swords Reforged v1.zip","C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft-The-Second\\config\\hordes","file/Unique Dark - Lite - 1.20.2-26.x.zip","file/UD Refined - Lite - 1.20.2-26.x.zip","file/Unique Dark - Mekanism 1.20.2-1.21 v2.1.zip"]
+incompatibleResourcePacks:["file/Simply Swords Reforged v1.zip","C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft-The-Second\\config\\hordes"]
 lastServer:
 lang:en_us
 chatVisibility:0
@@ -176,10 +176,10 @@ key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
+key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.carry.desc:key.keyboard.unknown
 key_key.tempad.shortcut:key.keyboard.unknown
 key_key.tempad.macro:key.keyboard.unknown
@@ -267,7 +267,9 @@ key_key.jei.showUses:key.keyboard.u
 key_key.jei.showUses2:key.mouse.right
 key_key.jei.transferRecipeBookmark:key.mouse.left:SHIFT
 key_key.jei.maxTransferRecipeBookmark:key.mouse.left:CONTROL
+key_key.jei.showBookmarkTooltipFeatures:key.keyboard.left.control
 key_key.jei.quickMove:key.mouse.left:SHIFT
+key_key.jei.shareToChat:key.keyboard.unknown
 key_key.jei.clearSearchBar:key.mouse.right
 key_key.jei.previousSearch:key.keyboard.up
 key_key.jei.nextSearch:key.keyboard.down
@@ -283,6 +285,7 @@ key_key.jei.toggleWildcardHideIngredient:key.mouse.right:CONTROL
 key_key.jei.recipeBack:key.keyboard.backspace
 key_key.jei.previousRecipePage:key.keyboard.page.up
 key_key.jei.nextRecipePage:key.keyboard.page.down
+key_key.jei.pauseRecipeCycling:key.keyboard.left.shift
 key_key.jei.previousCategory:key.keyboard.page.up:SHIFT
 key_key.jei.nextCategory:key.keyboard.page.down:SHIFT
 key_key.jei.closeRecipeGui:key.keyboard.escape
@@ -324,14 +327,17 @@ key_simulated.keyinfo.scroll_up:key.keyboard.unknown
 key_simulated.keyinfo.scroll_down:key.keyboard.unknown
 key_railways.keyinfo.bogey_menu:key.keyboard.left.alt
 key_railways.keyinfo.cycle_menu:key.keyboard.left.alt
+key_key.twilightforest.zoom:key.keyboard.z
 key_key.twilightforest.swap_hotbar:key.keyboard.v
 key_key.twilightforest.item_display_map_cycle:key.keyboard.unknown
 key_key.twilightforest.red_thread_vision:key.keyboard.unknown
-key_key.twilightforest.zoom:key.keyboard.z
 key_key.ok_zoomer.zoom:key.keyboard.c
 key_key.ok_zoomer.decrease_zoom:key.keyboard.unknown
 key_key.ok_zoomer.increase_zoom:key.keyboard.unknown
 key_key.ok_zoomer.reset_zoom:key.keyboard.unknown
+key_key.betterblockz.switch:key.keyboard.v
+key_key.betterblockz.scroll_modifier:key.keyboard.left.alt
+key_key.betterblockz.cycle_pillar_axis:key.keyboard.r
 key_key.deeperdarker.boost:key.keyboard.b
 key_key.deeperdarker.transmit:key.keyboard.v
 key_justdirethings.key.toggle_tool:key.keyboard.v
@@ -451,6 +457,7 @@ key_key.oritech.augment_screen:key.keyboard.g
 key_key.simplytooltips.cycle_tab:key.keyboard.g
 key_key.simplytooltips.capture_gif:key.keyboard.h
 key_key.ftbquests.quests:key.keyboard.unknown
+key_key.ftbquests.cycle_pinned_tracker:key.keyboard.unknown
 key_key.ftbquests.gui.zoom_in:key.keyboard.equal
 key_key.ftbquests.gui.zoom_out:key.keyboard.minus
 key_key.ftbquests.gui.zoom_reset:key.keyboard.0
