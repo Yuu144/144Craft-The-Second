@@ -1,7 +1,7 @@
 // Applies the exported RarityCore auto-rarity table to Minecraft item rarities.
 // The source file is kept inside the modpack so the assignments work on clients and servers.
 (function () {
-  let autoRarity
+  var autoRarity
 
   try {
     // JsonIO is KubeJS's supported JSON file reader. Direct java.nio access is
@@ -13,7 +13,7 @@
 
   if (autoRarity) {
 
-    const autoRarityNames = {
+    var autoRarityNames = {
       1: 'COMMON',
       2: 'UNCOMMON',
       3: 'RARE',
@@ -24,7 +24,7 @@
 
     ItemEvents.modification(event => {
       autoRarity.forEach((itemId, value) => {
-        const level = Math.min(Math.max(Number(value), 1), 6)
+        var level = Math.min(Math.max(Number(value), 1), 6)
         event.modify(itemId, item => {
           item.rarity = autoRarityNames[level]
         })
