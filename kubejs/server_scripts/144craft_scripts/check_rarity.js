@@ -13,7 +13,7 @@ ServerEvents.commandRegistry(event => {
           return 0
         }
 
-        var rarity = stack.item.getRarity(stack).name()
+        var rarity = stack.getRarity().name()
 
         player.tell(`Item: ${stack.id}`)
         player.tell(`Minecraft rarity: ${rarity}`)
