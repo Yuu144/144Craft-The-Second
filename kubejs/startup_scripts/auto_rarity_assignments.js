@@ -24,6 +24,11 @@
 
     ItemEvents.modification(event => {
       autoRarity.forEach((itemId, value) => {
+        // The exported table can contain items from mods not installed in this pack.
+        if (!Item.exists(itemId)) {
+          return
+        }
+
         var level = Math.min(Math.max(Number(value), 1), 6)
         event.modify(itemId, item => {
           item.rarity = autoRarityNames[level]
