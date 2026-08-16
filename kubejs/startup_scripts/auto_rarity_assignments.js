@@ -1,13 +1,16 @@
 // Applies the exported RarityCore auto-rarity table to Minecraft item rarities.
 // The source file is kept inside the modpack so the assignments work on clients and servers.
-const Files = Java.loadClass('java.nio.file.Files')
-const Paths = Java.loadClass('java.nio.file.Paths')
+let autoRarity
 
-const autoRarityPath = Paths.get('kubejs/data/auto_rarity.json')
-if (!Files.exists(autoRarityPath)) {
-  console.error(`Auto-rarity source not found: ${autoRarityPath}`)
-} else {
-  const autoRarity = JSON.parse(String(Files.readString(autoRarityPath)))
+try {
+  // JsonIO is KubeJS's supported JSON file reader. Direct java.nio access is
+  // blocked by KubeJS's class filter.
+  autoRarity = JsonIO.read('kubejs/data/auto_rarity.json')
+} catch (error) {
+  console.error(`Could not load kubejs/data/auto_rarity.json: ${error}`)
+}
+
+if (autoRarity) {
 
   const rarityNames = {
     1: 'COMMON',
@@ -19,7 +22,7 @@ if (!Files.exists(autoRarityPath)) {
   }
 
   ItemEvents.modification(event => {
-    Object.entries(autoRarity).forEach(([itemId, value]) => {
+    autoRarity.forEach((itemId, value) => {
       const level = Math.min(Math.max(Number(value), 1), 6)
       event.modify(itemId, item => {
         item.rarity = rarityNames[level]
