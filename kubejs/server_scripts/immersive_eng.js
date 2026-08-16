@@ -50,8 +50,87 @@ ServerEvents.recipes(event => {
         B: '#c:gears/diamond',
         C: 'bigreactors:ludicrite_ingot',
         D: 'industrialforegoing:machine_frame_simple',
-        E: '#c:gears/gold',
-        F: 'minecraft:redstone'
+        E: '#c:gears/enderium',
+        F: 'mekanism:ultimate_control_circuit'
     })
 
+    event.remove({ output: 'industrialforegoing:machine_frame_simple' })
+    event.custom({
+        type: 'industrialforegoing:dissolution_chamber',
+        input: [
+            {
+                tag: 'c:plastics'
+            },
+            {
+                tag: 'industrialforegoing:machine_frame/pity'
+            },
+            {
+                tag: 'c:plastics'
+            },
+            {
+                tag: 'c:ingots/electrum'
+            },
+            {
+                tag: 'c:ingots/electrum'
+            },
+            {
+                tag: 'c:ingots/iron'
+            },
+            {
+                tag: 'c:gears/constantan'
+            },
+            {
+                tag: 'c:ingots/iron'
+            }
+        ],
+        inputFluid: {
+            amount: 250,
+            fluid: 'industrialforegoing:latex'
+        },
+        output: {
+            count: 1,
+            id: 'industrialforegoing:machine_frame_simple'
+        },
+        processingTime: 300
+    })
+
+    event.remove({ output: 'industrialforegoing:machine_frame_advanced' })
+    event.custom({
+        type: 'industrialforegoing:dissolution_chamber',
+        input: [
+            {
+                tag: 'c:plastics'
+            },
+            {
+                tag: 'industrialforegoing:machine_frame/simple'
+            },
+            {
+                tag: 'c:plastics'
+            },
+            {
+                item: 'oritech:reinforced_carbon_sheet'
+            },
+            {
+                item: 'oritech:reinforced_carbon_sheet'
+            },
+            {
+                item: 'mekanism:steel_casing'
+            },
+            {
+                tag: 'c:gears/enderium'
+            },
+            {
+                item: 'oritech:machine_core_4'
+            }
+        ],
+        inputFluid: {
+            amount: 500,
+            fluid: 'industrialforegoing:pink_slime'
+        },
+        output: {
+            count: 1,
+            id: 'industrialforegoing:machine_frame_advanced'
+        },
+        processingTime: 300
+    })
 })
