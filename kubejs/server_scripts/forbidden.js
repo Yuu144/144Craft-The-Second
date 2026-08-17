@@ -1,0 +1,29 @@
+ServerEvents.recipes(event => {
+
+    event.custom({
+        "essences":
+        {
+            "aureal": 100,
+            "blood": 800,
+            "experience": 100,
+            "souls": 1
+        },
+        "forge_tier": 2,
+        "inputs":
+        [
+            {
+                "amount": 8,
+                "ingredient": { "item": "forbidden_arcanus:dragon_scale" }
+            }
+        ],
+        "magic_circle": "forbidden_arcanus:create_item",
+        "main_ingredient": {
+            "item": "irons_spellbooks:blood_staff"
+        },
+        "result": {
+            "type": "forbidden_arcanus:transmute_input",
+            "result_item": "irons_spellbooks:blank_rune"
+        }
+    })
+
+})
