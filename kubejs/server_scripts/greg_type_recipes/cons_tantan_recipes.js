@@ -48,16 +48,17 @@ ServerEvents.recipes(event => {
 
     //Cons Tan Tan Ingot
     event.custom({
-        type: 'create:compacting',
+        type: 'tfmg:casting',
         ingredients: [
             {
                 type: 'neoforge:single',
-                fluid: 'alltheores:molten_constantan',
-                amount: 250
+                amount: 250,
+                fluid: 'alltheores:molten_constantan'
             }
         ],
+        processing_time: 200,
         results: [
-            { id: 'alltheores:constantan_ingot', count: 1 }
+            { id: 'alltheores:constantan_ingot' }
         ]
     })
 

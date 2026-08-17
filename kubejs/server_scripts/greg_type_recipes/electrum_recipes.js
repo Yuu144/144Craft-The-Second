@@ -46,16 +46,17 @@ ServerEvents.recipes(event => {
 
     // Cast one ingot from the molten alloy.
     event.custom({
-        type: 'create:compacting',
+        type: 'tfmg:casting',
         ingredients: [
             {
                 type: 'neoforge:single',
-                fluid: 'alltheores:molten_electrum',
-                amount: 250
+                amount: 250,
+                fluid: 'alltheores:molten_electrum'
             }
         ],
+        processing_time: 200,
         results: [
-            { id: 'alltheores:electrum_ingot', count: 1 }
+            { id: 'alltheores:electrum_ingot' }
         ]
     })
 
