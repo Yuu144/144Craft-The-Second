@@ -48,8 +48,8 @@ mouseSensitivity:0.2975352112676056
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:["vanilla","fabric","mod_resources","mod/create_train_physics:resourcepacks/cee_sound_overrides","moonlight:merged_pack","file/LowOnFire 1.21.3.zip","file/RPG_Series_Icons-1.4.0+1.21.1.zip","file/Slightly-Improved-Font-1.1.5.zip","file/[1.6] Enhanced Boss Bars.zip","file/SimplySwordsWhimscape_v1.1.zip","file/Simply Swords Reforged v1.zip","C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft-The-Second\\config\\hordes","file/Unique Dark - Lite - 1.20.2-26.x.zip","file/UD Refined - Lite - 1.20.2-26.x.zip","file/Unique Dark - Mekanism 1.20.2-1.21 v2.1.zip"]
-incompatibleResourcePacks:["file/Simply Swords Reforged v1.zip","C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft-The-Second\\config\\hordes"]
+resourcePacks:["vanilla","fabric","mod_resources","mod/create_train_physics:resourcepacks/cee_sound_overrides","moonlight:merged_pack","file/LowOnFire 1.21.3.zip","file/RPG_Series_Icons-1.4.0+1.21.1.zip","file/Slightly-Improved-Font-1.1.5.zip","file/[1.6] Enhanced Boss Bars.zip","file/SimplySwordsWhimscape_v1.1.zip","file/Simply Swords Reforged v1.zip","C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft-The-Second\\config\\hordes","file/Unique Dark - Lite - 1.20.2-26.x.zip","file/UD Refined - Lite - 1.20.2-26.x.zip","file/Unique Dark - Mekanism 1.20.2-1.21 v2.1.zip","file/JollyTooltips-2.0.0.zip"]
+incompatibleResourcePacks:["file/Simply Swords Reforged v1.zip","C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft-The-Second\\config\\hordes","file/JollyTooltips-2.0.0.zip"]
 lastServer:
 lang:en_us
 chatVisibility:0
@@ -146,6 +146,7 @@ key_key.voice_chat_toggle_recording:key.keyboard.unknown
 key_key.voice_chat_adjust_volumes:key.keyboard.unknown
 key_key.trade_cycling.cycle_trades:key.keyboard.unknown
 key_fdlib.key.end_cutscene:key.keyboard.j
+key_key.crystal_chronicles.ring_swap:key.keyboard.r
 key_key.open_muffler_gui:key.keyboard.unknown
 key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_key.craftingtweaks.rotate:key.keyboard.unknown
@@ -176,10 +177,10 @@ key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
 key_key.carry.desc:key.keyboard.unknown
 key_key.tempad.shortcut:key.keyboard.unknown
 key_key.tempad.macro:key.keyboard.unknown
@@ -237,8 +238,6 @@ key_keybind.ironjetpacks.ascend:key.keyboard.unknown
 key_keybind.ironjetpacks.descend:key.keyboard.unknown
 key_keybind.ironjetpacks.increment_throttle:key.keyboard.period
 key_keybind.ironjetpacks.decrement_throttle:key.keyboard.comma
-key_talkingheads.keybinding.modToggle:key.keyboard.h
-key_talkingheads.keybinding.modSettings:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.g
 key_key.apotheosis.toggle_radial_mining:key.keyboard.o:CONTROL
 key_key.apotheosis.open_world_tier_select:key.keyboard.t:CONTROL
@@ -304,6 +303,7 @@ key_key.dragon_fireAttack:key.keyboard.r
 key_key.dragon_strike:key.keyboard.g
 key_key.dragon_down:key.keyboard.x
 key_key.dragon_change_view:key.keyboard.f7
+key_tooltipoverhaul.binds.compare_bind:key.keyboard.left.shift
 key_lazy_utilities.core.key.render_details_screen:key.keyboard.x
 key_keybinds.bettercombat.feint:key.keyboard.unknown
 key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown
@@ -327,10 +327,10 @@ key_simulated.keyinfo.scroll_up:key.keyboard.unknown
 key_simulated.keyinfo.scroll_down:key.keyboard.unknown
 key_railways.keyinfo.bogey_menu:key.keyboard.left.alt
 key_railways.keyinfo.cycle_menu:key.keyboard.left.alt
-key_key.twilightforest.zoom:key.keyboard.z
-key_key.twilightforest.swap_hotbar:key.keyboard.v
 key_key.twilightforest.item_display_map_cycle:key.keyboard.unknown
+key_key.twilightforest.swap_hotbar:key.keyboard.v
 key_key.twilightforest.red_thread_vision:key.keyboard.unknown
+key_key.twilightforest.zoom:key.keyboard.z
 key_key.ok_zoomer.zoom:key.keyboard.c
 key_key.ok_zoomer.decrease_zoom:key.keyboard.unknown
 key_key.ok_zoomer.increase_zoom:key.keyboard.unknown
@@ -489,6 +489,8 @@ key_key.ftbquests.gui_quest_panel.add_page_break:key.keyboard.p
 key_key.ftbquests.gui_quest_panel.add_line:key.keyboard.l
 key_key.ftbquests.gui_quest_panel.add_image:key.keyboard.i
 key_key.ftbquests.gui_quest_panel.edit_quest_props:key.keyboard.q
+key_talkingheads.keybinding.modToggle:key.keyboard.h
+key_talkingheads.keybinding.modSettings:key.keyboard.unknown
 key_key.ponder.ponder:key.keyboard.w
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt
