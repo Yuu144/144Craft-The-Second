@@ -7,6 +7,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'ae2:condenser' })
     event.remove({ output: 'extendedae:void_cell' })
     event.remove({ output: 'advanced_ae:reaction_chamber' })
+    event.remove({ output: 'ae2:silicon' })
 
     event.custom({
         type: 'create:compacting',

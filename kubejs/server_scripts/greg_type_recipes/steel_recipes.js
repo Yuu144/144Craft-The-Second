@@ -103,15 +103,18 @@ ServerEvents.recipes(event => {
 
     // Unforged Steel Ingot
     event.custom({
-        type: 'create:compacting',
+        type: 'tfmg:casting',
         ingredients: [
-            { 
+            {
                 type: 'neoforge:single',
-                fluid: 'tfmg:molten_steel',
-                amount: 250 
+                amount: 250,
+                fluid: 'tfmg:molten_steel'
             }
         ],
-        results: [{ id: 'kubejs:unforged_steel_ingot', count: 1 }]
+        processing_time: 200,
+        results: [
+            { id: 'kubejs:unforged_steel_ingot' }
+        ]
     })
 
     // Steel Ingot (Output changed to AllTheOres Steel Ingot)
