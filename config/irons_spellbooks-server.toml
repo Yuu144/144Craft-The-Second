@@ -87,7 +87,7 @@
 		#Additional Spell Power (additive percent)
 		additionalSpellPower = 5.0
 		#[Experimental] Whether Tyros has an Ominous Bossfight. Default: false
-		tyrosOminousEnabled = true
+		tyrosOminousEnabled = false
 
 	["Boss Config"."Dead King"]
 		#Additional Health
