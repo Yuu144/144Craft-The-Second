@@ -9,7 +9,7 @@
   "inputs": [
     {
       "amount": 8,
-      "ingredient": { "item": "forbidden_arcanus:dragon_scale" }
+      "ingredient": { "item": "irons_spellbooks:arcane_essence" }
     }
   ],
   "magic_circle": "forbidden_arcanus:create_item",
