@@ -240,6 +240,48 @@
       ]
     },
     {
+      "name": "Cinderous",
+      "texture": "tooltipoverhaul:textures/overlay/red_scale_frame.png",
+      "gradientColors": [
+        "#9E1889",
+        "#AF026F",
+        "#C524FF"
+      ],
+      "borderType": "gradient",
+      "innerFrameCornerType": "gem",
+      "disableIcon": false,
+      "iconBackgroundType": "focus",
+      "rarity": [
+        "IRONS_SPELLBOOKS_RARITY_CINDEROUS"
+      ],
+      "gradientType": "chaos",
+      "specialEffect": "cinder",
+      "items": [
+        "irons_spellbooks:pyrium_ingot"
+      ]
+    },
+    {
+      "name": "Runes",
+      "texture": "tooltipoverhaul:textures/overlay/diamond_frame.png",
+      "gradientColors": [
+        "#36318F",
+        "#4834B5",
+        "#1A0B40"
+      ],
+      "borderType": "gradient",
+      "innerFrameCornerType": "gem",
+      "disableIcon": false,
+      "iconBackgroundType": "focus",
+      "gradientType": "custom",
+      "tags": [
+        "irons_spellbooks:inscribed_rune"
+      ],
+      "items": [
+        "irons_spellbooks:blank_rune"
+      ],
+      "specialEffect": "white_dust"
+    },
+    {
       "name": "Compressed Blocks",
       "tags": [
         "allthecompressed:1x",
@@ -276,7 +318,7 @@
       "iconBackgroundType": "focus",
       "innerFrameCornerType": "bracket",
       "gradientType": "common",
-      "namespace": "mekanismgenerators",
+      "namespace": "mekanismgenerators, bfr",
       "items": [
         "mekanismgenerators:wind_generator",
         "oritech:bio_generator_block",
