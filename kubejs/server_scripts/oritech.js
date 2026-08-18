@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
+    event.remove({ id: 'oritech:foundry/alloy/compat/mekanism/infused_alloy' })
 
     event.custom({
-    
         "type": "oritech:particle_collision",
             "fluidInput": {
             "amount": 0,

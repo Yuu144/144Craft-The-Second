@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     })
 
     event.shaped('mekanismgenerators:heat_generator', [
-        'AAA',
+        'AFA',
         'BDB',
         'CEC'
     ], {
@@ -34,7 +34,8 @@ ServerEvents.recipes(event => {
         B: '#minecraft:planks',
         C: '#c:ingots/copper',
         D: '#c:ingots/osmium',
-        E: '#c:ingots/steel'
+        E: '#c:ingots/steel',
+        F: 'mekanism:alloy_infused'
     })
 
     event.shaped('mekanismgenerators:wind_generator', [
