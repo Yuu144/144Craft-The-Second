@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanism:advanced_control_circuit' })
     event.custom({
         type: "modern_industrialization:assembler",
-        duration: 200,
+        duration: 50,
         eu: 16,
         item_inputs: [
             {
@@ -17,12 +17,12 @@ ServerEvents.recipes(event => {
         fluid_inputs: [
             {
                 fluid: "modern_industrialization:molten_redstone",
-                amount: 1500
+                amount: 500
             }
         ],
         item_outputs: [
             {
-                amount: 2,
+                amount: 1,
                 item: "mekanism:advanced_control_circuit"
             }
         ]
