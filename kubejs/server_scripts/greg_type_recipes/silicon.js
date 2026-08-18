@@ -4,6 +4,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.recipes(event => {
+    event.remove({ id: 'tfmg:casting/silicon' })
     event.custom({
         type: 'tfmg:vat_machine_recipe',
         allowed_vat_types: [
