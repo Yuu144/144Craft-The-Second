@@ -11,6 +11,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanism:supercharged_coil' })
     event.remove({ output: 'mekanism:crusher' })
     event.remove({ output: 'mekanismgenerators:wind_generator' })
+    event.remove({ output: 'mekanismgenerators:heat_generator' })
 
     event.shaped('mekanism:metallurgic_infuser', [
         'AEA',
@@ -18,10 +19,22 @@ ServerEvents.recipes(event => {
         'ACA'
     ], {
         A: '#c:ingots/steel',
-        B: 'minecraft:redstone',
+        B: 'modern_industrialization:carbon_dust',
         C: 'alltheores:osmium_ingot',
         D: 'create_sa:hydraulic_engine',
         E: 'tfmg:steel_casing'
+    })
+
+    event.shaped('mekanismgenerators:heat_generator', [
+        'AAA',
+        'BDB',
+        'CEC'
+    ], {
+        A: '#c:ingots/iron',
+        B: '#minecraft:planks',
+        C: '#c:ingots/copper',
+        D: '#c:ingots/osmium',
+        E: '#c:ingots/steel'
     })
 
     event.shaped('mekanismgenerators:wind_generator', [

@@ -18,11 +18,19 @@ const industrialForegoingGeneratorItems = [
     'industrialforegoing:mycelial_netherstar',
     'industrialforegoing:mycelial_rocket',
     'industrialforegoing:mycelial_crimed',
-    'industrialforegoing:mycelial_meatallurgic'
+    'industrialforegoing:mycelial_meatallurgic',
+    'rftoolspower:blazing_generator',
+    'refurbished_furniture:light_electricity_generator',
+    'refurbished_furniture:dark_electricity_generator',
+    'integrateddynamics:coal_generator',
+    'rftoolspower:coal_generator',
+    'justdirethings:generatorfluidt1',
+    'justdirethings:generatort1',
+    'draconicevolution:generator'
 ]
 
-JEIEvents.hideItems(event => {
+RecipeViewerEvents.removeEntriesCompletely('item', event => {
     industrialForegoingGeneratorItems.forEach(item => {
-        event.hide(item)
+        event.remove(item)
     })
 })
