@@ -1,4 +1,4 @@
-const industrialForegoingGeneratorOutputs = [
+const industrialForegoingGeneratorItems = [
     'industrialforegoing:pitiful_generator',
     'industrialforegoing:biofuel_generator',
     'industrialforegoing:bioreactor',
@@ -21,10 +21,8 @@ const industrialForegoingGeneratorOutputs = [
     'industrialforegoing:mycelial_meatallurgic'
 ]
 
-ServerEvents.recipes(event => {
-    event.remove({ id: 'modern_industrialization:electric_age/machine/lv_steam_turbine_asbl' })
-
-    industrialForegoingGeneratorOutputs.forEach(output => {
-        event.remove({ output: output })
+JEIEvents.hideItems(event => {
+    industrialForegoingGeneratorItems.forEach(item => {
+        event.hide(item)
     })
 })
