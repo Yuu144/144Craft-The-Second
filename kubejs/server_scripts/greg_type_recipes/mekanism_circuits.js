@@ -1,4 +1,9 @@
 ServerEvents.recipes(event => {
+    event.remove({ id: 'oritech:atomicforge/compat/mekanism/basic_control_circuit' })
+    event.remove({ id: 'oritech:atomicforge/compat/mekanism/advanced_control_circuit' })
+    event.remove({ id: 'oritech:atomicforge/compat/mekanism/elite_control_circuit' })
+    event.remove({ id: 'oritech:atomicforge/compat/mekanism/ultimate_control_circuit' })
+
     event.remove({ output: 'mekanism:alloy_infused' })
     event.custom({
         type: "mekanism:metallurgic_infusing",
@@ -36,7 +41,7 @@ ServerEvents.recipes(event => {
         time: 80
     })
 
-    event.remove({ output: 'mekanism:advanced_control_circuit' })
+    event.remove({ output: 'mekanism:basic_control_circuit' })
     event.custom({
         type: "modern_industrialization:assembler",
         duration: 50,
