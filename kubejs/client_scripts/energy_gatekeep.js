@@ -23,7 +23,7 @@ const industrialForegoingGeneratorItems = [
     'refurbished_furniture:light_electricity_generator',
     'refurbished_furniture:dark_electricity_generator',
     'integrateddynamics:coal_generator',
-    'rftoolspower:coal_generator',
+    'rftoolspower:coalgenerator',
     'justdirethings:generatorfluidt1',
     'justdirethings:generatort1',
     'draconicevolution:generator'
