@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    event.remove({ output: 'mekanism:hdpe_pellet' })
+    event.remove({ id: 'mekanism:reaction/substrate/ethene_oxygen' })
     event.custom({
         type: "modern_industrialization:vacuum_freezer",
         eu: 16,
