@@ -17,6 +17,53 @@ ServerEvents.recipes(event => {
         per_tick_usage: false
     })
 
+    event.custom({
+        type: "oritech:foundry",
+        ingredients: [
+            {
+                tag: "c:ingots/bronze"
+            },
+            {
+                tag: "c:dusts/redstone"
+            }
+        ],
+        results: [
+            {
+                count: 1,
+                id: "mekanism:alloy_infused"
+            }
+        ],
+        time: 80
+    })
+
+    event.remove({ output: 'mekanism:advanced_control_circuit' })
+    event.custom({
+        type: "modern_industrialization:assembler",
+        duration: 50,
+        eu: 16,
+        item_inputs: [
+            {
+                amount: 2,
+                item: "tfmg:capacitor_item"
+            },
+            {
+                amount: 1,
+                tag: "c:ingots/osmium"
+            }
+        ],
+        fluid_inputs: [
+            {
+                fluid: "modern_industrialization:molten_redstone",
+                amount: 250
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 1,
+                item: "mekanism:basic_control_circuit"
+            }
+        ]
+    })
 
     event.remove({ output: 'mekanism:advanced_control_circuit' })
     event.custom({
@@ -34,7 +81,7 @@ ServerEvents.recipes(event => {
             },
             {
                 amount: 1,
-                item: "minecraft:copper_ingot"
+                tag: "c:ingots/bronze"
             }
         ],
         fluid_inputs: [
