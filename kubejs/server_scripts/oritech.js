@@ -39,6 +39,30 @@ ServerEvents.recipes(event => {
         D: 'tfmg:circuit_board'
     })
 
+    event.remove({ output: 'oritech:lava_generator_block' })
+    event.shaped('oritech:lava_generator_block', [
+        'AAA',
+        'ABA',
+        'CDC'
+    ],{
+        A: '#c:ingots/electrum',
+        B: 'oritech:carbon_fibre_strands',
+        C: '#oritech:plating',
+        D: 'oritech:basic_generator_block'
+    })
+
+    event.remove({ output: 'oritech:basic_generator_block' })
+    event.shaped('oritech:basic_generator_block', [
+        'AAA',
+        'ABA',
+        'CDC'
+    ],{
+        A: '#c:ingots/nickel',
+        B: 'oritech:carbon_fibre_strands',
+        C: 'oritech:magnetic_coil',
+        D: 'minecraft:furnace'
+    })
+
     // Motor
     event.remove({ output: 'oritech:motor' })
     event.shaped('oritech:motor', [
