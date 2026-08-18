@@ -40,7 +40,7 @@
 			maxEnergyExtraction = 0
 			# Default: 1024
 			# Range: > 0
-			energyPerTick = 1024
+			energyPerTick = 2048
 
 		[machineSettings.processingMachines.centrifugeData]
 			# Default: 10000
