@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
         item_outputs: [
             {
                 amount: 1,
-                item: "mekanism:advanced_control_circuit"
+                item: "mekanism:elite_control_circuit"
             }
         ]
     })
