@@ -185,6 +185,8 @@ ServerEvents.recipes(event => {
             { tag: 'c:plates/steel' },
             { tag: 'c:plates/steel' },
             { tag: 'c:plates/steel' },
+            { tag: 'c:plates/steel' },
+            { tag: 'c:plates/steel' },
             { item: 'alltheores:osmium_ingot' },
             { item: 'alltheores:osmium_ingot' },
             { item: 'alltheores:osmium_ingot' },

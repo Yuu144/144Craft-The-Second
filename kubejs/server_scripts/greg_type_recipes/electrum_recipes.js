@@ -59,15 +59,4 @@ ServerEvents.recipes(event => {
             { id: 'alltheores:electrum_ingot' }
         ]
     })
-
-    // Electrum Plate from Ingot
-    event.custom({
-        type: 'create:pressing',
-        ingredients: [
-            { tag: 'c:ingots/electrum' }
-        ],
-        results: [
-            { id: 'alltheores:electrum_plate', count: 1 }
-        ]
-    })
 })
