@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": {
+      "model": "kubejs:block/circuit_assembler_casing"
+    }
+  },
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "kubejs:block/ctm/circuit_assembler_casing/center",
+    "empty": "kubejs:block/ctm/circuit_assembler_casing/empty",
+    "horizontal": "kubejs:block/ctm/circuit_assembler_casing/horizontal",
+    "vertical": "kubejs:block/ctm/circuit_assembler_casing/vertical",
+    "particle": "kubejs:block/ctm/circuit_assembler_casing/particle"
+  }
+}
