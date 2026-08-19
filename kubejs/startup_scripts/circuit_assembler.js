@@ -45,9 +45,12 @@ MIMachineEvents.registerRecipeTypes(event => {
 })
 
 MIMachineEvents.registerCasings(event => {
-  event.registerBlockImitation(
+  // Use a dedicated MI casing model here. Using registerBlockImitation with
+  // an Athena/KubeJS CTM block can recurse through MI's hatch model when the
+  // multiblock forms. The placed casing block itself still uses CTM.
+  event.registerNamed(
     'circuit_assembler_casing',
-    'kubejs:circuit_assembler_casing'
+    'Circuit Assembler Casing'
   )
 })
 
