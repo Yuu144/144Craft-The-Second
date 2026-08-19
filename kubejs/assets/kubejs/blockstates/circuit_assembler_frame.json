@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": {
+      "model": "kubejs:block/circuit_assembler_frame"
+    }
+  },
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "kubejs:block/ctm/circuit_assembler_frame/center",
+    "empty": "kubejs:block/ctm/circuit_assembler_frame/empty",
+    "horizontal": "kubejs:block/ctm/circuit_assembler_frame/horizontal",
+    "vertical": "kubejs:block/ctm/circuit_assembler_frame/vertical",
+    "particle": "kubejs:block/ctm/circuit_assembler_frame/particle"
+  }
+}
