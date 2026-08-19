@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: 'mekanism:basic_control_circuit' })
     event.custom({
-        type: "modern_industrialization:assembler",
+        type: "modern_industrialization:circuit_assembler",
         duration: 50,
         eu: 16,
         item_inputs: [
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: 'mekanism:advanced_control_circuit' })
     event.custom({
-        type: "modern_industrialization:assembler",
+        type: "modern_industrialization:circuit_assembler",
         duration: 50,
         eu: 16,
         item_inputs: [
