@@ -8,10 +8,17 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'tfmg:industrial_blasting/steel_from_dust' })
     event.remove({ id: 'tfmg:industrial_blasting/steel_from_raw_iron' })
     event.remove({ id: 'tfmg:vat_machine_recipe/arc_furnace_steel' })
-        
-    // Explicitly remove all recipes for alternative coal dusts to prevent bypasses
-    event.remove({ output: 'enderio:powdered_coal' })
     event.remove({ output: 'oritech:coal_dust' })
+
+    event.remove({ id: 'create:crushing/coal_coke' })
+    event.custom({
+        type: 'create:crushing',
+        ingredients: [{ item: 'modern_industrialization:coke' }],
+        results: [
+            { id: 'tfmg:coal_coke_dust', count: 1 }
+        ],
+        processingTime: 250
+    })
 
     // Coal Dust
     event.custom({
