@@ -127,11 +127,11 @@ ServerEvents.recipes(event => {
             },
             {
                 amount: 2,
-                tag: "modern_industrialization:op_amp"
+                item: "modern_industrialization:op_amp"
             },
             {
                 amount: 1,
-                tag: "modern_industrialization:electronic_circuit_board"
+                item: "modern_industrialization:electronic_circuit_board"
             }
         ],
         fluid_inputs: [
