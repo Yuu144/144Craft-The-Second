@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanism:crusher' })
     event.remove({ output: 'mekanismgenerators:wind_generator' })
     event.remove({ output: 'mekanismgenerators:heat_generator' })
+    event.remove({ output: 'mekanism:heavy_water' })
 
     event.shaped('mekanism:metallurgic_infuser', [
         'AEA',
@@ -201,14 +202,14 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    event.shaped('mekanismgenerators:fission_fuel_assembly',[
+    event.shaped('mekanismgenerators:fission_fuel_assembly', [
         'ABA',
         'ACA',
         'ABA'
-    ],{
-        A:'#forge:ingots/lead',
-        B:'#forge:ingots/steel',
-        C:'bigreactors:blutonium_block'
+    ], {
+        A: '#forge:ingots/lead',
+        B: '#forge:ingots/steel',
+        C: 'bigreactors:blutonium_block'
     })
 
     event.custom({
@@ -227,7 +228,7 @@ ServerEvents.recipes(event => {
                 "chance": 10.0,
                 "id": "tfmg:coal_coke_dust"
             },
-            {       
+            {
                 "chance": 10.0,
                 "id": "mekanism:dust_coal"
             },
@@ -302,14 +303,18 @@ ServerEvents.recipes(event => {
                     {
                         "id": "mekanism:supercharged_coil"
                     }
-                ]         
+                ]
             }
         ],
         "transitional_item": {
             "id": "mekanism:supercharged_coil"
         }
-    
+
     })
 
-
+    event.replaceInput(
+        { id: 'mekanismgenerators:/decondensentrating/rotary/deuterium' },
+        '#c:deuterium',
+        'mekanismgenerators:deuterium'
+    )
 })
