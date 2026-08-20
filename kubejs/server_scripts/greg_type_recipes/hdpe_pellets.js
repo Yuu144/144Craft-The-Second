@@ -1,17 +1,12 @@
 ServerEvents.recipes(event => {
     event.remove({ id: 'mekanism:reaction/substrate/ethene_oxygen' })
     event.custom({
-        type: "modern_industrialization:vacuum_freezer",
-        eu: 16,
-        duration: 5,
-        fluid_inputs: [
-            {
-                fluid: "modern_industrialization:polyethylene",
-                amount: 90
-            }
-        ],
-        item_outputs: {
-            item: "mekanism:hdpe_pellet",
-        }
+        "type": "mekanism:reaction",
+        "chemical_input": { "amount": 10, "chemical": "mekanism:oxygen" },
+        "duration": 60,
+        "energy_required": 1000,
+        "fluid_input": { "amount": 50, "fluid": "modern_industrialization:polyethylene" },
+        "item_input": { "count": 1, "item": "mekanism:substrate" },
+        "item_output": { "count": 1, "id": "mekanism:hdpe_pellet" }
     })
 })

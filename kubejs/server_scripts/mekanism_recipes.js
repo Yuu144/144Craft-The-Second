@@ -158,12 +158,12 @@ ServerEvents.recipes(event => {
         'CDC',
         'EFE'
     ], {
-        A: 'mekanism:alloy_atomic',
-        B: 'northstar:lunar_sapphire_crystal',
-        C: 'mekanism:logistical_sorter',
+        A: 'mekanism:ultimate_control_circuit',
+        B: 'kubejs:larp_crystal',
+        C: 'industrialization_overdrive:vajra',
         D: 'mekanism:robit',
-        E: 'mekanism:teleportation_core',
-        F: 'create:precision_mechanism'
+        E: 'modern_industrialization:quantum_circuit',
+        F: 'allthecompressed:steel_block_2x'
     })
 
     event.shaped('mekanism:crusher', [
@@ -311,6 +311,7 @@ ServerEvents.recipes(event => {
         }
     })
 
+    // Heavy Water -> Deuterium / Oxygen
     event.remove({ id: 'mekanismgenerators:rotary/deuterium' })
     event.remove({ id: 'mekanismgenerators:separator/heavy_water' })
     event.custom({
@@ -319,5 +320,19 @@ ServerEvents.recipes(event => {
         "input": { "amount": 2, "fluid": "modern_industrialization:high_pressure_heavy_water" },
         "left_chemical_output": { "amount": 2, "id": "mekanismgenerators:deuterium" },
         "right_chemical_output": { "amount": 1, "id": "mekanism:oxygen" }
+    })
+
+    event.remove({ output: 'mekanism:pressurized_reaction_chamber' })
+    event.shaped('mekanism:pressurized_reaction_chamber', [
+        'ABA',
+        'CDC',
+        'EFE'
+    ], {
+        A: 'mekanism:steel_casing',
+        B: 'mekanism:advanced_control_circuit',
+        C: 'modern_industrialization:titianium_large_plate',
+        D: 'modern_industrialization:titianium_gear',
+        E: 'modern_industrialization:blastproof_alloy_plate',
+        F: 'modern_industrialization:digital_circuit'
     })
 })
