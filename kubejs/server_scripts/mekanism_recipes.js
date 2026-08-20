@@ -312,7 +312,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ id: 'mekanismgenerators:rotary/deuterium' })
-    //event.remove({ id: 'mekanismgenerators:separator/heavy_water' })
+    event.remove({ id: 'mekanismgenerators:separator/heavy_water' })
     event.custom({
         "type": "mekanism:separating",
         "energy_multiplier": 2,
