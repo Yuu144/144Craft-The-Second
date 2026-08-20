@@ -86,7 +86,7 @@ MIMachineEvents.registerMachines(event => {
     fluidInputs => fluidInputs.addSlot(14, 35),
     fluidOutputs => {},
     'circuit_assembler_casing',
-    'assembler',
+    'circuit_assembler',
     true,
     false,
     false
