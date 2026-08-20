@@ -63,15 +63,14 @@ MIMachineEvents.registerMachines(event => {
   )
 
   const customMachineShape = event.layeredShape('circuit_assembler_casing', [
-    [' aaa ', ' bcb ', ' ddd ', ' ddd ', ' ddd ', ' bcb ', ' aaa '],
+    [' aaa ', ' bbb ', ' ddd ', ' ddd ', ' ddd ', ' bbb ', ' aaa '],
     ['aaaaa', 'b   b', 'd   d', 'd   d', 'd   d', 'b   b', 'aaaaa'],
-    ['aaaaa', 'c   c', 'd   d', 'd   d', 'd   d', 'c   c', 'aaaaa'],
     ['aaaaa', 'b   b', 'd   d', 'd   d', 'd   d', 'b   b', 'aaaaa'],
-    [' aaa ', ' bcb ', ' ddd ', ' d#d ', ' ddd ', ' bcb ', ' aaa '],
+    ['aaaaa', 'b   b', 'd   d', 'd   d', 'd   d', 'b   b', 'aaaaa'],
+    [' aaa ', ' bbb ', ' ddd ', ' d#d ', ' ddd ', ' bbb ', ' aaa '],
   ])
     .key('a', event.memberOfBlock('kubejs:circuit_assembler_frame'), assemblerHatch)
-    .key('b', event.memberOfBlock('kubejs:circuit_assembler_terminal'), event.noHatch())
-    .key('c', event.memberOfBlock('kubejs:circuit_assembler_coil'), event.noHatch())
+    .key('b', event.memberOfBlock('modern_industrialization:cupronickel_coil'), event.noHatch())
     .key('d', event.memberOfBlock('kubejs:circuit_assembler_casing'), event.noHatch())
     .build()
 
