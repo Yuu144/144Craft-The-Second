@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanism:crusher' })
     event.remove({ output: 'mekanismgenerators:wind_generator' })
     event.remove({ output: 'mekanismgenerators:heat_generator' })
-    event.remove({ output: 'mekanism:heavy_water' })
+    //event.remove({ output: 'mekanism:heavy_water' })
 
     event.shaped('mekanism:metallurgic_infuser', [
         'AEA',
@@ -312,11 +312,11 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ id: 'mekanismgenerators:rotary/deuterium' })
-    event.remove({ id: 'mekanismgenerators:separator/heavy_water' })
+    //event.remove({ id: 'mekanismgenerators:separator/heavy_water' })
     event.custom({
         "type": "mekanism:separating",
         "energy_multiplier": 2,
-        "input": { "amount": 2, "id": "modern_industrialization:high_pressure_heavy_water" },
+        "input": { "amount": 2, "fluid": "modern_industrialization:high_pressure_heavy_water" },
         "left_chemical_output": { "amount": 2, "id": "mekanismgenerators:deuterium" },
         "right_chemical_output": { "amount": 1, "id": "mekanism:oxygen" }
     })
