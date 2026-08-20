@@ -4,10 +4,10 @@
     "minecraft",
     "ae2",
     "modern_industrialization",
+    "northstar",
     "kubejs",
     "create",
-    "mekanism",
-    "northstar"
+    "mekanism"
   ],
   "priority_overrides": {},
   "stone_variants": [
