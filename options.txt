@@ -48,7 +48,7 @@ mouseSensitivity:0.2975352112676056
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:["vanilla","fabric","mod_resources","mod/create_train_physics:resourcepacks/cee_sound_overrides","moonlight:merged_pack","file/LowOnFire 1.21.3.zip","file/RPG_Series_Icons-1.4.0+1.21.1.zip","file/Slightly-Improved-Font-1.1.5.zip","file/[1.6] Enhanced Boss Bars.zip","file/SimplySwordsWhimscape_v1.1.zip","file/Simply Swords Reforged v1.zip","C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft-The-Second\\config\\hordes","file/Unique Dark - Lite - 1.20.2-26.x.zip","file/UD Refined - Lite - 1.20.2-26.x.zip","file/Unique Dark - Mekanism 1.20.2-1.21 v2.1.zip","file/JollyTooltips-2.0.0.zip"]
+resourcePacks:["vanilla","fabric","mod_resources","mod/create_train_physics:resourcepacks/cee_sound_overrides","moonlight:merged_pack","file/LowOnFire 1.21.3.zip","file/RPG_Series_Icons-1.4.0+1.21.1.zip","file/Slightly-Improved-Font-1.1.5.zip","file/[1.6] Enhanced Boss Bars.zip","file/SimplySwordsWhimscape_v1.1.zip","file/Simply Swords Reforged v1.zip","C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft-The-Second\\config\\hordes","file/Unique Dark - Lite - 1.20.2-26.x.zip","file/UD Refined - Lite - 1.20.2-26.x.zip","file/Unique Dark - Mekanism 1.20.2-1.21 v2.1.zip","file/JollyTooltips-2.0.0.zip","file/Modern REIndustrialization.zip","file/AE2Blackout-V1.2.8.zip"]
 incompatibleResourcePacks:["file/Simply Swords Reforged v1.zip","C:\\Users\\Yuu14\\curseforge\\minecraft\\Instances\\144Craft-The-Second\\config\\hordes","file/JollyTooltips-2.0.0.zip"]
 lastServer:
 lang:en_us
@@ -141,7 +141,7 @@ key_key.disable_voice_chat:key.keyboard.n
 key_key.hide_icons:key.keyboard.h
 key_key.voice_chat:key.keyboard.v:CONTROL
 key_key.voice_chat_settings:key.keyboard.unknown
-key_key.voice_chat_group:key.keyboard.g
+key_key.voice_chat_group:key.keyboard.unknown
 key_key.voice_chat_toggle_recording:key.keyboard.unknown
 key_key.voice_chat_adjust_volumes:key.keyboard.unknown
 key_key.trade_cycling.cycle_trades:key.keyboard.unknown
@@ -177,11 +177,10 @@ key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
-key_key.carry.desc:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.tempad.shortcut:key.keyboard.unknown
 key_key.tempad.macro:key.keyboard.unknown
 key_key.tempad.new_location:key.keyboard.unknown
@@ -195,8 +194,6 @@ key_key.hypertube.tube_escape:key.keyboard.left.shift
 key_key.moreoverlays.lightoverlay.desc:key.keyboard.f7
 key_key.moreoverlays.chunkbounds.desc:key.keyboard.f9
 key_keyinfo.copycats.fill_copycat:key.keyboard.left.alt
-key_key.enderio.travel_staff:key.keyboard.g
-key_key.enderio.toggle_magnet:key.keyboard.m
 key_key.easy_villagers.pick_up:key.keyboard.v
 key_key.easy_villagers.cycle_trades:key.keyboard.unknown
 key_key.irons_spellbooks.spell_wheel:key.keyboard.r
@@ -327,10 +324,10 @@ key_simulated.keyinfo.scroll_up:key.keyboard.unknown
 key_simulated.keyinfo.scroll_down:key.keyboard.unknown
 key_railways.keyinfo.bogey_menu:key.keyboard.left.alt
 key_railways.keyinfo.cycle_menu:key.keyboard.left.alt
-key_key.twilightforest.item_display_map_cycle:key.keyboard.unknown
-key_key.twilightforest.swap_hotbar:key.keyboard.v
 key_key.twilightforest.red_thread_vision:key.keyboard.unknown
+key_key.twilightforest.item_display_map_cycle:key.keyboard.unknown
 key_key.twilightforest.zoom:key.keyboard.z
+key_key.twilightforest.swap_hotbar:key.keyboard.v
 key_key.ok_zoomer.zoom:key.keyboard.c
 key_key.ok_zoomer.decrease_zoom:key.keyboard.unknown
 key_key.ok_zoomer.increase_zoom:key.keyboard.unknown
@@ -372,7 +369,6 @@ key_key.openManual:key.keyboard.f1
 key_key.nextDestination:key.keyboard.right.bracket
 key_key.prevDestination:key.keyboard.left.bracket
 key_key.unmountVehicle:key.keyboard.backslash
-key_key.overpacked.take_off_backpack:key.keyboard.b
 key_key.guideme.guide:key.keyboard.g
 key_tfmg.keyinfo.transmission_shift_up:key.keyboard.v
 key_tfmg.keyinfo.transmission_shift_down:key.keyboard.unknown
@@ -387,7 +383,6 @@ key_key.jade.narrate:key.keyboard.keypad.5
 key_key.jade.show_details:key.keyboard.left.shift
 key_key.ae2.mouse_wheel_item_modifier:key.keyboard.left.shift
 key_key.ae2.part_placement_opposite:key.keyboard.left.control
-key_key.ae2.wireless_exp_encoding_terminal:key.keyboard.unknown
 key_key.ae2.wireless_requester_terminal:key.keyboard.unknown
 key_key.ae2.wireless_pattern_access_terminal:key.keyboard.unknown
 key_key.ae2.wireless_quantum_crafter_terminal:key.keyboard.unknown
@@ -400,6 +395,15 @@ key_key.ae2.wireless_pattern_encoding_terminal:key.keyboard.unknown
 key_key.ae2.wireless_terminal:key.keyboard.unknown
 key_key.extendedae.viewpattern:key.keyboard.p
 key_key.extendedae.set_amount:key.mouse.middle
+key_key.modern_industrialization.toggle_3x3:key.keyboard.y
+key_key.modern_industrialization.toggle_flight:key.keyboard.v
+key_key.yet_another_industrialization.toggle_industrialists_goggles:key.keyboard.keypad.3
+key_key.extended_industrialization.toggle_helmet_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_main_hand_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_leggings_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_chestplate_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_boots_ability:key.keyboard.unknown
+key_key.industrialization_overdrive.terminal_mode_switch:key.keyboard.v
 key_quark.keybind.autorun:key.keyboard.unknown
 key_quark.keybind.back:key.mouse.4
 key_quark.keybind.camera_mode:key.keyboard.f12
@@ -453,7 +457,7 @@ key_key.ftbchunks.minimap.zoomIn:key.keyboard.equal
 key_key.ftbchunks.minimap.zoomOut:key.keyboard.minus
 key_key.ftbchunks.add_waypoint:key.keyboard.unknown
 key_key.ftbchunks.waypoint_manager:key.keyboard.unknown
-key_key.oritech.augment_screen:key.keyboard.g
+key_key.oritech.augment_screen:key.keyboard.unknown
 key_key.simplytooltips.cycle_tab:key.keyboard.g
 key_key.simplytooltips.capture_gif:key.keyboard.h
 key_key.ftbquests.quests:key.keyboard.unknown
@@ -508,7 +512,7 @@ key_key.createrailgrinding.grind_jump:key.keyboard.space
 key_key.createrailgrinding.grind_crouch:key.keyboard.left.shift
 key_key.entityculling.toggle:key.keyboard.unknown
 key_key.createrailwaysnavigator.route_overlay_options:key.keyboard.r
-soundCategory_master:0.03090507726269319
+soundCategory_master:0.03752759381898458
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
