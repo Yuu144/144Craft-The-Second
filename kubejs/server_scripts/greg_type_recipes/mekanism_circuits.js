@@ -114,10 +114,6 @@ ServerEvents.recipes(event => {
                 item: "mekanism:advanced_control_circuit"
             },
             {
-                amount: 2,
-                item: "modern_industrialization:diode"
-            },
-            {
                 amount: 3,
                 tag: "c:ingots/electrum"
             },
