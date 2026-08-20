@@ -309,12 +309,14 @@ ServerEvents.recipes(event => {
         "transitional_item": {
             "id": "mekanism:supercharged_coil"
         }
-
     })
 
-    event.replaceInput(
-        { id: 'mekanismgenerators:/decondensentrating/rotary/deuterium' },
-        '#c:deuterium',
-        'mekanismgenerators:deuterium'
-    )
+    event.remove({ id: 'mekanismgenerators:/decondensentrating/rotary/deuterium' })
+    event.custom({
+        type: "mekanism:rotary",
+        chemical_input: { amount: 1, tag: "mekanism:deuterium" },
+        chemical_output: { amount: 1, id: "mekanismgenerators:deuterium" },
+        fluid_input: { amount: 1, id: "mekanismgenerators:deuterium" },
+        fluid_output: { amount: 1, id: "mekanismgenerators:deuterium" }
+    })
 })
