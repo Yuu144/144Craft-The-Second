@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
                 tag: "c:ingots/signalum"
             },
             {
-                amount: 2,
+                amount: 1,
                 item: "modern_industrialization:op_amp"
             },
             {
