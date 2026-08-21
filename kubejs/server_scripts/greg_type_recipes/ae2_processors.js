@@ -2,7 +2,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_64k_part' })
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_256k_part' })
     event.remove({ id: 'extendedae:crystal_assembler' })
-    event.remove({ id: 'extendedae:inscriber/concurrent_process' })
     
     event.shaped('ae2:cell_component_64k', [
         'ABA',
@@ -39,7 +38,7 @@ ServerEvents.recipes(event => {
         F: 'ae2:crafting_terminal'
     })
 
-    event.remove({ output: 'extendedae:concurrent_processor' })
+    event.remove({ id: 'extendedae:inscriber/concurrent_process' })
     event.custom({
         type: "modern_industrialization:circuit_assembler",
         duration: 50,
