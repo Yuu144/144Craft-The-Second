@@ -155,8 +155,8 @@ ServerEvents.recipes(event => {
                 item: "mekanism:elite_control_circuit"
             },
             {
-                amount: 3,
-                item: "modern_industrialization:robot_arm"
+                amount: 2,
+                item: "mekanism:ingot_refined_obsidian"
             },
             {
                 amount: 1,
@@ -177,12 +177,6 @@ ServerEvents.recipes(event => {
             {
                 amount: 4,
                 item: "bigreactors:cyanite_ingot"
-            }
-        ],
-        fluid_inputs: [
-            {
-                fluid: "modern_industrialization:hydrochloric_acid",
-                amount: 500
             }
         ],
         item_outputs: [
