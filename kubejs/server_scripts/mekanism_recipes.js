@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
         'CDC',
         'EFE'
     ], {
-        A: 'mekanism:epic_control_circuit',
+        A: 'mekanism:elite_control_circuit',
         B: 'kubejs:larp_crystal',
         C: 'industrialization_overdrive:vajra',
         D: 'mekanism:robit',
