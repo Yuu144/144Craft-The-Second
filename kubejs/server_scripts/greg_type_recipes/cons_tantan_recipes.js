@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         type: 'create:mixing',
         heat_requirement: 'heated',
         ingredients: [
-            { item: 'kubejs:manganese' },
+            { item: 'modern_industrialization:manganese_tiny_dust' },
             { 
                 type: 'neoforge:single',
                 fluid: 'alltheores:molten_copper', 
