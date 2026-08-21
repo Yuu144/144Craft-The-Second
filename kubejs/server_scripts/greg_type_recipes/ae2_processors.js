@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
         F: 'ae2:crafting_terminal'
     })
 
-    event.remove({ output: 'expandedae:concurrent_processor' })
+    event.remove({ output: 'extendedae:concurrent_processor' })
     event.custom({
         type: "modern_industrialization:circuit_assembler",
         duration: 50,
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         item_outputs: [
             {
                 amount: 2,
-                item: "expandedae:concurrent_processor"
+                item: "extendedae:concurrent_processor"
             }
         ]
     })
