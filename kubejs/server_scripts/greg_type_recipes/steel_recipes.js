@@ -154,4 +154,14 @@ ServerEvents.recipes(event => {
 
     event.smelting('alltheores:steel_ingot', 'mekanism:dust_steel')
     event.blasting('alltheores:steel_ingot', 'mekanism:dust_steel')
+
+    event.remove({ id: 'modern_industrialization:steam_age/steel/machine_casing_asbl' })
+    event.shaped('extendedae:crystal_assembler', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'alltheores:steel_plate',
+        B: 'mekanism:steel_casing'
+    })
 })
