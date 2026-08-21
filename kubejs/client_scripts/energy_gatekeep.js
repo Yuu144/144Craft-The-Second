@@ -33,4 +33,6 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
     industrialForegoingGeneratorItems.forEach(item => {
         event.remove(item)
     })
+
+    event.remove('integrateddynamics:crafting/squeezer')
 })

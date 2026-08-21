@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     event.custom({
         type: "modern_industrialization:circuit_assembler",
         duration: 50,
-        eu: 16,
+        eu: 32,
         item_inputs: [
             {
                 amount: 2,
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
     event.custom({
         type: "modern_industrialization:circuit_assembler",
         duration: 50,
-        eu: 16,
+        eu: 64,
         item_inputs: [
             {
                 amount: 1,
@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
     event.custom({
         type: "modern_industrialization:circuit_assembler",
         duration: 50,
-        eu: 16,
+        eu: 128,
         item_inputs: [
             {
                 amount: 1,
@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
             },
             {
                 amount: 1,
-                item: "modern_industrialization:electronic_circuit_board"
+                item: "oritech:processing_unit"
             }
         ],
         fluid_inputs: [
@@ -140,6 +140,55 @@ ServerEvents.recipes(event => {
             {
                 amount: 1,
                 item: "mekanism:elite_control_circuit"
+            }
+        ]
+    })
+
+    event.remove({ output: 'mekanism:ultimate_control_circuit' })
+    event.custom({
+        type: "modern_industrialization:circuit_assembler",
+        duration: 50,
+        eu: 256,
+        item_inputs: [
+            {
+                amount: 1,
+                item: "mekanism:elite_control_circuit"
+            },
+            {
+                amount: 3,
+                item: "modern_industrialization:robot_arm"
+            },
+            {
+                amount: 1,
+                item: "oritech:overcharged_crystal"
+            },
+            {
+                amount: 2,
+                item: "oritech:reinforced_carbon_sheet"
+            },
+            {
+                amount: 1,
+                item: "oritech:super_ai_chip"
+            },
+            {
+                amount: 1,
+                item: "ae2:singularity"
+            },
+            {
+                amount: 4,
+                item: "bigreactors:cyanite_ingot"
+            }
+        ],
+        fluid_inputs: [
+            {
+                fluid: "modern_industrialization:hydrochloric_acid",
+                amount: 500
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 1,
+                item: "mekanism:ultimate_control_circuit"
             }
         ]
     })
