@@ -7,6 +7,13 @@ MIMachineEvents.registerRecipeTypes(event => {
         .withFluidInputs()
 })
 
+MIMachineEvents.registerCasings(event => {
+    event.registerBlockImitation(
+        'tesla',
+        'betterblockz:ironslate_blockz_23'
+    )
+})
+
 MIMachineEvents.registerMachines(event => {
     const customMachineShape = event.layeredShape("tesla", [
         ["      aaaaa      ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                 ", "                b"],
@@ -53,7 +60,7 @@ MIMachineEvents.registerMachines(event => {
         itemOutputs => itemOutputs.addSlot(139, 35),
         fluidInputs => fluidInputs.addSlot(14, 35),
         fluidOutputs => {},
-        'modern_industrialization:advanced_machine_hull',
+        'tesla',
         'tesla',
         true,
         false,
