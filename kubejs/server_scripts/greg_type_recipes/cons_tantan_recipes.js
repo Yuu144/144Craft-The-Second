@@ -9,18 +9,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'create:crushing/crimsite' })
     event.remove({ id: 'create:crushing/crimsite_recycling' })
 
-    // Manganese recipe
-    event.custom({
-        type: 'create:crushing',
-        ingredients: [ { item: 'create:crimsite' } ],
-        results: [
-            { id: 'kubejs:manganese', count: 1 },
-            { id: 'create:crushed_raw_iron', chance: 0.3, count: 1 },
-            { id: 'minecraft:iron_nugget', chance: 0.3, count: 1 }
-        ],
-        processingTime: 200
-    })
-
     //Molten Cons Tan Tan
     event.custom({
         type: 'create:mixing',
