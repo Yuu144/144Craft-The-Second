@@ -33,10 +33,10 @@ ServerEvents.recipes(event => {
         'ABA',
         'CDC'
     ],{
-        A: 'minecraft:copper_ingot',
+        A: 'oritech:adamant_ingot',
         B: 'oritech:motor',
         C: '#c:ingots/electrum',
-        D: 'tfmg:circuit_board'
+        D: 'modern_industrialization:analog_circuit'
     })
 
     event.remove({ output: 'oritech:lava_generator_block' })
@@ -75,4 +75,19 @@ ServerEvents.recipes(event => {
         C: 'oritech:magnetic_coil',
         D: 'mekanism:steel_casing'
     })
+
+    // Advanced Battery
+    event.remove({ id: ' oritech:motor/advbattery' })
+    event.shaped(' oritech:advanced_battery', [
+        ' A ',
+        'BCB',
+        'BCB'
+    ],{
+        A: '#c:plates/electrum',
+        B: '#c:plates/steel',
+        C: 'oritech:energite_ingot'
+    })
+
+    // Processing Unit
+    event.replaceInput({ id: 'oritech:assembler/processingunit' }, 'minecraft:redstone', 'modern_industrialization:diode')
 })
