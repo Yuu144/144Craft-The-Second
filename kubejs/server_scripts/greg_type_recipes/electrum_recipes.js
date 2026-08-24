@@ -3,17 +3,9 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'alltheores:crafting/electrum/alloy_blending_from_dust' })
     event.remove({ id: 'oritech:compat/mekanism/infusing/electrum_dust' })
     event.remove({ id: 'alltheores:alloy_smelting/electrum_ingot' })
-    //event.remove({ output: 'alltheores:electrum_dust' })
-    //event.remove({ output: '#c:dusts/electrum' })
-    //event.remove({ id: 'alltheores:crafting/electrum/alloy_blending_from_dust' })
-    //event.remove({ id: 'alltheores:alloy_smelting/electrum_ingot' })
-    //event.remove({ id: 'alltheores:alloysmelter/electrum/ingot' })
-    //event.remove({ id: 'alltheores:arcfurnace/electrum/ingot' })
-    //event.remove({ id: 'alltheores:sag_milling/electrum/ingot' })
-    //event.remove({ id: 'electroenergetics:crafting/electrum_wire' })
-    //event.remove({ type: 'minecraft:smelting', input: '#c:dusts/electrum' })
-    //event.remove({ type: 'minecraft:blasting', input: '#c:dusts/electrum' })
-    //event.remove({ output: 'createaddition:electrum_sheet' })
+    event.remove({ id: 'alltheores:alloy_smelting/electrum_ingot' })
+    event.remove({ id: 'modern_industrialization:alloy/mixer/electrum/dust' })
+    event.remove({ id: 'modern_industrialization:alloy/mixer/electrum/tiny_dust' })
 
     event.custom({
         type: 'tfmg:vat_machine_recipe',
