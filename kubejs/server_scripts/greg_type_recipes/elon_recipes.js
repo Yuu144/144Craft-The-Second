@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
             },
             {
                 amount: 1,
-                item: "extended_industrialization:tesla_inderdimensional_upgrade"
+                item: "extended_industrialization:tesla_interdimensional_upgrade"
             }
         ],
         item_outputs: [
