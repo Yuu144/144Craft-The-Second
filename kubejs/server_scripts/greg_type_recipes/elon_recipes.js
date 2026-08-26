@@ -3,8 +3,8 @@ ServerEvents.recipes(event => {
     //EST-Larp Alloy
     event.custom({
         type: "modern_industrialization:tesla",
-        duration: 250,
-        eu: 50000,
+        duration: 200,
+        eu: 15000,
         item_inputs: [
             {
                 amount: 8,
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
         event.custom({
         type: "modern_industrialization:tesla",
         duration: 100,
-        eu: 15000,
+        eu: 12000,
         item_inputs: [
             {
                 amount: 4,
@@ -54,6 +54,37 @@ ServerEvents.recipes(event => {
             {
                 amount: 1,
                 item: "aeinfinitybooster:infinity_card"
+            }
+        ]
+    })
+
+        //Dimension Card
+        event.custom({
+        type: "modern_industrialization:tesla",
+        duration: 100,
+        eu: 12000,
+        item_inputs: [
+            {
+                amount: 4,
+                item: "aeinfinitybooster:infinity_card"
+            },
+            {
+                amount: 8,
+                item: "alltheores:enderium_ingot"
+            },
+            {
+                amount: 1,
+                item: "minecraft:nether_star"
+            },
+            {
+                amount: 1,
+                item: "extended_industrialization:tesla_inderdimensional_upgrade"
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 1,
+                item: "aeinfinitybooster:dimension_card"
             }
         ]
     })
