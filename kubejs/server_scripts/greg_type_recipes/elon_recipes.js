@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
     event.custom({
         type: "modern_industrialization:tesla",
         duration: 200,
-        eu: 15000,
+        eu: 8000,
         item_inputs: [
             {
                 amount: 8,
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
         event.custom({
         type: "modern_industrialization:tesla",
         duration: 100,
-        eu: 12000,
+        eu: 6000,
         item_inputs: [
             {
                 amount: 4,
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
         event.custom({
         type: "modern_industrialization:tesla",
         duration: 100,
-        eu: 12000,
+        eu: 6000,
         item_inputs: [
             {
                 amount: 4,
