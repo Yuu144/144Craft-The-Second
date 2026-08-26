@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
-
+    
+    event.remove({ id: 'aeinfinitybooster:infinity_card' })
+    event.remove({ id: 'aeinfinitybooster:dimension_card' })
     //EST-Larp Alloy
     event.custom({
         type: "modern_industrialization:tesla",
