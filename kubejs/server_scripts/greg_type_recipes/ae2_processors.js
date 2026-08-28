@@ -74,4 +74,43 @@ ServerEvents.recipes(event => {
             }
         ]
     })
+
+    event.remove({ id: 'megacells:inscriber/accumulation_processor' })
+    event.remove({ id: 'extendedae:assembler/accumulation_processor' })
+    event.custom({
+        type: "modern_industrialization:circuit_assembler",
+        duration: 50,
+        eu: 256,
+        item_inputs: [
+            {
+                amount: 4,
+                item: "megacells:printed_accumulation_processor"
+            },
+            {
+                amount: 4,
+                item: "ae2:printed_silicon"
+            },
+            {
+                amount: 4,
+                item: "ae2:fluix_dust"
+            }
+        ],
+        fluid_inputs: [
+            {
+                fluid: "modern_industrialization:platinum_sulfuric_solution",
+                amount: 4000
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 4,
+                item: "megacells:accumulation_processor"
+            }
+        ]
+    })
+
+    event.replaceInput({ 
+        id: 'megacells:cells/cell_component_4m' }, 
+        'ae2:quartz_vibrant_glass', 
+        'kubejs:energized_superconducting_titanium_larp_alloy')
 })
