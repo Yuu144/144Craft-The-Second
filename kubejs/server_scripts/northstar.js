@@ -10,4 +10,16 @@ ServerEvents.recipes(event => {
         'alltheores:iron_plate',
         'modern_industrialization:electronic_circuit_board'
     )
+
+    event.replaceInput(
+        { id: 'northstar:mechanical_crafting/interplanetary_navigator' },
+        'modern_industrialization:titanium_plate',
+        'modern_industrialization:tungsten_large_plate'
+    )
+
+    event.replaceInput(
+        { id: 'northstar:mechanical_crafting/interplanetary_navigator' },
+        'modern_industrialization:titanium_ingot',
+        'modern_industrialization:neodymium_dust'
+    )
 })
