@@ -143,4 +143,5 @@ ServerEvents.recipes(event => {
         E:'minecraft:bucket'
     })
 
+    event.replaceInput({ id: 'ae2:network/wireless_booster' }, 'minecraft:iron_ingot', 'modern_industrialization:tungsten_large_plate')
 })
