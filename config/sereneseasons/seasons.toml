@@ -1,6 +1,6 @@
 [weather_settings]
 	#Generate snow and ice during the Winter season
-	generate_snow_ice = false
+	generate_snow_ice = true
 	#Change the frequency of rain/snow/storms based on the season
 	change_weather_frequency = true
 
@@ -16,7 +16,7 @@
 	#4 - 6 = Early/Mid/Late Summer
 	#7 - 9 = Early/Mid/Late Autumn
 	#10 - 12 = Early/Mid/Late Winter
-	starting_sub_season = 1
+	starting_sub_season = 0
 	#If the season should progress on a server with no players online
 	progress_season_while_offline = true
 
