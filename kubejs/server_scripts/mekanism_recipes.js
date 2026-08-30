@@ -343,4 +343,19 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'mekanism:upgrade/chemical' })
     event.remove({ id: 'mekanism:upgrade/anchor' })
     event.remove({ mod: 'tfmg', output: 'tfmg:lithium_ingot' })
+
+    event.custom({
+        type: 'tfmg:casting',
+        ingredients: [
+            {
+                type: 'neoforge:single',
+                amount: 250,
+                fluid: 'mekanism:lithium'
+            }
+        ],
+        processing_time: 200,
+        results: [
+            { id: 'tfmg:lithium_ingot' }
+        ]
+    })
 })
