@@ -263,15 +263,15 @@
 	#Energy capacity (Joules) of MekaSuit items without any installed upgrades. Quadratically scaled by upgrades.
 	# Default: 16000000
 	# Range: 0 ~ 9223372036854775807
-	baseEnergyCapacity = 16000000
+	baseEnergyCapacity = 10000000
 	#Amount (joules) of energy the MekaSuit can accept per tick. Quadratically scaled by upgrades.
 	# Default: 100000
 	# Range: 0 ~ 9223372036854775807
-	chargeRate = 100000
+	chargeRate = 1000
 	#Charge rate of inventory items in Joules/t when charging the player's inventory with the Charge Distribution Unit.
 	# Default: 10000
 	# Range: 0 ~ 9223372036854775807
-	inventoryChargeRate = 10000
+	inventoryChargeRate = 1000
 	#Solar recharging rate in Joules/t of the helmet, per upgrade installed.
 	# Default: 500
 	# Range: 0 ~ 9223372036854775807
