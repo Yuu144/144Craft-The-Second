@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanism:crusher' })
     event.remove({ output: 'mekanismgenerators:wind_generator' })
     event.remove({ output: 'mekanismgenerators:heat_generator' })
-    event.remove({ mod: 'industrialforegoing', output: 'mekanism:lithium_dust' })
+    event.remove({ mod: 'industrialforegoing', output: 'mekanism:dust_lithium' })
     //event.remove({ output: 'mekanism:heavy_water' })
 
     event.shaped('mekanism:metallurgic_infuser', [
