@@ -358,4 +358,12 @@ ServerEvents.recipes(event => {
             { id: 'tfmg:lithium_ingot' }
         ]
     })
+
+    event.shaped('tfmg:lithium_ingot', [
+        'AAA',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'tfmg:lithium_nugget'
+    })
 })
