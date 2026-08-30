@@ -4,7 +4,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'ae2:formation_core' })
     event.remove({ output: 'ae2:annihilation_core' })
     event.remove({ output: 'ae2:inscriber' })
-    event.remove({ output: 'ae2:condenser' })
     event.remove({ output: 'extendedae:void_cell' })
     event.remove({ output: 'advanced_ae:reaction_chamber' })
     event.remove({ output: 'ae2:silicon' })
