@@ -342,5 +342,5 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'mekanism:upgrade/muffling' })
     event.remove({ id: 'mekanism:upgrade/chemical' })
     event.remove({ id: 'mekanism:upgrade/anchor' })
-
+    event.remove({ mod: 'tfmg', output: 'tfmg:lithium_ingot' })
 })
