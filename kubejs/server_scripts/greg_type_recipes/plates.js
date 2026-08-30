@@ -11,4 +11,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'modern_industrialization:materials/iron/forge_hammer/double_ingot_to_plate_with_tool' })
     event.remove({ id: 'modern_industrialization:materials/gold/forge_hammer/double_ingot_to_plate_with_tool' })
     event.remove({ id: 'modern_industrialization:materials/gold/forge_hammer/ingot_to_plate_with_tool' })
+
+    
 })
