@@ -335,4 +335,13 @@ ServerEvents.recipes(event => {
         E: 'modern_industrialization:blastproof_alloy_plate',
         F: 'modern_industrialization:digital_circuit'
     })
+
+    event.remove({ id: 'mekanism:upgrade/speed' })
+    event.remove({ id: 'mekanism:upgrade/energy' })
+    event.remove({ id: 'mekanism:upgrade/filter' })
+    event.remove({ id: 'mekanism:upgrade/muffling' })
+    event.remove({ id: 'mekanism:upgrade/chemical' })
+    event.remove({ id: 'mekanism:upgrade/anchor' })
+
+
 })

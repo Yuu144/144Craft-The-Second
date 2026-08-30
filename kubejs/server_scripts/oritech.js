@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
             "results": [
         {
             "count": 1,
-            "id": "oritech:black_hole_block"
+            "id": "modern_industrialization:singularity"
         }
         ],
             "time": 100000
