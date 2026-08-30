@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanism:crusher' })
     event.remove({ output: 'mekanismgenerators:wind_generator' })
     event.remove({ output: 'mekanismgenerators:heat_generator' })
+    event.remove({ mod: 'industrial_foregoing', output: 'mekanism:luthium_dust' })
     //event.remove({ output: 'mekanism:heavy_water' })
 
     event.shaped('mekanism:metallurgic_infuser', [
@@ -335,4 +336,13 @@ ServerEvents.recipes(event => {
         E: 'modern_industrialization:blastproof_alloy_plate',
         F: 'modern_industrialization:digital_circuit'
     })
+
+    event.remove({ id: 'mekanism:upgrade/speed' })
+    event.remove({ id: 'mekanism:upgrade/energy' })
+    event.remove({ id: 'mekanism:upgrade/filter' })
+    event.remove({ id: 'mekanism:upgrade/muffling' })
+    event.remove({ id: 'mekanism:upgrade/chemical' })
+    event.remove({ id: 'mekanism:upgrade/anchor' })
+
+
 })
