@@ -1,28 +1,12 @@
 const allTheOresGearMaterials = [
     'aluminum',
-    'brass',
     'bronze',
-    'constantan',
     'copper',
-    'diamond',
-    'electrum',
-    'enderium',
     'gold',
     'invar',
-    'iridium',
     'iron',
-    'lead',
-    'lumium',
-    'netherite',
-    'nickel',
-    'osmium',
-    'platinum',
-    'signalum',
-    'silver',
     'steel',
-    'tin',
-    'uranium',
-    'zinc'
+    'tin'
 ]
 
 ServerEvents.recipes(event => {
