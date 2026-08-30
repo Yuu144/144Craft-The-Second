@@ -4,6 +4,7 @@
 	filename: "create"
 	group: ""
 	id: "1343E1B2C0206494"
+	images: [ ]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
@@ -1040,7 +1041,7 @@
 			id: "62DB1E73D200E8FB"
 			tasks: [{
 				id: "5FD01A4DA8D2507D"
-				item: { count: 1, id: "northstar:jet_engine" }
+				item: { count: 1, id: "northstar:rocket_thruster" }
 				type: "item"
 			}]
 			x: 18.0d
