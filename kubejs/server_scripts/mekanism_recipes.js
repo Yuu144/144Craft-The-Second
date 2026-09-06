@@ -331,7 +331,7 @@ ServerEvents.recipes(event => {
         A: 'mekanism:steel_casing',
         B: 'mekanism:advanced_control_circuit',
         C: 'modern_industrialization:tungsten_large_plate',
-        D: 'modern_industrialization:tungsten_gear',
+        D: 'modern_industrialization:turbo_machine_casing',
         E: 'modern_industrialization:blastproof_alloy_plate',
         F: 'modern_industrialization:digital_circuit'
     })
