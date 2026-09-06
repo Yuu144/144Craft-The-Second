@@ -366,4 +366,25 @@ ServerEvents.recipes(event => {
     ], {
         A: 'tfmg:lithium_nugget'
     })
+
+    event.shaped('mekanism:upgrade_speed', [
+        'CBC',
+        'BAB',
+        'CBC'
+    ], {
+        B: 'alltheores:aluminum_plate',
+        A: 'tmfg:lithium_charge',
+        C: 'mekanism:alloy_infused'
+    })
+
+    event.shaped('mekanism:upgrade_energy', [
+        'CBC',
+        'BAB',
+        'CBC'
+    ], {
+        A: 'tfmg:lithium_nugget',
+        B: 'alltheores:gold_plate',
+        C: 'mekanism:alloy_infused'
+    })
+
 })
