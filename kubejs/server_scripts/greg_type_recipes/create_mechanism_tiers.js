@@ -70,6 +70,7 @@ ServerEvents.recipes(hscraft => {
 
     })
 
+    //Wooden Mechanism
     hscraft.shaped('createmechanisms:wooden_mechanism', [
         'BAB',
         'ACA',
@@ -80,4 +81,71 @@ ServerEvents.recipes(hscraft => {
         C: 'create:cogwheel'
     })  
 
+    //Computing Mechanism
+    hscraft.custom({
+        'type': 'create:sequenced_assembly',
+        'ingredient': {
+            'item': 'create:precision_mechanism'
+        },
+        'loops': 3,
+        'results': [
+            {
+                'id': 'createmechanisms:computing_mechanism'
+            }
+        ],
+        'sequence': [
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    {
+                        'item': 'create:precision_mechanism'
+                    },
+                    {
+                        'item': 'modern_industrialization:annealed_copper_hot_ingot'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'create:precision_mechanism'
+                    }
+                ]
+            },
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    {
+                        'item': 'create:precision_mechanism'
+                    },
+                    {
+                        'item': 'ae2:silicon'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'create:precision_mechanism'
+                    }
+                ]
+            },
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    {
+                        'item': 'create:precision_mechanism'
+                    },
+                    {
+                        'item': 'alltheores:aluminum_plate'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'create:precision_mechanism'
+                    }
+                ]
+            }
+        ],
+        'transitional_item': {
+            'id': 'createmechanisms:void_mechanism'
+        }
+
+    })
 })
