@@ -1,5 +1,8 @@
 ServerEvents.recipes(hscraft => {
 
+    //Precision Mechanism
+    hscraft.remove({ id: 'create:sequenced_assembly/precision_mechanism' })
+
     hscraft.custom({
         'type': 'create:sequenced_assembly',
         'ingredient': {
@@ -66,5 +69,15 @@ ServerEvents.recipes(hscraft => {
         }
 
     })
+
+    hscraft.shaped('createmechanisms:wooden_mechanism', [
+        'BAB',
+        'ACA',
+        'BAB'
+    ],{
+        A: 'create:andesite_alloy',
+        B: '#minecraft:planks',
+        C: 'create:cogwheel'
+    })  
 
 })
