@@ -269,7 +269,7 @@ ServerEvents.recipes(hscraft => {
                         'item': 'createmechanisms:fluid_mechanism'
                     },
                     {
-                        'type': 'neofroge:single',
+                        'type': 'neoforge:single',
                         'amount': 250,
                         'fluid': 'modern_industrialization:plant_oil'
                     }
@@ -337,7 +337,7 @@ ServerEvents.recipes(hscraft => {
                         'item': 'createmechanisms:fluid_mechanism'
                     },
                     {
-                        'type': 'neofroge:single',
+                        'type': 'neoforge:single',
                         'amount': 500,
                         'fluid': 'modern_industrialization:synthetic_oil'
                     }
