@@ -195,12 +195,37 @@ ServerEvents.recipes(event => {
         "type": "create:mixing",
         "ingredients": [
             {
-            "item": "alltheores:tin_dust",
-            "amount": 2
+            "item": "alltheores:tin_dust"
+            },
+            {
+            "item": "alltheores:tin_dust"
             },
             {
             "item": "alltheores:copper_dust",
-            "amount": 9
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
             }
         ],
         "results": [
