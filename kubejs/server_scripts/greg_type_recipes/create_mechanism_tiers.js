@@ -237,7 +237,7 @@ ServerEvents.recipes(hscraft => {
         'ingredient': {
             'item': 'createmechanisms:fluid_mechanism'
         },
-        'loops': 2,
+        'loops': 3,
         'results': [
             {
                 'chance': 80,
@@ -292,6 +292,19 @@ ServerEvents.recipes(hscraft => {
                         'id': 'createmechanisms:fluid_mechanism'
                     }
                 ]
+            },
+            {
+                'type': 'create:pressing',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:fluid_mechanism'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:fluid_mechanism'
+                    }
+                ]
             }
         ],
         'transitional_item': {
@@ -305,7 +318,7 @@ ServerEvents.recipes(hscraft => {
         'ingredient': {
             'item': 'createmechanisms:fluid_mechanism'
         },
-        'loops': 2,
+        'loops': 3,
         'results': [
             {
                 'chance': 80,
@@ -339,7 +352,20 @@ ServerEvents.recipes(hscraft => {
                     {
                         'type': 'neoforge:single',
                         'amount': 500,
-                        'fluid': 'modern_industrialization:synthetic_oil'
+                        'fluid': 'modern_industrialization:raw_synthetic_oil'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:fluid_mechanism'
+                    }
+                ]
+            },
+            {
+                'type': 'create:pressing',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:fluid_mechanism'
                     }
                 ],
                 'results': [
