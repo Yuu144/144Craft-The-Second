@@ -373,7 +373,7 @@ ServerEvents.recipes(event => {
         'CBC'
     ], {
         B: 'alltheores:aluminum_plate',
-        A: 'tmfg:lithium_charge',
+        A: 'tfmg:lithium_charge',
         C: 'mekanism:alloy_infused'
     })
 

@@ -148,4 +148,86 @@ ServerEvents.recipes(hscraft => {
         }
 
     })
+
+    //Fluid Mechanism
+    hscraft.custom({
+        'type': 'create:sequenced_assembly',
+        'ingredient': {
+            'item': 'createmechanisms:wooden_mechanism'
+        },
+        'loops': 2,
+        'results': [
+            {
+                'chance': 90,
+                'id': 'createmechanisms:fluid_mechanism'
+            },
+            {
+                'chance': 2,
+                'id': 'northstar:sodium_catalyst'
+            },
+            {
+                'chance': 5,
+                'id': 'create:andesite_alloy'
+            },
+            {
+                'chance': 3,
+                'id': 'alltheores:salt'
+            }
+        ],
+        'sequence': [
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:wooden_mechanism'
+                    },
+                    {
+                        'item': 'create:fluid_tank'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:wooden_mechanism'
+                    }
+                ]
+            },
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:wooden_mechanism'
+                    },
+                    {
+                        'item': 'minecraft:bucket'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:wooden_mechanism'
+                    }
+                ]
+            },
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:wooden_mechanism'
+                    },
+                    {
+                        'item': 'northstar:sodium_catalyst'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:wooden_mechanism'
+                    }
+                ]
+            }
+        ],
+        'transitional_item': {
+            'id': 'createmechanisms:void_mechanism'
+        }
+
+    })
+
 })
