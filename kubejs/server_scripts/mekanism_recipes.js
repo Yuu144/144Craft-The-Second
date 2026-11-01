@@ -160,10 +160,10 @@ ServerEvents.recipes(event => {
     ], {
         A: 'mekanism:elite_control_circuit',
         B: 'kubejs:larp_crystal',
-        C: 'industrialization_overdrive:vajra',
+        C: 'modern_industrialization:titanium_drill_head',
         D: 'mekanism:robit',
-        E: 'oritech:unholy_intelligence',
-        F: 'allthecompressed:steel_block_2x'
+        E: 'cataclysm:lava_power_cell',
+        F: 'allthecompressed:steel_block_1x'
     })
 
     event.shaped('mekanism:crusher', [

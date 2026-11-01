@@ -34,8 +34,8 @@ ServerEvents.recipes(event => {
         'EFE'
     ], {
         A: '#c:plastics',
-        B: 'create:mechanical_drill',
-        C: 'draconicevolution:awakened_draconium_block',
+        B: 'modern_industrialization:titanium_drill_head',
+        C: 'modern_industrialization:digital_circuit_board',
         D: 'industrialforegoing:machine_frame_advanced',
         E: 'alltheores:netherite_gear',
         F: 'minecraft:redstone'
@@ -47,11 +47,11 @@ ServerEvents.recipes(event => {
         'EFE'
     ], {
         A: '#c:plastics',
-        B: '#c:gears/diamond',
-        C: 'bigreactors:ludicrite_ingot',
+        B: 'kubejs:larp_crystal',
+        C: 'bigreactors:blutonium_ingot',
         D: 'industrialforegoing:machine_frame_simple',
         E: '#c:gears/enderium',
-        F: 'mekanism:ultimate_control_circuit'
+        F: 'mekanism:elite_control_circuit'
     })
 
     event.remove({ output: 'industrialforegoing:machine_frame_simple' })
