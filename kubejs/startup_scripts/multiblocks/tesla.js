@@ -13,9 +13,12 @@ MIMachineEvents.registerRecipeTypes(event => {
 })
 
 MIMachineEvents.registerCasings(event => {
-    event.registerBlockImitation(
-        'tesla',
-        'betterblockz:ironslate_blockz_23'
+    // Use a dedicated MI casing model here. Using registerBlockImitation with
+    // an Athena/KubeJS CTM block can recurse through MI's hatch model when the
+    // multiblock forms. The placed casing block itself still uses CTM.
+    event.registerNamed(
+        'betterblockz:ironslate_blockz_23',
+        'Tesla'
     )
 })
 

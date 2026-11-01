@@ -33,6 +33,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'modern_industrialization:electric_age/machine/lv_steam_turbine_asbl' })
     event.remove({ id: 'ironfurnaces:augments/augment_generator' })
     event.remove({ id: 'integrateddynamics:crafting/squeezer' })
+    event.remove({ id: 'integrateddynamics:squeezer/ore/dust_coal' })
     
     industrialForegoingGeneratorOutputs.forEach(output => {
         event.remove({ output: output })
