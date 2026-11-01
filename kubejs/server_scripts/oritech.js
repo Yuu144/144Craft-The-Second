@@ -29,14 +29,16 @@ ServerEvents.recipes(event => {
     // Foundry Alloying Machine Recipe
     event.remove({ output: 'oritech:foundry_block' })
     event.shaped('oritech:foundry_block', [
-        'AAA',
+        'EFE',
         'ABA',
         'CDC'
     ],{
         A: 'oritech:adamant_ingot',
         B: 'oritech:motor',
         C: '#c:ingots/electrum',
-        D: 'modern_industrialization:analog_circuit'
+        D: 'modern_industrialization:analog_circuit',
+        E: 'modern_industrialization:steel_machine_casing',
+        F: 'mekanism:advanced_control_circuit'
     })
 
     event.remove({ output: 'oritech:lava_generator_block' })
@@ -87,7 +89,16 @@ ServerEvents.recipes(event => {
         B: '#c:plates/steel',
         C: 'oritech:energite_ingot'
     })
-
+    
     // Processing Unit
     event.replaceInput({ id: 'oritech:assembler/processingunit' }, 'minecraft:redstone', 'modern_industrialization:diode')
+    
+    // Oritech Cores
+    event.replaceInput({ id: 'oritech:crafting/core1' }, 'minecraft:crafting_table', 'createmechanisms:wooden_mechanism')
+
+    event.remove({ id: 'oritech:crafting/core2' })
+    event.replaceInput({ id: 'oritech:crafting/core2alt' }, 'minecraft:lapis_lazuli', 'create:precision_mechanism')
+
+    event.remove({ id: 'oritech:crafting/core3alt' })
+    event.replaceInput({ id: 'oritech:crafting/core3' }, 'minecraft:redstone', 'createmechanisms:advanced_precision_mechanism')
 })
