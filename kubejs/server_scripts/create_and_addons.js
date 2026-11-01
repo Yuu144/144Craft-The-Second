@@ -176,4 +176,62 @@ ServerEvents.recipes(event => {
         ],
         processingTime: 200
     })
+
+    event.custom({
+        "type": "create:crushing",
+        "ingredients": [
+            {
+            "tag": "c:ores/tin"
+            }
+        ],
+        "results": [
+            {
+            "id": "alltheores:tin_dust"
+            }
+        ]
+    })
+
+    event.custom({
+        "type": "create:mixing",
+        "ingredients": [
+            {
+            "item": "alltheores:tin_dust"
+            },
+            {
+            "item": "alltheores:tin_dust"
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            },
+            {
+            "item": "alltheores:copper_dust",
+            }
+        ],
+        "results": [
+            {
+            "id": "alltheores:bronze_dust"
+            }
+        ]
+    })
 })
