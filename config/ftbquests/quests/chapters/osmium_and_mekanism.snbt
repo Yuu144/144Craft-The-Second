@@ -1,0 +1,130 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "osmium_and_mekanism"
+	group: "6AF4B2304F054B26"
+	id: "240AD1CEBA5947F7"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "386AF5FE69054626"
+			tasks: [{
+				count: 16L
+				id: "205BA6349D854F3B"
+				item: { count: 1, id: "mekanism:raw_osmium" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["386AF5FE69054626"]
+			id: "EA008A95C33A4FD9"
+			tasks: [{
+				count: 16L
+				id: "AFCEED027A0C49A5"
+				item: { count: 1, id: "alltheores:osmium_dust" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["EA008A95C33A4FD9"]
+			id: "F43CB25870364F12"
+			tasks: [{
+				id: "934F6C08D0BC4BA6"
+				item: { count: 1, id: "kubejs:treated_osmium" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["F43CB25870364F12"]
+			id: "47F0552A3C6149D4"
+			tasks: [{
+				id: "B0ECF59F235F4C10"
+				item: { count: 1, id: "kubejs:osmium_tetroxide_dust" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47F0552A3C6149D4"]
+			id: "B63CC6F7E7C041F8"
+			tasks: [{
+				id: "C18702FBA3E24C08"
+				item: { count: 1, id: "kubejs:purified_osmium_dust" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["B63CC6F7E7C041F8"]
+			shape: "hexagon"
+			size: 2.0d
+			id: "4B87CC918AF94CF0"
+			tasks: [{
+				id: "1A120519E99A41C7"
+				item: { count: 1, id: "alltheores:osmium_ingot" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B87CC918AF94CF0"]
+			id: "1EB34D787F654B3E"
+			tasks: [{
+				count: 8L
+				id: "DEDDC8F8B4184273"
+				item: { count: 1, id: "alltheores:bronze_ingot" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.75d
+		}
+		{
+			dependencies: ["1EB34D787F654B3E"]
+			id: "329B0BD78ADB4323"
+			tasks: [{
+				id: "4C52D45353684263"
+				item: { count: 1, id: "mekanism:metallurgic_infuser" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["329B0BD78ADB4323"]
+			id: "0F7E0C99F4A745FB"
+			tasks: [{
+				id: "82302D6315324618"
+				item: { count: 1, id: "mekanism:alloy_infused" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.75d
+		}
+		{
+			dependencies: [
+				"4B87CC918AF94CF0"
+				"0F7E0C99F4A745FB"
+			]
+			shape: "hexagon"
+			size: 2.0d
+			id: "9F718ACCE4AA4FF6"
+			tasks: [{
+				id: "D9ECB566AAB84D4B"
+				item: { count: 1, id: "mekanism:basic_control_circuit" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+	]
+}

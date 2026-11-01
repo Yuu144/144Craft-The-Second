@@ -1,0 +1,150 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steel_age"
+	group: "4B153F79CFB54CEF"
+	id: "D3A9D9FCB5DC4B1E"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "02A7DDF9D4294542"
+			tasks: [{
+				count: 32L
+				id: "D6AF252752E9413A"
+				item: { count: 1, id: "mekanism:dust_coal" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["02A7DDF9D4294542"]
+			id: "2663ADB8CA094300"
+			tasks: [{
+				count: 16L
+				id: "5DA9966DAE9C44C3"
+				item: { count: 1, id: "kubejs:pig_iron_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2663ADB8CA094300"]
+			id: "BAD6041D09C94237"
+			tasks: [{
+				id: "83D8EC89A19542BD"
+				item: { count: 1, id: "tfmg:coke_oven" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.75d
+		}
+		{
+			dependencies: ["BAD6041D09C94237"]
+			id: "0A09D4BAC20E4576"
+			tasks: [{
+				id: "D57684840BAF47F2"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["0A09D4BAC20E4576"]
+			id: "016D29BD3E2F4DDA"
+			tasks: [{
+				id: "8B5F844221904A64"
+				item: { count: 1, id: "tfmg:blast_furnace_output" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.75d
+		}
+		{
+			dependencies: [
+				"2663ADB8CA094300"
+				"016D29BD3E2F4DDA"
+			]
+			id: "F07BBB56705840E7"
+			tasks: [{
+				id: "5D1F79DF9D8D49BB"
+				type: "fluid"
+				fluid: "tfmg:molten_steel"
+				amount: 1000L
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["F07BBB56705840E7"]
+			id: "976562BFB8F549DD"
+			tasks: [{
+				id: "E413872E189A47E1"
+				item: { count: 1, id: "tfmg:casting_basin" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["976562BFB8F549DD"]
+			id: "9173BB70A3A94B8D"
+			tasks: [{
+				id: "2C6010801C364F4D"
+				item: { count: 1, id: "kubejs:unforged_steel_ingot" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["9173BB70A3A94B8D"]
+			shape: "hexagon"
+			size: 2.0d
+			id: "3FA08AD925FD43CD"
+			tasks: [{
+				count: 16L
+				id: "D837028B9DB94FD5"
+				item: { count: 1, id: "alltheores:steel_ingot" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3FA08AD925FD43CD"]
+			id: "66C71BFD56A043E2"
+			tasks: [{
+				id: "2E16E0F0261242C9"
+				item: { count: 1, id: "mekanism:steel_casing" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3FA08AD925FD43CD"]
+			id: "713A5BCD40E448A6"
+			tasks: [{
+				id: "79C4FA8B94A04B1E"
+				item: { count: 1, id: "modern_industrialization:steel_machine_casing" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3FA08AD925FD43CD"]
+			shape: "square"
+			id: "5A0E7D3E6AF9403B"
+			tasks: [{
+				id: "0194F5A75C4F4D0A"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+	]
+}

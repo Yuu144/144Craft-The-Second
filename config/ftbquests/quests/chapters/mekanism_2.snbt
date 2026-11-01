@@ -2,11 +2,12 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "mekanism_2"
-	group: ""
+	group: "222248B761F14DFB"
 	icon: {
 		id: "mekanism:creative_energy_cube"
 	}
 	id: "0EBC9B8BF95312C7"
+	images: [ ]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -39,7 +40,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["046BAEA3B5CBC781"]
 			id: "75E600FC98B65B67"
 			rewards: [
 				{
