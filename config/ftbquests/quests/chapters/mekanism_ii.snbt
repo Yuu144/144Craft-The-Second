@@ -1,0 +1,154 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism_ii"
+	group: "222248B761F14DFB"
+	id: "568F30BC4F094DA4"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0031F351FADB48FD"
+			tasks: [{
+				id: "45D1C4CFB6F246C2"
+				item: { count: 1, id: "mekanism:advanced_control_circuit" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0031F351FADB48FD"]
+			id: "866805002BD14A29"
+			tasks: [{
+				id: "16CE404724A44FAD"
+				item: { count: 1, id: "mekanism:alloy_reinforced" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["866805002BD14A29"]
+			id: "69E65629D013401F"
+			tasks: [{
+				id: "784373170CF34C77"
+				item: { count: 1, id: "mekanism:electrolytic_core" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["69E65629D013401F"]
+			id: "D1BD86ACE40C4833"
+			tasks: [{
+				id: "58917F0F895949EF"
+				item: { count: 1, id: "mekanism:electrolytic_separator" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0031F351FADB48FD"]
+			id: "EB1A0F357C654361"
+			tasks: [{
+				id: "AF2D15FD0CDB4C82"
+				item: { count: 1, id: "mekanism:pressurized_reaction_chamber" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"EB1A0F357C654361"
+				"D1BD86ACE40C4833"
+			]
+			shape: "square"
+			id: "71860826A4204386"
+			tasks: [{
+				id: "96ACEF42733B487E"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 0.25d
+		}
+		{
+			dependencies: ["71860826A4204386"]
+			shape: "hexagon"
+			size: 2.0d
+			id: "00D076076B424407"
+			tasks: [{
+				id: "9DBD8DE1CE394EEC"
+				item: { count: 1, id: "mekanism:elite_control_circuit" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.25d
+		}
+		{
+			dependencies: ["00D076076B424407"]
+			id: "776B14BC0BAE45AF"
+			tasks: [{
+				count: 2L
+				id: "088AB0F5E626498A"
+				item: { count: 1, id: "mekanism:ingot_refined_obsidian" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00D076076B424407"]
+			id: "22074097F7B54864"
+			tasks: [{
+				id: "508692524125401B"
+				item: { count: 1, id: "ae2:singularity" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["00D076076B424407"]
+			id: "BEECDD2974C74A20"
+			tasks: [{
+				id: "86F5980308C74B8A"
+				item: { count: 1, id: "oritech:overcharged_crystal" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"776B14BC0BAE45AF"
+				"22074097F7B54864"
+				"BEECDD2974C74A20"
+			]
+			shape: "hexagon"
+			size: 2.0d
+			id: "5454FEA955194D25"
+			tasks: [{
+				id: "E778CE6199DB41BF"
+				item: { count: 1, id: "mekanism:ultimate_control_circuit" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5454FEA955194D25"]
+			shape: "square"
+			id: "328A30CF39A84565"
+			tasks: [{
+				id: "389328E4AD654637"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: 0.5d
+		}
+	]
+}

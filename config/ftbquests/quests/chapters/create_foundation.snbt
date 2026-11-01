@@ -1,0 +1,220 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_foundation"
+	group: "4B153F79CFB54CEF"
+	id: "18BA841F3E85432E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "8C547A0ABF7A4032"
+			tasks: [{
+				id: "408CEC27887442FA"
+				item: { count: 1, id: "minecraft:stone_pickaxe" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8C547A0ABF7A4032"]
+			id: "3E739B05BF0043DF"
+			tasks: [{
+				count: 32L
+				id: "409574015F35444F"
+				item: { count: 1, id: "minecraft:andesite" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["8C547A0ABF7A4032"]
+			id: "92C94D8C863F4615"
+			tasks: [{
+				count: 16L
+				id: "07271AC659BB4593"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8C547A0ABF7A4032"]
+			id: "2639F212391148AB"
+			tasks: [{
+				id: "66E0611610464497"
+				item: { count: 1, id: "alltheores:zinc_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3E739B05BF0043DF"
+				"92C94D8C863F4615"
+			]
+			id: "A9084AF10C6143B0"
+			tasks: [{
+				count: 32L
+				id: "AD4CC18D586F4735"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["A9084AF10C6143B0"]
+			id: "D97DBA220B6C4FEF"
+			tasks: [{
+				id: "19141ACFA57046B7"
+				item: { count: 1, id: "create:andesite_casing" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["D97DBA220B6C4FEF"]
+			hide_dependency_lines: true
+			id: "D07CB2F3C0FF4056"
+			shape: "square"
+			tasks: [{
+				id: "4D6C7636E2BB490C"
+				item: { count: 1, id: "create:water_wheel" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["D97DBA220B6C4FEF"]
+			id: "9241B337BFCB4CC0"
+			tasks: [{
+				id: "7C40022C47334E51"
+				item: { count: 1, id: "create:mechanical_press" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["D97DBA220B6C4FEF"]
+			id: "978E50A2D0664487"
+			tasks: [{
+				id: "FB9EEA741BB940F6"
+				item: { count: 1, id: "create:deployer" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["92C94D8C863F4615"]
+			id: "D48E7B6A1F574085"
+			tasks: [{
+				count: 16L
+				id: "4CA346ADD67F4A71"
+				item: { count: 1, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"9241B337BFCB4CC0"
+				"978E50A2D0664487"
+				"D48E7B6A1F574085"
+			]
+			id: "C9A37B6667E4468E"
+			tasks: [{
+				id: "C77066570EE44377"
+				item: { count: 1, id: "createmechanisms:wooden_mechanism" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.25d
+		}
+		{
+			dependencies: [
+				"C9A37B6667E4468E"
+				"2639F212391148AB"
+			]
+			id: "CB8762804FB84962"
+			tasks: [{
+				id: "A653AA1790494B82"
+				item: { count: 1, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.25d
+		}
+		{
+			dependencies: ["D48E7B6A1F574085"]
+			id: "FFD0A3104C1044D2"
+			tasks: [{
+				id: "7ADAA359D9BC4DA3"
+				item: { count: 1, id: "create:copper_casing" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["FFD0A3104C1044D2"]
+			id: "E961496BF20C41D5"
+			tasks: [{
+				id: "5E3CEE4E7AD14C83"
+				item: { count: 1, id: "create:mechanical_mixer" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.25d
+		}
+		{
+			dependencies: ["E961496BF20C41D5"]
+			id: "C703108EA3DB4A1F"
+			tasks: [{
+				count: 16L
+				id: "E6DB02B5553440AE"
+				item: { count: 1, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["C703108EA3DB4A1F"]
+			id: "703CD48B8DB947DD"
+			tasks: [{
+				id: "A41EFD5ABC7340FD"
+				item: { count: 1, id: "create:brass_casing" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"CB8762804FB84962"
+				"703CD48B8DB947DD"
+			]
+			shape: "hexagon"
+			size: 2.0d
+			id: "5E7457450F494D99"
+			tasks: [{
+				count: 25L
+				id: "3CA2E4A6B22A4C46"
+				item: { count: 1, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.25d
+		}
+	]
+}

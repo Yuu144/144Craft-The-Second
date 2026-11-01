@@ -1,0 +1,174 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "circuit_assembler"
+	group: "6AF4B2304F054B26"
+	id: "87784EB1A0334962"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3F82635510A5454B"
+			tasks: [{
+				id: "B6802925D3144801"
+				item: { count: 1, id: "ae2:silicon" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "994983F50470413A"
+			tasks: [{
+				id: "66B47EB516A64864"
+				item: { count: 1, id: "modern_industrialization:stainless_steel_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3F82635510A5454B"]
+			id: "71EFC7E3FF9F4C57"
+			tasks: [{
+				count: 2L
+				id: "D8395F84E9EF4660"
+				item: { count: 1, id: "tfmg:capacitor_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3F82635510A5454B"]
+			id: "63F0F783F52F4CF0"
+			tasks: [{
+				count: 2L
+				id: "5E12B21371B846A1"
+				item: { count: 1, id: "tfmg:transistor_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["994983F50470413A"]
+			id: "613E927EC91F4381"
+			tasks: [{
+				count: 8L
+				id: "507B16E9E75446EF"
+				item: { count: 1, id: "kubejs:circuit_assembler_frame" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["994983F50470413A"]
+			id: "DC827C21C0B34823"
+			tasks: [{
+				count: 4L
+				id: "5010DB37DD3D4C1B"
+				item: { count: 1, id: "kubejs:circuit_assembler_casing" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["613E927EC91F4381"]
+			id: "F410ECC69DDE44A3"
+			tasks: [{
+				count: 4L
+				id: "96746E95F62C4BD6"
+				item: { count: 1, id: "modern_industrialization:cupronickel_coil" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"DC827C21C0B34823"
+				"F410ECC69DDE44A3"
+			]
+			shape: "hexagon"
+			size: 2.0d
+			id: "31BBC5A5DD1242FF"
+			tasks: [{
+				id: "F0D9B5D3D1B94976"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 1.25d
+		}
+		{
+			dependencies: [
+				"71EFC7E3FF9F4C57"
+				"31BBC5A5DD1242FF"
+			]
+			id: "73002E305B1A4493"
+			tasks: [{
+				id: "7A3160C7677E4A0E"
+				item: { count: 1, id: "mekanism:basic_control_circuit" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"73002E305B1A4493"
+				"63F0F783F52F4CF0"
+			]
+			id: "4A1A71B904714D9F"
+			tasks: [{
+				id: "144C9A5C70E94F8A"
+				item: { count: 1, id: "mekanism:advanced_control_circuit" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4A1A71B904714D9F"]
+			id: "6A1A7D0C3F094DAA"
+			tasks: [{
+				count: 3L
+				id: "79A812E10780459A"
+				item: { count: 1, id: "alltheores:electrum_ingot" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["4A1A71B904714D9F"]
+			id: "78B60FB4B4C44412"
+			tasks: [{
+				count: 3L
+				id: "347C5CFAAE7E4323"
+				item: { count: 1, id: "alltheores:signalum_ingot" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.25d
+		}
+		{
+			dependencies: [
+				"6A1A7D0C3F094DAA"
+				"78B60FB4B4C44412"
+			]
+			shape: "hexagon"
+			size: 2.0d
+			id: "5E0F3A0A0B9B4F2B"
+			tasks: [{
+				id: "23F65D3B52DA4132"
+				item: { count: 1, id: "mekanism:elite_control_circuit" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.75d
+		}
+	]
+}

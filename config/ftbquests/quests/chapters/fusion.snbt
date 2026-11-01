@@ -1,0 +1,70 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fusion"
+	group: "E9BB587060F0433A"
+	id: "EBB48339A012494E"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			id: "347D9E1D827E4ED1"
+			tasks: [{
+				id: "7034B1BB14EE4300"
+				item: { count: 1, id: "bigreactors:ridiculite_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["347D9E1D827E4ED1"]
+			id: "71B53A288C2B4A1F"
+			tasks: [{
+				count: 4L
+				id: "6C3A9E1E0A4F42A1"
+				item: { count: 1, id: "modern_industrialization:quantum_circuit" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["347D9E1D827E4ED1"]
+			id: "3A9E5A1C2B0B4E7D"
+			tasks: [{
+				id: "C0BEFCDA3F494279"
+				item: { count: 1, id: "modern_industrialization:quantum_machine_hull" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"71B53A288C2B4A1F"
+				"3A9E5A1C2B0B4E7D"
+			]
+			shape: "hexagon"
+			size: 2.0d
+			id: "67DBC0CB288B4C09"
+			tasks: [{
+				id: "79B095D2A1B14CD2"
+				item: { count: 1, id: "modern_industrialization:fusion_reactor" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67DBC0CB288B4C09"]
+			id: "8FD3FF62EA9F4550"
+			tasks: [{
+				id: "2922161D0C0A4006"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+	]
+}
