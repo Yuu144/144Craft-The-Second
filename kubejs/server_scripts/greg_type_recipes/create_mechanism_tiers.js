@@ -2,13 +2,14 @@ ServerEvents.recipes(hscraft => {
 
     //Precision Mechanism
     hscraft.remove({ id: 'create:sequenced_assembly/precision_mechanism' })
+    hscraft.remove({ id: 'create_sa:hydraulic_engine_recipe' })
 
     hscraft.custom({
         'type': 'create:sequenced_assembly',
         'ingredient': {
             'item': 'createmechanisms:wooden_mechanism'
         },
-        'loops': 3,
+        'loops': 5,
         'results': [
             {
                 'id': 'create:precision_mechanism'
@@ -148,4 +149,249 @@ ServerEvents.recipes(hscraft => {
         }
 
     })
+
+    //Fluid Mechanism
+    hscraft.custom({
+        'type': 'create:sequenced_assembly',
+        'ingredient': {
+            'item': 'createmechanisms:wooden_mechanism'
+        },
+        'loops': 2,
+        'results': [
+            {
+                'chance': 90,
+                'id': 'createmechanisms:fluid_mechanism'
+            },
+            {
+                'chance': 2,
+                'id': 'northstar:sodium_catalyst'
+            },
+            {
+                'chance': 5,
+                'id': 'create:andesite_alloy'
+            },
+            {
+                'chance': 3,
+                'id': 'alltheores:salt'
+            }
+        ],
+        'sequence': [
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:wooden_mechanism'
+                    },
+                    {
+                        'item': 'create:fluid_tank'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:wooden_mechanism'
+                    }
+                ]
+            },
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:wooden_mechanism'
+                    },
+                    {
+                        'item': 'minecraft:bucket'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:wooden_mechanism'
+                    }
+                ]
+            },
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:wooden_mechanism'
+                    },
+                    {
+                        'item': 'northstar:sodium_catalyst'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:wooden_mechanism'
+                    }
+                ]
+            }
+        ],
+        'transitional_item': {
+            'id': 'createmechanisms:void_mechanism'
+        }
+
+    })
+
+    //Hydraulic Engine
+    hscraft.custom({
+        'type': 'create:sequenced_assembly',
+        'ingredient': {
+            'item': 'createmechanisms:fluid_mechanism'
+        },
+        'loops': 3,
+        'results': [
+            {
+                'chance': 80,
+                'id': 'create_sa:hydraulic_engine'
+            },
+            {
+                'chance': 8,
+                'id': 'alltheores:copper_plate'
+            },
+            {
+                'chance': 2,
+                'id': 'createmechanisms:fluid_mechanism'
+            },
+            {
+                'chance': 4,
+                'id': 'alltheores:dirty_copper_dust'
+            },
+            {
+                'chance': 6,
+                'id': 'create:cogwheel'
+            }
+        ],
+        'sequence': [
+            
+            {
+                'type': 'create:filling',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:fluid_mechanism'
+                    },
+                    {
+                        'type': 'neoforge:single',
+                        'amount': 250,
+                        'fluid': 'modern_industrialization:plant_oil'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:fluid_mechanism'
+                    }
+                ]
+            },
+            {
+                'type': 'create:pressing',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:fluid_mechanism'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:fluid_mechanism'
+                    }
+                ]
+            },
+            {
+                'type': 'create:pressing',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:fluid_mechanism'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:fluid_mechanism'
+                    }
+                ]
+            }
+        ],
+        'transitional_item': {
+            'id': 'createmechanisms:void_mechanism'
+        }
+
+    })
+    //Hydraulic Engine (alt)
+    hscraft.custom({
+        'type': 'create:sequenced_assembly',
+        'ingredient': {
+            'item': 'createmechanisms:fluid_mechanism'
+        },
+        'loops': 3,
+        'results': [
+            {
+                'chance': 80,
+                'id': 'create_sa:hydraulic_engine'
+            },
+            {
+                'chance': 8,
+                'id': 'alltheores:copper_plate'
+            },
+            {
+                'chance': 2,
+                'id': 'createmechanisms:fluid_mechanism'
+            },
+            {
+                'chance': 4,
+                'id': 'alltheores:dirty_copper_dust'
+            },
+            {
+                'chance': 6,
+                'id': 'create:cogwheel'
+            }
+        ],
+        'sequence': [
+            
+            {
+                'type': 'create:filling',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:fluid_mechanism'
+                    },
+                    {
+                        'type': 'neoforge:single',
+                        'amount': 500,
+                        'fluid': 'modern_industrialization:raw_synthetic_oil'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:fluid_mechanism'
+                    }
+                ]
+            },
+            {
+                'type': 'create:pressing',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:fluid_mechanism'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:fluid_mechanism'
+                    }
+                ]
+            },
+            {
+                'type': 'create:pressing',
+                'ingredients': [
+                    {
+                        'item': 'createmechanisms:fluid_mechanism'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'createmechanisms:fluid_mechanism'
+                    }
+                ]
+            }
+        ],
+        'transitional_item': {
+            'id': 'createmechanisms:void_mechanism'
+        }
+
+    })
+
 })
