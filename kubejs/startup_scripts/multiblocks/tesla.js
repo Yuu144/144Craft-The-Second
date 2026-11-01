@@ -17,7 +17,7 @@ MIMachineEvents.registerCasings(event => {
     // an Athena/KubeJS CTM block can recurse through MI's hatch model when the
     // multiblock forms. The placed casing block itself still uses CTM.
     event.registerNamed(
-        'betterblockz:ironslate_blockz_23',
+        'tesla',
         'Tesla'
     )
 })
