@@ -71,14 +71,16 @@ ServerEvents.recipes(event => {
     }).id("144craft2:ae2/controller")
 
     event.shaped('ae2:inscriber', [
-        'ABA',
-        'C A',
-        'ABA'
+        'IPI',
+        'COC',
+        'SPS'
     ],{
-        A:'minecraft:iron_ingot',
-        B:'create:mechanical_press',
-        C:'minecraft:copper_ingot'
-    })
+        I:'tfmg:unfinished_insulator',
+        P:'create:mechanical_press',
+        C:'#c:ingots/copper',
+        O:'#c:ingots/osmium',
+        S:'#c:ingots/steel'
+    }).id('144craft2:ae2/inscriber')
 
     event.custom({
     
