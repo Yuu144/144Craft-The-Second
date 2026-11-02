@@ -1,6 +1,7 @@
-// /dumprecipes [itemId ...]  -> logs resolved recipes for the pack's bottleneck items
-// to logs/kubejs/server.log as JSON lines. No args = dump the default list below.
-// ponytail: server-side because recipes only resolve on the server; run in-game.
+// /dumprecipes [itemId]  -> logs resolved recipes for bottleneck items
+// to logs/kubejs/server.log. No arg = dump the default list below.
+// ponytail: raw RecipeHolder access + kjs$getId; try/catch per recipe so one
+// weird modded recipe can't kill the whole dump.
 
 const DUMP_ITEMS = [
   'kubejs:pig_iron_ingot', 'kubejs:unforged_steel_ingot', 'alltheores:steel_ingot',
@@ -16,17 +17,34 @@ const DUMP_ITEMS = [
 ServerEvents.commandRegistry(event => {
   const { commands: Commands, arguments: Arguments } = event
 
+  const stackId = s => { try { return String(s.kjs$getId()) } catch (e) { return '?' } }
+
   const dump = (player, items) => {
+    const ra = player.server.registryAccess()
+    const all = player.server.recipeManager.getRecipes()
     items.forEach(id => {
-      const recipes = player.server.recipeManager.getRecipes().filter(r =>
-        r.getOriginalRecipeResult() && String(r.getOriginalRecipeResult().getId()) === id
-      )
-      console.info(`[RECIPE_DUMP] ${id} -> ${recipes.size()} recipe(s)`)
-      recipes.forEach(r => {
-        console.info(`[RECIPE_DUMP] ${id} | ${r.getType()} | ${r.getId()} | ${r.json}`)
-      })
+      let n = 0
+      for (let i = 0; i < all.size(); i++) {
+        try {
+          const holder = all.get(i)
+          const recipe = holder.value()
+          const out = recipe.getResultItem(ra)
+          if (out.isEmpty() || stackId(out) !== id) continue
+          n++
+          let ing = ''
+          const ings = recipe.getIngredients()
+          for (let j = 0; j < ings.size(); j++) {
+            const stacks = ings.get(j).getItems()
+            let opts = ''
+            for (let k = 0; k < stacks.length; k++) opts += (k ? '|' : '') + stackId(stacks[k])
+            ing += (j ? ' + ' : '') + (opts || '-')
+          }
+          console.info(`[RECIPE_DUMP] ${id} | ${recipe.getType()} | ${holder.id()} | IN: ${ing}`)
+        } catch (e) { /* skip recipe types with no standard ingredients */ }
+      }
+      console.info(`[RECIPE_DUMP] ${id} -> ${n} recipe(s)`)
     })
-    player.tell(`Dumped ${items.length} item(s) to logs/kubejs/server.log (search RECIPE_DUMP)`)
+    player.tell(`Dumped ${items.length} item(s) - grep RECIPE_DUMP in logs/kubejs/server.log`)
   }
 
   event.register(
