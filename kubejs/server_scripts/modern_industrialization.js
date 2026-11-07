@@ -59,4 +59,34 @@ ServerEvents.recipes(event => {
             },
         ]
     })
+
+    event.custom({
+        "type": "create:crushing",
+        "ingredients": [
+            {
+            "item": "minecraft:dripstone_block"
+            }
+        ],
+        "results": [
+            {
+            "id": "modern_industrialization:manganese_dust"
+            },
+            {
+            "id": "modern_industrialization:manganese_dust"
+            }
+        ]
+    })
+
+    event.custom({
+        type: "mekanism:crushing",
+        input: {
+            count: 1,
+            item: "minecraft:dripstone_block"
+        },
+        output: {
+            count: 2,
+            item: "modern_industrialization:manganese_dust"
+        },
+        per_tick_usage: false
+    })
 })
