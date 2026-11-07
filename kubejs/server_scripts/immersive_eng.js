@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    // *INDUSTRIAL FOREGOING (ICH HASSE DICH PAUL), (GET A JOB), (BITCH ASS)
 
     event.remove({ output: 'industrialforegoing:machine_frame_pity' })
     event.remove({ output: 'industrialforegoing:dissolution_chamber' })
@@ -6,13 +7,15 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'industrialforegoing:laser_drill' })
 
     event.shaped('industrialforegoing:machine_frame_pity', [
-        'ABA',
+        'AEA',
         'BCB',
-        'ABA'
+        'ADA'
     ], {
         A: '#minecraft:logs',
-        B: 'minecraft:iron_ingot',
-        C: 'create:railway_casing'
+        B: 'minecraft:copper_block',
+        C: 'create:railway_casing',
+        D: 'minecraft:iron_block',
+        E: 'createmechanisms:wooden_mechanism'
     })
 
     event.shaped('industrialforegoing:dissolution_chamber', [
@@ -22,7 +25,7 @@ ServerEvents.recipes(event => {
     ], {
         A: '#c:plastics',
         B: 'create:precision_mechanism',
-        C: 'minecraft:bucket',
+        C: 'alltheores:electrum_plate',
         D: 'industrialforegoing:machine_frame_pity',
         E: 'create:brass_ingot',
         F: '#c:gears/diamond'
@@ -132,5 +135,165 @@ ServerEvents.recipes(event => {
             id: 'industrialforegoing:machine_frame_advanced'
         },
         processingTime: 300
+    })
+
+    event.remove({ output: 'industrialforegoing:speed_addon_tier_1' })
+    event.custom({
+        type: 'industrialforegoing:dissolution_chamber',
+        input: [
+            {
+                item: 'minecraft:redstone_block'
+            },
+            {
+                item: 'createmechanisms:physics_mechanism'
+            },
+            {
+                item: 'minecraft:copper_block'
+            },
+            {
+                item: 'modern_industrialization:steel_large_plate'
+            },
+            {
+                item: 'alltheores:electrum_gear'
+            },
+            {
+                item: 'alltheores:constantan_gear'
+            },
+            {
+                item: 'modern_industrialization:steel_upgrade'
+            },
+            {
+                item: 'addictives:caffeine'
+            }
+        ],
+        inputFluid: {
+            amount: 1000,
+            fluid: 'industrialforegoing:latex'
+        },
+        output: {
+            count: 1,
+            id: 'industrialforegoing:speed_addon_tier_1'
+        },
+        processingTime: 200
+    })
+
+    event.remove({ output: 'industrialforegoing:speed_addon_tier_2' })
+    event.custom({
+        type: 'industrialforegoing:dissolution_chamber',
+        input: [
+            {
+                item: 'minecraft:redstone_block'
+            },
+            {
+                item: 'minecraft:copper_block'
+            },
+            {
+                item: 'modern_industrialization:invar_large_plate'
+            },
+            {
+                item: 'modern_industrialization:invar_large_plate'
+            },
+            {
+                item: 'alltheores:electrum_gear'
+            },
+            {
+                item: 'alltheores:constantan_gear'
+            },
+            {
+                item: 'industrialforegoing:speed_addon_tier_1'
+            },
+            {
+                item: 'addictives:caffeine'
+            }
+        ],
+        inputFluid: {
+            amount: 1000,
+            fluid: 'industrialforegoing:latex'
+        },
+        output: {
+            count: 1,
+            id: 'industrialforegoing:speed_addon_tier_2'
+        },
+        processingTime: 200
+    })
+
+    event.remove({ output: 'industrialforegoing:processing_addon_tier_1' })
+    event.custom({
+        type: 'industrialforegoing:dissolution_chamber',
+        input: [
+            {
+                item: 'minecraft:redstone_block'
+            },
+            {
+                item: 'createmechanisms:physics_mechanism'
+            },
+            {
+                item: 'minecraft:copper_block'
+            },
+            {
+                item: 'modern_industrialization:aluminum_large_plate'
+            },
+            {
+                item: 'alltheores:electrum_gear'
+            },
+            {
+                item: 'alltheores:constantan_gear'
+            },
+            {
+                item: 'modern_industrialization:steel_upgrade'
+            },
+            {
+                item: 'addictives:unstable_mix'
+            }
+        ],
+        inputFluid: {
+            amount: 1000,
+            fluid: 'industrialforegoing:latex'
+        },
+        output: {
+            count: 1,
+            id: 'industrialforegoing:processing_addon_tier_1'
+        },
+        processingTime: 200
+    })
+
+    event.remove({ output: 'industrialforegoing:processing_addon_tier_2' })
+    event.custom({
+        type: 'industrialforegoing:dissolution_chamber',
+        input: [
+            {
+                item: 'minecraft:redstone_block'
+            },
+            {
+                item: 'minecraft:copper_block'
+            },
+            {
+                item: 'modern_industrialization:invar_large_plate'
+            },
+            {
+                item: 'modern_industrialization:invar_large_plate'
+            },
+            {
+                item: 'alltheores:electrum_gear'
+            },
+            {
+                item: 'alltheores:constantan_gear'
+            },
+            {
+                item: 'industrialforegoing:processing_addon_tier_1'
+            },
+            {
+                item: 'addictives:unstable_mix'
+            }
+        ],
+        inputFluid: {
+            amount: 1000,
+            fluid: 'industrialforegoing:latex'
+        },
+        output: {
+            count: 1,
+            id: 'industrialforegoing:processing_addon_tier_2'
+        },
+        processingTime: 200
     })
 })

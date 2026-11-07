@@ -1,4 +1,30 @@
 ServerEvents.recipes(event => {
+    // Machines that use steam
+    event.remove({ output: 'extended_industrialization:steel_alloy_smelter' })
+    event.remove({ type: 'extended_industrialization:steel_alloy_smelter' })
+
+    // Forge Hammer
+    event.remove({ id: 'modern_industrialization:forge_hammer' })
+    event.remove({ id: 'modern_industrialization:vanilla_recipes/steel_forge_hammer_asbl' })
+
+    event.custom({
+        type: 'create:compacting',
+        ingredients: [
+            { item: 'minecraft:diamond' },
+            { item: 'minecraft:diamond' },
+            { item: 'minecraft:diamond' },
+            { item: 'minecraft:diamond' },
+            { item: 'modern_industrialization:iron_large_plate' },
+            { item: 'modern_industrialization:iron_large_plate' },
+            { item: 'minecraft:iron_block' },
+            { item: 'minecraft:iron_block' },
+            { item: 'minecraft:iron_block' }
+        ],
+        results: [
+            { id: 'modern_industrialization:forge_hammer', count: 1 }
+        ]
+    })
+
     event.remove({ id: 'modern_industrialization:electric_age/component/implosion_compressor/singularity' })
 
     event.remove({ id: 'modern_industrialization:materials/coal/forge_hammer/ore_to_dust_with_tool' })
@@ -38,24 +64,24 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'create:kjs/mekanism_dust_coal_mekanism_dust_coal' })
 
     event.custom({
-        "type": "create:crushing",
-        "ingredients": [
+        type: "create:crushing",
+        ingredients: [
             {
-            "item": "minecraft:coal"
+                item: "minecraft:coal"
             }
         ],
-        "processing_time": 150,
-        "results": [
+        processing_time: 150,
+        results: [
             {
-            "id": "mekanism:dust_coal"
+                id: "mekanism:dust_coal"
             },
             {
-            "chance": 0.5,
-            "id": "mekanism:dust_coal"
+                chance: 0.5,
+                id: "mekanism:dust_coal"
             },
             {
-            "chance": 0.5,
-            "id": "modern_industrialization:carbon_dust"
+                chance: 0.5,
+                id: "modern_industrialization:carbon_dust"
             },
         ]
     })
@@ -89,4 +115,8 @@ ServerEvents.recipes(event => {
         },
         per_tick_usage: false
     })
+    // Bronze Ingot
+    event.remove({ id: 'modern_industrialization:alloy/mixer/bronze/dust' })
+    event.remove({ id: 'modern_industrialization:alloy/mixer/bronze/tiny_dust' })
+    event.remove({ id: 'modern_industrialization:materials/bronze_tiny_dust' })
 })
