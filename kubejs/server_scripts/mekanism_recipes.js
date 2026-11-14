@@ -292,7 +292,7 @@ ServerEvents.recipes(event => {
                 ]
             },
             {
-                "type": "northstar:engraving",
+                "type": "create:pressing", // NORTHSTAR-FIX: War davor northstar:engraving. Alternative suchen
                 "ingredients": [
                     {
                         "item": "mekanism:supercharged_coil"
