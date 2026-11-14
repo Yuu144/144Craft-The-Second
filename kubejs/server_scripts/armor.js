@@ -91,39 +91,3 @@ ServerEvents.tags('item', event => {
     event.add('c:armor/dragonsteel_leggings', 'iceandfire:dragonsteel_lightning_leggings')
     event.add('c:armor/dragonsteel_boots', 'iceandfire:dragonsteel_lightning_boots')
 })
-
-ServerEvents.recipes(event => {
-    event.remove({ output: 'crystal_chronicles:prismatic_knight_helmet' })
-    event.remove({ output: 'crystal_chronicles:prismatic_knight_chestplate' })
-    event.remove({ output: 'crystal_chronicles:prismatic_knight_leggings' })
-    event.remove({ output: 'crystal_chronicles:prismatic_knight_boots' })
-
-    event.smithing(
-        'crystal_chronicles:prismatic_knight_helmet',
-        'irons_spellbooks:arcane_rune',
-        '#c:armor/dragonsteel_helmet',
-        'irons_spellbooks:divine_soulshard'
-    ).id('144craft2:armor/minecraft/smithing/crystal_chronicles/prismatic_knight_helmet')
-
-    event.smithing(
-        'crystal_chronicles:prismatic_knight_chestplate',
-        'irons_spellbooks:arcane_rune',
-        '#c:armor/dragonsteel_chestplate',
-        'irons_spellbooks:divine_soulshard'
-    ).id('144craft2:armor/minecraft/smithing/crystal_chronicles/prismatic_knight_chestplate')
-
-    event.smithing(
-        'crystal_chronicles:prismatic_knight_leggings',
-        'irons_spellbooks:arcane_rune',
-        '#c:armor/dragonsteel_leggings',
-        'irons_spellbooks:divine_soulshard'
-    ).id('144craft2:armor/minecraft/smithing/crystal_chronicles/prismatic_knight_leggings')
-
-    event.smithing(
-        'crystal_chronicles:prismatic_knight_boots',
-        'irons_spellbooks:arcane_rune',
-        '#c:armor/dragonsteel_boots',
-        'irons_spellbooks:divine_soulshard'
-    ).id('144craft2:armor/minecraft/smithing/crystal_chronicles/prismatic_knight_boots')
-
-})
