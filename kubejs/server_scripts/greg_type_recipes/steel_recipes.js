@@ -124,9 +124,9 @@ ServerEvents.recipes(event => {
         ]
     }).id('144craft2:greg_type_recipes/steel_recipes/tfmg/casting/kubejs/unforged_steel_ingot')
 
-    // Steel Ingot (Output changed to AllTheOres Steel Ingot)
+    // Steel Ingot: Hydraulic Press + Basin (AllTheOres output)
     event.custom({
-        type: 'create:pressing',
+        type: 'dndesires:hydraulic_compacting',
         ingredients: [{ item: 'kubejs:unforged_steel_ingot' }],
         results: [{ id: 'alltheores:steel_ingot', count: 1 }]
     }).id('144craft2:greg_type_recipes/steel_recipes/create/pressing/alltheores/steel_ingot')

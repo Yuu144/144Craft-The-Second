@@ -164,7 +164,7 @@ ServerEvents.recipes(hscraft => {
             },
             {
                 'chance': 2,
-                'id': 'northstar:sodium_catalyst'
+                'id': 'minecraft:dirt' // NORTHSTART-FIX: War davor Sodium Catalyst. Alternative suchen
             },
             {
                 'chance': 5,
@@ -215,7 +215,7 @@ ServerEvents.recipes(hscraft => {
                         'item': 'createmechanisms:wooden_mechanism'
                     },
                     {
-                        'item': 'northstar:sodium_catalyst'
+                        'item': 'minecraft:dirt' // NORTHSTART-FIX: War davor Sodium Catalyst. Alternative suchen
                     }
                 ],
                 'results': [
