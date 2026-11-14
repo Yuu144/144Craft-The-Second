@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         '#alltheores:ore_hammers',
         '#c:raw_materials/osmium',
         '#c:raw_materials/osmium'
-    ]).damageIngredient('#alltheores:ore_hammers')
+    ]).damageIngredient('#alltheores:ore_hammers').id('144craft2:greg_type_recipes/osmium_recipes/minecraft/shapeless/alltheores/osmium_dust')
 
     // Raw Osmium -> ATO Osmium Dust
     event.custom({
@@ -29,9 +29,9 @@ ServerEvents.recipes(event => {
             { id: 'alltheores:osmium_dust', chance: 0.3, count: 1 }
         ],
         processingTime: 200
-    })
+    }).id('144craft2:greg_type_recipes/osmium_recipes/create/crushing/alltheores/osmium_dust')
 
-    // Osmium Dust + Oritech Sulfuric Acid -> Acid-Treated Osmium
+    // Osmium Dust + Kerosene -> Acid-Treated Osmium
     event.custom({
         type: 'create:mixing',
         heat_requirement: 'heated',
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         results: [
             { id: 'kubejs:treated_osmium', count: 1 }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/osmium_recipes/create/mixing/kubejs/treated_osmium')
 
     // Step 3 (Early Oxidation): Acid-Treated Osmium + Glowstone (Oxidizer) -> Osmium Tetroxide Powder
     event.custom({
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         results: [
             { id: 'kubejs:osmium_tetroxide_dust', count: 1 }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/osmium_recipes/create/mixing/kubejs/osmium_tetroxide_dust')
 
     // Step 4 (Early Reduction): Osmium Tetroxide Powder + 2x Coal Dust (Carbon Reduction) -> Purified Osmium Dust
     event.custom({
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         results: [
             { id: 'kubejs:purified_osmium_dust', count: 1 }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/osmium_recipes/create/mixing/kubejs/purified_osmium_dust')
 
     // Step 3 (Late Oxidation): Acid-Treated Osmium + Water + Oxygen -> 2x Osmium Tetroxide Powder
     event.custom({
@@ -83,11 +83,11 @@ ServerEvents.recipes(event => {
             item: 'kubejs:treated_osmium'
         },
         fluid_input: {
-            amount: 500,
+            amount: 1000,
             fluid: 'minecraft:water'
         },
         chemical_input: {
-            amount: 100,
+            amount: 400,
             chemical: 'mekanism:oxygen'
         },
         duration: 80,
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
             count: 2, // 2x Output!
             id: 'kubejs:osmium_tetroxide_dust'
         }
-    })
+    }).id('144craft2:osmium/late_oxidation')
 
     // Step 4 (Late Reduction): Osmium Tetroxide Powder + Water + Hydrogen -> 2x Purified Osmium Dust
     event.custom({
@@ -117,9 +117,9 @@ ServerEvents.recipes(event => {
             count: 2, // 2x Output!
             id: 'kubejs:purified_osmium_dust'
         }
-    })
+    }).id('144craft2:greg_type_recipes/osmium_recipes/mekanism/reaction/kubejs/purified_osmium_dust')
 
     // Only the chemically purified dust can be smelted into the actual usable ingot.
-    event.smelting('alltheores:osmium_ingot', 'kubejs:purified_osmium_dust')
-    event.blasting('alltheores:osmium_ingot', 'kubejs:purified_osmium_dust')
+    event.smelting('alltheores:osmium_ingot', 'kubejs:purified_osmium_dust').id('144craft2:greg_type_recipes/osmium_recipes/minecraft/smelting/alltheores/osmium_ingot')
+    event.blasting('alltheores:osmium_ingot', 'kubejs:purified_osmium_dust').id('144craft2:greg_type_recipes/osmium_recipes/minecraft/blasting/alltheores/osmium_ingot')
 })

@@ -1,0 +1,20 @@
+ServerEvents.recipes(e => {
+    RemoveOutput(
+        e,
+        [
+            'create:vertical_gearbox',
+            'create:wrench',
+            'create:crushing_wheel',
+            'create:fluid_tank',
+            'create:transmitter',
+            'create:electron_tube',
+            'create:brown_toolbox'
+        ]
+    )
+    RemoveId(
+        e,
+        [
+            'alltheores:crafting/brass/alloy_blending_from_dust'
+        ]
+    )
+})

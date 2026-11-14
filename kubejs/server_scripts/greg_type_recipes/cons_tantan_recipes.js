@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
                 id: 'alltheores:molten_constantan' 
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/cons_tantan_recipes/create/mixing/alltheores/molten_constantan')
 
     //Cons Tan Tan Ingot
     event.custom({
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
         results: [
             { id: 'alltheores:constantan_ingot' }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/cons_tantan_recipes/tfmg/casting/alltheores/constantan_ingot')
 
     //Molten Copper T1
     event.custom({
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:furnace_gas'
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/cons_tantan_recipes/tfmg/industrial_blasting/alltheores/molten_copper')
 
     //Molten Nickel T1
     event.custom({
@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:furnace_gas'
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/cons_tantan_recipes/tfmg/industrial_blasting/alltheores/molten_nickel')
 
     //Molten Copper T2
     event.custom({
@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:molten_slag'
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/cons_tantan_recipes/tfmg/vat_machine_recipe/tfmg/coal_coke_dust/from/minecraft/copper_ingot')
 
     //Molten Nickel T2
     event.custom({
@@ -172,5 +172,5 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:molten_slag'
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/cons_tantan_recipes/tfmg/vat_machine_recipe/tfmg/coal_coke_dust/from/alltheores/nickel_ingot')
 })

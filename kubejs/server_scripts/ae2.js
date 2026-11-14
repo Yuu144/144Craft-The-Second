@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
         ],
             "time": 10000
 
-    })
+    }).id('144craft2:ae2/oritech/particle_collision/ae2/singularity')
 
     event.custom({
 
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
             { id: 'ae2:matter_ball', count: 8 }
         ]
 
-    })
+    }).id('144craft2:ae2/create/pressing/ae2/matter_ball')
 
     event.shaped('extendedae:void_cell', [
         'ABA',
@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
         C:'ae2:void_card',
         D:'ae2:cell_component_16k',
         E:'minecraft:amethyst_shard'
-    })
+    }).id('144craft2:ae2/minecraft/shaped/extendedae/void_cell')
 
     event.shaped('advanced_ae:reaction_chamber', [
         'ABA',
@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
         C:'ae2:vibration_chamber',
         D:'minecraft:glowstone',
         E:'minecraft:bucket'
-    })
+    }).id('144craft2:ae2/minecraft/shaped/advanced_ae/reaction_chamber')
 
     event.replaceInput({ id: 'ae2:network/wireless_booster' }, 'minecraft:iron_ingot', 'modern_industrialization:tungsten_large_plate')
 })

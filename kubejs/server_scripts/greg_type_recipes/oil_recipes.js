@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
                 fluid: "modern_industrialization:sulfuric_light_fuel"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/oil_recipes/modern_industrialization/distillery/modern_industrialization/sulfuric_light_fuel')
 
     event.custom({
         type: "modern_industrialization:distillery",
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
                 fluid: "modern_industrialization:sulfuric_heavy_fuel"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/oil_recipes/modern_industrialization/distillery/modern_industrialization/sulfuric_heavy_fuel')
 
     event.custom({
         type: "modern_industrialization:distillery",
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
                 fluid: "modern_industrialization:sulfuric_naphtha"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/oil_recipes/modern_industrialization/distillery/modern_industrialization/sulfuric_naphtha')
 
     event.custom({
         type: "modern_industrialization:distillation_tower",
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
                 fluid: "modern_industrialization:sulfuric_naphtha"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/oil_recipes/modern_industrialization/distillation_tower/modern_industrialization/sulfuric_light_fuel')
 
     event.remove({ id: 'tfmg:hot_blast/hot_air' })
     event.custom({
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
                 id: "tfmg:carbon_dioxide"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/oil_recipes/tfmg/hot_blast/tfmg/hot_air')
 
     event.remove({ id: 'tfmg:filling/hardened_planks' })
     event.custom({
@@ -132,5 +132,5 @@ ServerEvents.recipes(event => {
                 id: "tfmg:hardened_planks"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/oil_recipes/create/filling/tfmg/hardened_planks')
 })

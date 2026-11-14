@@ -8,5 +8,5 @@ ServerEvents.recipes(event => {
         "fluid_input": { "amount": 50, "fluid": "modern_industrialization:polyethylene" },
         "item_input": { "count": 1, "item": "mekanism:substrate" },
         "item_output": { "count": 1, "id": "mekanism:hdpe_pellet" }
-    })
+    }).id('144craft2:greg_type_recipes/hdpe_pellets/mekanism/reaction/mekanism/hdpe_pellet')
 })

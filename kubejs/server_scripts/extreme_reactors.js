@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
                 "id": "kubejs:ctl"
             }
         ]
-    }).heated()
+    }).heated().id('144craft2:extreme_reactors/create/mixing/kubejs/ctl')
 
     event.custom({
         type: 'dndesires:hydraulic_compacting',
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
         results: [
             { id: 'bigreactors:graphite_ingot', count: 4 }
         ]
-    })
+    }).id('144craft2:extreme_reactors/dndesires/hydraulic_compacting/bigreactors/graphite_ingot')
 
     event.shaped('bigreactors:reprocessorcontroller', [
         'AEA',
@@ -40,6 +40,6 @@ ServerEvents.recipes(event => {
         C: 'create:precision_mechanism',
         D: 'create:railway_casing',
         E: 'minecraft:comparator'
-    })
+    }).id('144craft2:extreme_reactors/minecraft/shaped/bigreactors/reprocessorcontroller')
 
 })

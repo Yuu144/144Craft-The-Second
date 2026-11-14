@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         B: 'extendedae:concurrent_processor',
         C: 'ae2:quartz_glass',
         D: 'ae2:cell_component_16k'
-    })
+    }).id('144craft2:greg_type_recipes/ae2_processors/minecraft/shaped/ae2/cell_component_64k')
 
     event.shaped('ae2:cell_component_256k', [
         'ABA',
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         B: 'extendedae:concurrent_processor',
         C: 'ae2:quartz_glass',
         D: 'ae2:cell_component_64k'
-    })
+    }).id('144craft2:greg_type_recipes/ae2_processors/minecraft/shaped/ae2/cell_component_256k')
 
     event.shaped('extendedae:crystal_assembler', [
         'AFA',
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
         D: 'ae2:sky_stone_tank',
         E: '#ae2:glass_cable',
         F: 'ae2:crafting_terminal'
-    })
+    }).id('144craft2:greg_type_recipes/ae2_processors/minecraft/shaped/extendedae/crystal_assembler')
 
     event.remove({ id: 'extendedae:inscriber/concurrent_process' })
     event.custom({
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
                 item: "extendedae:concurrent_processor"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/ae2_processors/modern_industrialization/circuit_assembler/extendedae/concurrent_processor')
 
     event.remove({ id: 'megacells:inscriber/accumulation_processor' })
     event.remove({ id: 'extendedae:assembler/accumulation_processor' })
@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
                 item: "megacells:accumulation_processor"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/ae2_processors/modern_industrialization/circuit_assembler/megacells/accumulation_processor')
 
     event.replaceInput({ 
         id: 'megacells:cells/cell_component_4m' }, 

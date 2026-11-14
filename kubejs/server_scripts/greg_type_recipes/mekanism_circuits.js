@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
             id: "mekanism:alloy_infused"
         },
         per_tick_usage: false
-    })
+    }).id('144craft2:greg_type_recipes/mekanism_circuits/mekanism/metallurgic_infusing/mekanism/alloy_infused')
 
     event.custom({
         type: "oritech:foundry",
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
             }
         ],
         time: 80
-    })
+    }).id('144craft2:greg_type_recipes/mekanism_circuits/oritech/foundry/mekanism/alloy_infused')
 
     event.remove({ output: 'mekanism:basic_control_circuit' })
     event.custom({
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
                 item: "mekanism:basic_control_circuit"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/mekanism_circuits/modern_industrialization/circuit_assembler/mekanism/basic_control_circuit')
 
     event.remove({ output: 'mekanism:advanced_control_circuit' })
     event.custom({
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
                 item: "mekanism:advanced_control_circuit"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/mekanism_circuits/modern_industrialization/circuit_assembler/mekanism/advanced_control_circuit')
 
     event.remove({ output: 'mekanism:elite_control_circuit' })
     event.custom({
@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
                 item: "mekanism:elite_control_circuit"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/mekanism_circuits/modern_industrialization/circuit_assembler/mekanism/elite_control_circuit')
 
     event.remove({ output: 'mekanism:ultimate_control_circuit' })
     event.custom({
@@ -185,5 +185,5 @@ ServerEvents.recipes(event => {
                 item: "mekanism:ultimate_control_circuit"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/mekanism_circuits/modern_industrialization/circuit_assembler/mekanism/ultimate_control_circuit')
 })

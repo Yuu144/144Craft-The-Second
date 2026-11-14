@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         C: 'create:railway_casing',
         D: 'minecraft:iron_block',
         E: 'createmechanisms:wooden_mechanism'
-    })
+    }).id('144craft2:immersive_eng/minecraft/shaped/industrialforegoing/machine_frame_pity')
 
     event.shaped('industrialforegoing:dissolution_chamber', [
         'ABA',
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         D: 'industrialforegoing:machine_frame_pity',
         E: 'create:brass_ingot',
         F: '#c:gears/diamond'
-    })
+    }).id('144craft2:immersive_eng/minecraft/shaped/industrialforegoing/dissolution_chamber')
 
     event.shaped('industrialforegoing:ore_laser_base', [
         'ABA',
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         D: 'industrialforegoing:machine_frame_advanced',
         E: 'alltheores:netherite_gear',
         F: 'minecraft:redstone'
-    })
+    }).id('144craft2:immersive_eng/minecraft/shaped/industrialforegoing/ore_laser_base')
 
     event.shaped('industrialforegoing:laser_drill', [
         'ABA',
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         D: 'industrialforegoing:machine_frame_simple',
         E: '#c:gears/enderium',
         F: 'mekanism:elite_control_circuit'
-    })
+    }).id('144craft2:immersive_eng/minecraft/shaped/industrialforegoing/laser_drill')
 
     event.remove({ output: 'industrialforegoing:machine_frame_simple' })
     event.custom({
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
             id: 'industrialforegoing:machine_frame_simple'
         },
         processingTime: 300
-    })
+    }).id('144craft2:immersive_eng/industrialforegoing/dissolution_chamber/industrialforegoing/machine_frame_simple')
 
     event.remove({ output: 'industrialforegoing:machine_frame_advanced' })
     event.custom({
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
             id: 'industrialforegoing:machine_frame_advanced'
         },
         processingTime: 300
-    })
+    }).id('144craft2:immersive_eng/industrialforegoing/dissolution_chamber/industrialforegoing/machine_frame_advanced')
 
     event.remove({ output: 'industrialforegoing:speed_addon_tier_1' })
     event.custom({
@@ -151,19 +151,19 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:copper_block'
             },
             {
-                item: 'modern_industrialization:steel_large_plate'
+                item: 'alltheores:constantan_gear'
             },
             {
                 item: 'alltheores:electrum_gear'
             },
             {
-                item: 'alltheores:constantan_gear'
-            },
-            {
-                item: 'modern_industrialization:steel_upgrade'
+                item: 'modern_industrialization:steel_large_plate'
             },
             {
                 item: 'addictives:caffeine'
+            },
+            {
+                item: 'modern_industrialization:steel_upgrade'
             }
         ],
         inputFluid: {
@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
             id: 'industrialforegoing:speed_addon_tier_1'
         },
         processingTime: 200
-    })
+    }).id('144craft2:immersive_eng/industrialforegoing/dissolution_chamber/industrialforegoing/speed_addon_tier_1')
 
     event.remove({ output: 'industrialforegoing:speed_addon_tier_2' })
     event.custom({
@@ -183,6 +183,9 @@ ServerEvents.recipes(event => {
         input: [
             {
                 item: 'minecraft:redstone_block'
+            },
+            {
+                item: 'industrialforegoing:speed_addon_tier_1'
             },
             {
                 item: 'minecraft:copper_block'
@@ -197,13 +200,10 @@ ServerEvents.recipes(event => {
                 item: 'alltheores:electrum_gear'
             },
             {
-                item: 'alltheores:constantan_gear'
-            },
-            {
-                item: 'industrialforegoing:speed_addon_tier_1'
-            },
-            {
                 item: 'addictives:caffeine'
+            },
+            {
+                item: 'alltheores:constantan_gear'
             }
         ],
         inputFluid: {
@@ -215,7 +215,7 @@ ServerEvents.recipes(event => {
             id: 'industrialforegoing:speed_addon_tier_2'
         },
         processingTime: 200
-    })
+    }).id('144craft2:immersive_eng/industrialforegoing/dissolution_chamber/industrialforegoing/speed_addon_tier_2')
 
     event.remove({ output: 'industrialforegoing:processing_addon_tier_1' })
     event.custom({
@@ -231,19 +231,19 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:copper_block'
             },
             {
-                item: 'modern_industrialization:aluminum_large_plate'
-            },
-            {
                 item: 'alltheores:electrum_gear'
             },
             {
                 item: 'alltheores:constantan_gear'
             },
             {
-                item: 'modern_industrialization:steel_upgrade'
+                item: 'modern_industrialization:aluminum_large_plate'
             },
             {
                 item: 'addictives:unstable_mix'
+            },
+            {
+                item: 'modern_industrialization:steel_upgrade'
             }
         ],
         inputFluid: {
@@ -255,7 +255,7 @@ ServerEvents.recipes(event => {
             id: 'industrialforegoing:processing_addon_tier_1'
         },
         processingTime: 200
-    })
+    }).id('144craft2:immersive_eng/industrialforegoing/dissolution_chamber/industrialforegoing/processing_addon_tier_1')
 
     event.remove({ output: 'industrialforegoing:processing_addon_tier_2' })
     event.custom({
@@ -263,6 +263,9 @@ ServerEvents.recipes(event => {
         input: [
             {
                 item: 'minecraft:redstone_block'
+            },
+            {
+                item: 'industrialforegoing:processing_addon_tier_1'
             },
             {
                 item: 'minecraft:copper_block'
@@ -277,13 +280,10 @@ ServerEvents.recipes(event => {
                 item: 'alltheores:electrum_gear'
             },
             {
-                item: 'alltheores:constantan_gear'
-            },
-            {
-                item: 'industrialforegoing:processing_addon_tier_1'
-            },
-            {
                 item: 'addictives:unstable_mix'
+            },
+            {
+                item: 'alltheores:constantan_gear'
             }
         ],
         inputFluid: {
@@ -295,5 +295,5 @@ ServerEvents.recipes(event => {
             id: 'industrialforegoing:processing_addon_tier_2'
         },
         processingTime: 200
-    })
+    }).id('144craft2:immersive_eng/industrialforegoing/dissolution_chamber/industrialforegoing/processing_addon_tier_2')
 })

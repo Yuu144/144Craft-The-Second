@@ -24,6 +24,6 @@ ServerEvents.recipes(event => {
         ],
             "time": 15000
 
-    })
+    }).id('144craft2:144craft_scripts/144craft_recipe/oritech/particle_collision/kubejs/144_ium')
 
 })

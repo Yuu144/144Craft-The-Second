@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
                 item: "kubejs:energized_superconducting_titanium_larp_alloy"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/elon_recipes/modern_industrialization/tesla/kubejs/energized_superconducting_titanium_larp_alloy')
 
     //Infinity Range Booster
         event.custom({
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
                 item: "aeinfinitybooster:infinity_card"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/elon_recipes/modern_industrialization/tesla/aeinfinitybooster/infinity_card')
 
         //Dimension Card
         event.custom({
@@ -89,5 +89,5 @@ ServerEvents.recipes(event => {
                 item: "aeinfinitybooster:dimension_card"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/elon_recipes/modern_industrialization/tesla/aeinfinitybooster/dimension_card')
 })

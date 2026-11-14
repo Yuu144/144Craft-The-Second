@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         results: [
             { id: 'modern_industrialization:forge_hammer', count: 1 }
         ]
-    })
+    }).id('144craft2:modern_industrialization/create/compacting/modern_industrialization/forge_hammer')
 
     event.remove({ id: 'modern_industrialization:electric_age/component/implosion_compressor/singularity' })
 
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
                 id: "modern_industrialization:carbon_dust"
             },
         ]
-    })
+    }).id('144craft2:modern_industrialization/create/crushing/mekanism/dust_coal')
 
     event.custom({
         "type": "create:crushing",
@@ -98,10 +98,11 @@ ServerEvents.recipes(event => {
             "id": "modern_industrialization:manganese_dust"
             },
             {
-            "id": "modern_industrialization:manganese_dust"
+            "id": "modern_industrialization:manganese_dust",
+            "chance": 0.5
             }
         ]
-    })
+    }).id('144craft2:create/crushing/dripstone_to_manganese_dust')
 
     event.custom({
         type: "mekanism:crushing",
@@ -111,12 +112,25 @@ ServerEvents.recipes(event => {
         },
         output: {
             count: 2,
-            item: "modern_industrialization:manganese_dust"
+            id: "modern_industrialization:manganese_dust"
         },
         per_tick_usage: false
-    })
+    }).id('144craft2:mekanism/crushing/dripstone_to_manganese_dust')
+    
     // Bronze Ingot
     event.remove({ id: 'modern_industrialization:alloy/mixer/bronze/dust' })
     event.remove({ id: 'modern_industrialization:alloy/mixer/bronze/tiny_dust' })
     event.remove({ id: 'modern_industrialization:materials/bronze_tiny_dust' })
+
+    // Nano Items
+    event.remove({ id: 'extended_industrializatio:nano_quantum_saber' })
+    event.remove({ id: 'extended_industrializatio:nano_saber' })
+    event.remove({ id: 'extended_industrializatio:nano_helmet' })
+    event.remove({ id: 'extended_industrializatio:nano_chestplate' })
+    event.remove({ id: 'extended_industrializatio:nano_leggings' })
+    event.remove({ id: 'extended_industrializatio:nano_boots' })
+    event.remove({ id: 'extended_industrializatio:nano_quantum_helmet' })
+    event.remove({ id: 'extended_industrializatio:nano_quantum_chestplate' })
+    event.remove({ id: 'extended_industrializatio:nano_quantum_leggings' })
+    event.remove({ id: 'extended_industrializatio:nano_quantum_boots' })
 })

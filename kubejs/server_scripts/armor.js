@@ -103,27 +103,27 @@ ServerEvents.recipes(event => {
         'irons_spellbooks:arcane_rune',
         '#c:armor/dragonsteel_helmet',
         'irons_spellbooks:divine_soulshard'
-    )
+    ).id('144craft2:armor/minecraft/smithing/crystal_chronicles/prismatic_knight_helmet')
 
     event.smithing(
         'crystal_chronicles:prismatic_knight_chestplate',
         'irons_spellbooks:arcane_rune',
         '#c:armor/dragonsteel_chestplate',
         'irons_spellbooks:divine_soulshard'
-    )
+    ).id('144craft2:armor/minecraft/smithing/crystal_chronicles/prismatic_knight_chestplate')
 
     event.smithing(
         'crystal_chronicles:prismatic_knight_leggings',
         'irons_spellbooks:arcane_rune',
         '#c:armor/dragonsteel_leggings',
         'irons_spellbooks:divine_soulshard'
-    )
+    ).id('144craft2:armor/minecraft/smithing/crystal_chronicles/prismatic_knight_leggings')
 
     event.smithing(
         'crystal_chronicles:prismatic_knight_boots',
         'irons_spellbooks:arcane_rune',
         '#c:armor/dragonsteel_boots',
         'irons_spellbooks:divine_soulshard'
-    )
+    ).id('144craft2:armor/minecraft/smithing/crystal_chronicles/prismatic_knight_boots')
 
 })

@@ -69,7 +69,7 @@ ServerEvents.recipes(hscraft => {
             'id': 'create:incomplete_precision_mechanism'
         }
 
-    })
+    }).id('144craft2:greg_type_recipes/create_mechanism_tiers/create/sequenced_assembly/create/precision_mechanism')
 
     //Wooden Mechanism
     hscraft.shaped('createmechanisms:wooden_mechanism', [
@@ -80,7 +80,7 @@ ServerEvents.recipes(hscraft => {
         A: 'create:andesite_alloy',
         B: '#minecraft:planks',
         C: 'create:cogwheel'
-    })  
+    }).id('144craft2:greg_type_recipes/create_mechanism_tiers/minecraft/shaped/createmechanisms/wooden_mechanism')  
 
     //Computing Mechanism
     hscraft.custom({
@@ -148,7 +148,7 @@ ServerEvents.recipes(hscraft => {
             'id': 'createmechanisms:void_mechanism'
         }
 
-    })
+    }).id('144craft2:greg_type_recipes/create_mechanism_tiers/create/sequenced_assembly/createmechanisms/computing_mechanism')
 
     //Fluid Mechanism
     hscraft.custom({
@@ -229,7 +229,7 @@ ServerEvents.recipes(hscraft => {
             'id': 'createmechanisms:void_mechanism'
         }
 
-    })
+    }).id('144craft2:greg_type_recipes/create_mechanism_tiers/create/sequenced_assembly/createmechanisms/fluid_mechanism')
 
     //Hydraulic Engine
     hscraft.custom({
@@ -311,7 +311,7 @@ ServerEvents.recipes(hscraft => {
             'id': 'createmechanisms:void_mechanism'
         }
 
-    })
+    }).id('144craft2:greg_type_recipes/create_mechanism_tiers/create/sequenced_assembly/create_sa/hydraulic_engine/from/createmechanisms/fluid_mechanism/using/modern_industrialization/plant_oil')
     //Hydraulic Engine (alt)
     hscraft.custom({
         'type': 'create:sequenced_assembly',
@@ -392,6 +392,6 @@ ServerEvents.recipes(hscraft => {
             'id': 'createmechanisms:void_mechanism'
         }
 
-    })
+    }).id('144craft2:greg_type_recipes/create_mechanism_tiers/create/sequenced_assembly/create_sa/hydraulic_engine/from/createmechanisms/fluid_mechanism/using/modern_industrialization/raw_synthetic_oil')
 
 })

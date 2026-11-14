@@ -10,5 +10,5 @@ ServerEvents.recipes(event => {
         C: 'industrialization_overdrive:vajra',
         D: 'justdirethings:upgrade_blank',
         E: 'mekanism:atomic_disassembler'
-    })
+    }).id('144craft2:just_dire_things/minecraft/shaped/justdirethings/upgrade_instabreak')
 })

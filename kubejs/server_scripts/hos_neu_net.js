@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         C: 'minecraft:ender_pearl',
         D: 'industrialforegoing:machine_frame_advanced',
         E: '#c:glass_panes'
-    })
+    }).id('144craft2:hos_neu_net/minecraft/shaped/hostilenetworks/sim_chamber')
 
     event.shaped('hostilenetworks:loot_fabricator', [
         'AEA',
@@ -25,6 +25,6 @@ ServerEvents.recipes(event => {
         C: 'minecraft:gold_ingot',
         D: 'industrialforegoing:machine_frame_advanced',
         E: 'minecraft:netherite_ingot'
-    })
+    }).id('144craft2:hos_neu_net/minecraft/shaped/hostilenetworks/loot_fabricator')
 
 })
