@@ -298,7 +298,6 @@ ServerEvents.recipes(event => {
                         "item": "mekanism:supercharged_coil"
                     }
                 ],
-                "processing_time": 200,
                 "results": [
                     {
                         "id": "mekanism:supercharged_coil"
