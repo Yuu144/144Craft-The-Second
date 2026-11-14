@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         C: 'alltheores:osmium_ingot',
         D: 'create_sa:hydraulic_engine',
         E: 'tfmg:steel_casing'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanism/metallurgic_infuser')
 
     event.shaped('mekanismgenerators:heat_generator', [
         'AFA',
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         D: '#c:ingots/osmium',
         E: '#c:ingots/steel',
         F: 'mekanism:alloy_infused'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanismgenerators/heat_generator')
 
     event.shaped('mekanismgenerators:wind_generator', [
         ' A ',
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         C: 'mekanism:energy_tablet',
         D: 'mekanism:basic_control_circuit',
         E: 'tfmg:steel_casing'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanismgenerators/wind_generator')
 
     event.shaped('mekanismgenerators:bio_generator', [
         'ABA',
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         C: '#c:fuels/bio',
         D: 'mekanism:basic_control_circuit',
         E: 'tfmg:steel_casing'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanismgenerators/bio_generator')
 
     event.shaped('mekanismgenerators:gas_burning_generator', [
         'ABA',
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         C: 'mekanismgenerators:bio_generator',
         D: 'mekanism:electrolytic_core',
         E: 'mekanism:steel_casing'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanismgenerators/gas_burning_generator')
 
     event.custom({
         "type": "create:sequenced_assembly",
@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
             "id": "mekanism:alloy_reinforced"
         }
 
-    })
+    }).id('144craft2:mekanism_recipes/create/sequenced_assembly/mekanism/electrolytic_core')
 
     event.shaped('bfr:fusion_reactor_controller', [
         'ABA',
@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
         B: 'tfmg:circuit_board',
         C: 'bfr:fusion_reactor_frame',
         D: 'mekanism:ultimate_chemical_tank'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/bfr/fusion_reactor_controller')
 
     event.shaped('mekanism:digital_miner', [
         'ABA',
@@ -164,7 +164,7 @@ ServerEvents.recipes(event => {
         D: 'mekanism:robit',
         E: 'cataclysm:lava_power_cell',
         F: 'allthecompressed:steel_block_1x'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanism/digital_miner')
 
     event.shaped('mekanism:crusher', [
         'ABA',
@@ -176,7 +176,7 @@ ServerEvents.recipes(event => {
         C: 'create:crushing_wheel',
         D: 'tfmg:steel_casing',
         E: '#c:plates/electrum'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanism/crusher')
 
     event.custom({
         type: 'create:compacting',
@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
         results: [
             { id: 'mekanism:steel_casing', count: 1 }
         ]
-    })
+    }).id('144craft2:mekanism_recipes/create/compacting/mekanism/steel_casing')
 
     event.shaped('mekanismgenerators:fission_fuel_assembly', [
         'ABA',
@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
         A: '#forge:ingots/lead',
         B: '#forge:ingots/steel',
         C: 'bigreactors:blutonium_block'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanismgenerators/fission_fuel_assembly')
 
     event.custom({
 
@@ -309,7 +309,7 @@ ServerEvents.recipes(event => {
         "transitional_item": {
             "id": "mekanism:supercharged_coil"
         }
-    })
+    }).id('144craft2:mekanism_recipes/create/sequenced_assembly/mekanism/supercharged_coil')
 
     // Heavy Water -> Deuterium / Oxygen
     event.remove({ id: 'mekanismgenerators:rotary/deuterium' })
@@ -320,7 +320,7 @@ ServerEvents.recipes(event => {
         "input": { "amount": 2, "fluid": "modern_industrialization:high_pressure_heavy_water" },
         "left_chemical_output": { "amount": 2, "id": "mekanismgenerators:deuterium" },
         "right_chemical_output": { "amount": 1, "id": "mekanism:oxygen" }
-    })
+    }).id('144craft2:mekanism_recipes/mekanism/separating/mekanismgenerators/deuterium')
 
     event.remove({ output: 'mekanism:pressurized_reaction_chamber' })
     event.shaped('mekanism:pressurized_reaction_chamber', [
@@ -334,7 +334,7 @@ ServerEvents.recipes(event => {
         D: 'modern_industrialization:turbo_machine_casing',
         E: 'modern_industrialization:blastproof_alloy_plate',
         F: 'modern_industrialization:digital_circuit'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanism/pressurized_reaction_chamber')
 
     event.remove({ id: 'mekanism:upgrade/speed' })
     event.remove({ id: 'mekanism:upgrade/energy' })
@@ -357,7 +357,7 @@ ServerEvents.recipes(event => {
         results: [
             { id: 'tfmg:lithium_ingot' }
         ]
-    })
+    }).id('144craft2:mekanism_recipes/tfmg/casting/tfmg/lithium_ingot')
 
     event.shaped('tfmg:lithium_ingot', [
         'AAA',
@@ -365,7 +365,7 @@ ServerEvents.recipes(event => {
         'AAA'
     ], {
         A: 'tfmg:lithium_nugget'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/tfmg/lithium_ingot')
 
     event.shaped('mekanism:upgrade_speed', [
         'CBC',
@@ -375,7 +375,7 @@ ServerEvents.recipes(event => {
         B: 'alltheores:aluminum_plate',
         A: 'tfmg:lithium_charge',
         C: 'mekanism:alloy_infused'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanism/upgrade_speed')
 
     event.shaped('mekanism:upgrade_energy', [
         'CBC',
@@ -385,6 +385,6 @@ ServerEvents.recipes(event => {
         A: 'tfmg:lithium_nugget',
         B: 'alltheores:gold_plate',
         C: 'mekanism:alloy_infused'
-    })
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanism/upgrade_energy')
 
 })

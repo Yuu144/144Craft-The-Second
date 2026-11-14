@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         A: 'bigreactors:ridiculite_block',
         B: 'modern_industrialization:quantum_circuit',
         C: 'modern_industrialization:quantum_machine_hull'
-    })
+    }).id('144craft2:greg_type_recipes/mi_fusion_reactor/minecraft/shaped/modern_industrialization/fusion_reactor')
 
     event.remove({ id: 'modern_industrialization:electric_age/hull/highly_advanced_machine_hull_asbl' })
     event.shaped('modern_industrialization:highly_advanced_machine_hull', [
@@ -21,5 +21,5 @@ ServerEvents.recipes(event => {
         C: 'modern_industrialization:highly_advanced_machine_casing',
         D: 'modern_industrialization:annealed_copper_cable',
         E: 'mekanism:ultimate_control_circuit'
-    })
+    }).id('144craft2:greg_type_recipes/mi_fusion_reactor/minecraft/shaped/modern_industrialization/highly_advanced_machine_hull')
 })

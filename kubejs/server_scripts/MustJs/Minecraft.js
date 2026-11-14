@@ -1,0 +1,271 @@
+/**
+ * Creates a Minecraft smelting recipe.
+ *
+ * @param {Object} e - The recipe event object.
+ * @param {Object|string} output - The recipe output item.
+ *                         Use helper functions like `itemOutput()`.
+ * @param {Object} input - The recipe input ingredient.
+ *                         Use helper functions such as `itemInput()` or `itemInputTag()`.
+ * @param {number} experience - The amount of experience granted when the recipe is completed.
+ * @param {number} time - The cooking time in ticks.
+ *
+ * @example:
+ * smelting(
+ *     e,
+ *     itemOutput("minecraft:iron_ingot"),
+ *     itemInput("minecraft:raw_iron"),
+ *     0.7,
+ *     200
+ * )
+ * - Smelts raw iron into an iron ingot.
+ * - 200 ticks correspond to 10 seconds.
+ */
+function smelting(e, output, input, experience, time) {
+    e.custom({
+        "type": "minecraft:smelting",
+        "ingredient": input,
+        "result": output,
+        "experience": experience,
+        "cookingtime": time
+    })
+}
+
+/**
+ * Creates a Minecraft blasting recipe.
+ *
+ * @param {Object} e - The recipe event object.
+ * @param {Object|string} output - The recipe output item.
+ *                         Use helper functions like `itemOutput()`.
+ * @param {Object} input - The recipe input ingredient.
+ *                         Use helper functions such as `itemInput()` or `itemInputTag()`.
+ * @param {number} experience - The amount of experience granted when the recipe is completed.
+ * @param {number} time - The cooking time in ticks.
+ *
+ * @example:
+ * blasting(
+ *     e,
+ *     itemOutput("minecraft:iron_ingot"),
+ *     itemInput("minecraft:raw_iron"),
+ *     0.7,
+ *     100
+ * )
+ * - Blasts raw iron into an iron ingot.
+ * - 100 ticks correspond to 5 seconds.
+ */
+function blasting(e, output, input, experience, time) {
+    e.custom({
+        "type": "minecraft:blasting",
+        "ingredient": input,
+        "result": output,
+        "experience": experience,
+        "cookingtime": time
+    })
+}
+
+/**
+ * Creates a Minecraft smoking recipe.
+ *
+ * @param {Object} e - The recipe event object.
+ * @param {Object|string} output - The recipe output item.
+ *                         Use helper functions like `itemOutput()`.
+ * @param {Object} input - The recipe input ingredient.
+ *                         Use helper functions such as `itemInput()` or `itemInputTag()`.
+ * @param {number} experience - The amount of experience granted when the recipe is completed.
+ * @param {number} time - The cooking time in ticks.
+ *
+ * @example:
+ * smoking(
+ *     e,
+ *     itemOutput("minecraft:cooked_beef"),
+ *     itemInput("minecraft:beef"),
+ *     0.35,
+ *     100
+ * )
+ * - Cooks beef into cooked beef using a smoker.
+ * - 100 ticks correspond to 5 seconds.
+ */
+function smoking(e, output, input, experience, time) {
+    e.custom({
+        "type": "minecraft:smoking",
+        "ingredient": input,
+        "result": output,
+        "experience": experience,
+        "cookingtime": time
+    })
+}
+
+/**
+ * Creates a Minecraft shaped crafting recipe.
+ *
+ * @param {Object} e - The recipe event object.
+ * @param {Object|string} output - The recipe output item.
+ *                         Use helper functions like `itemOutput()`.
+ * @param {Object} input - Object containing the ingredients assigned to each pattern key.
+ *                         Use helper functions such as `itemInputKey()` or `itemInputTagKey()`.
+ * @param {Array<string>} pattern - Array of strings representing the crafting pattern.
+ *
+ * @example:
+ * shaped(
+ *     e,
+ *     itemOutput("minecraft:iron_pickaxe"),
+ *     Object.assign(
+ *         {},
+ *         itemInputKey('A', 'minecraft:iron_ingot'),
+ *         itemInputTagKey('B', 'c:rods/wooden'),
+ *     ),
+ *     [
+ *         "AAA",
+ *         " B ",
+ *         " B "
+ *     ]
+ * )
+ * - Creates a shaped crafting recipe using the specified pattern and ingredients.
+ * - Each character in the pattern corresponds to a key defined in the input object.
+ * - itemInputKey() assigns a specific item to a pattern key.
+ * - itemInputTagKey() assigns an item tag to a pattern key.
+ */
+function shaped(e, output, input, pattern) {
+    e.custom({
+        "type": "minecraft:crafting_shaped",
+        "pattern": pattern,
+        "key": input,
+        "result": output
+    })
+}
+
+/**
+ * Creates a Minecraft shapeless crafting recipe.
+ *
+ * @param {Object} e - The recipe event object.
+ * @param {Object|string} output - The recipe output item.
+ *                         Use helper functions like `itemOutput()`.
+ * @param {Array<Object>} input - Array containing the recipe ingredients.
+ *                         Use helper functions such as `itemInput()` or `itemInputTag()`.
+ *                         All items must be wrapped inside an array [].
+ *
+ * @example:
+ * shapeless(
+ *     e,
+ *     itemOutput("minecraft:stick"),
+ *     [
+ *         itemInput("minecraft:planks"),
+ *         itemInput("minecraft:planks")
+ *     ]
+ * )
+ * - Creates a shapeless crafting recipe using the specified ingredients.
+ * - The order of the ingredients does not matter.
+ */
+function shapeless(e, output, input) {
+    e.custom({
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": input,
+        "result": output
+    })
+}
+
+/**
+ * Creates a Minecraft stonecutting recipe.
+ *
+ * @param {Object} e - The recipe event object.
+ * @param {Object|string} output - The recipe output item.
+ *                         Use helper functions like `itemOutput()`.
+ * @param {Object} input - The recipe input ingredient.
+ *                         Use helper functions such as `itemInput()` or `itemInputTag()`.
+ *
+ * @example:
+ * stonecutting(
+ *     e,
+ *     itemOutput("minecraft:stone_slab"),
+ *     itemInput("minecraft:stone")
+ * )
+ * - Cuts the specified input item into the output item using a stonecutter.
+ */
+function stonecutting(e, output, input) {
+    e.custom({
+        "type": "minecraft:stonecutting",
+        "ingredient": input,
+        "result": output
+    })
+}
+
+/**
+ * Creates a Minecraft smithing transformation recipe.
+ *
+ * @param {Object} e - The recipe event object.
+ * @param {Object|string} output - The recipe output item.
+ *                         Use helper functions like `itemOutput()`.
+ * @param {Object} template - The smithing template ingredient.
+ *                         Use helper functions such as `itemInput()`.
+ * @param {Object} base - The base item ingredient.
+ *                         Use helper functions such as `itemInput()`.
+ * @param {Object} addition - The additional ingredient.
+ *                         Use helper functions such as `itemInput()`.
+ *
+ * @example:
+ * smithing(
+ *     e,
+ *     itemOutput("minecraft:netherite_sword"),
+ *     itemInput("minecraft:netherite_upgrade_smithing_template"),
+ *     itemInput("minecraft:diamond_sword"),
+ *     itemInput("minecraft:netherite_ingot")
+ * )
+ * - Transforms the base item using the specified smithing template and addition.
+ */
+function smithing(e, output, template, base, addition) {
+    e.custom({
+        "type": "minecraft:smithing_transform",
+        "template": template,
+        "base": base,
+        "addition": addition,
+        "result": output
+    })
+}
+
+/**
+ * Adds items to a Minecraft item tag.
+ *
+ * @param {Object} e - The recipe event object.
+ * @param {string} tagName - The identifier of the item tag to modify.
+ * @param {Array<string>} itens - Array of item identifiers to add to the tag.
+ *
+ * @example:
+ * addTag(
+ *     e,
+ *     "c:ingots/iron",
+ *     [
+ *         "minecraft:iron_ingot",
+ *         "examplemod:iron_ingot"
+ *     ]
+ * )
+ * - Adds the specified items to the given item tag.
+ * - Creates the tag if it does not already exist.
+ */
+function addTag(e, tagName, itens) {
+    e.add(tagName, itens);
+}
+
+/**
+ * Creates two shapeless crafting recipes that allow two items to be
+ * converted into each other.
+ *
+ * @param {Object} e - The recipe event object.
+ * @param {Object|string} item_a - The first item.
+ * @param {Object|string} item_b - The second item.
+ *
+ * @example:
+ * alternate(
+ *     e,
+ *     'minecraft:iron_ingot',
+ *     'minecraft:iron_nugget'
+ * )
+ *
+ * * Creates a shapeless recipe that converts item_a into item_b.
+ * * Creates a shapeless recipe that converts item_b into item_a.
+ * * Each recipe requires only one input item.
+ * * The conversion works in both directions, allowing the two items
+ * to be used as alternatives to each other.
+ */
+function alternate(e, item_a, item_b) {
+    shapeless(e, itemOutput(item_a), [itemInput(item_b)]);
+    shapeless(e, itemOutput(item_b), [itemInput(item_a)]);
+}

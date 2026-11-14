@@ -11,5 +11,5 @@ ServerEvents.recipes(event => {
         B: 'apothic_enchanting:endshelf',
         C: 'draconicevolution:draconium_ingot',
         D: 'minecraft:ender_pearl'
-    })
+    }).id('144craft2:apotheosis/minecraft/shaped/apothic_enchanting/draconic_endshelf')
 })

@@ -39,5 +39,5 @@ ServerEvents.recipes(event => {
                 "id": "fluxnetworks:flux_core"
             }
         ]
-    })
+    }).id('144craft2:flux/dndesires/hydraulic_compacting/fluxnetworks/flux_core')
 })

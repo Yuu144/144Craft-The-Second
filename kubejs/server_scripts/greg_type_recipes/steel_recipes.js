@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
             { id: 'tfmg:coal_coke_dust', count: 1 }
         ],
         processingTime: 250
-    })
+    }).id('144craft2:greg_type_recipes/steel_recipes/create/crushing/tfmg/coal_coke_dust')
 
     // Coal Dust
     event.custom({
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
             { id: 'mekanism:dust_coal', chance: 0.5, count: 1 }
         ],
         processingTime: 250
-    })
+    }).id('144craft2:greg_type_recipes/steel_recipes/create/crushing/mekanism/dust_coal')
 
     // Pig Iron Ingot
     event.custom({
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
             { tag: 'c:dusts/coal' }
         ],
         results: [{ id: 'kubejs:pig_iron_ingot', count: 1 }]
-    })
+    }).id('144craft2:greg_type_recipes/steel_recipes/create/mixing/kubejs/pig_iron_ingot')
 
     // Molten Steel
     event.custom({
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:furnace_gas'
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/steel_recipes/tfmg/industrial_blasting/tfmg/molten_steel')
 
     // Molten Steel Tier II
     event.custom({
@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:molten_slag'
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/steel_recipes/tfmg/vat_machine_recipe/tfmg/coal_coke_dust')
 
     // Unforged Steel Ingot
     event.custom({
@@ -122,14 +122,14 @@ ServerEvents.recipes(event => {
         results: [
             { id: 'kubejs:unforged_steel_ingot' }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/steel_recipes/tfmg/casting/kubejs/unforged_steel_ingot')
 
     // Steel Ingot (Output changed to AllTheOres Steel Ingot)
     event.custom({
         type: 'create:pressing',
         ingredients: [{ item: 'kubejs:unforged_steel_ingot' }],
         results: [{ id: 'alltheores:steel_ingot', count: 1 }]
-    })
+    }).id('144craft2:greg_type_recipes/steel_recipes/create/pressing/alltheores/steel_ingot')
 
     event.custom({
         type: 'mekanism:reaction',
@@ -150,10 +150,10 @@ ServerEvents.recipes(event => {
             count: 2,
             id: 'mekanism:dust_steel'
         }
-    })
+    }).id('144craft2:greg_type_recipes/steel_recipes/mekanism/reaction/mekanism/dust_steel')
 
-    event.smelting('alltheores:steel_ingot', 'mekanism:dust_steel')
-    event.blasting('alltheores:steel_ingot', 'mekanism:dust_steel')
+    event.smelting('alltheores:steel_ingot', 'mekanism:dust_steel').id('144craft2:greg_type_recipes/steel_recipes/minecraft/smelting/alltheores/steel_ingot')
+    event.blasting('alltheores:steel_ingot', 'mekanism:dust_steel').id('144craft2:greg_type_recipes/steel_recipes/minecraft/blasting/alltheores/steel_ingot')
 
     event.remove({ id: 'modern_industrialization:steam_age/steel/machine_casing_asbl' })
     event.shaped('modern_industrialization:steel_machine_casing', [
@@ -163,5 +163,5 @@ ServerEvents.recipes(event => {
     ], {
         A: 'alltheores:steel_plate',
         B: 'mekanism:steel_casing'
-    })
+    }).id('144craft2:greg_type_recipes/steel_recipes/minecraft/shaped/modern_industrialization/steel_machine_casing')
 })

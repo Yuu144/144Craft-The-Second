@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
                 "item": "modern_industrialization:superconductor_dust"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/superconductor/modern_industrialization/mixer/modern_industrialization/superconductor_dust')
 
     event.custom({
         "type": "modern_industrialization:mixer",
@@ -62,5 +62,5 @@ ServerEvents.recipes(event => {
                 "item": "modern_industrialization:superconductor_tiny_dust"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/superconductor/modern_industrialization/mixer/modern_industrialization/superconductor_tiny_dust')
 })

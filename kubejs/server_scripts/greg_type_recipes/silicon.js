@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:liquid_silicon'
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/silicon/tfmg/vat_machine_recipe/tfmg/liquid_silicon')
 
     event.custom({
         type: 'tfmg:casting',
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         results: [
             { id: 'ae2:silicon' }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/silicon/tfmg/casting/ae2/silicon')
 
     event.custom({
         "type": "create:mixing",
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
                 "id": "tfmg:p_semiconductor"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/silicon/create/mixing/tfmg/p_semiconductor')
 
     event.custom({
         "type": "create:mixing",
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
                 "id": "tfmg:n_semiconductor"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/silicon/create/mixing/tfmg/n_semiconductor')
 
     event.custom({
         "type": "create:mixing",
@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
                 "id": "tfmg:magnetic_alloy_ingot"
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/silicon/create/mixing/tfmg/magnetic_alloy_ingot')
 
     event.custom({
         "type": "minecraft:crafting_shaped",
@@ -140,6 +140,6 @@ ServerEvents.recipes(event => {
             "count": 4,
             "id": "tfmg:segmented_display"
         }
-    })
+    }).id('144craft2:greg_type_recipes/silicon/minecraft/crafting_shaped/tfmg/segmented_display')
 })
 

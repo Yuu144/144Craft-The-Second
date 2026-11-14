@@ -11,5 +11,5 @@ ServerEvents.recipes(event => {
         D: 'industrialforegoing:machine_frame_simple',
         E: 'oritech:motor',
         F: 'minecraft:netherite_block'
-    })  
+    }).id('144craft2:builder/minecraft/shaped/rftoolsbuilder/builder')  
 })

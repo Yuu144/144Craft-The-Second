@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
             "id": "tfmg:limesand"
             }
         ]
-    })
+    }).id('144craft2:create_and_addons/create/crushing/tfmg/limesand')
 
     event.shaped('dndesires:hydraulic_press', [
         ' A ',
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         A: 'create_sa:hydraulic_engine',
         B: 'create:mechanical_press',
         C: 'allthecompressed:copper_block_1x'
-    })
+    }).id('144craft2:create_and_addons/minecraft/shaped/dndesires/hydraulic_press')
 
     event.shaped('create:windmill_bearing', [
         ' A ',
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         A: '#minecraft:wooden_slabs',
         B: 'create:andesite_casing',
         C: 'create:shaft'
-    })
+    }).id('144craft2:create_and_addons/minecraft/shaped/create/windmill_bearing')
 
     event.custom({
         'type': 'create:sequenced_assembly',
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
             'id': 'create:andesite_casing'
         }
 
-    })
+    }).id('144craft2:create_and_addons/create/sequenced_assembly/create/copper_casing')
 
     event.custom({
         'type': 'create:sequenced_assembly',
@@ -165,7 +165,7 @@ ServerEvents.recipes(event => {
             'id': 'create:brass_casing'
         }
 
-    })
+    }).id('144craft2:create_and_addons/create/sequenced_assembly/create/railway_casing')
 
     event.custom({
         type: 'create:splashing',
@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
             { id: 'alltheores:nickel_nugget', chance: 0.08, count: 1 }
         ],
         processingTime: 200
-    })
+    }).id('144craft2:create_and_addons/create/splashing/alltheores/zinc_nugget')
 
     event.custom({
         "type": "create:crushing",
@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
             "id": "alltheores:tin_dust"
             }
         ]
-    })
+    }).id('144craft2:create_and_addons/create/crushing/alltheores/tin_dust')
 
     event.custom({
         "type": "create:mixing",
@@ -233,5 +233,5 @@ ServerEvents.recipes(event => {
             "id": "alltheores:bronze_dust"
             }
         ]
-    })
+    }).id('144craft2:create_and_addons/create/mixing/alltheores/bronze_dust')
 })

@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
                 id: 'alltheores:molten_electrum'
             }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/electrum_recipes/tfmg/vat_machine_recipe/tfmg/coal_coke_dust')
 
     // Cast one ingot from the molten alloy.
     event.custom({
@@ -50,5 +50,5 @@ ServerEvents.recipes(event => {
         results: [
             { id: 'alltheores:electrum_ingot' }
         ]
-    })
+    }).id('144craft2:greg_type_recipes/electrum_recipes/tfmg/casting/alltheores/electrum_ingot')
 })
