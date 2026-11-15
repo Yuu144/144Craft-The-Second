@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "structures": true,
+  "trees": true,
+  "waterFeatures": true,
+  "distantTerrain": "SMOOTH",
+  "extendedDistanceChunks": 0,
+  "extendedDistance": false,
+  "realTerrainRadiusChunks": 128,
+  "shareSeedWithClients": true,
+  "serverGeneration": true,
+  "serverSeeds": {},
+  "realTerrain": false,
+  "defaultsFrom": 8
+}
