@@ -119,6 +119,8 @@ ServerEvents.recipes(e => {
             deployingS(itemOutput(trans_fluid), itemInput(trans_fluid), itemInput('create:fluid_pipe'), false),
             deployingS(itemOutput(trans_fluid), itemInput(trans_fluid), itemInput('create:fluid_tank'), false),
             deployingS(itemOutput(trans_fluid), itemInput(trans_fluid), itemInput('createmechanisms:cured_rubber'), false),
+            deployingS(itemOutput(trans_fluid), itemInput(trans_fluid), itemInput('alltheores:bronze_gear'), false),
+            deployingS(itemOutput(trans_fluid), itemInput(trans_fluid), itemInput('modern_industrialization:bronze_curved_plate'), false),
             pressingS(itemOutput(trans_fluid), itemInput(trans_fluid)),
             pressingS(itemOutput(trans_fluid), itemInput(trans_fluid))
         ]

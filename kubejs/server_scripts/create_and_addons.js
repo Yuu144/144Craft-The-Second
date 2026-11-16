@@ -20,13 +20,16 @@ ServerEvents.recipes(event => {
     }).id('144craft2:create_and_addons/create/crushing/tfmg/limesand')
 
     event.shaped('dndesires:hydraulic_press', [
-        ' A ',
-        ' B ',
-        ' C '
+        'GAG',
+        'PBP',
+        'bCb'
     ], {
         A: 'create_sa:hydraulic_engine',
         B: 'create:mechanical_press',
-        C: 'allthecompressed:copper_block_1x'
+        C: 'allthecompressed:copper_block_1x',
+        G: 'alltheores:bronze_gear',
+        P: 'alltheores:bronze_plate',
+        b: 'modern_industrialization:bronze_bolt'
     }).id('144craft2:create_and_addons/minecraft/shaped/dndesires/hydraulic_press')
 
     event.shaped('create:windmill_bearing', [
