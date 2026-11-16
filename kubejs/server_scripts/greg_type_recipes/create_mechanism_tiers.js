@@ -63,6 +63,16 @@ ServerEvents.recipes(hscraft => {
                         'id': 'createmechanisms:wooden_mechanism'
                     }
                 ]
+            },
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    { 'item': 'create:incomplete_precision_mechanism' },
+                    { 'item': 'alltheores:bronze_plate' }
+                ],
+                'results': [
+                    { 'id': 'createmechanisms:wooden_mechanism' }
+                ]
             }
         ],
         'transitional_item': {
@@ -222,6 +232,26 @@ ServerEvents.recipes(hscraft => {
                     {
                         'id': 'createmechanisms:wooden_mechanism'
                     }
+                ]
+            },
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    { 'item': 'createmechanisms:wooden_mechanism' },
+                    { 'item': 'alltheores:bronze_gear' }
+                ],
+                'results': [
+                    { 'id': 'createmechanisms:wooden_mechanism' }
+                ]
+            },
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    { 'item': 'createmechanisms:wooden_mechanism' },
+                    { 'item': 'modern_industrialization:bronze_curved_plate' }
+                ],
+                'results': [
+                    { 'id': 'createmechanisms:wooden_mechanism' }
                 ]
             }
         ],
