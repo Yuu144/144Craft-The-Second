@@ -263,7 +263,7 @@
     "mountains": {
       "weight": 2.5,
       "baseScale": 1.2286501,
-      "verticalScale": 1.8549128,
+      "verticalScale": 2.3549128,
       "horizontalScale": 2.194674
     },
     "volcano": {
@@ -275,11 +275,11 @@
     "plateau": {
       "weight": 1.7998164,
       "baseScale": 1.3480257,
-      "verticalScale": 2.2038567,
+      "verticalScale": 2.6038567,
       "horizontalScale": 1
     },
     "badlands": {
-      "weight": 1,
+      "weight": 2.0,
       "baseScale": 1.3884298,
       "verticalScale": 1.9742883,
       "horizontalScale": 1
@@ -297,13 +297,13 @@
       "horizontalScale": 1
     },
     "dales": {
-      "weight": 1.6988063,
+      "weight": 2.6988063,
       "baseScale": 1,
       "verticalScale": 0.77134985,
-      "horizontalScale": 1
+      "horizontalScale": 2
     },
     "general": {
-      "globalVerticalScale": 0.98,
+      "globalVerticalScale": 1.2,
       "globalHorizontalScale": 2.0,
       "fancyMountains": true,
       "terrainSeedOffset": 0,
