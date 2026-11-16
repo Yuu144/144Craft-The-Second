@@ -186,14 +186,14 @@ ServerEvents.recipes(e => {
         itemOutput('create:fluid_tank'),
         Object.assign(
             {},
-            itemInputTagKey("A", 'c:plates/copper'),
+            itemInputKey("A", 'alltheores:bronze_plate'),
             itemInputTagKey("B", 'c:glass_blocks'),
             itemInputKey("C", 'create:copper_casing')
         ),
         [
-            " A ",
+            "ABA",
             "BCB",
-            " A "
+            "ABA"
         ]
     )
     //Item Draim Recipe:
