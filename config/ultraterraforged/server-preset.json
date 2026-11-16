@@ -279,7 +279,7 @@
       "horizontalScale": 1
     },
     "badlands": {
-      "weight": 1,
+      "weight": 2.0,
       "baseScale": 1.3884298,
       "verticalScale": 1.9742883,
       "horizontalScale": 1
