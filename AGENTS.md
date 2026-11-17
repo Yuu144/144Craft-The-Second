@@ -9,6 +9,7 @@
 - Use `PROGRESSION.canvas` only for in-game progression and recipe changes. Keep workflow instructions, documentation preferences, and commit style in this Markdown file.
 - Keep comments in KubeJS files very simple, such as just the item name.
 - Keep Git/GitHub commit messages very simple and short.
+- Keep progression canvas text simple and match the existing cards: item names, short labels such as `MAKE WITH`, `NEEDS`, and `POWER`, and brief arrows. Avoid long explanations and repeated text.
 
 ## Remote server access
 
