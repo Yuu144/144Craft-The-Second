@@ -18,17 +18,17 @@ ServerEvents.recipes(event => {
             { 
                 type: 'neoforge:single',
                 fluid: 'alltheores:molten_copper', 
-                amount: 250 
+                amount: 90 
             },
-                        { 
+            { 
                 type: 'neoforge:single',
                 fluid: 'alltheores:molten_nickel', 
-                amount: 250 
+                amount: 90 
             }
         ],
         results: [
             {  
-                amount: 250,  
+                amount: 180,  
                 id: 'alltheores:molten_constantan' 
             }
         ]
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         ingredients: [
             {
                 type: 'neoforge:single',
-                amount: 250,
+                amount: 90,
                 fluid: 'alltheores:molten_constantan'
             }
         ],
@@ -65,11 +65,11 @@ ServerEvents.recipes(event => {
         processing_time: 30,
         results: [
             {
-                amount: 250,
+                amount: 90,
                 id: 'alltheores:molten_copper'
             },
             {
-                amount: 250,
+                amount: 50,
                 id: 'tfmg:molten_slag'
             },
             {
@@ -94,11 +94,11 @@ ServerEvents.recipes(event => {
         processing_time: 30,
         results: [
             {
-                amount: 250,
+                amount: 90,
                 id: 'alltheores:molten_nickel'
             },
             {
-                amount: 250,
+                amount: 50,
                 id: 'tfmg:molten_slag'
             },
             {
@@ -131,11 +131,11 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:coal_coke_dust'
             },
             {
-                amount: 500,
+                amount: 180,
                 id: 'alltheores:molten_copper'
             },
             {
-                amount: 350,
+                amount: 100,
                 id: 'tfmg:molten_slag'
             }
         ]
@@ -164,11 +164,11 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:coal_coke_dust'
             },
             {
-                amount: 500,
+                amount: 180,
                 id: 'alltheores:molten_nickel'
             },
             {
-                amount: 350,
+                amount: 100,
                 id: 'tfmg:molten_slag'
             }
         ]
