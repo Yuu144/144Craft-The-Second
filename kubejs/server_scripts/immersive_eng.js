@@ -296,4 +296,16 @@ ServerEvents.recipes(event => {
         },
         processingTime: 200
     }).id('144craft2:immersive_eng/industrialforegoing/dissolution_chamber/industrialforegoing/processing_addon_tier_2')
+
+    event.shaped('industrialforegoing:fluid_extractor', [
+        'ACA',
+        'BDB',
+        'AEA'
+    ], {
+        A: 'minecraft:iron_ingot',
+        B: 'alltheores:bronze_block',
+        C: 'createmechanisms:fluid_mechanism',
+        D: 'industrialforegoing:machine_frame_pity',
+        E: 'create:mechanical_piston'
+    }).id('144craft2:immersive_eng/minecraft/shaped/industrialforegoing/fluid_extractor')
 })

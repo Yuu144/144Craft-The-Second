@@ -424,4 +424,38 @@ ServerEvents.recipes(hscraft => {
 
     }).id('144craft2:greg_type_recipes/create_mechanism_tiers/create/sequenced_assembly/create_sa/hydraulic_engine/from/createmechanisms/fluid_mechanism/using/modern_industrialization/raw_synthetic_oil')
 
+    hscraft.custom({
+        "type": "create:mechanical_crafting",
+        "accept_mirrored": true,
+        "category": "misc",
+        "key": {
+            "A": {
+            "item": 'modern_industrialization:bronze_curved_plate'
+            },
+            "B": {
+            "item": 'alltheores:brass_gear'
+            },
+            "C": {
+            "item": 'create:precision_mechanism'
+            },
+            "D": {
+            "item": 'cataclysm:ancient_metal_ingot'
+            },
+            "E": {
+            "item": 'alltheores:steel_ingot'
+            }
+        },
+        "pattern": [
+            " AAA ",
+            "ADEDA",
+            "BECEB",
+            "ADEDA",
+            " AAA "
+        ],
+        "result": {
+            "count": 1,
+            "id": 'createmechanisms:physics_mechanism'
+        },
+        "show_notification": false
+    }).id("144craft2:ae2/physics_mechanism")
 })
