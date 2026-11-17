@@ -290,24 +290,6 @@ ServerEvents.recipes(event => {
                         "id": "mekanism:supercharged_coil"
                     }
                 ]
-            },
-            {
-                "type": "create:filling", // NORTHSTAR-FIX: War davor northstar:engraving. Alternative suchen
-                "ingredients": [
-                    {
-                        "item": "mekanism:supercharged_coil"
-                    },
-                    {
-                        "type": "neoforge:single",
-                        "amount": 750,
-                        "fluid": "minecraft:water"
-                    }
-                ],
-                "results": [
-                    {
-                        "id": "mekanism:supercharged_coil"
-                    }
-                ]
             }
         ],
         "transitional_item": {
