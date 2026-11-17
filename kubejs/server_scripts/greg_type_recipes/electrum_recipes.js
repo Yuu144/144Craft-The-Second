@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
                 id: 'tfmg:coal_coke_dust'
             },
             {
-                amount: 250,
+                amount: 180,
                 id: 'alltheores:molten_electrum'
             }
         ]
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         ingredients: [
             {
                 type: 'neoforge:single',
-                amount: 250,
+                amount: 90,
                 fluid: 'alltheores:molten_electrum'
             }
         ],

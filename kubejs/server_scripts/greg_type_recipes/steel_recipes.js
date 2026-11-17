@@ -59,11 +59,11 @@ ServerEvents.recipes(event => {
         processing_time: 30,
         results: [
             {
-                amount: 250,
+                amount: 90,
                 id: 'tfmg:molten_steel'
             },
             {
-                amount: 250,
+                amount: 50,
                 id: 'tfmg:molten_slag'
             },
             {
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
         ingredients: [
             {
                 type: 'neoforge:single',
-                amount: 250,
+                amount: 90,
                 fluid: 'tfmg:molten_steel'
             }
         ],
