@@ -1,6 +1,19 @@
+// Shale Oil
+RecipeViewerEvents.removeEntries('fluid', event => {
+    event.remove('modern_industrialization:shale_oil')
+})
+
+RecipeViewerEvents.removeEntries('item', event => {
+    event.remove('modern_industrialization:shale_oil_bucket')
+})
+
 ServerEvents.recipes(event => {
     event.remove({ id: 'modern_industrialization:oil/crude_oil' })
     event.remove({ id: 'modern_industrialization:oil/shale_oil' })
+    event.remove({ id: 'modern_industrialization:petrochem/distillation/shale_oil_full' })
+    event.remove({ id: 'modern_industrialization:petrochem/distillation/shale_oil_0' })
+    event.remove({ id: 'modern_industrialization:petrochem/distillation/shale_oil_1' })
+    event.remove({ id: 'modern_industrialization:petrochem/distillation/shale_oil_2' })
     event.remove({ id: 'modern_industrialization:petrochem/distillation/crude_oil_full' })
     event.remove({ id: 'modern_industrialization:petrochem/distillation/crude_oil_0' })
     event.remove({ id: 'modern_industrialization:petrochem/distillation/crude_oil_1' })

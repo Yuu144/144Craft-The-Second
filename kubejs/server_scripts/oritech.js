@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         duration: 240,
         item_inputs: [
             { item: 'oritech:carbon_fibre_strands', amount: 4 },
-            { tag: 'kubejs:deathworm_chitin', amount: 1 }
+            { tag: 'kubejs:deathworm_chitin', amount: 2 }
         ],
         fluid_inputs: [
             { tag: 'c:naphtha', amount: 2000 }
