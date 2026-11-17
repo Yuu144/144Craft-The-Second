@@ -26,6 +26,15 @@
       "width": 600,
       "height": 160,
       "text": "Shale Oil\nMI Shale Oil fluid and bucket hidden from JEI through oil_recipes.js. Removed all four Shale Oil distillery/distillation recipes (full, 0, 1, 2). Shared output fluids remain available through other routes. Applied locally and on the remote server; pending reload and in-game verification."
+    },
+    {
+      "id": "recipe-adjustments-20261117",
+      "type": "text",
+      "text": "Oil and Circuits | 2026-11-17\nMI oil processing now uses TFMG Crude Oil. Distillery recipes: 1,000 mB input; 400 ticks, 12 EU/t; outputs 350 mB Sulfuric Light Fuel, 100 mB Sulfuric Heavy Fuel, or 200 mB Sulfuric Naphtha. Tower: 1,000 mB input; 200 ticks, 36 EU/t; outputs 350/100/300 mB respectively plus 50 mB Helium.\nCircuit Assembler Casing uses 2 Carbon Large Plates, 2 Reinforced Carbon Sheets, and a Mekanism Steel Casing. Elite Circuit adds 2 sheets; Ultimate Circuit uses 4 sheets.\nImplemented on server and client/singleplayer. Pending reload and runtime verification.",
+      "x": 1450,
+      "y": 0,
+      "width": 800,
+      "height": 340
     }
   ],
   "edges": []
