@@ -300,7 +300,7 @@ ServerEvents.recipes(event => {
                     {
                         "type": "neoforge:single",
                         "amount": 750,
-                        "fluid": "minecraft:water"
+                        "fluid": "justdirethings:refined_t3_fluid_source"
                     }
                 ],
                 "results": [
