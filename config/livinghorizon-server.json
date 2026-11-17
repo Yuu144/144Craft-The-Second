@@ -1,0 +1,14 @@
+{
+  "sharePlayers": true,
+  "playerRange": 0,
+  "teamsOnly": false,
+  "hideSpectators": true,
+  "hideInvisible": true,
+  "hiddenPlayers": [],
+  "hiddenDimensions": [],
+  "shareOfflinePlayers": true,
+  "shareMobs": false,
+  "seedMobs": false,
+  "seedMobRange": 512,
+  "shareSeed": false
+}
