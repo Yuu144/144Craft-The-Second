@@ -279,7 +279,7 @@ ServerEvents.recipes(event => {
                 ]
             },
             {
-                "type": "dndesires:hydraulic_compacting",
+                "type": "create:pressing",
                 "ingredients": [
                     {
                         "item": "mekanism:supercharged_coil"
