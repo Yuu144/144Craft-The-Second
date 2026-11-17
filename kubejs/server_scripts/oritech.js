@@ -1,4 +1,25 @@
 ServerEvents.recipes(event => {
+    // Reinforced Carbon Sheet
+    event.remove({ id: 'oritech:refinery/carbonsheet' })
+    event.custom({
+        type: 'modern_industrialization:mixer',
+        eu: 32,
+        duration: 240,
+        item_inputs: [
+            { item: 'oritech:carbon_fibre_strands', amount: 4 },
+            { tag: 'kubejs:deathworm_chitin', amount: 1 }
+        ],
+        fluid_inputs: [
+            { tag: 'c:naphtha', amount: 2000 }
+        ],
+        item_outputs: [
+            { item: 'oritech:reinforced_carbon_sheet', amount: 4 }
+        ]
+    }).id('144craft2:oritech/reinforced_carbon_sheet')
+
+    // Centrifuge
+    event.remove({ id: 'oritech:crafting/centrifugealt' })
+
     event.remove({ id: 'oritech:foundry/alloy/compat/mekanism/infused_alloy' })
 
     event.custom({

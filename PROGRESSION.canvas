@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"singleplayer-carbon-sheet-20261117","type":"text","text":"**Singleplayer recipes | 2026-11-17**\nImplemented locally to match the remote server; pending /reload and in-game verification.\nMI Electric Mixer: 4 Carbon Fibre Strands + 1 Deathworm Chitin (any colour) + 2,000 mB Naphtha -> 4 Reinforced Carbon Sheets. 32 EU/t, 240 ticks (12 seconds base).\nReplaces oritech:refinery/carbonsheet. Added kubejs:deathworm_chitin item tag. Removed oritech:crafting/centrifugealt.","x":600,"y":-620,"width":750,"height":350},
 		{"id":"ae-early","type":"group","x":4945,"y":5196,"width":3935,"height":1134,"color":"5","label":"AE2 | After Osmium"},
 		{"id":"alloys","type":"group","x":0,"y":1608,"width":2635,"height":1070,"color":"6","label":"1A | Alloy Supply"},
 		{"id":"ae-storage","type":"group","x":4945,"y":6520,"width":1985,"height":1390,"color":"5","label":"AE2 | Industrial Storage"},
