@@ -21,17 +21,17 @@ ServerEvents.recipes(event => {
 
     event.custom({
         type: "modern_industrialization:distillery",
-        duration: 200,
+        duration: 400,
         eu: 12,
         fluid_inputs: [
             {
                 amount: 1000,
-                fluid: "tfmg:heavy_oil"
+                fluid: "tfmg:crude_oil"
             }
         ],
         fluid_outputs: [
             {
-                amount: 500,
+                amount: 350,
                 fluid: "modern_industrialization:sulfuric_light_fuel"
             }
         ]
@@ -39,17 +39,17 @@ ServerEvents.recipes(event => {
 
     event.custom({
         type: "modern_industrialization:distillery",
-        duration: 200,
+        duration: 400,
         eu: 12,
         fluid_inputs: [
             {
                 amount: 1000,
-                fluid: "tfmg:heavy_oil"
+                fluid: "tfmg:crude_oil"
             }
         ],
         fluid_outputs: [
             {
-                amount: 200,
+                amount: 100,
                 fluid: "modern_industrialization:sulfuric_heavy_fuel"
             }
         ]
@@ -57,17 +57,17 @@ ServerEvents.recipes(event => {
 
     event.custom({
         type: "modern_industrialization:distillery",
-        duration: 200,
+        duration: 400,
         eu: 12,
         fluid_inputs: [
             {
                 amount: 1000,
-                fluid: "tfmg:heavy_oil"
+                fluid: "tfmg:crude_oil"
             }
         ],
         fluid_outputs: [
             {
-                amount: 300,
+                amount: 200,
                 fluid: "modern_industrialization:sulfuric_naphtha"
             }
         ]
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
         fluid_inputs: [
             {
                 amount: 1000,
-                fluid: "tfmg:heavy_oil"
+                fluid: "tfmg:crude_oil"
             }
         ],
         fluid_outputs: [
@@ -95,6 +95,10 @@ ServerEvents.recipes(event => {
             {
                 amount: 300,
                 fluid: "modern_industrialization:sulfuric_naphtha"
+            },
+            {
+                amount: 50,
+                fluid: "modern_industrialization:helium"
             }
         ]
     }).id('144craft2:greg_type_recipes/oil_recipes/modern_industrialization/distillation_tower/modern_industrialization/sulfuric_light_fuel')

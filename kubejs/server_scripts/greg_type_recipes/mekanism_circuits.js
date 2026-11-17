@@ -126,6 +126,10 @@ ServerEvents.recipes(event => {
                 item: "modern_industrialization:op_amp"
             },
             {
+                amount: 2,
+                item: "oritech:reinforced_carbon_sheet"
+            },
+            {
                 amount: 1,
                 item: "oritech:processing_unit"
             }
@@ -163,7 +167,7 @@ ServerEvents.recipes(event => {
                 item: "oritech:overcharged_crystal"
             },
             {
-                amount: 2,
+                amount: 4,
                 item: "oritech:reinforced_carbon_sheet"
             },
             {

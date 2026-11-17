@@ -11,10 +11,11 @@ ServerEvents.recipes(event => {
 
     event.shaped('kubejs:circuit_assembler_casing', [
         ' A ',
-        'ABA',
+        'CBC',
         ' A '
     ], {
         A: 'modern_industrialization:carbon_large_plate',
-        B: 'mekanism:steel_casing'
+        B: 'mekanism:steel_casing',
+        C: 'oritech:reinforced_carbon_sheet'
     }).id('144craft2:greg_type_recipes/circuit_assembler_blocks_recipes/minecraft/shaped/kubejs/circuit_assembler_casing')
 })
