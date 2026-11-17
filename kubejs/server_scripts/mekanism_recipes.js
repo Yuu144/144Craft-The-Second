@@ -238,11 +238,11 @@ ServerEvents.recipes(event => {
             },
             {
                 "chance": 5.0,
-                "id": "ae2:singularity"
+                "id": "simplemagnets:basic_demagnetization_coil"
             },
             {
                 "chance": 5.0,
-                "id": "advanced_ae:quantum_infused_dust"
+                "id": "modern_industrialization:superconductor_cable"
             }
         ],
         "sequence": [
@@ -253,7 +253,7 @@ ServerEvents.recipes(event => {
                         "item": "mekanism:supercharged_coil"
                     },
                     {
-                        "item": "minecraft:copper_block"
+                        "item": "modern_industrialization:superconductor_coil"
                     }
                 ],
                 "results": [
@@ -279,7 +279,7 @@ ServerEvents.recipes(event => {
                 ]
             },
             {
-                "type": "dndesires:hydraulic_compacting",
+                "type": "create:pressing",
                 "ingredients": [
                     {
                         "item": "mekanism:supercharged_coil"
