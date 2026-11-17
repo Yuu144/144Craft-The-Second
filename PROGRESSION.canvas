@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"createmmm-removed","type":"text","text":"**CreateMMM Recipes**\nCreateMMM-BaseRecipes removed.\nKeep the pack's current custom recipes.","x":0,"y":-680,"width":530,"height":130},
 		{"id":"ae-early","type":"group","x":4945,"y":5196,"width":3935,"height":1134,"color":"5","label":"AE2 | After Osmium"},
 		{"id":"alloys","type":"group","x":0,"y":1608,"width":2635,"height":1070,"color":"6","label":"1A | Alloy Supply"},
 		{"id":"ae-storage","type":"group","x":4945,"y":6520,"width":1985,"height":1390,"color":"5","label":"AE2 | Industrial Storage"},
