@@ -3,7 +3,7 @@
 showACContent = true
 #.
 #Disables flywheel wire rendering
-disableFlywheelWireRendering = false
+disableFlywheelWireRendering = true
 #.
 #Whether wires are rendered on unloaded chunks
 renderWiresOnUnloadedChunks = true
