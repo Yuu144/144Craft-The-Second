@@ -35,6 +35,24 @@
       "y": 0,
       "width": 800,
       "height": 340
+    },
+    {
+      "id": "electrum-alloy-smelter-20261117",
+      "type": "text",
+      "text": "Electrum Ingot x3\nMI Electric Alloy Smelter (Extended Industrialization): 3 Gold Ingots + 1 Silver Ingot -> 3 AllTheOres Electrum Ingots.\n32 EU/t, 200 ticks (10 seconds base).\nAdditional route; vat and casting remain available. Implemented on server and client/singleplayer; pending reload and runtime verification.",
+      "x": 2300,
+      "y": 0,
+      "width": 650,
+      "height": 240
+    },
+    {
+      "id": "mi-conveyor-electrum-20261117",
+      "type": "text",
+      "text": "MI Conveyor\nCrafting Table or MI Assembler: 2 Motors + 6 Rubber Sheets + 1 Electrum Cable.\nReplaces Tin Cable with Electrum Cable in both conveyor recipes. MI Assembler keeps its original conveyors and other components; Electrum is required through the conveyors.\nImplemented on server and client/singleplayer; pending reload and runtime verification.",
+      "x": 3000,
+      "y": 0,
+      "width": 650,
+      "height": 260
     }
   ],
   "edges": []

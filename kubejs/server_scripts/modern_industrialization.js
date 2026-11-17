@@ -1,4 +1,11 @@
 ServerEvents.recipes(event => {
+    // Conveyor
+    event.replaceInput(
+        { output: 'modern_industrialization:conveyor' },
+        'modern_industrialization:tin_cable',
+        'modern_industrialization:electrum_cable'
+    )
+
     // Machines that use steam
     event.remove({ output: 'extended_industrialization:steel_alloy_smelter' })
     event.remove({ type: 'extended_industrialization:steel_alloy_smelter' })

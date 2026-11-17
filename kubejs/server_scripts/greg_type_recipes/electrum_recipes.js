@@ -7,6 +7,20 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'modern_industrialization:alloy/mixer/electrum/dust' })
     event.remove({ id: 'modern_industrialization:alloy/mixer/electrum/tiny_dust' })
 
+    // Electrum
+    event.custom({
+        type: 'extended_industrialization:alloy_smelter',
+        duration: 200,
+        eu: 32,
+        item_inputs: [
+            { tag: 'c:ingots/gold', amount: 3 },
+            { tag: 'c:ingots/silver', amount: 1 }
+        ],
+        item_outputs: [
+            { item: 'alltheores:electrum_ingot', amount: 3 }
+        ]
+    }).id('144craft2:greg_type_recipes/electrum_recipes/alloy_smelter/electrum_ingot')
+
     event.custom({
         type: 'tfmg:vat_machine_recipe',
         allowed_vat_types: [
