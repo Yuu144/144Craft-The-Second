@@ -279,7 +279,7 @@ ServerEvents.recipes(event => {
                 ]
             },
             {
-                "type": "create:pressing",
+                "type": "dndesires:hydraulic_compacting",
                 "ingredients": [
                     {
                         "item": "mekanism:supercharged_coil"
@@ -292,10 +292,15 @@ ServerEvents.recipes(event => {
                 ]
             },
             {
-                "type": "create:pressing", // NORTHSTAR-FIX: War davor northstar:engraving. Alternative suchen
+                "type": "create:filling", // NORTHSTAR-FIX: War davor northstar:engraving. Alternative suchen
                 "ingredients": [
                     {
                         "item": "mekanism:supercharged_coil"
+                    },
+                    {
+                        "type": "neoforge:single",
+                        "amount": 750,
+                        "fluid": "justdirethings:refined_t3_fluid_source"
                     }
                 ],
                 "results": [

@@ -174,7 +174,7 @@ ServerEvents.recipes(hscraft => {
             },
             {
                 'chance': 2,
-                'id': 'minecraft:dirt' // NORTHSTART-FIX: War davor Sodium Catalyst. Alternative suchen
+                'id': 'alltheores:salt_block'
             },
             {
                 'chance': 5,
@@ -225,7 +225,7 @@ ServerEvents.recipes(hscraft => {
                         'item': 'createmechanisms:wooden_mechanism'
                     },
                     {
-                        'item': 'minecraft:dirt' // NORTHSTART-FIX: War davor Sodium Catalyst. Alternative suchen
+                        'item': 'alltheores:salt_block' 
                     }
                 ],
                 'results': [
