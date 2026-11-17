@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "reinforced-carbon-sheet-20261117",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 650,
+      "height": 310,
+      "text": "Reinforced Carbon Sheet | 2026-11-17\nImplemented in server KubeJS; pending /reload and runtime verification.\nMI Electric Mixer: 4 Carbon Fibre Strands + 1 Deathworm Chitin (red, yellow, or white) + 2,000 mB Naphtha (#c:naphtha) -> 4 Reinforced Carbon Sheets.\n32 EU/t, 240 ticks (12 seconds base duration).\nReplaces oritech:refinery/carbonsheet.\nRecipe: 144craft2:oritech/reinforced_carbon_sheet.\nAffects downstream sheet uses, including Advanced Machine Frames and Ultimate Control Circuits."
+    },
+    {
+      "id": "centrifuge-alt-20261117",
+      "type": "text",
+      "x": 750,
+      "y": 0,
+      "width": 520,
+      "height": 180,
+      "text": "Centrifuge | 2026-11-17\nRemoved oritech:crafting/centrifugealt in server KubeJS. Other centrifuge recipes remain unchanged.\nPending /reload and runtime verification."
+    }
+  ],
+  "edges": []
+}
