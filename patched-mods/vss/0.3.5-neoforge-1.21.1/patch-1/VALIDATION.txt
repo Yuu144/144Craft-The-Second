@@ -1,0 +1,10 @@
+PASS: baseline SHA-256 matches the inspected JAR.
+PASS: ASM structural and full beginFrame data-flow verification.
+PASS: all other methods in StrictLodVisibility are unchanged.
+PASS: JVM -Xverify:all on the extracted patched prefix with dependency stubs.
+PASS: inactive frames skip work; disabling clears previous active state once.
+PASS: null/zero viewport preserves coverage; valid active view continues.
+PASS: missing world/player retains lifecycle cleanup.
+PASS: only StrictLodVisibility.class changes; patch marker added.
+PASS: all network classes, mixins, mod metadata and other entries are byte-identical.
+NOT TESTED: full Minecraft restart, LOD arrival/rendering, live FPS, prediction toggles.

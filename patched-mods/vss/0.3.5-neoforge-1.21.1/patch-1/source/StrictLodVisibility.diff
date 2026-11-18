@@ -1,0 +1,16 @@
+--- original/StrictLodVisibility.java
++++ patched/StrictLodVisibility.java
+@@ -311 +311,7 @@
+-      if (mc != null && mc.level != null && mc.player != null) {
++      if (mc == null || mc.level == null || mc.player == null) {
++         resetGeometry();
++      } else if (!active()) {
++         if (levelIdentity != null) {
++            resetGeometry();
++         }
++      } else {
+@@ -320 +325,0 @@
+-               updateRenderWindow(null, 0.0, 0.0, 0);
+@@ -407,2 +411,0 @@
+-      } else {
+-         resetGeometry();

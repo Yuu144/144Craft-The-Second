@@ -11,6 +11,14 @@
 - Keep Git/GitHub commit messages very simple and short.
 - Keep progression canvas text simple and match the existing cards: item names, short labels such as `MAKE WITH`, `NEEDS`, and `POWER`, and brief arrows. Avoid long explanations and repeated text.
 
+## Patched mods
+
+- Document every patched mod in `PATCHED_MODS.md`, including its name, original version, installed JAR filename, client/server location, patch purpose, and backup/source paths. Clearly mark it `DO NOT UPDATE` until the patch has been checked or reapplied to the replacement version.
+- Before installing a patched mod, keep a versioned copy of the patched JAR outside `mods`, under `patched-mods/<mod-id>/<version>/` in the relevant client or server checkout. Keep the original JAR and SHA-256 hashes there too so accidental replacements can be identified and restored.
+- Keep the patched source code or source diff, any patch/build scripts, and simple build and restore instructions alongside the backup. A patched JAR alone is not enough; the changed code must remain inspectable and reproducible.
+- When updating mods, check `PATCHED_MODS.md` first. Preserve existing patch backups, and verify or reapply each affected patch before replacing its installed JAR.
+- Keep client and server patch documentation and backups separately in their respective locations.
+
 ## Remote server access
 
 - Minecraft server SSH host: `192.168.178.83` (user: `root`).

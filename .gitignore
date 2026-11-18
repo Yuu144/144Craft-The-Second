@@ -20,3 +20,7 @@
 !shaderpacks/**
 !options.txt
 !servers.dat
+!PATCHED_MODS.md
+!patched-mods/
+!patched-mods/**
+patched-mods/**/build/
