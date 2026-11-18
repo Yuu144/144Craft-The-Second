@@ -31,7 +31,8 @@
 
 - When changing a recipe, use crafted components made from the required material, such as plates, gears, screws, bolts, or machine parts. Do not rely only on raw ingots or blocks when suitable components exist.
 - Make progression recipes meaningfully expensive: require a significant amount of material through multiple components.
-- Consider functional Modern Industrialization components as well as material parts. Match them to what the machine does: circuits, circuit boards, or digital components for electrical control and processing; motors for powered motion; pumps for moving fluids.
+- Use functional Modern Industrialization components alongside material parts when they fit the recipe. Use motors for powered motion, robot arms for automated handling, pumps for moving fluids, and circuits, circuit boards, or processing units for electrical control and computing.
+- Check component IDs and crafting routes against the dedicated server's recipe export in `local/144craft-runtime/`. Use `tools/packdata.py` with that export to search for terms such as `motor`, `robot arm`, or `circuit` and inspect the matching recipes. See `tools/PACKDATA.md` for lookup commands.
 - Consider Oritech components too. Use its circuit boards, motors, and other crafted parts where their function and progression tier fit the recipe.
 - Choose components the player can already craft at that point in progression. Use parts such as large plates, screws, and bolts where they fit, and avoid forcing a higher-tier component into an earlier recipe or requiring the machine to craft its own ingredients.
 - For a material or component available from multiple mods, prefer sources in this order:

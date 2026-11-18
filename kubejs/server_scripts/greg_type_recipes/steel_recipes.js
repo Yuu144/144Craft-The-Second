@@ -162,6 +162,6 @@ ServerEvents.recipes(event => {
         'AAA'
     ], {
         A: 'alltheores:steel_plate',
-        B: 'mekanism:steel_casing'
+        B: 'tfmg:steel_casing'
     }).id('144craft2:greg_type_recipes/steel_recipes/minecraft/shaped/modern_industrialization/steel_machine_casing')
 })

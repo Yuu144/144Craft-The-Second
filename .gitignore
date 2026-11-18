@@ -20,6 +20,10 @@
 !shaderpacks/**
 !options.txt
 !servers.dat
+!tools/packdata.py
+!tools/test_packdata.py
+!tools/PACKDATA.md
+!AGENTS.md
 !PATCHED_MODS.md
 !patched-mods/
 !patched-mods/**

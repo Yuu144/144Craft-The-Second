@@ -2,9 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "welcome"
-	group: "4B153F79CFB54CEF"
-	id: "8A7B89FC729D46FE"
-	order_index: 1
+	group: ""
+	id: "687750B89DED59EC"
+	images: [ ]
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -20,7 +21,7 @@
 			dependencies: ["1714E8E3AAD44769"]
 			id: "656712B23A9147CB"
 			tasks: [{
-				id: "DEAF5F1218774988"
+				id: "06070F4B439C79E9"
 				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
 				type: "item"
 			}]
@@ -31,7 +32,7 @@
 			dependencies: ["1714E8E3AAD44769"]
 			id: "1F577C0FAC0B46AB"
 			tasks: [{
-				id: "C2CB733688CC49CD"
+				id: "0E819F5F6F9285AB"
 				item: { count: 1, id: "waystones:waystone" }
 				type: "item"
 			}]
@@ -40,9 +41,9 @@
 		}
 		{
 			dependencies: ["656712B23A9147CB"]
-			id: "A2F8110BED31469E"
+			id: "357E44677C0000C3"
 			tasks: [{
-				id: "CE70FF2F257146E4"
+				id: "275542DDD4179704"
 				item: { count: 1, id: "storagedrawers:oak_full_drawers_1" }
 				type: "item"
 			}]
@@ -51,9 +52,9 @@
 		}
 		{
 			dependencies: ["1F577C0FAC0B46AB"]
-			id: "C229EF8F76DF4344"
+			id: "23B7D46593ACFF15"
 			tasks: [{
-				id: "FF5971D2F44041C0"
+				id: "13ED6E33147DE324"
 				item: { count: 1, id: "minecraft:iron_pickaxe" }
 				type: "item"
 			}]

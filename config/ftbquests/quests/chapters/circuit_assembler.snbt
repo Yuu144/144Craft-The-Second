@@ -2,15 +2,16 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "circuit_assembler"
-	group: "6AF4B2304F054B26"
-	id: "87784EB1A0334962"
-	order_index: 4
+	group: ""
+	id: "1E75FA725A2AFF58"
+	images: [ ]
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
 			id: "3F82635510A5454B"
 			tasks: [{
-				id: "B6802925D3144801"
+				id: "2A0C3A2315EF9D57"
 				item: { count: 1, id: "ae2:silicon" }
 				type: "item"
 			}]
@@ -18,7 +19,7 @@
 			y: -1.5d
 		}
 		{
-			id: "994983F50470413A"
+			id: "0B349EF385F39472"
 			tasks: [{
 				id: "66B47EB516A64864"
 				item: { count: 1, id: "modern_industrialization:stainless_steel_ingot" }
@@ -32,8 +33,8 @@
 			id: "71EFC7E3FF9F4C57"
 			tasks: [{
 				count: 2L
-				id: "D8395F84E9EF4660"
-				item: { count: 1, id: "tfmg:capacitor_item" }
+				id: "0BB30D1475FAF129"
+				item: { count: 1, id: "tfmg:capacitor" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -45,14 +46,13 @@
 			tasks: [{
 				count: 2L
 				id: "5E12B21371B846A1"
-				item: { count: 1, id: "tfmg:transistor_item" }
+				item: { count: 1, id: "tfmg:transistor" }
 				type: "item"
 			}]
 			x: 1.5d
 			y: -1.0d
 		}
 		{
-			dependencies: ["994983F50470413A"]
 			id: "613E927EC91F4381"
 			tasks: [{
 				count: 8L
@@ -64,8 +64,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["994983F50470413A"]
-			id: "DC827C21C0B34823"
+			id: "7946B6384B5414ED"
 			tasks: [{
 				count: 4L
 				id: "5010DB37DD3D4C1B"
@@ -77,10 +76,10 @@
 		}
 		{
 			dependencies: ["613E927EC91F4381"]
-			id: "F410ECC69DDE44A3"
+			id: "7AD72CBB1E764C21"
 			tasks: [{
 				count: 4L
-				id: "96746E95F62C4BD6"
+				id: "3CA427D97A57AC2C"
 				item: { count: 1, id: "modern_industrialization:cupronickel_coil" }
 				type: "item"
 			}]
@@ -88,15 +87,11 @@
 			y: 0.75d
 		}
 		{
-			dependencies: [
-				"DC827C21C0B34823"
-				"F410ECC69DDE44A3"
-			]
+			id: "31BBC5A5DD1242FF"
 			shape: "hexagon"
 			size: 2.0d
-			id: "31BBC5A5DD1242FF"
 			tasks: [{
-				id: "F0D9B5D3D1B94976"
+				id: "5C9AFFB26B175C09"
 				type: "checkmark"
 			}]
 			x: 4.5d
@@ -159,9 +154,9 @@
 				"6A1A7D0C3F094DAA"
 				"78B60FB4B4C44412"
 			]
+			id: "5E0F3A0A0B9B4F2B"
 			shape: "hexagon"
 			size: 2.0d
-			id: "5E0F3A0A0B9B4F2B"
 			tasks: [{
 				id: "23F65D3B52DA4132"
 				item: { count: 1, id: "mekanism:elite_control_circuit" }

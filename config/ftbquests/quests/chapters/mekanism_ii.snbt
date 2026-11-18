@@ -2,9 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "mekanism_ii"
-	group: "222248B761F14DFB"
+	group: ""
 	id: "568F30BC4F094DA4"
-	order_index: 6
+	images: [ ]
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -19,7 +20,7 @@
 		}
 		{
 			dependencies: ["0031F351FADB48FD"]
-			id: "866805002BD14A29"
+			id: "68E8E153D2F4852D"
 			tasks: [{
 				id: "16CE404724A44FAD"
 				item: { count: 1, id: "mekanism:alloy_reinforced" }
@@ -29,7 +30,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["866805002BD14A29"]
 			id: "69E65629D013401F"
 			tasks: [{
 				id: "784373170CF34C77"
@@ -41,7 +41,7 @@
 		}
 		{
 			dependencies: ["69E65629D013401F"]
-			id: "D1BD86ACE40C4833"
+			id: "3B33BF52362DEA70"
 			tasks: [{
 				id: "58917F0F895949EF"
 				item: { count: 1, id: "mekanism:electrolytic_separator" }
@@ -52,9 +52,9 @@
 		}
 		{
 			dependencies: ["0031F351FADB48FD"]
-			id: "EB1A0F357C654361"
+			id: "5387F1D5AF09B585"
 			tasks: [{
-				id: "AF2D15FD0CDB4C82"
+				id: "21D244C432D4E850"
 				item: { count: 1, id: "mekanism:pressurized_reaction_chamber" }
 				type: "item"
 			}]
@@ -62,14 +62,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"EB1A0F357C654361"
-				"D1BD86ACE40C4833"
-			]
-			shape: "square"
 			id: "71860826A4204386"
+			shape: "square"
 			tasks: [{
-				id: "96ACEF42733B487E"
+				id: "33711DCA9F0D1D7D"
 				type: "checkmark"
 			}]
 			x: 5.5d
@@ -77,11 +73,11 @@
 		}
 		{
 			dependencies: ["71860826A4204386"]
+			id: "00D076076B424407"
 			shape: "hexagon"
 			size: 2.0d
-			id: "00D076076B424407"
 			tasks: [{
-				id: "9DBD8DE1CE394EEC"
+				id: "0B904005C4A2C012"
 				item: { count: 1, id: "mekanism:elite_control_circuit" }
 				type: "item"
 			}]
@@ -113,9 +109,9 @@
 		}
 		{
 			dependencies: ["00D076076B424407"]
-			id: "BEECDD2974C74A20"
+			id: "1AE9BB347AAB579A"
 			tasks: [{
-				id: "86F5980308C74B8A"
+				id: "3CD2468A68B21245"
 				item: { count: 1, id: "oritech:overcharged_crystal" }
 				type: "item"
 			}]
@@ -126,13 +122,12 @@
 			dependencies: [
 				"776B14BC0BAE45AF"
 				"22074097F7B54864"
-				"BEECDD2974C74A20"
 			]
+			id: "5454FEA955194D25"
 			shape: "hexagon"
 			size: 2.0d
-			id: "5454FEA955194D25"
 			tasks: [{
-				id: "E778CE6199DB41BF"
+				id: "01971A1CCC62C950"
 				item: { count: 1, id: "mekanism:ultimate_control_circuit" }
 				type: "item"
 			}]
@@ -141,8 +136,8 @@
 		}
 		{
 			dependencies: ["5454FEA955194D25"]
-			shape: "square"
 			id: "328A30CF39A84565"
+			shape: "square"
 			tasks: [{
 				id: "389328E4AD654637"
 				type: "checkmark"
