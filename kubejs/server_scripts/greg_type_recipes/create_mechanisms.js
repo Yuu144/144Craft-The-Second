@@ -458,4 +458,74 @@ ServerEvents.recipes(hscraft => {
         },
         "show_notification": false
     }).id("144craft2:ae2/physics_mechanism")
+
+    hscraft.custom({
+        'type': 'create:sequenced_assembly',
+        'ingredient': {
+            'item': 'create:precision_mechanism'
+        },
+        'loops': 3,
+        'results': [
+            {
+                'chance': 90,
+                'id': 'createmechanisms:rubber_mechanism'
+            },
+            {
+                'chance': 8,
+                'id': 'industrialforegoing:dryrubber'
+            },
+            {
+                'chance': 2,
+                'id': 'create:andesite_alloy'
+            }
+        ],
+        'sequence': [
+            
+            {
+                'type': 'create:filling',
+                'ingredients': [
+                    {
+                        'item': 'create:precision_mechanism'
+                    },
+                    {
+                        'type': 'neoforge:single',
+                        'amount': 250,
+                        'fluid': 'industrialforegoing:latex'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'create:precision_mechanism'
+                    }
+                ]
+            },
+            {
+                'type': 'create:deploying',
+                'ingredients': [
+                    { 'item': 'create:precision_mechanism' },
+                    { 'item': 'industrialforegoing:plastic' }
+                ],
+                'results': [
+                    { 'id': 'create:precision_mechanism' }
+                ]
+            },
+            {
+                'type': 'create:pressing',
+                'ingredients': [
+                    {
+                        'item': 'create:precision_mechanism'
+                    }
+                ],
+                'results': [
+                    {
+                        'id': 'create:precision_mechanism'
+                    }
+                ]
+            }
+        ],
+        'transitional_item': {
+            'id': 'createmechanisms:void_mechanism'
+        }
+
+    }).id('144craft2:greg_type_recipes/create_mechanism_tiers/create/sequenced_assembly/rubber_mechanism')
 })

@@ -237,4 +237,37 @@ ServerEvents.recipes(event => {
             }
         ]
     }).id('144craft2:create_and_addons/create/mixing/alltheores/bronze_dust')
+
+    event.shaped('simulated:physics_assembler', [
+        '   ',
+        ' A ',
+        'BCB'
+    ], {
+        A: 'simulated:throttle_lever',
+        B: 'create:andesite_casing',
+        C: 'createmechanisms:physics_mechanism'
+    }).id('144craft2:create_and_addons/minecraft/shaped/sable/physics_assembler')
+
+    event.shaped('create:track_station', 2 [
+        '   ',
+        ' A ',
+        'BCB'
+    ], {
+        A: 'minecraft:compass',
+        B: 'create:railway_casing',
+        C: 'createmechanisms:physics_mechanism'
+    }).id('144craft2:create_and_addons/minecraft/shaped/create/track_station')
+
+    event.shaped('loconautics:creative_train_relocator', [
+        ' AB',
+        ' DB',
+        '  C'
+    ], {
+        A: 'createmechanisms:physics_mechanism',
+        B: 'minecraft:stick',
+        C: 'alltheores:constantan_rod',
+        D: 'alltheores:brass_gear'
+    }).id('144craft2:create_and_addons/minecraft/shaped/loconautics/train_relocator')
+
+
 })
