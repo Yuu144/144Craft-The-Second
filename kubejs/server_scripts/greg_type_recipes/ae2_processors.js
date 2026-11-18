@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
     event.shaped('ae2:cell_component_16k', [
         'BEB',
         'LGL',
-        ' GL'
+        ' L '
     ], {
         B: 'modern_industrialization:analog_circuit_board',
         E: 'ae2:engineering_processor',
@@ -57,13 +57,12 @@ ServerEvents.recipes(event => {
     event.shaped('ae2:cell_component_256k', [
         'BCB',
         'LGL',
-        ' EL'
+        ' L '
     ], {
         B: 'modern_industrialization:digital_circuit_board',
         C: 'extendedae:concurrent_processor',
         L: 'ae2:cell_component_64k',
-        G: 'ae2:quartz_vibrant_glass',
-        E: 'ae2:engineering_processor'
+        G: 'ae2:quartz_vibrant_glass'
     }).id('144craft2:greg_type_recipes/ae2_processors/minecraft/shaped/ae2/cell_component_256k')
 
     // 1M Storage Component
