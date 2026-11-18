@@ -133,6 +133,15 @@
       "y": 500,
       "width": 530,
       "height": 130
+    },
+    {
+      "id": "oritech-fuel-pollution",
+      "type": "text",
+      "text": "**Oritech Generators**\nBasic | Bio | Fuel\nADPother pollution while fuel remains burning.\nUses the remaining burn timer.\nPending in-game check.",
+      "x": 3700,
+      "y": 500,
+      "width": 530,
+      "height": 170
     }
   ],
   "edges": [

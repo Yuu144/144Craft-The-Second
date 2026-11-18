@@ -2,15 +2,16 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tesla"
-	group: "222248B761F14DFB"
-	id: "ED51ABDD614F46F8"
-	order_index: 8
+	group: ""
+	id: "563AD1352E83BBC1"
+	images: [ ]
+	order_index: 13
 	quest_links: [ ]
 	quests: [
 		{
-			id: "D1A868A5A7C940EC"
+			id: "7583C72AAC2549D8"
 			tasks: [{
-				id: "F9A3F61F41B2420C"
+				id: "5B0D520B5941BE77"
 				item: { count: 1, id: "modern_industrialization:annealed_copper_hot_ingot" }
 				type: "item"
 			}]
@@ -18,10 +19,9 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["D1A868A5A7C940EC"]
-			id: "B4D107B35B944861"
+			id: "0587337008B2F8E4"
 			tasks: [{
-				id: "BABF92C95D99462B"
+				id: "468C1518D2EB3AAE"
 				item: { count: 1, id: "createmechanisms:computing_mechanism" }
 				type: "item"
 			}]
@@ -31,7 +31,7 @@
 		{
 			id: "061812401B37448E"
 			tasks: [{
-				id: "E07B1B4C5BEB4350"
+				id: "012F80C5993DB6AD"
 				item: { count: 1, id: "modern_industrialization:iridium_ingot" }
 				type: "item"
 			}]
@@ -39,7 +39,7 @@
 			y: 1.5d
 		}
 		{
-			id: "E96072EACEA34E71"
+			id: "3D5C8180DD5BA9B8"
 			tasks: [{
 				id: "4A17E55C64FB4AF9"
 				item: { count: 1, id: "modern_industrialization:neodymium_dust" }
@@ -49,11 +49,8 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"061812401B37448E"
-				"E96072EACEA34E71"
-			]
-			id: "92154506BC1C49FA"
+			dependencies: ["061812401B37448E"]
+			id: "2BD655866A3D759B"
 			tasks: [{
 				count: 9L
 				id: "6DDCDE7FC7504C42"
@@ -64,8 +61,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["92154506BC1C49FA"]
-			id: "B2D48AEB8760486E"
+			id: "377326743B2E000E"
 			tasks: [{
 				count: 8L
 				id: "18D260A86903489A"
@@ -76,7 +72,7 @@
 			y: 2.0d
 		}
 		{
-			id: "C436C59DE1E54BC1"
+			id: "57985CA8B5D889C9"
 			tasks: [{
 				id: "55648C1D91B743D9"
 				item: { count: 1, id: "mekanism:elite_induction_cell" }
@@ -86,14 +82,9 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"B4D107B35B944861"
-				"B2D48AEB8760486E"
-				"C436C59DE1E54BC1"
-			]
+			id: "2CC34D2B897D4CA0"
 			shape: "hexagon"
 			size: 2.0d
-			id: "2CC34D2B897D4CA0"
 			tasks: [{
 				id: "76700BFA078047EF"
 				type: "checkmark"
@@ -103,9 +94,9 @@
 		}
 		{
 			dependencies: ["2CC34D2B897D4CA0"]
-			id: "FD59F2F091444BC5"
+			id: "48C7050033C5FBDD"
 			tasks: [{
-				id: "FD24A93176CB4FAF"
+				id: "087FFF5FF01C1010"
 				item: { count: 1, id: "kubejs:energized_superconducting_titanium_larp_alloy" }
 				type: "item"
 			}]
@@ -114,7 +105,7 @@
 		}
 		{
 			dependencies: ["2CC34D2B897D4CA0"]
-			id: "E36D9C72D3FE4240"
+			id: "7F7D2F0B3A3058EC"
 			tasks: [{
 				id: "2D6B63CABCF34AEC"
 				item: { count: 1, id: "aeinfinitybooster:infinity_card" }

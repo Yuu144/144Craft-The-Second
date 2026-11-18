@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "create"
-	group: "4B153F79CFB54CEF"
+	group: ""
 	id: "1343E1B2C0206494"
 	images: [ ]
-	order_index: 2
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -1030,7 +1030,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "1B4B08DDBFE1A273"
-				item: { count: 1, id: "northstar:titanium_ingot" }
+				item: { components: { "ftbquests:missing_item": "northstar:titanium_ingot" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 17.0d
@@ -1041,7 +1041,7 @@
 			id: "62DB1E73D200E8FB"
 			tasks: [{
 				id: "5FD01A4DA8D2507D"
-				item: { count: 1, id: "northstar:rocket_thruster" }
+				item: { components: { "ftbquests:missing_item": "northstar:rocket_thruster" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 18.0d
@@ -1052,7 +1052,7 @@
 			id: "177DFE987C3EA435"
 			tasks: [{
 				id: "0D41FE9A430DE7E2"
-				item: { count: 1, id: "northstar:titanium_plating" }
+				item: { components: { "ftbquests:missing_item": "northstar:titanium_plating" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 19.0d
@@ -1063,7 +1063,7 @@
 			id: "289E18D7C95FA380"
 			tasks: [{
 				id: "6303982A4D05C978"
-				item: { count: 1, id: "northstar:rocket_station" }
+				item: { components: { "ftbquests:missing_item": "northstar:rocket_station" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 18.0d
@@ -1077,7 +1077,7 @@
 			id: "308C7DFE28EB1DBC"
 			tasks: [{
 				id: "37F1BC82729494B6"
-				item: { count: 1, id: "northstar:rocket_controls" }
+				item: { components: { "ftbquests:missing_item": "northstar:rocket_controls" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 20.0d
@@ -1088,7 +1088,7 @@
 			id: "21A8CDA417FC1495"
 			tasks: [{
 				id: "2905B3A4F5F7670D"
-				item: { count: 1, id: "northstar:astronomy_table" }
+				item: { components: { "ftbquests:missing_item": "northstar:astronomy_table" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 20.5d
@@ -1099,7 +1099,7 @@
 			id: "015400B8CD7EF364"
 			tasks: [{
 				id: "37CED844682F9B74"
-				item: { count: 1, id: "northstar:telescope" }
+				item: { components: { "ftbquests:missing_item": "northstar:telescope" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 19.0d

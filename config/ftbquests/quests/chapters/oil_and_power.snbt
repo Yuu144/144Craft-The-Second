@@ -2,13 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "oil_and_power"
-	group: "6AF4B2304F054B26"
+	group: ""
 	id: "2E8EEF57F9214A51"
-	order_index: 3
+	images: [ ]
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
-			id: "8970EBE78B2B40C2"
+			id: "3F259CF9CB91A499"
 			tasks: [{
 				id: "2353158F83064551"
 				item: { count: 1, id: "tfmg:pumpjack_hammer" }
@@ -18,22 +19,22 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["8970EBE78B2B40C2"]
-			id: "C1F23991F0034A96"
+			id: "4A81B8E24FF61BD5"
 			tasks: [{
-				id: "F4C8013A88A143FE"
+				fluid: {
+					amount: 1000
+					id: "tfmg:crude_oil"
+				}
+				id: "2D92B1D06BA6E6A9"
 				type: "fluid"
-				fluid: "tfmg:crude_oil"
-				amount: 1000L
 			}]
 			x: 1.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["C1F23991F0034A96"]
-			id: "B2FF5821853A4A00"
+			id: "76FF0E6697BC1012"
 			tasks: [{
-				id: "C84FC749824E4CAC"
+				id: "2C67B24DACE520CD"
 				item: { count: 1, id: "tfmg:steel_distillation_output" }
 				type: "item"
 			}]
@@ -41,34 +42,35 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["B2FF5821853A4A00"]
 			id: "4873C958BA674044"
 			tasks: [{
-				id: "A1A9C88552C54E79"
+				fluid: {
+					amount: 1000
+					id: "tfmg:kerosene"
+				}
+				id: "554D11EC7A03B26D"
 				type: "fluid"
-				fluid: "tfmg:kerosene"
-				amount: 1000L
 			}]
 			x: 4.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["B2FF5821853A4A00"]
-			id: "EEAEA1FD956542E6"
+			id: "06AF49B17E738C70"
 			tasks: [{
+				fluid: {
+					amount: 1000
+					id: "tfmg:heavy_oil"
+				}
 				id: "058EECA4B5D34950"
 				type: "fluid"
-				fluid: "tfmg:heavy_oil"
-				amount: 1000L
 			}]
 			x: 4.5d
 			y: -0.5d
 		}
 		{
-			dependencies: ["C1F23991F0034A96"]
+			id: "07BF74EC396D46A1"
 			shape: "gear"
 			size: 1.0d
-			id: "07BF74EC396D46A1"
 			tasks: [{
 				id: "0F3DBAA3C76345D2"
 				type: "checkmark"
@@ -80,7 +82,7 @@
 			dependencies: ["07BF74EC396D46A1"]
 			id: "7AC7F7CCE55D41B6"
 			tasks: [{
-				id: "F86A14081E724FEF"
+				id: "2AC251A63E4BFA5A"
 				item: { count: 1, id: "bigreactors:basic_reactorcontroller" }
 				type: "item"
 			}]
@@ -100,9 +102,9 @@
 		}
 		{
 			dependencies: ["7AC7F7CCE55D41B6"]
+			id: "661AD291F857ECC6"
 			shape: "hexagon"
 			size: 2.0d
-			id: "8B37F03C5F504CDF"
 			tasks: [{
 				id: "4F50F09C5C0743FC"
 				item: { count: 1, id: "bigreactors:cyanite_ingot" }
@@ -112,10 +114,9 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["8B37F03C5F504CDF"]
-			id: "D36D9CCF825548D3"
+			id: "23F1099099EBD023"
 			tasks: [{
-				id: "EBF1EB0575654C31"
+				id: "74A360827A419031"
 				item: { count: 1, id: "fluxnetworks:flux_core" }
 				type: "item"
 			}]

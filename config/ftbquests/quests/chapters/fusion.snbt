@@ -2,9 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "fusion"
-	group: "E9BB587060F0433A"
-	id: "EBB48339A012494E"
-	order_index: 8
+	group: ""
+	id: "33D9F591AAD75625"
+	images: [ ]
+	order_index: 14
 	quest_links: [ ]
 	quests: [
 		{
@@ -33,7 +34,7 @@
 			dependencies: ["347D9E1D827E4ED1"]
 			id: "3A9E5A1C2B0B4E7D"
 			tasks: [{
-				id: "C0BEFCDA3F494279"
+				id: "07612CC5F8F9A39E"
 				item: { count: 1, id: "modern_industrialization:quantum_machine_hull" }
 				type: "item"
 			}]
@@ -45,9 +46,9 @@
 				"71B53A288C2B4A1F"
 				"3A9E5A1C2B0B4E7D"
 			]
+			id: "67DBC0CB288B4C09"
 			shape: "hexagon"
 			size: 2.0d
-			id: "67DBC0CB288B4C09"
 			tasks: [{
 				id: "79B095D2A1B14CD2"
 				item: { count: 1, id: "modern_industrialization:fusion_reactor" }
@@ -58,7 +59,7 @@
 		}
 		{
 			dependencies: ["67DBC0CB288B4C09"]
-			id: "8FD3FF62EA9F4550"
+			id: "23A90B188AE1D814"
 			tasks: [{
 				id: "2922161D0C0A4006"
 				type: "checkmark"

@@ -2,13 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "create_foundation"
-	group: "4B153F79CFB54CEF"
+	group: ""
 	id: "18BA841F3E85432E"
-	order_index: 0
+	images: [ ]
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			id: "8C547A0ABF7A4032"
+			id: "2659DD865360F003"
 			tasks: [{
 				id: "408CEC27887442FA"
 				item: { count: 1, id: "minecraft:stone_pickaxe" }
@@ -18,7 +19,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["8C547A0ABF7A4032"]
 			id: "3E739B05BF0043DF"
 			tasks: [{
 				count: 32L
@@ -30,8 +30,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["8C547A0ABF7A4032"]
-			id: "92C94D8C863F4615"
+			id: "7743D22049257199"
 			tasks: [{
 				count: 16L
 				id: "07271AC659BB4593"
@@ -42,7 +41,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["8C547A0ABF7A4032"]
 			id: "2639F212391148AB"
 			tasks: [{
 				id: "66E0611610464497"
@@ -53,14 +51,11 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"3E739B05BF0043DF"
-				"92C94D8C863F4615"
-			]
-			id: "A9084AF10C6143B0"
+			dependencies: ["3E739B05BF0043DF"]
+			id: "64F44D4C92585338"
 			tasks: [{
 				count: 32L
-				id: "AD4CC18D586F4735"
+				id: "6EFAEAA53646F275"
 				item: { count: 1, id: "create:andesite_alloy" }
 				type: "item"
 			}]
@@ -68,8 +63,7 @@
 			y: -0.75d
 		}
 		{
-			dependencies: ["A9084AF10C6143B0"]
-			id: "D97DBA220B6C4FEF"
+			id: "28A3A02BD0D05364"
 			tasks: [{
 				id: "19141ACFA57046B7"
 				item: { count: 1, id: "create:andesite_casing" }
@@ -79,9 +73,8 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["D97DBA220B6C4FEF"]
 			hide_dependency_lines: true
-			id: "D07CB2F3C0FF4056"
+			id: "436CA08008ED84A0"
 			shape: "square"
 			tasks: [{
 				id: "4D6C7636E2BB490C"
@@ -92,8 +85,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["D97DBA220B6C4FEF"]
-			id: "9241B337BFCB4CC0"
+			id: "1159731F7DF419BA"
 			tasks: [{
 				id: "7C40022C47334E51"
 				item: { count: 1, id: "create:mechanical_press" }
@@ -103,10 +95,9 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["D97DBA220B6C4FEF"]
-			id: "978E50A2D0664487"
+			id: "54167ABD2463951C"
 			tasks: [{
-				id: "FB9EEA741BB940F6"
+				id: "7A24ACC88470A135"
 				item: { count: 1, id: "create:deployer" }
 				type: "item"
 			}]
@@ -114,8 +105,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["92C94D8C863F4615"]
-			id: "D48E7B6A1F574085"
+			id: "38E3EE28182F5687"
 			tasks: [{
 				count: 16L
 				id: "4CA346ADD67F4A71"
@@ -126,14 +116,9 @@
 			y: 0.75d
 		}
 		{
-			dependencies: [
-				"9241B337BFCB4CC0"
-				"978E50A2D0664487"
-				"D48E7B6A1F574085"
-			]
-			id: "C9A37B6667E4468E"
+			id: "476376CA67C40F34"
 			tasks: [{
-				id: "C77066570EE44377"
+				id: "59FC727A135E7560"
 				item: { count: 1, id: "createmechanisms:wooden_mechanism" }
 				type: "item"
 			}]
@@ -141,13 +126,10 @@
 			y: -1.25d
 		}
 		{
-			dependencies: [
-				"C9A37B6667E4468E"
-				"2639F212391148AB"
-			]
-			id: "CB8762804FB84962"
+			dependencies: ["2639F212391148AB"]
+			id: "45AFC9D5B3222684"
 			tasks: [{
-				id: "A653AA1790494B82"
+				id: "455924CC77C46014"
 				item: { count: 1, id: "create:precision_mechanism" }
 				type: "item"
 			}]
@@ -155,8 +137,7 @@
 			y: -1.25d
 		}
 		{
-			dependencies: ["D48E7B6A1F574085"]
-			id: "FFD0A3104C1044D2"
+			id: "2544774282FC86C2"
 			tasks: [{
 				id: "7ADAA359D9BC4DA3"
 				item: { count: 1, id: "create:copper_casing" }
@@ -166,8 +147,7 @@
 			y: 0.75d
 		}
 		{
-			dependencies: ["FFD0A3104C1044D2"]
-			id: "E961496BF20C41D5"
+			id: "3A5AED18A5B306DF"
 			tasks: [{
 				id: "5E3CEE4E7AD14C83"
 				item: { count: 1, id: "create:mechanical_mixer" }
@@ -177,11 +157,10 @@
 			y: 0.25d
 		}
 		{
-			dependencies: ["E961496BF20C41D5"]
-			id: "C703108EA3DB4A1F"
+			id: "6131B5406C516C54"
 			tasks: [{
 				count: 16L
-				id: "E6DB02B5553440AE"
+				id: "0A0CFF1FD1F46B3C"
 				item: { count: 1, id: "create:brass_ingot" }
 				type: "item"
 			}]
@@ -189,10 +168,9 @@
 			y: 0.75d
 		}
 		{
-			dependencies: ["C703108EA3DB4A1F"]
 			id: "703CD48B8DB947DD"
 			tasks: [{
-				id: "A41EFD5ABC7340FD"
+				id: "7C5047C3799AC696"
 				item: { count: 1, id: "create:brass_casing" }
 				type: "item"
 			}]
@@ -200,13 +178,10 @@
 			y: 0.75d
 		}
 		{
-			dependencies: [
-				"CB8762804FB84962"
-				"703CD48B8DB947DD"
-			]
+			dependencies: ["703CD48B8DB947DD"]
+			id: "5E7457450F494D99"
 			shape: "hexagon"
 			size: 2.0d
-			id: "5E7457450F494D99"
 			tasks: [{
 				count: 25L
 				id: "3CA2E4A6B22A4C46"
