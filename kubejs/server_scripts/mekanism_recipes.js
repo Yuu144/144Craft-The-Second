@@ -202,6 +202,16 @@ ServerEvents.recipes(event => {
         ]
     }).id('144craft2:mekanism_recipes/create/compacting/mekanism/steel_casing')
 
+    event.shaped('4x mekanism:steel_casing', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'modern_industrialization:stainless_steel_large_plate',
+        B: 'alltheores:osmium_gear',
+        C: 'tfmg:steel_casing'
+    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanism/steel_casing')
+
     event.shaped('mekanismgenerators:fission_fuel_assembly', [
         'ABA',
         'ACA',
@@ -335,8 +345,8 @@ ServerEvents.recipes(event => {
         A: 'mekanism:steel_casing',
         B: 'mekanism:advanced_control_circuit',
         C: 'modern_industrialization:tungsten_large_plate',
-        D: 'modern_industrialization:turbo_machine_casing',
-        E: 'modern_industrialization:blastproof_alloy_plate',
+        D: 'alltheores:signalum_gear',
+        E: 'modern_industrialization:mixed_ingot_blastproof',
         F: 'modern_industrialization:digital_circuit'
     }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanism/pressurized_reaction_chamber')
 

@@ -142,7 +142,8 @@
       "y": 500,
       "width": 530,
       "height": 170
-    }
+    },
+    {"id":"late-steel-casing","type":"text","text":"**Steel Casing x4**\nMAKE WITH: Crafting Table\nNEEDS: 4 Stainless Steel Large Plates | 4 Osmium Gears | TFMG Steel Casing","x":1335,"y":6500,"width":530,"height":155,"color":"4"}
   ],
   "edges": [
     {
