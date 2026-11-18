@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         item_inputs: [
             {
                 amount: 2,
-                item: "tfmg:capacitor_item"
+                item: "modern_industrialization:capacitor"
             },
             {
                 amount: 1,
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
             },
             {
                 amount: 2,
-                item: "tfmg:transistor_item"
+                item: "modern_industrialization:transistor"
             },
             {
                 amount: 1,
@@ -128,10 +128,6 @@ ServerEvents.recipes(event => {
             {
                 amount: 2,
                 item: "oritech:reinforced_carbon_sheet"
-            },
-            {
-                amount: 1,
-                item: "oritech:processing_unit"
             }
         ],
         fluid_inputs: [
@@ -173,10 +169,6 @@ ServerEvents.recipes(event => {
             {
                 amount: 1,
                 item: "oritech:super_ai_chip"
-            },
-            {
-                amount: 1,
-                item: "ae2:singularity"
             },
             {
                 amount: 4,
