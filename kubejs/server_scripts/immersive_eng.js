@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         'ADA'
     ], {
         A: '#minecraft:logs',
-        B: 'minecraft:copper_block',
+        B: 'alltheores:bronze_gear',
         C: 'create:railway_casing',
         D: 'minecraft:iron_block',
         E: 'createmechanisms:wooden_mechanism'
@@ -71,19 +71,19 @@ ServerEvents.recipes(event => {
                 tag: 'c:plastics'
             },
             {
-                tag: 'c:ingots/electrum'
+                item: 'alltheores:electrum_rod'
             },
             {
-                tag: 'c:ingots/electrum'
+                item: 'alltheores:electrum_rod'
             },
             {
-                tag: 'c:ingots/iron'
+                item: 'alltheores:constantan_plate'
             },
             {
                 tag: 'c:gears/constantan'
             },
             {
-                tag: 'c:ingots/iron'
+                item: 'alltheores:constantan_plate'
             }
         ],
         inputFluid: {
