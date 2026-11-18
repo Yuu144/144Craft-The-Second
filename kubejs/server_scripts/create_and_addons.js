@@ -248,7 +248,7 @@ ServerEvents.recipes(event => {
         C: 'createmechanisms:physics_mechanism'
     }).id('144craft2:create_and_addons/minecraft/shaped/sable/physics_assembler')
 
-    event.shaped('create:track_station', 2 [
+    event.shaped(Item.of ('create:track_station', 2), [
         '   ',
         ' A ',
         'BCB'
