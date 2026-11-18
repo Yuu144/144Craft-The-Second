@@ -31,6 +31,8 @@
 
 - When changing a recipe, use crafted components made from the required material, such as plates, gears, screws, bolts, or machine parts. Do not rely only on raw ingots or blocks when suitable components exist.
 - Make progression recipes meaningfully expensive: require a significant amount of material through multiple components.
+- Consider functional Modern Industrialization components as well as material parts. Match them to what the machine does: circuits, circuit boards, or digital components for electrical control and processing; motors for powered motion; pumps for moving fluids.
+- Choose components the player can already craft at that point in progression. Use parts such as large plates, screws, and bolts where they fit, and avoid forcing a higher-tier component into an earlier recipe or requiring the machine to craft its own ingredients.
 - For a material or component available from multiple mods, prefer sources in this order:
   1. AllTheOres
   2. Modern Industrialization or its addons
