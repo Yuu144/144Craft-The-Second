@@ -137,7 +137,7 @@
 		{"id":"power-electrical-phase","type":"text","text":"**Electrical Phase**\nPowered Assembler -> First Generators","x":4520,"y":77,"width":530,"height":250,"color":"4"},
 		{"id":"power-first-generators","type":"text","text":"**LV Steam Turbine**\nMAKE WITH: MI Assembler\nFUEL: Steam\nOUTPUT: Electricity","x":5120,"y":77,"width":530,"height":250,"color":"4"},
 		{"id":"ae-endgame-note","type":"text","text":"Tesla controller recipe not found. Survival access unverified.\nAlloy and wireless card recipes require the custom Tesla.","x":4945,"y":7960,"width":1985,"height":65},
-		{"id":"late-steel-casing","type":"text","text":"**Steel Casing x4**\nMAKE WITH: Crafting Table\nNEEDS: 4 Stainless Steel Large Plates | 4 Osmium Gears | TFMG Steel Casing","x":1335,"y":6500,"width":530,"height":155,"color":"4"}
+		{"id":"late-steel-casing","type":"text","text":"**Mekanism Steel Casing x2**\nMI Assembler: 5 sec | 4 Steel Plates | 2 Osmium Plates | 4 Osmium Bolts | 4 Structural Glass\nCreate Heated: 6 Steel Plates | 2 Osmium Plates | 4 Osmium Bolts | 1 Structural Glass","x":1335,"y":6500,"width":530,"height":180,"color":"4"}
 	],
 	"edges":[
 		{"id":"bronze-ingot-to-plate","fromNode":"recipe-3","fromSide":"right","toNode":"bronze-plate-craft","toSide":"left","color":"2"},

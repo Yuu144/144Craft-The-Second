@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         ingredients: [
             {
                 type: 'neoforge:single',
-                amount: 250,
+                amount: 90,
                 fluid: 'tfmg:liquid_silicon'
             }
         ],
