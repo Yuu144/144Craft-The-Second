@@ -1,6 +1,6 @@
 {
   "nodes": [
-		{"id":"reactor-moon-gate","type":"text","text":"**Reinforced Reactor**\nController: 2 Titanium Large Plates | 2 HDPE Sheets\nCasing: Titanium Plate | HDPE Sheet","x":6350,"y":500,"width":530,"height":160,"color":"4"},
+		{"id":"reactor-moon-gate","type":"text","text":"**Reinforced Reactor**\nNEEDS: Moon Desh -> Titanium\nController: 2 Titanium Large Plates | 2 HDPE Sheets\nCasing: Titanium Plate | HDPE Sheet","x":6350,"y":500,"width":530,"height":160,"color":"4"},
 		{"id":"oritech-bio-mek","type":"text","text":"**Oritech Bio Generator**\nNEEDS: Mekanism Bio Generator | Steel Large Plates | Steel Gears | Magnetic Coils | Advanced Control Circuit | Flux Gate","x":5750,"y":500,"width":530,"height":160,"color":"4"},
 		{"id":"oritech-cores","type":"text","text":"**Oritech Machine Cores**\nPrimitive -> Basic -> Improved -> Advanced -> Elite -> Ultra -> Ultimate\nNEEDS: Previous Core","x":6950,"y":77,"width":530,"height":200,"color":"4"},
 		{"id":"titanium-desh","type":"text","text":"**Titanium**\nNEEDS: Desh Ingots | Manganese Sulfuric Solution\nMAKE WITH: Blast Furnace","x":6350,"y":330,"width":530,"height":150,"color":"4"},

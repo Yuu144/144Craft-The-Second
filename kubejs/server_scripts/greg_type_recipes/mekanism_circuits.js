@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: 'mekanism:basic_control_circuit' })
     event.custom({
-        type: "modern_industrialization:circuit_assembler",
+        type: "modern_industrialization:assembler",
         duration: 50,
         eu: 32,
         item_inputs: [
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
                 item: "mekanism:basic_control_circuit"
             }
         ]
-    }).id('144craft2:greg_type_recipes/mekanism_circuits/modern_industrialization/circuit_assembler/mekanism/basic_control_circuit')
+    }).id('144craft2:greg_type_recipes/mekanism_circuits/modern_industrialization/assembler/mekanism/basic_control_circuit')
 
     event.remove({ output: 'mekanism:advanced_control_circuit' })
     event.custom({
