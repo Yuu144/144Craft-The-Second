@@ -148,7 +148,7 @@
       "width": 530,
       "height": 170
     },
-    {"id":"late-steel-casing","type":"text","text":"**Steel Casing x4**\nMAKE WITH: Crafting Table\nNEEDS: 4 Stainless Steel Large Plates | 4 Osmium Gears | TFMG Steel Casing","x":1335,"y":6500,"width":530,"height":155,"color":"4"}
+    {"id":"late-steel-casing","type":"text","text":"**Mekanism Steel Casing x2**\nMI Assembler: 5 sec | 4 Steel Plates | 2 Osmium Plates | 4 Osmium Bolts | 4 Structural Glass\nCreate Heated: 6 Steel Plates | 2 Osmium Plates | 4 Osmium Bolts | 1 Structural Glass","x":1335,"y":6500,"width":530,"height":155,"color":"4"}
   ],
   "edges": [
     {

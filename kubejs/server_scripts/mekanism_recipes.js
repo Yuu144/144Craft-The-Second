@@ -189,29 +189,30 @@ ServerEvents.recipes(event => {
             { tag: 'c:plates/steel' },
             { tag: 'c:plates/steel' },
             { tag: 'c:plates/steel' },
-            { item: 'alltheores:osmium_ingot' },
-            { item: 'alltheores:osmium_ingot' },
-            { item: 'alltheores:osmium_ingot' },
-            { item: 'alltheores:osmium_ingot' },
-            { item: 'minecraft:sand' },
-            { item: 'minecraft:sand' },
-            { item: 'minecraft:sand' },
-            { item: 'minecraft:sand' }
+            { tag: 'c:plates/osmium' },
+            { tag: 'c:plates/osmium' },
+            { tag: 'c:bolts/osmium' },
+            { tag: 'c:bolts/osmium' },
+            { tag: 'c:bolts/osmium' },
+            { tag: 'c:bolts/osmium' },
+            { item: 'mekanism:structural_glass' }
         ],
         results: [
-            { id: 'mekanism:steel_casing', count: 1 }
+            { id: 'mekanism:steel_casing', count: 2 }
         ]
     }).id('144craft2:mekanism_recipes/create/compacting/mekanism/steel_casing')
 
-    event.shaped('4x mekanism:steel_casing', [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'modern_industrialization:stainless_steel_large_plate',
-        B: 'alltheores:osmium_gear',
-        C: 'tfmg:steel_casing'
-    }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanism/steel_casing')
+    event.custom({
+        type: 'modern_industrialization:assembler',
+        eu: 8,
+        duration: 100,
+        item_inputs: [
+            { tag: 'c:plates/steel', amount: 4 },
+            { tag: 'c:plates/osmium', amount: 2 },
+            { tag: 'c:bolts/osmium', amount: 4 }
+        ],
+        item_outputs: [{ item: 'mekanism:steel_casing', amount: 1 }]
+    }).id('144craft2:mekanism_recipes/modern_industrialization/assembler/mekanism/steel_casing')
 
     event.shaped('mekanismgenerators:fission_fuel_assembly', [
         'ABA',
@@ -364,7 +365,7 @@ ServerEvents.recipes(event => {
         ingredients: [
             {
                 type: 'neoforge:single',
-                amount: 250,
+                amount: 90,
                 fluid: 'mekanism:lithium'
             }
         ],
