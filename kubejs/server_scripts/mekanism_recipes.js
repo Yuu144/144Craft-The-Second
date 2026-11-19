@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanismgenerators/heat_generator')
 
     event.shaped('mekanismgenerators:wind_generator', [
-        ' A ',
+        'PAP',
         'EBE',
         'CDC'
     ], {
@@ -48,7 +48,8 @@ ServerEvents.recipes(event => {
         B: 'mekanism:alloy_infused',
         C: 'mekanism:energy_tablet',
         D: 'mekanism:basic_control_circuit',
-        E: 'tfmg:steel_casing'
+        E: 'tfmg:steel_casing',
+        P: 'oritech:plastic_sheet'
     }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanismgenerators/wind_generator')
 
     event.shaped('mekanismgenerators:bio_generator', [

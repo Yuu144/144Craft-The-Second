@@ -18,14 +18,14 @@
 	#Peak energy generation in Joules/t for the Advanced Solar Generator. Note: It can go higher than this value in some extreme environments.
 	# Default: 300
 	# Range: 0 ~ 9223372036854775807
-	advancedSolarGeneration = 300
+	advancedSolarGeneration = 900
 
 #Settings for configuring Bio Generators
 [bio_generator]
 	#Energy produced by the Bio Generator in Joules/t.
 	# Default: 350
 	# Range: 0 ~ 9223372036854775807
-	bioGeneration = 350
+	bioGeneration = 1280
 	#The capacity in mB of the fluid tank in the Bio Generator.
 	# Default: 24000
 	# Range: > 1
