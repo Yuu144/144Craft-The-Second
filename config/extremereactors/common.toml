@@ -10,7 +10,7 @@
 		#A multiplier for balancing overall power production from Extreme Reactors generators.
 		# Default: 1.0
 		# Range: 0.005 ~ 100.0
-		powerProductionMultiplier = 6.0
+		powerProductionMultiplier = 8.0
 		#Number of ticks between updates for the Redstone Port.
 		# Default: 20
 		# Range: 10 ~ 100
