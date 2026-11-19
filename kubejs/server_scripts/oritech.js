@@ -1,4 +1,19 @@
 ServerEvents.recipes(event => {
+    // Bio Generator
+    event.remove({ output: 'oritech:bio_generator_block' })
+    event.shaped('oritech:bio_generator_block', [
+        'PFP',
+        'GCG',
+        'MBM'
+    ], {
+        P: 'modern_industrialization:steel_large_plate',
+        F: 'mekanism:advanced_control_circuit',
+        G: '#c:gears/steel',
+        C: 'oritech:flux_gate',
+        M: 'oritech:magnetic_coil',
+        B: 'mekanismgenerators:bio_generator'
+    }).id('144craft2:oritech/bio_generator')
+
     // Fuel Generator
     event.remove({ output: 'oritech:fuel_generator_block' })
     event.shaped('oritech:fuel_generator_block', [

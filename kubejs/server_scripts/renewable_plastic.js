@@ -15,18 +15,18 @@ ServerEvents.recipes(event => {
     panels.forEach(panel => {
         const output = `extended_industrialization:${panel.tier}_solar_panel`
         event.remove({ output: output })
-        event.shaped(output, ['RCR', 'PHP', 'cMc'], {
-            R: `#c:rods/${panel.rod}`, C: `modern_industrialization:${panel.circuit}`,
-            P: 'oritech:plastic_sheet', H: `modern_industrialization:${panel.hull}`,
+        event.shaped(output, ['PCP', 'FHF', 'cMc'], {
+            C: `modern_industrialization:${panel.circuit}`, P: 'oritech:plastic_sheet',
+            F: '#modern_industrialization:fluid_pipes', H: `modern_industrialization:${panel.hull}`,
             c: `modern_industrialization:${panel.cable}`, M: `modern_industrialization:${panel.motor}`
         }).id(`144craft2:renewable/${panel.tier}_solar_panel`)
         event.custom({
             type: 'modern_industrialization:assembler', duration: 200, eu: 8,
             item_inputs: [
-                { tag: `c:rods/${panel.rod}`, amount: 2 },
+                { item: 'oritech:plastic_sheet', amount: 2 },
                 { item: `modern_industrialization:${panel.circuit}`, amount: 1 },
                 { item: `modern_industrialization:${panel.cable}`, amount: 2 },
-                { item: 'oritech:plastic_sheet', amount: 2 },
+                { tag: 'modern_industrialization:fluid_pipes', amount: 2 },
                 { item: `modern_industrialization:${panel.hull}`, amount: 1 },
                 { item: `modern_industrialization:${panel.motor}`, amount: 1 }
             ],
