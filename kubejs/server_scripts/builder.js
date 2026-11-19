@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     ],{
         A: 'kubejs:larp_crystal',
         B: 'modern_industrialization:electronic_circuit',
-        C: 'draconicevolution:draconium_ingot',
+        C: 'modern_industrialization:titanium_drill_head',
         D: 'industrialforegoing:machine_frame_simple',
         E: 'oritech:motor',
         F: 'minecraft:netherite_block'
