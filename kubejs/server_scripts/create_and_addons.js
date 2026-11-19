@@ -3,6 +3,9 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'dndesires:hydraulic_press' })
     event.remove({ output: 'create:copper_casing' })
     event.remove({ output: 'create:railway_casing' })
+    event.remove({ output: 'simulated:physics_assembler' })
+    event.remove({ output: 'create:track_station' })
+    event.remove({ output: 'create:track_station' })
 
     // Aus irgendeinem Grund sonst gone. Probably wegen Northstar
     event.custom({
