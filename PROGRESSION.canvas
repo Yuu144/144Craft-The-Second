@@ -1,5 +1,6 @@
 {
   "nodes": [
+		{"id":"renewable-plastic","type":"text","text":"**Renewable Power**\nNEEDS: Oritech Plastic Sheet\nNaphtha -> Polymer Resin -> Plastic Sheet\nWind | Solar","x":5750,"y":77,"width":530,"height":200,"color":"4"},
 		{"id":"ae2-storage-component-guide","type":"group","x":4410,"y":5196,"width":1885,"height":1100,"color":"5","label":"AE2 | Storage Components"},
 		{"id":"ae2-storage-1k","type":"text","text":"**1k ME Storage Component**\nMAKE WITH: Crafting Table\nNEEDS: 2 Copper Wire | 2 Printed Calculation Circuit | 2 Quartz Fiber | Logic Processor","x":4445,"y":5276,"width":530,"height":175,"color":"5"},
 		{"id":"ae2-storage-4k","type":"text","text":"**4k ME Storage Component**\nMAKE WITH: Crafting Table\nNEEDS: 2 Capacitor | Calculation Processor | 3 1K Component | Quartz Glass","x":5095,"y":5276,"width":530,"height":175,"color":"5"},
