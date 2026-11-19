@@ -1,4 +1,19 @@
 ServerEvents.recipes(event => {
+    // Fuel Generator
+    event.remove({ output: 'oritech:fuel_generator_block' })
+    event.shaped('oritech:fuel_generator_block', [
+        'PSP',
+        'GLG',
+        'BSH'
+    ], {
+        P: 'modern_industrialization:steel_large_plate',
+        S: 'mekanism:hdpe_sheet',
+        G: '#c:gears/steel',
+        L: 'oritech:enderic_lens',
+        B: 'oritech:basic_generator_block',
+        H: 'modern_industrialization:hv_diesel_generator'
+    }).id('144craft2:oritech/fuel_generator')
+
     // Polymer Resin
     event.shaped('oritech:polymer_resin', [
         'SS',
@@ -126,9 +141,35 @@ ServerEvents.recipes(event => {
     // Oritech Cores
     event.replaceInput({ id: 'oritech:crafting/core1' }, 'minecraft:crafting_table', 'createmechanisms:wooden_mechanism')
 
-    event.remove({ id: 'oritech:crafting/core2' })
-    event.replaceInput({ id: 'oritech:crafting/core2alt' }, 'minecraft:lapis_lazuli', 'create:precision_mechanism')
+    event.remove({ output: 'oritech:machine_core_2' })
+    event.shaped('oritech:machine_core_2', ['PXP', 'GCG', 'PGP'], {
+        P: '#c:plates/iron',
+        G: '#c:gears/iron',
+        X: 'oritech:machine_core_1',
+        C: 'create:precision_mechanism'
+    }).id('144craft2:oritech/basic_machine_core')
 
-    event.remove({ id: 'oritech:crafting/core3alt' })
-    event.replaceInput({ id: 'oritech:crafting/core3' }, 'minecraft:redstone', 'createmechanisms:advanced_precision_mechanism')
+    event.remove({ output: 'oritech:machine_core_3' })
+    event.shaped('oritech:machine_core_3', ['SXS', 'FCF', 'SFS'], {
+        S: 'oritech:reinforced_carbon_sheet',
+        F: '#c:carbon_fibre',
+        X: 'oritech:machine_core_2',
+        C: 'createmechanisms:advanced_precision_mechanism'
+    }).id('144craft2:oritech/improved_machine_core')
+
+    const cores = [
+        { tier: 4, material: '#oritech:plating', center: 'oritech:enderic_compound' },
+        { tier: 5, material: 'oritech:adamant_ingot', center: 'oritech:advanced_computing_engine' },
+        { tier: 6, material: 'oritech:duratium_ingot', center: 'oritech:dubios_container' },
+        { tier: 7, material: 'oritech:prometheum_ingot', center: 'oritech:superconductor' }
+    ]
+    cores.forEach(core => {
+        const output = `oritech:machine_core_${core.tier}`
+        event.remove({ output: output })
+        event.shaped(output, ['SPS', 'SCS', 'SSS'], {
+            S: core.material,
+            P: `oritech:machine_core_${core.tier - 1}`,
+            C: core.center
+        }).id(`144craft2:oritech/machine_core_${core.tier}`)
+    })
 })
