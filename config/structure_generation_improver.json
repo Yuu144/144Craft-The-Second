@@ -1,0 +1,32 @@
+{
+  "comment_structure_height": "Only structures whose bounding box bottom (minY) is inside this range are processed.",
+  "Min structure height": 0,
+  "Max structure height": 512,
+  "comment_floating": "Automatic detection of flying structures (airships, planes) and ships at sea: a structure is skipped when at least \u0027Floating column ratio\u0027 of its footprint has more than \u0027Floating air gap\u0027 blocks of air below it, or when \u0027Water column ratio\u0027 of its footprint stands on water. A jigsaw structure placed at an absolute height (no project_start_to_heightmap) counts as an extra hint; optionally terrain_adaptation\u003dnone does too.",
+  "Auto skip floating structures": true,
+  "Floating air gap": 8,
+  "Floating column ratio": 0.8,
+  "Water column ratio": 0.6,
+  "Treat terrain adaptation none as floating hint": false,
+  "comment_shaping": "Terrain shaping happens before the terrain is generated, so it goes through the vanilla surface rules. Around every processed structure the ground is brought to the row its pieces rest on, raised where the terrain is lower and cleared where it is higher. Seen from above, the shaped area is an irregular circle (a rounded oval for elongated pieces) through the corners of the structure, plus \u0027Flat margin\u0027 plus a blend radius per direction, never less: \u0027Blend radius\u0027, plus \u0027Blend radius per block of height\u0027 for every block of height difference between the structure and the natural terrain in that direction, up to \u0027Max blend radius\u0027. \u0027Flat margin\u0027 is how many blocks next to the pieces stay flat at their level; the slope fills the whole rest of the circle, carries the natural hills and dips along and meets the untouched terrain at the edge. These sizes are scaled with the structure: the blend radii and \u0027Shape extra width\u0027 by 0.55 for a car-sized structure up to 0.9 for large ones, \u0027Flat margin\u0027 by 0.5 for a car-sized structure up to 1 for large ones. Near the vanilla limit of 8 chunks from the structure start, the slope is shortened, not cut.",
+  "Terrain shaping": true,
+  "Blend radius": 16,
+  "Max blend radius": 48,
+  "Blend radius per block of height": 1.5,
+  "Flat margin": 4,
+  "comment_irregularity": "Shape irregularity (0-1) makes the outline of the shaped terrain irregular. It is still a circle (a rounded oval for elongated pieces) through the structure corners plus \u0027Flat margin\u0027 plus the blend radius of each direction, never less; depending on direction the slope reaches further, by up to 60% of the blend radius times the irregularity plus \u0027Shape extra width\u0027 blocks, so it is long and gentle and fills the whole circle. The flat plateau next to the structure stays about \u0027Flat margin\u0027 wide. Near the vanilla limit of 8 chunks from the structure start, the slope is shortened, not cut. 0 keeps a regular outline.",
+  "Shape irregularity": 0.8,
+  "Shape extra width": 10,
+  "comment_shell": "Shell settings format: \"modid:structure_file\": { radius, verticalOffset, exponentialSpeed }",
+  "Shell settings": {},
+  "comment_lists": "Id lists support: full id (modid:name), namespace.*, *, #modid:tag. Structure blacklist: never processed. Foundation blacklist: template files (.nbt) of pieces (classic and jigsaw) that never get a foundation: the terrain is still cleared around them but never raised under them. Force list: always processed, ignoring the blacklist and the automatic floating/water/underground detection.",
+  "Structure blacklist": [
+    "cataclysm.*",
+    "minecraft.*"
+  ],
+  "Foundation blacklist": [
+    "minecraft.*"
+  ],
+  "Force list": [],
+  "comment_templates": "The list of structure template files known to the server is written to structure_generation_improver.templates.txt at every start."
+}
