@@ -1,24 +1,22 @@
-# Patched mods
+﻿# Patched mods
 
-Check this file before updating mods. Preserve each backup folder. Do not replace a listed mod until its patch has been reviewed or reapplied and tested for the replacement version.
+Check this file before updating mods. Preserve each backup folder. A patched JAR must be checked or repatched before it is installed again.
 
-| Mod | Baseline version | Patch | Side | Status |
+| Mod | Original version | Patch | Client/server location | Status |
 | --- | --- | --- | --- | --- |
-| Voxy Server Side (VSS) | 0.3.5-neoforge-1.21.1 | patch-1 | Local client, including singleplayer | **DO NOT UPDATE** - installed 2026-11-18 |
+| Voxy Server Side (VSS) | 0.3.5-neoforge-1.21.1 | patch-1 | Client and remote server; removed 2026-11-21 | **DO NOT UPDATE** if reinstalling until checked or reapplied |
 
 ## VSS patch-1
 
-- Installed file: `mods/vss-0.3.5-neoforge-1.21.1.jar`.
-- Purpose: stop shadow passes from clearing the main view's Voxy coverage; skip visibility frame work when prediction is inactive, with cleanup when disabling it.
-- Server LOD downloading and ingestion remain unchanged. No remote server JAR was modified.
-- Original prepatch backup: [original.jar](patched-mods/vss/0.3.5-neoforge-1.21.1/original.jar).
-- Patched backup: [patched.jar](patched-mods/vss/0.3.5-neoforge-1.21.1/patch-1/patched.jar).
-- [Build, verification and restore instructions](patched-mods/vss/0.3.5-neoforge-1.21.1/patch-1/README.md).
-- [Patched code for inspection](patched-mods/vss/0.3.5-neoforge-1.21.1/patch-1/source/StrictLodVisibility.java) and [source diff](patched-mods/vss/0.3.5-neoforge-1.21.1/patch-1/source/StrictLodVisibility.diff).
-- [Reproducible patch implementation](patched-mods/vss/0.3.5-neoforge-1.21.1/patch-1/PatchVss.java).
-- [SHA-256 hashes](patched-mods/vss/0.3.5-neoforge-1.21.1/patch-1/SHA256SUMS.json).
+- Installed filename on both sides: `vss-0.3.5-neoforge-1.21.1.jar`.
+- Purpose: prevent shadow passes from clearing the main view's Voxy coverage; skip visibility frame work when prediction is inactive, with cleanup when disabling it. Server LOD transfer and ingestion were unchanged.
+- The client JAR and the remote server JAR had the same patched SHA-256. The earlier note that the server JAR was unmodified was incorrect.
+- Client archive: `patched-mods/vss/0.3.5-neoforge-1.21.1/`.
+- Server archive: `/home/container/patched-mods/vss/0.3.5-neoforge-1.21.1/` in the remote checkout.
+- Original JAR: `original.jar`; installed patched JAR copies: `patch-1/patched.jar`, `patch-1/installed-client.jar`, and `patch-1/server-installed.jar`.
+- Patch source, diff, build script, and restore instructions are in `patch-1/source/`, `patch-1/PatchVss.java`, and `patch-1/README.md`.
 - Original SHA-256: `6abc84e84cc40030d49f974f3e40055020b5121bcc1a72193cef7a69677a7559`.
 - Patched SHA-256: `4fa98a2ce28ccb90b3fee8660e4affc6b926ff33ae5fe80c64c2acfcc1cf055f`.
-- Validation: bytecode structure/data flow, unchanged methods/archive entries, and isolated JVM behavior checks passed. Installed JAR hash matches the patched backup. After restart, Minecraft ran with Photon High and Voxy; a 40-second profile contained no sampled VSS visibility/reset work, versus 4.31% visibility samples before. See [runtime check](patched-mods/vss/0.3.5-neoforge-1.21.1/patch-1/RUNTIME_CHECK.md). Server LOD transfer, prediction toggles, reconnect/dimension/singleplayer checks, and a controlled FPS comparison remain pending.
+- The removed client configs are retained in `removed-config/vss-client-config.json` and `removed-config/vss-server-config.json`. The server config is archived separately in the remote server checkout.
+- Previous runtime note: `patched-mods/vss/0.3.5-neoforge-1.21.1/patch-1/RUNTIME_CHECK.md`. LOD transfer, prediction toggles, reconnect/dimension/singleplayer checks, and controlled FPS comparison remain pending.
 
-The filename and mod version metadata intentionally remain the baseline version. Identify the patch using its hash or the embedded `META-INF/144craft-vss-patch.txt` marker. Preserve `patch-1` when creating later patches; use a new patch directory.
