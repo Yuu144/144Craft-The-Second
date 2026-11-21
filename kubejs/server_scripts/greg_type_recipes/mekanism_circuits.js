@@ -52,8 +52,8 @@ ServerEvents.recipes(event => {
                 item: "modern_industrialization:capacitor"
             },
             {
-                amount: 1,
-                tag: "c:ingots/osmium"
+                amount: 2,
+                tag: "c:ingots/bronze"
             }
         ],
         fluid_inputs: [
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
             },
             {
                 amount: 1,
-                tag: "c:ingots/bronze"
+                item: "modern_industrialization:osmium_large_plate"
             }
         ],
         fluid_inputs: [
