@@ -4,7 +4,7 @@
   "Max structure height": 512,
   "comment_floating": "Automatic detection of flying structures (airships, planes) and ships at sea: a structure is skipped when at least \u0027Floating column ratio\u0027 of its footprint has more than \u0027Floating air gap\u0027 blocks of air below it, or when \u0027Water column ratio\u0027 of its footprint stands on water. A jigsaw structure placed at an absolute height (no project_start_to_heightmap) counts as an extra hint; optionally terrain_adaptation\u003dnone does too.",
   "Auto skip floating structures": true,
-  "Floating air gap": 8,
+  "Floating air gap": 16,
   "Floating column ratio": 0.8,
   "Water column ratio": 0.6,
   "Treat terrain adaptation none as floating hint": false,
