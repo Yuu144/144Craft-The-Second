@@ -352,8 +352,8 @@ ServerEvents.recipes(event => {
         B: 'mekanism:advanced_control_circuit',
         C: 'modern_industrialization:tungsten_large_plate',
         D: 'alltheores:signalum_gear',
-        E: 'modern_industrialization:mixed_ingot_blastproof',
-        F: 'modern_industrialization:digital_circuit'
+        E: 'modern_industrialization:basic_upgrade',
+        F: 'modern_industrialization:electronic_circuit_board'
     }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanism/pressurized_reaction_chamber')
 
     event.remove({ id: 'mekanism:upgrade/speed' })
