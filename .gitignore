@@ -28,3 +28,9 @@
 !patched-mods/
 !patched-mods/**
 patched-mods/**/build/
+!addons/
+!addons/ftf-terrain-debug/
+!addons/ftf-terrain-debug/**
+addons/ftf-terrain-debug/.gradle/
+addons/ftf-terrain-debug/build/
+addons/ftf-terrain-debug/run/

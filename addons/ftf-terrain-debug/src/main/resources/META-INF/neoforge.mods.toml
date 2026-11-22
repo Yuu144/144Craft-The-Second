@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="ftfterraindebug"
+version="1.0.0"
+displayName="FreeTerraForged Terrain Debug"
+description="Displays FreeTerraForged terrain type in the F3 debug screen."
+
+[[dependencies.ftfterraindebug]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.248,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.ftfterraindebug]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.ftfterraindebug]]
+modId="freeterraforged"
+type="required"
+versionRange="[1.0.0027,)"
+ordering="AFTER"
+side="BOTH"
