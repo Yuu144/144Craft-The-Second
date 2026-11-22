@@ -173,6 +173,10 @@ ServerEvents.recipes(event => {
             {
                 amount: 4,
                 item: "bigreactors:cyanite_ingot"
+            },
+            {
+                amount: 2,
+                item: "modern_industrialization:advanced_upgrade"
             }
         ],
         item_outputs: [
