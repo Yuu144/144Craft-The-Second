@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
             },
             {
                 amount: 1,
-                item: "modern_industrialization:osmium_large_plate"
+                item: "kubejs:osmium_large_plate"
             }
         ],
         fluid_inputs: [

@@ -53,7 +53,7 @@ preset = "AUTO"
 	#"key=value" ("fastOres=false", "gpuSurface=OFF"): each wins over the preset and over the value written for that
 	#setting below, whatever the preset. A choice that is what the preset gives anyway is taken out. Empty: none (the
 	#screen's Defaults button empties its tab's).
-	overrides = []
+	overrides = ["gpuTileNoise=ON", "gpuErosionFilter=ON", "gpuNoiseFill=ON", "gpuLookAhead=OFF", "gpuBiomes=ON", "gpuBiomeDecoration=ON", "gpuSurface=ON", "gpuStructures=true", "gpuBiomesAhead=true", "gpuSurfaceAhead=true", "gpuNoiseFillOtherDimensions=true"]
 
 #CPU improvements: exact speed-ups of FreeTerraForged's and Minecraft's own CPU work (no GPU needed; any PC).
 [cpu]
