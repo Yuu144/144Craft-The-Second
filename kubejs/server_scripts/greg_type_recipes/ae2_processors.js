@@ -42,13 +42,13 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_64k_part' })
     event.shaped('ae2:cell_component_64k', [
         'BCB',
-        'LGL',
+        'LHL',
         'PLP'
     ], {
         B: 'modern_industrialization:electronic_circuit_board',
         C: 'extendedae:concurrent_processor',
         L: 'ae2:cell_component_16k',
-        G: 'ae2:quartz_glass',
+        H: 'mekanism:hdpe_sheet',
         P: 'oritech:plastic_sheet'
     }).id('144craft2:greg_type_recipes/ae2_processors/minecraft/shaped/ae2/cell_component_64k')
 
@@ -57,12 +57,13 @@ ServerEvents.recipes(event => {
     event.shaped('ae2:cell_component_256k', [
         'BCB',
         'LGL',
-        ' L '
+        'RLR'
     ], {
         B: 'modern_industrialization:digital_circuit_board',
         C: 'extendedae:concurrent_processor',
         L: 'ae2:cell_component_64k',
-        G: 'ae2:quartz_vibrant_glass'
+        G: 'ae2:quartz_vibrant_glass',
+        R: 'mekanism:hdpe_rod'
     }).id('144craft2:greg_type_recipes/ae2_processors/minecraft/shaped/ae2/cell_component_256k')
 
     // 1M Storage Component
