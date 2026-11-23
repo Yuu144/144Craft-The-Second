@@ -49,6 +49,11 @@ ServerEvents.recipes(event => {
 
     // Centrifuge
     event.remove({ id: 'oritech:crafting/centrifugealt' })
+    event.replaceInput(
+        { id: 'oritech:crafting/centrifuge' },
+        'oritech:processing_unit',
+        'modern_industrialization:electronic_circuit_board'
+    )
 
     event.remove({ id: 'oritech:foundry/alloy/compat/mekanism/infused_alloy' })
 
