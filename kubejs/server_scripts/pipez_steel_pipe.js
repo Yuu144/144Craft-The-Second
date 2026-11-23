@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
     // Pipez
+    event.remove({ output: 'pipez:energy_pipe' })
     const pipes = [
         { name: 'item_pipe', side: 'minecraft:dropper' },
         { name: 'fluid_pipe', side: 'minecraft:bucket' },

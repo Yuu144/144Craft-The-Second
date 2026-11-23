@@ -352,7 +352,7 @@ ServerEvents.recipes(event => {
         A: 'mekanism:steel_casing',
         B: 'mekanism:advanced_control_circuit',
         C: 'modern_industrialization:tungsten_large_plate',
-        D: 'alltheores:signalum_gear',
+        D: 'modern_industrialization:annealed_copper_double_ingot',
         E: 'modern_industrialization:basic_upgrade',
         F: 'modern_industrialization:electronic_circuit_board'
     }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanism/pressurized_reaction_chamber')
