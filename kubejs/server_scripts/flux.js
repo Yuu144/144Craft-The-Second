@@ -1,43 +1,15 @@
 ServerEvents.recipes(event => {
-    
+    // Flux Core
     event.remove({ output: 'fluxnetworks:flux_core' })
-
     event.custom({
-        "type": "dndesires:hydraulic_compacting",
-        "ingredients": [
-            {
-                "item": "fluxnetworks:flux_dust",
-            },
-            {
-                "item": "fluxnetworks:flux_dust",
-            },
-            {
-                "item": "fluxnetworks:flux_dust",
-            },
-            {
-                "item": "fluxnetworks:flux_dust",
-            },
-            {
-                "item": "mekanism:ingot_refined_obsidian",
-            },
-            {
-                "item": "mekanism:ingot_refined_obsidian",
-            },
-            {
-                "item": "mekanism:ingot_refined_obsidian",
-            },
-            {
-                "item": "mekanism:ingot_refined_obsidian",
-            },
-            {
-                "item": "minecraft:ender_eye",
-            }
+        type: 'modern_industrialization:assembler',
+        eu: 32,
+        duration: 200,
+        item_inputs: [
+            { item: 'fluxnetworks:flux_dust', amount: 4 },
+            { item: 'mekanism:ingot_refined_obsidian', amount: 4 },
+            { item: 'minecraft:ender_eye', amount: 1 }
         ],
-        "results": [
-            {
-                "count": 6,
-                "id": "fluxnetworks:flux_core"
-            }
-        ]
-    }).id('144craft2:flux/dndesires/hydraulic_compacting/fluxnetworks/flux_core')
+        item_outputs: [{ item: 'fluxnetworks:flux_core', amount: 6 }]
+    }).id('144craft2:flux/assembler/flux_core')
 })
