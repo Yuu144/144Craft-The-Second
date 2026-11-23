@@ -1,12 +1,11 @@
 ServerEvents.recipes(event => {
     event.shaped('kubejs:circuit_assembler_frame', [
         ' A ',
-        'BCB',
+        'B B',
         ' A '
     ], {
         A: 'modern_industrialization:steel_large_plate',
-        B: 'modern_industrialization:steel_bolt',
-        C: 'modern_industrialization:steel_machine_casing_pipe'
+        B: 'modern_industrialization:steel_bolt'
     }).id('144craft2:greg_type_recipes/circuit_assembler_blocks_recipes/minecraft/shaped/kubejs/circuit_assembler_frame')
 
     event.shaped('kubejs:circuit_assembler_casing', [
