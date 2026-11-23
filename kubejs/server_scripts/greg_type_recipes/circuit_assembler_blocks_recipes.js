@@ -1,4 +1,17 @@
 ServerEvents.recipes(event => {
+    // Circuit Assembler
+    event.shaped('modern_industrialization:circuit_assembler', [
+        'PCP',
+        'RAR',
+        'GCG'
+    ], {
+        P: 'modern_industrialization:steel_large_plate',
+        C: 'mekanism:basic_control_circuit',
+        R: 'modern_industrialization:robot_arm',
+        A: 'modern_industrialization:assembler',
+        G: 'alltheores:steel_gear'
+    }).id('144craft2:circuit_assembler_controller')
+
     event.shaped('kubejs:circuit_assembler_frame', [
         ' A ',
         'B B',
