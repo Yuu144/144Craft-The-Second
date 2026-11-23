@@ -30,8 +30,7 @@ MIMachineEvents.registerMachines(event => {
         'energy_input'
     )
 
-    MIMachineEvents.registerMachines(event => {
-    const customMachineShape = event.layeredShape("customHatchCasing", [
+    const customMachineShape = event.layeredShape("tesla", [
         ["                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   "],
         ["       bbbbb       ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   "],
         ["     bbbbbbbbb     ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "        bbb        ", "       bbbbb       ", "        bbb        ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   ", "                   "],
@@ -70,7 +69,6 @@ MIMachineEvents.registerMachines(event => {
     .key("p", event.memberOfBlock("mekanism:elite_induction_provider"), event.noHatch())
     .key("q", event.memberOfBlock("mekanism:elite_induction_cell"), event.noHatch())
     .build();
-    });
 
     event.simpleElectricCraftingMultiBlock(
         'Tesla',
