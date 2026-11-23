@@ -219,13 +219,14 @@ ServerEvents.recipes(event => {
     }).id('144craft2:mekanism_recipes/modern_industrialization/assembler/mekanism/steel_casing')
 
     event.shaped('mekanismgenerators:fission_fuel_assembly', [
-        'ABA',
-        'ACA',
-        'ABA'
+        'LPL',
+        'GCG',
+        'LPL'
     ], {
-        A: '#forge:ingots/lead',
-        B: '#forge:ingots/steel',
-        C: 'bigreactors:blutonium_block'
+        L: 'alltheores:lead_plate',
+        P: 'modern_industrialization:steel_large_plate',
+        G: 'alltheores:steel_gear',
+        C: 'modern_industrialization:steel_machine_casing_pipe'
     }).id('144craft2:mekanism_recipes/minecraft/shaped/mekanismgenerators/fission_fuel_assembly')
 
     event.custom({

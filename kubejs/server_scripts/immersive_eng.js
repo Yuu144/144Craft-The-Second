@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
         C: 'modern_industrialization:digital_circuit_board',
         D: 'industrialforegoing:machine_frame_advanced',
         E: 'alltheores:netherite_gear',
-        F: 'minecraft:redstone'
+        F: 'cataclysm:witherite_ingot'
     }).id('144craft2:immersive_eng/minecraft/shaped/industrialforegoing/ore_laser_base')
 
     event.shaped('industrialforegoing:laser_drill', [
