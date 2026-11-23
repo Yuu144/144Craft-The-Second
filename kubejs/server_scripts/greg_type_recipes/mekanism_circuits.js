@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
             tag: "mekanism:redstone"
         },
         item_input: {
-            count: 1,
+            count: 2,
             tag: "c:ingots/bronze"
         },
         output: {
@@ -114,12 +114,12 @@ ServerEvents.recipes(event => {
                 item: "mekanism:advanced_control_circuit"
             },
             {
-                amount: 3,
-                tag: "c:ingots/electrum"
+                amount: 1,
+                item: "kubejs:electrum_large_plate"
             },
             {
-                amount: 3,
-                tag: "c:ingots/signalum"
+                amount: 2,
+                item: "alltheores:signalum_plate"
             },
             {
                 amount: 1,
