@@ -45,8 +45,8 @@
     "seedOffset": 0,
     "riverCount": 12,
     "mainRivers": {
-      "bankWidth": 75,
-      "bedWidth": 42,
+      "bankWidth": 80,
+      "bedWidth": 64,
       "fade": 0.75,
       "bedDepth": 5,
       "minBankHeight": 2,
