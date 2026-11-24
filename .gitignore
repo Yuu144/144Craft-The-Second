@@ -34,3 +34,10 @@ patched-mods/**/build/
 addons/ftf-terrain-debug/.gradle/
 addons/ftf-terrain-debug/build/
 addons/ftf-terrain-debug/run/
+!addons/144craft-foundations/
+!addons/144craft-foundations/**
+addons/144craft-foundations/.gradle/
+addons/144craft-foundations/build/
+addons/144craft-foundations/run/
+!disabled-mods/structure-generation-improver/
+!disabled-mods/structure-generation-improver/**
