@@ -521,3 +521,6 @@ addons/144craft-foundations/build/
 addons/144craft-foundations/run/
 !disabled-mods/structure-generation-improver/
 !disabled-mods/structure-generation-improver/**
+!patched-mods/structure_generation_improver/
+!patched-mods/structure_generation_improver/**
+patched-mods/structure_generation_improver/**/build/
