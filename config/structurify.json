@@ -17,159 +17,136 @@
       "name": "dungeons_arise:kisegi_sanctuary",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO",
-      "terrain_adaptation": "beard_thin"
+      "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:abandoned_temple",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:bandit_village",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:bathhouse",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:ceryneian_hind",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:coliseum",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:fishing_hut",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:giant_mushroom",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:greenwood_pub",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:illager_campsite",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:illager_fort",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:illager_windmill",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:infested_temple",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:jungle_tree_house",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:lighthouse",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:merchant_campsite",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:monastery",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:mushroom_house",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:mushroom_mines",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:mushroom_village",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:scorched_mines",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:shiraz_palace",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
       "name": "dungeons_arise:wishing_well",
-      "terrain_adaptation": "beard_thin",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
@@ -214,15 +191,13 @@
       "name": "cataclysm:burning_arena",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO",
-      "terrain_adaptation": "beard_thin"
+      "flatness_check_mode": "AUTO"
     },
     {
       "name": "cataclysm:cursed_pyramid",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO",
-      "terrain_adaptation": "beard_thin"
+      "flatness_check_mode": "AUTO"
     },
     {
       "name": "cataclysm:desert_occupied_village",
@@ -246,22 +221,19 @@
       "name": "cataclysm:frosted_prison",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO",
-      "terrain_adaptation": "beard_thin"
+      "flatness_check_mode": "AUTO"
     },
     {
       "name": "cataclysm:ruined_citadel",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO",
-      "terrain_adaptation": "beard_thin"
+      "flatness_check_mode": "AUTO"
     },
     {
       "name": "cataclysm:soul_black_smith",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO",
-      "terrain_adaptation": "beard_thin"
+      "flatness_check_mode": "AUTO"
     },
     {
       "name": "cataclysm:sunken_city",
@@ -279,276 +251,26 @@
       "name": "dungeons_arise:keep_kayra",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "ad_astra:lunarian_village",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "ad_astra:oil_well",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:callisto/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:callisto/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:charon/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:charon/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:deimos/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:deimos/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:dysnomia/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:dysnomia/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:enceladus/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:enceladus/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:eris/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:eris/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:europa/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:europa/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:ganymede/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:ganymede/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:iapetus/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:iapetus/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:io/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:io/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:miranda/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:miranda/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:neptune/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:neptune/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:oberon/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:oberon/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:phobos/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:phobos/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:phobos/expedition_outpost",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:pluto/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:pluto/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:rhea/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:rhea/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:titan/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:titan/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:titan/library_of_the_rings",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:titania/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:titania/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:triton/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:triton/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:uranus/alien_ruin",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "adastraplanets:uranus/crashed_probe",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "betterjungletemples:jungle_temple",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "betterwitchhuts:witch_circle",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "betterwitchhuts:witch_hut",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "dungeons_arise:bandit_towers",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "dungeons_arise:thornborn_towers",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "minecraft:bastion_remnant",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "minecraft:desert_pyramid",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "minecraft:end_city",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "minecraft:igloo",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "minecraft:jungle_pyramid",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "minecraft:ruined_portal",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "minecraft:ruined_portal_desert",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "minecraft:ruined_portal_jungle",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "minecraft:ruined_portal_mountain",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "minecraft:ruined_portal_nether",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "minecraft:ruined_portal_swamp",
-      "terrain_adaptation": "beard_thin"
-    },
-    {
-      "name": "minecraft:swamp_hut",
-      "terrain_adaptation": "beard_thin"
+      "flatness_check_mode": "AUTO"
     },
     {
       "name": "twilightforest:aurora_palace",
-      "terrain_adaptation": "beard_thin",
       "exclude_from_overlap_prevention": false
     },
     {
       "name": "twilightforest:fallen_trunk",
-      "terrain_adaptation": "beard_thin",
       "exclude_from_overlap_prevention": false
     },
     {
       "name": "twilightforest:hollow_tree",
-      "terrain_adaptation": "beard_thin",
       "exclude_from_overlap_prevention": false
     },
     {
       "name": "twilightforest:mushroom_tower",
-      "terrain_adaptation": "beard_thin",
       "exclude_from_overlap_prevention": false
     },
     {
       "name": "twilightforest:swamp_hollow_tree",
-      "terrain_adaptation": "beard_thin",
       "exclude_from_overlap_prevention": false
     },
     {

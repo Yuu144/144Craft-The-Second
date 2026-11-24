@@ -514,3 +514,10 @@
 /config/xnet-client.toml
 /config/zeta-common.toml
 /config/CoroUtil/General.toml
+!addons/144craft-foundations/
+!addons/144craft-foundations/**
+addons/144craft-foundations/.gradle/
+addons/144craft-foundations/build/
+addons/144craft-foundations/run/
+!disabled-mods/structure-generation-improver/
+!disabled-mods/structure-generation-improver/**
