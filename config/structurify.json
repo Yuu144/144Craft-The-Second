@@ -1,0 +1,177 @@
+{
+  "config_version": "2.0.43",
+  "config_datetime": "2026-11-22_00-31-29",
+  "general": {},
+  "structure_namespaces": [
+    {
+      "name": "global",
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    }
+  ],
+  "structures": [
+    {
+      "name": "dungeons_arise:abandoned_temple",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:bandit_village",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:bathhouse",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:ceryneian_hind",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:coliseum",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:fishing_hut",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:giant_mushroom",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:greenwood_pub",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:illager_campsite",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:illager_fort",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:illager_windmill",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:infested_temple",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:jungle_tree_house",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:kisegi_sanctuary",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:lighthouse",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:merchant_campsite",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:monastery",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:mushroom_house",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:mushroom_mines",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:mushroom_village",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:scorched_mines",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:shiraz_palace",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:wishing_well",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    }
+  ],
+  "structure_sets": [],
+  "structure_template_pools": []
+}
