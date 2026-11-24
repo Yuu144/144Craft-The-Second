@@ -1,0 +1,6 @@
+com/vivideru/sgi/mixin/ChunkGeneratorMixin.class
+com/vivideru/sgi/mixin/NoiseBasedChunkGeneratorMixin.class
+com/vivideru/sgi/worldgen/StructureFilter.class
+com/vivideru/sgi/worldgen/TerrainConformUtil.class
+com/vivideru/sgi/worldgen/TerrainShaper$Function.class
+com/vivideru/sgi/worldgen/TerrainShaper.class
