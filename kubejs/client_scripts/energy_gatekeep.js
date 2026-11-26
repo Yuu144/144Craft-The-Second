@@ -34,5 +34,5 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         event.remove(item)
     })
 
-    event.remove('integrateddynamics:squeezer')
+    event.remove('integrateddynamics:crafting/squeezer')
 })

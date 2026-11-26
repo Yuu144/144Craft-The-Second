@@ -5,7 +5,7 @@ Check this file before updating mods. Preserve each backup folder. A patched JAR
 | Mod | Original version | Patch | Client/server location | Status |
 | --- | --- | --- | --- | --- |
 | Voxy Server Side (VSS) | 0.3.5-neoforge-1.21.1 | patch-1 | Client and remote server; removed 2026-11-21 | **DO NOT UPDATE** if reinstalling until checked or reapplied |
-| Structure Generation Improver (SGI) | 2.1.0 NeoForge 1.21.1 | diagnostics-1 | Client `mods/structure_generation_improver-2.1.0-neoforge-1.21.1.jar`; separate server archive | **DO NOT UPDATE** until diagnostics are checked or reapplied |
+| Structure Generation Improver (SGI) | 2.1.0 NeoForge 1.21.1 | original installed; diagnostics archived | Client `mods/structure_generation_improver-2.1.0-neoforge-1.21.1.jar`; separate server archive | **DO NOT UPDATE** until diagnostics are checked or reapplied |
 
 ## VSS patch-1
 
@@ -37,3 +37,12 @@ Check this file before updating mods. Preserve each backup folder. A patched JAR
   separately in the remote checkout. No terrain behavior fix is claimed by this patch.
 - **DO NOT UPDATE** until diagnostics have been checked or reapplied.
 
+
+## WGAccel sgi-compat-2 - DO NOT UPDATE
+
+- Worldgen Accelerator 0.70.5+mc1.21.1; client: mods/wgaccel-neoforge-0.70.5+mc1.21.1.jar.
+- Quiet SGI compatibility fallback. Original SGI 2.1.0 is installed on the client.
+- Backup, original JAR, hashes, source, build and restore instructions: patched-mods/wgaccel/0.70.5-mc1.21.1/sgi-compat-2/README.md.
+- Original SHA-256: d1cad121843252ad3ee777d50e1aea849fbcadb2942a0af26321c555238e7816.
+- Patched SHA-256: 760f8837f6c9126086160313060ee9c6641143112b12b7294ab4d3f022aab9f9.
+- DO NOT UPDATE until checked or reapplied.
