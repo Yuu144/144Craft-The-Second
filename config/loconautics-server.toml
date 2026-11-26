@@ -206,8 +206,8 @@
 		remoteControl = true
 
 [debug]
-	force = false
-	forceLines = false
+	force = true
+	forceLines = true
 
 [patch]
 	enableRollerPatch = true

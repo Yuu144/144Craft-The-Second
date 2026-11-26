@@ -1,6 +1,6 @@
 {
   "config_version": "2.0.43",
-  "config_datetime": "2026-11-22_00-31-29",
+  "config_datetime": "2026-11-22_00-31-01",
   "general": {
     "prevent_structure_overlap": true,
     "overlap_padding": 0
@@ -14,97 +14,145 @@
   ],
   "structures": [
     {
-      "name": "twilightforest:knight_stronghold",
-      "exclude_from_overlap_prevention": false
+      "name": "irons_spellbooks:mangrove_hut",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "flatness_check_mode": "AUTO"
     },
     {
-      "name": "twilightforest:quest_grove",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:labyrinth",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:giant_house",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:medium_hollow_hill",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:small_hollow_hill",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:lich_tower",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:hedge_maze",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:yeti_cave",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:large_hollow_hill",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:camp",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:dark_tower",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:hydra_lair",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:final_castle",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:naga_courtyard",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:troll_cave",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:aurora_palace",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:fallen_trunk",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:hollow_tree",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:mushroom_tower",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "twilightforest:swamp_hollow_tree",
-      "exclude_from_overlap_prevention": false
-    },
-    {
-      "name": "dungeons_arise:keep_kayra",
+      "name": "dungeons_arise:kisegi_sanctuary",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
-      "name": "dungeons_arise:mining_complex",
+      "name": "dungeons_arise:abandoned_temple",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:bandit_village",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:bathhouse",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:ceryneian_hind",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:coliseum",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:fishing_hut",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:giant_mushroom",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:greenwood_pub",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:illager_campsite",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:illager_fort",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:illager_windmill",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:infested_temple",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:jungle_tree_house",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:lighthouse",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:merchant_campsite",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:monastery",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:mushroom_house",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:mushroom_mines",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:mushroom_village",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:scorched_mines",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:shiraz_palace",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
+      "name": "dungeons_arise:wishing_well",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
@@ -200,142 +248,100 @@
       "flatness_check_mode": "AUTO"
     },
     {
-      "name": "dungeons_arise:abandoned_temple",
+      "name": "dungeons_arise:mining_complex",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
-      "name": "dungeons_arise:bandit_village",
+      "name": "dungeons_arise:keep_kayra",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,
       "flatness_check_mode": "AUTO"
     },
     {
-      "name": "dungeons_arise:bathhouse",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:aurora_palace",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:ceryneian_hind",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:fallen_trunk",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:coliseum",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:hollow_tree",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:fishing_hut",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:mushroom_tower",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:giant_mushroom",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:swamp_hollow_tree",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:greenwood_pub",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:camp",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:illager_campsite",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:dark_tower",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:illager_fort",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:final_castle",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:illager_windmill",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:giant_house",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:infested_temple",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:hedge_maze",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:jungle_tree_house",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:hydra_lair",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:kisegi_sanctuary",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:knight_stronghold",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:lighthouse",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:labyrinth",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:merchant_campsite",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:large_hollow_hill",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:monastery",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:lich_tower",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:mushroom_house",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:medium_hollow_hill",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:mushroom_mines",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:naga_courtyard",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:mushroom_village",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:quest_grove",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:scorched_mines",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:small_hollow_hill",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:shiraz_palace",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:troll_cave",
+      "exclude_from_overlap_prevention": false
     },
     {
-      "name": "dungeons_arise:wishing_well",
-      "override_global_flatness_check": true,
-      "enable_flatness_check": true,
-      "flatness_check_mode": "AUTO"
+      "name": "twilightforest:yeti_cave",
+      "exclude_from_overlap_prevention": false
     }
   ],
   "structure_sets": [],

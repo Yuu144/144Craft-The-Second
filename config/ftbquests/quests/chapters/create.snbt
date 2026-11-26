@@ -5,7 +5,7 @@
 	group: ""
 	id: "1343E1B2C0206494"
 	images: [ ]
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -604,8 +604,8 @@
 				item: { count: 1, id: "create:blaze_burner" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 2.0d
+			x: 14.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["21DD63F9C62BA64C"]
@@ -760,7 +760,7 @@
 				item: { count: 1, id: "create:portable_fluid_interface" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 11.5d
 			y: -1.5d
 		}
 		{
@@ -776,8 +776,8 @@
 				item: { count: 1, id: "create:hose_pulley" }
 				type: "item"
 			}]
-			x: 13.0d
-			y: 1.0d
+			x: 12.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -796,7 +796,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["23D4A2942F65C2FB"]
@@ -884,7 +884,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -902,8 +902,8 @@
 				item: { count: 1, id: "create:mechanical_arm" }
 				type: "item"
 			}]
-			x: 15.0d
-			y: 4.0d
+			x: 14.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["667268734FC8C44C"]
@@ -919,7 +919,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5AE6E5C8286B980E"]
@@ -934,8 +934,8 @@
 				item: { count: 1, id: "create:portable_storage_interface" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 5.5d
+			x: 13.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["1E4DFE75DE3ABD13"]
@@ -983,7 +983,10 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["2C9EA69BBBD6395D"]
+			dependencies: [
+				"2C9EA69BBBD6395D"
+				"430BC1CC9D28B826"
+			]
 			id: "24BBDBCF110AC88F"
 			rewards: [
 				{
@@ -1001,13 +1004,13 @@
 				}
 			]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "6115EBFAD12C9B12"
 				item: { count: 1, id: "create:precision_mechanism" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 12.5d
 			y: 3.0d
 		}
 		{
@@ -1019,91 +1022,6 @@
 			}]
 			x: 17.0d
 			y: -3.5d
-		}
-		{
-			dependencies: [
-				"78095835D1B7E93C"
-				"667F3B294E62CA36"
-			]
-			id: "54D2E3B573E8C59B"
-			shape: "pentagon"
-			size: 1.5d
-			tasks: [{
-				id: "1B4B08DDBFE1A273"
-				item: { components: { "ftbquests:missing_item": "northstar:titanium_ingot" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 17.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["54D2E3B573E8C59B"]
-			id: "62DB1E73D200E8FB"
-			tasks: [{
-				id: "5FD01A4DA8D2507D"
-				item: { components: { "ftbquests:missing_item": "northstar:rocket_thruster" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["54D2E3B573E8C59B"]
-			id: "177DFE987C3EA435"
-			tasks: [{
-				id: "0D41FE9A430DE7E2"
-				item: { components: { "ftbquests:missing_item": "northstar:titanium_plating" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 19.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["54D2E3B573E8C59B"]
-			id: "289E18D7C95FA380"
-			tasks: [{
-				id: "6303982A4D05C978"
-				item: { components: { "ftbquests:missing_item": "northstar:rocket_station" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: -2.5d
-		}
-		{
-			dependencies: [
-				"54D2E3B573E8C59B"
-				"015400B8CD7EF364"
-			]
-			id: "308C7DFE28EB1DBC"
-			tasks: [{
-				id: "37F1BC82729494B6"
-				item: { components: { "ftbquests:missing_item": "northstar:rocket_controls" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 20.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["015400B8CD7EF364"]
-			id: "21A8CDA417FC1495"
-			tasks: [{
-				id: "2905B3A4F5F7670D"
-				item: { components: { "ftbquests:missing_item": "northstar:astronomy_table" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 20.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["54D2E3B573E8C59B"]
-			id: "015400B8CD7EF364"
-			tasks: [{
-				id: "37CED844682F9B74"
-				item: { components: { "ftbquests:missing_item": "northstar:telescope" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 19.0d
-			y: -2.0d
 		}
 		{
 			dependencies: ["27CEFD94B907F03D"]
@@ -1206,26 +1124,29 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["0E1ECD1C3FD827A1"]
+			dependencies: [
+				"0E1ECD1C3FD827A1"
+				"430BC1CC9D28B826"
+			]
 			id: "58EC5CC26192D805"
 			tasks: [{
-				id: "0971C60A56134974"
-				item: { count: 1, id: "create_sa:hydraulic_engine" }
+				id: "2C82C27A7D6ECCC4"
+				item: { count: 1, id: "createmechanisms:fluid_mechanism" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -1.5d
+			x: 14.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["58EC5CC26192D805"]
 			id: "4B5184B7FCF73417"
 			tasks: [{
-				id: "327007FEA2D46D70"
-				item: { count: 1, id: "dndesires:hydraulic_press" }
+				id: "5EF288CC266681D9"
+				item: { count: 1, id: "create_sa:hydraulic_engine" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: -3.5d
+			x: 16.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0767ED6BA3DEFE11"]
@@ -1234,8 +1155,8 @@
 				id: "7954587460A7E00A"
 				type: "checkmark"
 			}]
-			x: 15.5d
-			y: 1.5d
+			x: 16.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["21DD63F9C62BA64C"]
@@ -1259,8 +1180,53 @@
 				item: { count: 1, id: "create:rotation_speed_controller" }
 				type: "item"
 			}]
+			x: 14.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4B5184B7FCF73417"]
+			id: "08A2EBA039315509"
+			tasks: [{
+				id: "2191D9B17C016C87"
+				item: { count: 1, id: "dndesires:hydraulic_press" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["24BBDBCF110AC88F"]
+			id: "0C868BFDC48C46B8"
+			tasks: [{
+				id: "1DD981D8145FAC6B"
+				item: { count: 1, id: "createmechanisms:physics_mechanism" }
+				type: "item"
+			}]
 			x: 14.5d
-			y: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["24BBDBCF110AC88F"]
+			id: "240E93FE0E7C5D2E"
+			tasks: [{
+				id: "2EAE6A73F7D540BC"
+				item: { count: 1, id: "createmechanisms:rubber_mechanism" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["66B9FE3871DEA62E"]
+			hide_dependency_lines: true
+			id: "430BC1CC9D28B826"
+			tasks: [{
+				id: "55BD998A4719FFF1"
+				item: { count: 1, id: "createmechanisms:wooden_mechanism" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
 		}
 	]
 }
