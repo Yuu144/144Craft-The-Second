@@ -29,3 +29,12 @@ Check this file before updating or reinstalling patched mods. Keep all retained 
 - Rebuilt on server using Java 21; hash matches client. Full-pack runtime verification pending.
 - Logs: logs/sgi-diagnostics.log and rotations .1, .2, .3.
 - DO NOT UPDATE until diagnostics have been checked or reapplied. Retain backups.
+
+## WGAccel sgi-compat-2 - DO NOT UPDATE
+
+- Worldgen Accelerator 0.70.5+mc1.21.1; server: mods/wgaccel-neoforge-0.70.5+mc1.21.1.jar.
+- Quiet SGI compatibility fallback. Original SGI 2.1.0 is installed on the server.
+- Backup, original JAR, hashes, source, build and restore instructions: patched-mods/wgaccel/0.70.5-mc1.21.1/sgi-compat-2/README.md.
+- Original SHA-256: d1cad121843252ad3ee777d50e1aea849fbcadb2942a0af26321c555238e7816.
+- Patched SHA-256: 760f8837f6c9126086160313060ee9c6641143112b12b7294ab4d3f022aab9f9.
+- DO NOT UPDATE until checked or reapplied.

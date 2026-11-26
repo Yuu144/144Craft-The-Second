@@ -1,9 +1,14 @@
 ServerEvents.recipes(event => {
     // Solar Generator
     event.remove({ output: 'mekanismgenerators:solar_generator' })
-    event.shaped('mekanismgenerators:solar_generator', ['SSS', 'APA', 'OEO'], {
-        S: 'mekanismgenerators:solar_panel', A: '#mekanism:alloys/infused',
-        P: 'oritech:plastic_sheet', O: '#c:ingots/osmium', E: 'mekanism:energy_tablet'
+    event.shaped('mekanismgenerators:solar_generator', [
+        'SSS', 'APA', 'OEO'
+    ], {
+        S: 'mekanismgenerators:solar_panel',
+        A: '#mekanism:alloys/infused',
+        P: 'oritech:plastic_sheet',
+        O: '#c:ingots/osmium',
+        E: 'mekanism:energy_tablet'
     }).id('144craft2:renewable/solar_generator')
 
     // Solar Panels
@@ -16,12 +21,17 @@ ServerEvents.recipes(event => {
         const output = `extended_industrialization:${panel.tier}_solar_panel`
         event.remove({ output: output })
         event.shaped(output, ['PCP', 'FHF', 'cMc'], {
-            C: `modern_industrialization:${panel.circuit}`, P: 'oritech:plastic_sheet',
-            F: '#modern_industrialization:fluid_pipes', H: `modern_industrialization:${panel.hull}`,
-            c: `modern_industrialization:${panel.cable}`, M: `modern_industrialization:${panel.motor}`
+            C: `modern_industrialization:${panel.circuit}`,
+            P: 'oritech:plastic_sheet',
+            F: '#modern_industrialization:fluid_pipes',
+            H: `modern_industrialization:${panel.hull}`,
+            c: `modern_industrialization:${panel.cable}`,
+            M: `modern_industrialization:${panel.motor}`
         }).id(`144craft2:renewable/${panel.tier}_solar_panel`)
         event.custom({
-            type: 'modern_industrialization:assembler', duration: 200, eu: 8,
+            type: 'modern_industrialization:assembler',
+            duration: 200,
+            eu: 8,
             item_inputs: [
                 { item: 'oritech:plastic_sheet', amount: 2 },
                 { item: `modern_industrialization:${panel.circuit}`, amount: 1 },
@@ -37,14 +47,16 @@ ServerEvents.recipes(event => {
     // Big Solar Panel
     event.remove({ output: 'oritech:big_solar_panel_block' })
     event.shaped('oritech:big_solar_panel_block', ['FPF', 'FCF', 'SBS'], {
-        F: 'oritech:fluxite', P: 'oritech:plastic_sheet', C: 'oritech:advanced_battery',
-        S: 'oritech:flux_gate', B: 'oritech:basic_generator_block'
+        F: 'oritech:fluxite', P: 'oritech:plastic_sheet',
+        C: 'oritech:advanced_battery', S: 'oritech:flux_gate',
+        B: 'oritech:basic_generator_block'
     }).id('144craft2:renewable/big_solar_panel')
 
     // Solar Panel
     event.remove({ output: 'ad_astra:solar_panel' })
     event.shaped('ad_astra:solar_panel', ['CCC', 'SDS', 'DPD'], {
-        C: 'ad_astra:photovoltaic_etrium_cell', S: '#ad_astra:steel_plates',
-        D: '#ad_astra:desh_plates', P: 'oritech:plastic_sheet'
+        C: 'ad_astra:photovoltaic_etrium_cell',
+        S: '#ad_astra:steel_plates', D: '#ad_astra:desh_plates',
+        P: 'oritech:plastic_sheet'
     }).id('144craft2:renewable/ad_astra_solar_panel')
 })
