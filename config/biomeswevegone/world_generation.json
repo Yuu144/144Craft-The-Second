@@ -53,7 +53,7 @@
     "biomeswevegone:tropical_rainforest": true,
     "biomeswevegone:weeping_witch_forest": true,
     "biomeswevegone:white_mangrove_marshes": true,
-    "biomeswevegone:windswept_desert": true,
+    "biomeswevegone:windswept_desert": false,
     "biomeswevegone:zelkova_forest": true
   },
   "region_1_weight": 8,
