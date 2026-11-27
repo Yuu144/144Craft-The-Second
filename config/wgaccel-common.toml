@@ -256,7 +256,7 @@ preset = "AUTO"
 	#is compared bit for bit (logged as WGA GPU erosion filter check; no speedup). ON: the GPU's result is used;
 	#the few cells it cannot be sure of are redone on the CPU. Any GPU trouble switches it back to the CPU.
 	#Allowed Values: OFF, CHECK, ON
-	gpuErosionFilter = "OFF"
+	gpuErosionFilter = "ON"
 	#FreeTerraForged's CliffRelaxation filter (its FTF of 21 Oct and later) on the GPU, with gpuErosionFilter's mode. Off by
 	#default: bit-identical, but in the run of 0.9.58 it took 27 ms per call on the GPU (waiting its turn on the GPU
 	#thread) against FreeTerraForged's 3.7 ms on the CPU.
@@ -268,7 +268,7 @@ preset = "AUTO"
 	#ON: the GPU's blocks are written into the chunk instead; every 64th chunk is still checked. Chunks with structure
 	#terrain or old-world blending stay on the CPU. Any GPU trouble switches it back to the CPU.
 	#Allowed Values: OFF, CHECK, ON
-	gpuNoiseFill = "OFF"
+	gpuNoiseFill = "ON"
 	#Gain: 1:06 -> 1:01 (with gpuBiomesAheadAtReferences).
 	#Noise fills worked out ahead of Minecraft's requests. Each new chunk is noted at its structure references step;
 	#two threads make its fill's inputs from a stand-in chunk (its own noise chunk, aquifer and FreeTerraForged tile
