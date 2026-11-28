@@ -23,9 +23,7 @@
   "Structure blacklist": [
     "minecraft.*"
   ],
-  "Foundation blacklist": [
-    "minecraft.*"
-  ],
+  "Foundation blacklist": [],
   "Force list": [
     "minecraft:village_plains",
     "minecraft:village_desert",
