@@ -26,6 +26,12 @@
   "Foundation blacklist": [
     "minecraft.*"
   ],
-  "Force list": [],
+  "Force list": [
+    "minecraft:village_plains",
+    "minecraft:village_desert",
+    "minecraft:village_savanna",
+    "minecraft:village_snowy",
+    "minecraft:village_taiga"
+  ],
   "comment_templates": "The list of structure template files known to the server is written to structure_generation_improver.templates.txt at every start."
 }
