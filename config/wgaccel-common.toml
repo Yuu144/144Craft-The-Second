@@ -34,7 +34,8 @@ preset = "AUTO"
 	#How many chunks Chunky keeps in flight while pregenerating (its chunky.maxWorkingCount; Chunky's own default is 50,
 	#which leaves the generation threads and the GPU waiting). 0: automatic, from the heap and the world's height (each chunk in
 	#flight keeps ~220 chunks loaded; kept under ~45% of the heap: 16 GB with a 768-block FreeTerraForged world ~300, a
-	#vanilla-height world or a bigger heap 512; 512 on 16 GB filled the heap in a radius 2000 run and slowed it).
+	#vanilla-height world or a bigger heap 512; 512 on 16 GB filled the heap in a radius 2000 run and slowed it; at most 24
+	#per CPU thread, as a CPU that cannot keep up also falls behind unloading them).
 	#-1: leave Chunky's setting alone. A value set on the command line (-Dchunky.maxWorkingCount) always wins.
 	#Takes effect for a pregeneration started after the world has loaded.
 	# Default: 0
@@ -54,6 +55,27 @@ preset = "AUTO"
 	#setting below, whatever the preset. A choice that is what the preset gives anyway is taken out. Empty: none (the
 	#screen's Defaults button empties its tab's).
 	overrides = ["gpuTileNoise=ON", "gpuErosionFilter=ON", "gpuNoiseFill=ON", "gpuLookAhead=OFF", "gpuBiomes=ON", "gpuBiomeDecoration=ON", "gpuSurface=ON", "gpuStructures=true", "gpuBiomesAhead=true", "gpuSurfaceAhead=true", "gpuNoiseFillOtherDimensions=true"]
+
+#Version support: verified FreeTerraForged, terrain, and biome mod versions for Worldgen Accelerator:
+#  Terrain / Shaping Mods:
+#    - FreeTerraForged (freeterraforged): 1.0.0010 to 1.0.0034 (MC 1.21.1; tested 1.0.0010, 1.0.0013, 1.0.0014, 1.0.0024-1.0.0034)
+#    - Conquest ReTerraForged (reterraforged): 0.1.0 (Fabric 26.1.2, with Conquest of Arborea & Lithos)
+#    - Lithosphere (lithosphere): 1.8.2 (supported with Still Life 0.3 / 0.3.5 1.21.1 backport)
+#    - RoadWeaver (roadweaver): 2.3.2
+#  Biome & Worldgen Mods:
+#    - William Wythers' Overhauled Overworld (wwoo): 2.6.7
+#    - Nature's Spirit (natures_spirit): 2.3.1 - 2.3.2 (with Lithostitched 1.8.0 - 1.8.1)
+#    - Biomes O' Plenty (biomesoplenty): 21.1.0.14 (with TerraBlender 4.1.0.8, GlitchCore 2.1.0.2)
+#    - Regions Unexplored (regions_unexplored): 0.6.2 (with Lithostitched 1.8.0 - 1.8.1)
+#    - Terralith (terralith): 2.6.2 (with Lithostitched 1.8.0)
+#    - Still Life (mr_still_life / still_life): 0.3-ftf (with stilllife_ftf_bridge 3.3.0 or 5.5.0, VanillaBackport 1.2.1 - 1.2.2) or 0.3 / 0.3.5 (with Lithosphere 1.8.2)
+#    - No Man's Land (nomansland): 1.6.2 (with Biolith 3.0.14)
+#    - Supporting / Companion Worldgen Mods: TerraBlender 4.1.0.8, Lithostitched 1.8.0 - 1.8.1, Biolith 3.0.14,
+#      VanillaBackport 1.2.1 - 1.2.2 (with Platform 1.4.2), Worldgen Patches 1.1.0, Streams Reflowing 2.15.2
+[version_support]
+	#Log a warning at startup and show a yellow chat notice on join if an unsupported FreeTerraForged, terrain,
+	#or biome mod version (or an untested terrain/biome mod) is installed. false: silence version-support warnings.
+	warnUnsupportedVersions = true
 
 #CPU improvements: exact speed-ups of FreeTerraForged's and Minecraft's own CPU work (no GPU needed; any PC).
 [cpu]
@@ -134,6 +156,11 @@ preset = "AUTO"
 	#are worked out once per column when the world's density functions prove they depend on x and z only (vanilla's do: 4% of
 	#the CPU in vanilla 26.1.2). Every 64th kept value is compared with the function's own.
 	fastClimateColumns = true
+	#FreeTerraForged with Lithostitched biome injections (Regions Unexplored and others): every injection rule with density
+	#criteria works its density function out at each biome cell it is asked about (9.4% of the CPU with Regions Unexplored and
+	#Oh The Biomes We've Gone). Values are kept per point, and per column for functions proven to depend on x and z only;
+	#every 256th value kept per column is compared with the function's own.
+	fastLithostitchedCriteria = true
 	#Minecraft 26.1.2: saving a chunk numbers each section's blocks anew for its palette; each old number is now asked once
 	#instead of at every change along the section (pack was 3.3% of the CPU in vanilla 26.1.2). The same palette and numbers;
 	#every 256th section is checked against the palette's own answers.
@@ -142,6 +169,15 @@ preset = "AUTO"
 	#the same calls in the same order (the deep dark's sculk patches were 5% of the CPU in a Conquest profile, 40% of it the
 	#streams). The same world.
 	fastMultifaceSpread = true
+	#Sculk charges moving through the deep dark (SculkSpreader's cursor) pick their next block with direct section reads
+	#and a reused neighbour list (0.64.1).
+	#No live check (it uses the feature's random or writes blocks): on by default on 1.21.1, off on 26.1.2, where the
+	#0.64.2 A/B (Conquest, r500) found no gain from it.
+	fastSculkMoves = true
+	#Ore blobs written with whole section runs and hoisted block reads (0.64.1's FastOreDoPlace; fastOres must be on too).
+	#No live check (it uses the feature's random or writes blocks): on by default on 1.21.1, off on 26.1.2, where the
+	#0.64.2 A/B (Conquest, r500) found no gain from it.
+	fastOreBlocks = true
 	#Disk features (terrain fixes, crusts, cliffs) skip the columns that cannot pass their target: when the target
 	#needs the position's own block to be one of a few, a column whose chunk sections hold none of them is not tested.
 	#William Wythers' Overhauled Overworld places such disks 100 to 256 times a chunk (42% of all CPU in a 7 Nov 2026
@@ -152,6 +188,14 @@ preset = "AUTO"
 	#section look-ups each time); here the column reads its section directly. About 1 in 256 reads is compared with the
 	#game's own; a difference turns it off. The same world. Since 0.9.94.
 	fastSurfaceReads = true
+	#Minecraft 1.21.1 surface sequences: compile immutable rule lists to arrays once, then keep the same lazy
+	#rule calls in the same order. Mutable/unknown list implementations retain their original evaluation.
+	#No surface result, world read, predicate or random draw is skipped.
+	fastSurfaceSequences = true
+	#Minecraft 1.21.1 biome zoom: remember the three deterministic corner-jitter values, keyed by the full
+	#seed and quart coordinates. Bounded per-thread storage holds no world or biome references. Distance arithmetic
+	#and winning-corner order stay unchanged; initial and periodic calls are checked against Minecraft.
+	fastBiomeZoom = true
 	#Gain: carvers 1.7-2.0 -> 1.19 ms per chunk (30% of the carvers' time was these biome look-ups).
 	#The carvers' biome of each chunk within 8 read from the chunk when it already holds its biomes, instead of asking the
 	#biome source again (30% of the carvers' time with FreeTerraForged). Every 64th read is compared; a difference turns
@@ -176,6 +220,10 @@ preset = "AUTO"
 	# Default: 4096
 	# Range: 0 ~ 65536
 	ftfRawChunkCache = 4096
+	#Concurrent requests for the same missing raw FTF chunk share one calculation. Cache hits keep FTF's own
+	#path; completed values stay in FTF's cache, not a second cache. Nested requests never wait on another owner.
+	#Terrain arithmetic, cache capacity and the original CPU/GPU fallback are unchanged.
+	ftfCoalesceRawChunks = true
 	#FreeTerraForged 1.0.0013 and later: how many chunks' filtered cells (after its terrain filters, about 60 KB a chunk)
 	#its FilteredChunkCache keeps. It keeps 2,048, and a chunk asked for after its drop makes its whole 4 x 4 region again:
 	#the 1 Nov 2026 runs (1.0.0018, r1000, about 1,100 regions needed) made 1,479. The cells are the same either way; 0
@@ -214,9 +262,41 @@ preset = "AUTO"
 	#Block predicates (placement filters, rule-based block choices) read each block once per evaluation: a block read
 	#again in the same evaluation comes from that evaluation's own reads (nothing writes blocks while a predicate runs).
 	#About 1 in 256 such answers is compared with the world; a difference turns it off. The same world. Since 0.10.10.
-	#Off by default: in the Still Life A/B (2026-10-22) it was slower (78.6 s on, 72.9 s off).
+	#Off by default: in the Still Life A/B (2026-10-22) it was slower (78.6 s on, 72.9 s off); its mixins are skipped
+	#at startup unless enabled here in wgaccel-common.toml (restart required after enabling).
 	#The presets leave this one alone (being measured): always the value written here.
 	fastBlockPredicates = false
+	#Feature placement runs modifiers depth-first with direct sequential consumption instead of stacked Stream.flatMap
+	#pipelines, keeping the exact modifier call order, RNG sequence and close semantics.
+	#No live check (it uses the feature's random or writes blocks): on by default on 1.21.1, off on 26.1.2, where the
+	#0.64.2 A/B (Conquest, r500) found no gain from it.
+	fastPlacementStreams = true
+	#Amethyst geodes skip the outer Perlin/NormalNoise evaluation when the point sum plus the noise bound is still below the outer shell.
+	#No live check (it uses the feature's random or writes blocks): on by default on 1.21.1, off on 26.1.2, where the
+	#0.64.2 A/B (Conquest, r500) found no gain from it.
+	fastGeodes = true
+	#Dripstone cluster and pointed dripstone helpers read chunk sections directly without intermediate BlockPos or
+	#Predicate allocations, keeping identical placement logic. Every 64th answer is compared with the game's own;
+	#a difference turns it off.
+	fastDripstone = true
+	#Cave and canyon carvers reuse section lookups and skip all-air sections when air is not replaceable, reusing
+	#one MutablePointContext and MutableBoolean per carve instead of allocating per voxel/column.
+	#No live check (it uses the feature's random or writes blocks): on by default on 1.21.1, off on 26.1.2, where the
+	#0.64.2 A/B (Conquest, r500) found no gain from it.
+	fastCarvers = true
+	#NoiseChunk cell/block interpolation uses cached arrays instead of allocating capturing Consumer lambdas
+	#in updateForX/Y/Z and selectCellYZ on CPU worldgen.
+	#No live check of its own: on by default on 1.21.1, off on 26.1.2, where the GPU noise fill does this work.
+	fastNoiseInterpolation = true
+	#Compiles vanilla BlockPredicate trees and placement modifier chains into allocation-free direct-section
+	#evaluators for PlacementStreams, DiskFeature, and BlockColumnFeature (WWOO and Nature's Spirit heavy features).
+	#Every 64th block test and rule choice is compared with the game's own; a difference turns it off.
+	fastCompiledPredicates = true
+	#Accelerates Nature's Spirit sugi and stratified-desert surface pillars directly on the GPU surface path
+	#(instead of falling whole chunks back to the CPU) and removes dead scans on CPU fallback columns.
+	nsFastPillars = true
+	#Disables AllTheLeaks' per-chunk unload WeakReference tracking, leak summary scans, and explicit System.gc/EmptyWorkingSet calls during worldgen.
+	disableAllTheLeaksChunkMonitor = true
 
 #GPU improvements: world generation work done on the GPU (OpenCL; CUDA or HIP when chosen). Every GPU
 #result is checked against the CPU's now and then; a part that differs turns itself off.
@@ -232,9 +312,11 @@ preset = "AUTO"
 	# Default: -1
 	# Range: -1 ~ 15
 	gpuDevice = -1
-	#Which GPU API: AUTO (OpenCL, a separate card first, then the most compute units; Intel integrated graphics and GPUs under 8 compute units only when chosen; on Linux HIP on an AMD GPU (not RDNA 1) when ROCm is installed),
-	#OPENCL, CUDA (NVIDIA, needs the CUDA Toolkit) or HIP (AMD, needs the HIP SDK on Windows, ROCm on Linux). gpuDevice then counts that API's devices. Both are set by the settings screen's Config tab (Options, the WGA button, or the mods list's
-	#Config). Read when the GPU is first used: a change takes a restart of the game. -Dwgaccel.gpuBackend=cuda, hip or opencl still wins.
+	#Which GPU API: OPENCL (default — faster than CUDA, which did not receive the latest optimizations; runs through the GPU driver's
+	#OpenCL compiler with nothing else to install), AUTO (OpenCL, or HIP on Linux with ROCm), CUDA (NVIDIA, legacy/unoptimized relative
+	#to OpenCL; needs the CUDA Toolkit), or HIP (AMD, needs the HIP SDK on Windows, ROCm on Linux). gpuDevice then counts that API's devices.
+	#Both are set by the settings screen's Config tab (Options, the WGA button, or the mods list's Config). Read when the GPU is first used:
+	#a change takes a restart of the game. -Dwgaccel.gpuBackend=opencl, cuda or hip still wins.
 	#Allowed Values: AUTO, CUDA, HIP, OPENCL
 	gpuBackend = "AUTO"
 	#The GPU (OpenCL, CUDA or HIP, through LWJGL). OFF: never touched. SELFTEST: when a world starts,
@@ -243,6 +325,9 @@ preset = "AUTO"
 	#and compared bit for bit with its own results at world load (logged as WGA GPU noise check).
 	#Allowed Values: OFF, SELFTEST, CHECK
 	gpuMode = "CHECK"
+	#Reuse at most six sets of terrain-populator input/output buffers. A set is returned only after its GPU
+	#results have been downloaded. Larger-than-65536-column sets and failed jobs are discarded. No terrain math changes.
+	gpuReusePopulatorBuffers = true
 	#Gain: 0:51 -> 0:46 (the best client time, 3.1x the 2:23 start; a dedicated server 0:47).
 	#FreeTerraForged's tile terrain noise (the terrain populators' noise trees, mostly the mountains' erosion noise) worked
 	#out on the GPU for a whole tile at once; a populator asked at a column takes the GPU's values (unsure ones stay on the
@@ -314,11 +399,11 @@ preset = "AUTO"
 	gpuSurfaceAhead = false
 	#The GPU noise fill in the other dimensions with a noise generator (the Nether, the End, modded ones), each with its
 	#own GPU code made when it loads; every 64th chunk checked as in the overworld. A dimension whose terrain has something
-	#the GPU does not know stays on the CPU (a chat warning names it).
+	#the GPU does not know stays on the CPU (the log names it).
 	gpuNoiseFillOtherDimensions = true
 	#Dimensions whose noise fill stays on the CPU even with gpuNoiseFillOtherDimensions on. The Nether and the End by
 	#default: C2ME's CPU fill was as fast or faster there on the test PC (End radius 2000: 0:48 on the GPU against 0:31;
-	#Nether radius 1000 with biome mods: 0:30 against 0:23).
+	#Nether radius 1000 with biome mods: 0:30 against 0:23); and Create Riftborne's rift, whose terrain has no GPU version.
 	gpuNoiseFillCpuDimensions = ["minecraft:the_nether", "minecraft:the_end"]
 	#Measured: vanilla r2000 on 26.1.2 2:23 -> 1:41 (on); on 1.21.1 2:15 without the mod, 2:29 with it (off).
 	#The GPU noise fill in worlds that are not FreeTerraForged's (vanilla and others). On by default on Minecraft 26.1.2
@@ -334,11 +419,31 @@ preset = "AUTO"
 	#96 blocks deep in every column) worked out on the GPU for each chunk as its features step starts, and read from
 	#that table when Lithos asks. Every 64th answer is compared with Lithos's own; a difference turns this off.
 	gpuLithosNoise = true
+	#With Distant Horizons: its overworld LODs made from the GPU noise fill (the ground's height, water and biome of
+	#one column every 1 to 4,096 blocks) instead of generated chunks. In development: no surface blocks yet (the ground
+	#shows as stone), no structures or trees; the chunks the player generates replace them. Off by default.
+	distantHorizonsGenerator = false
+	#With the Distant Horizons generator in a FreeTerraForged world: from this LOD detail level on (a column every
+	#2^level blocks), FreeTerraForged's terrain is worked out only for the columns the level shows, without its region
+	#filters (erosion, cliff smoothing, beaches), instead of for whole 4 x 4-chunk regions: much faster far away, but
+	#those columns' heights are the unfiltered ones (1.0.0018 test world: 85-92% of grounds the same, 99% within 2
+	#blocks). Below level 6 it was not faster (the exact regions use the GPU's tile noise, the few columns not):
+	#detail 6 2.4x faster. -1: every level exact.
+	# Default: 6
+	# Range: -1 ~ 12
+	distantHorizonsFastFrom = 6
 	#Gain: FreeTerraForged 1.0.0010 r1000 0:46 -> 0:44; vanilla r2000 1:58 -> 1:53. Off by default (in development).
 	#The 4 x 4 area step (with C2ME): every chunk's biome step waits for its aligned 4 x 4 area's GPU work, done once
 	#for the 16 chunks, so their GPU results are ready when their steps come. On, it also turns on the GPU fill and biomes in
 	#worlds that are not FreeTerraForged's (gpuNoiseFillVanilla, gpuBiomesVanilla). In development: off by default.
 	gpuAreaStep = false
+	#Measured (without ScalableLux, FTF r1000 16 GB C2ME=19): 30.70 s / 525.41 CPS on CPU vs 34.87 s / 462.49 CPS on CUDA
+	#(38.55 s OpenCL); Trace 12.64 s CPU vs 16.28 s CUDA. Bit-identical (0 diffs across 338 checked chunks), but slower than
+	#C2ME-threaded Vanilla/ScalableLux CPU lighting due to 3x3 section gather and GPU contention, so OFF by default.
+	#Automatically stays off when ScalableLux is installed. CHECK: compares every chunk nibble-for-nibble against an isolated
+	#3x3 CPU light engine. ON: uses the GPU light result and checks every 64th chunk.
+	#Allowed Values: OFF, CHECK, ON
+	gpuLight = "OFF"
 
 	#GPU tuning: how the GPU work is queued and batched. The defaults are the measured best on the test PC; every value
 	#gives the same world.
@@ -384,9 +489,9 @@ preset = "AUTO"
 		# Default: 16
 		# Range: 0 ~ 256
 		gpuSurfaceBatchChunks = 16
-		#With gpuSurfaceBatchChunks above 0: how many threads gather and launch the surface batches (more: a chunk waits less
-		#for its batch to start; the same blocks either way). Was 2 until 0.9.56.
-		# Default: 4
+		#With gpuSurfaceBatchChunks above 0: how many threads gather and launch the surface batches (1 keeps
+		#batches bigger with lower driver overhead; the same blocks either way).
+		# Default: 1
 		# Range: 1 ~ 16
 		gpuSurfaceBatchThreads = 4
 		#The surface's column walk (stone above and below each block, water above it) by 32 GPU threads per column instead of
@@ -423,8 +528,7 @@ preset = "AUTO"
 		# Range: 0 ~ 64
 		gpuStreamPool = 2
 		#The surface's inputs (which blocks are air, fluid, the default block) from the noise fill's codes instead of
-		#reading the chunk's blocks. Off: 0.9.53's codes check found a block the codes call stone but air in the chunk
-		#(1 chunk of 234), so the codes are not always the chunk's blocks when the surface starts.
+		#reading the chunk's blocks for sections untouched since noise fill (dirty section bitmask falls back per section).
 		gpuSurfaceKindsFromCodes = false
 		#With gpuLookAhead ON: how many finished chunks' blocks may wait in memory for their noise step (about 120 KB
 		#each); past that the oldest are dropped.
@@ -448,3 +552,133 @@ preset = "AUTO"
 		#Chunks whose GPU noise fill is always checked, diagnosed in the log and saved (logs/wgaccel/wgaccel-noise-fill-sample-1NN.bin)
 		#with the game's own blocks, as "x,z" chunk coordinates (as the log's chunk [x, z]). Empty: none.
 		gpuFillDebugChunks = []
+
+#Voxy LOD generator (with Voxy installed): Voxy's distant terrain made from the GPU columns instead of generated
+#chunks, in rings around the players, nearest first. Terrain only (ground, surface blocks, water, snow and ice): no trees,
+#structures or other features; the chunks players really generate replace it in Voxy. Chunks already generated (in the
+#world's region files) are never written over. Overworld only; needs the GPU noise fill. /wgaccel lod voxy runs it once
+#by hand.
+[voxy]
+	#The automatic Voxy LOD generator on or off (only does anything with Voxy installed). On by default since 0.70.3;
+	#a config written by an older version keeps its value.
+	voxyGenerator = true
+	#The rings, nearest first, as "radius:stride": radius in chunks from the player, stride the blocks between the
+	#columns worked out. Stride 1, 2, 4, 8 or 16: every chunk (1 = every column, full detail; above 1 it is no faster:
+	#the cost is per chunk). Stride 32, 64, 128 or 256: one column every stride / 16 chunks, the heights between them
+	#interpolated (FreeTerraForged's fast cells): about 10x faster at 64, blotchier blocks. Measured (FreeTerraForged
+	#1.0.0033, RX 9070 XT, 8 threads): stride 1 ~1,000 chunks/s, stride 32 ~3,000, stride 64 ~9,000.
+	#Default: full detail to 64 chunks (1,024 blocks), one column per 2 x 2 chunks to 192 chunks (3,072 blocks), then
+	#one column per 4 x 4 chunks to 512 chunks (8,192 blocks): about 1 million chunks in 2 minutes.
+	voxyRings = ["64:1", "192:32", "512:64"]
+	#How much of the CPU the generator takes (changes apply at once):
+	#LOW: an eighth of the CPU's threads (1-2), low priority, one writing into Voxy at a time;
+	#MEDIUM: a quarter (2-4), below normal priority, one writing at a time;
+	#HIGH: half (2-8), two writing at a time;
+	#EXTREME: all but two (up to 16), four writing at a time;
+	#DYNAMIC: HIGH for the first ring, MEDIUM for the second, LOW after; with voxyWithVwg AFTER, Voxy World Gen V2 gets
+	#the CPU back the other way: half of voxyVwgTasks during our first ring, all of it during the second, twice from the
+	#third, and its own maxActiveTasks once our rings are done.
+	#Writing into Voxy is limited because many threads writing while Voxy draws and unloads the same sections can hit a race
+	#in Voxy (Voxy 0.2.16: "Section freed while marked as dirty", then its threads wait for ever).
+	#Allowed Values: LOW, MEDIUM, HIGH, EXTREME, DYNAMIC
+	voxyPerformance = "MEDIUM"
+	#Threads the generator works on. 0: from voxyPerformance.
+	# Default: 0
+	# Range: 0 ~ 64
+	voxyThreads = 0
+	#The generator waits while the server's average tick takes longer than this (milliseconds; 50 is a full tick), so
+	#the game stays smooth while other work runs. 0: never waits.
+	# Default: 40
+	# Range: 0 ~ 1000
+	voxyPauseAboveMspt = 40
+	#With Voxy World Gen V2 (VWG) installed and on (its config/voxyworldgenv2.json, only read):
+	#AFTER: our LODs first everywhere; VWG is held (its runtime 'enabled', never its file) until our rings within its
+	#generationRadius are done, then runs at voxyVwgTasks tasks and replaces our LODs with real chunks; held again when
+	#the player moves and new LODs are needed there. AVOID: its circle is left to it. IGNORE: neither looks at the other.
+	#Your own VWG settings come back when our generator stops or is turned off.
+	#Allowed Values: AFTER, AVOID, IGNORE
+	voxyWithVwg = "AFTER"
+	#AFTER: how many chunks VWG works on at once once it runs (a low number keeps it from fighting ours). 0: its own
+	#maxActiveTasks.
+	# Default: 4
+	# Range: 0 ~ 128
+	voxyVwgTasks = 4
+	#AFTER: VWG starts once our rings within this many chunks of the player are done. 0: VWG's own generationRadius.
+	# Default: 0
+	# Range: 0 ~ 4096
+	voxyVwgAfterRadius = 0
+	#When the rings around a player are done, generate the real chunks (trees, structures and all) near them with
+	#Chunky (needs Chunky installed), and hand each one to Voxy as it is saved so it replaces the LOD. One Chunky task at
+	#a time; none while another Chunky task runs in the overworld.
+	voxyRealChunks = false
+	#How far the real chunks go, in chunks from the player (a square). 0: the first ring's radius.
+	# Default: 0
+	# Range: 0 ~ 1024
+	voxyRealChunksRadius = 0
+	#Where the generator's progress shows in the game: OVERLAY a panel in a corner of the screen (rings, chunks/s, time
+	#left), F3 lines in the debug screen, BOTH, or OFF. In the game only (on a dedicated server, the log).
+	#Allowed Values: OFF, OVERLAY, F3, BOTH
+	voxyProgress = "BOTH"
+	#The panel's corner: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT or BOTTOM_RIGHT.
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	voxyOverlayCorner = "TOP_LEFT"
+	#Hide the panel 10 seconds after the rings are done (it comes back when there is work again, as the player moves).
+	voxyOverlayHideWhenDone = true
+	#The little scene under the panel's title (a cheetah chasing a hare through the biomes), also on the world-loading
+	#screen. In the panel it runs at the generator's speed (normal: 300 chunks/s at full detail, 1,500 at stride 32, 3,000
+	#at 64) and stands still while it waits. Off by default.
+	voxyOverlayAnimation = false
+
+	#How the LODs look (tests against moire far away; off by default).
+	[voxy.visuals]
+		#Against moire far away (smooth slopes make perfectly regular 1-block steps, thin lines that shimmer as the view turns):
+		#a random -1, 0 or +1 block on each dry column's height, so the steps are irregular. FAR: the interpolated rings only
+		#(stride 32 and up); ALL: every ring; OFF. Applies to LODs made from now on (/wgaccel lod voxy reset to make them again).
+		#Allowed Values: OFF, FAR, ALL
+		voxyHeightDither = "OFF"
+		#Against moire far away: the blocks a step shows on its side take the surface's block (grass, sand, snow) instead
+		#of what lies under it (dirt), so slopes are not striped green and brown. LODs then differ a little from the real chunks
+		#that replace them. Applies to LODs made from now on.
+		voxyStepSides = false
+
+	#What the LODs show besides the terrain. Each: OFF, NEAR (the rings of stride 16 and under), ALL (every ring).
+	#Applies to LODs made from now on (/wgaccel lod voxy reset to make them again).
+	[voxy.features]
+		#Trees: each biome's own trees and huge mushrooms, grown by the game's own trunk and leaf placers
+		#(FreeTerraForged: its tree templates), about as many as the game makes and in its pattern, not its exact spots.
+		#Real chunks replace them. Conquest of Arborea's forests: its own feature, run as it is (its real trees; it costs
+		#what it costs the game, a lot slower far rings: NEAR keeps them fast). Other mods' own tree features are left out.
+		#About 6% slower in the far rings.
+		#Allowed Values: OFF, NEAR, ALL
+		voxyTrees = "ALL"
+		#Lithos (when installed): its own features run as they are, its rock strata, cliff stone and ground cover on the
+		#LODs' ground. A run costs what it costs the game (about 25 ms a chunk in Conquest): about 3 times slower near
+		#rings. ALL: the far rings too, one run per sample (one per 2 x 2 chunks at stride 32, 4 x 4 at stride 64) laid on
+		#the chunks around it.
+		#Allowed Values: OFF, NEAR, ALL
+		voxyLithos = "NEAR"
+		#Lithos's strata in the LODs (with voxyLithos on): its rock layers. Changes no top block, only the sides of steps
+		#and slopes (about 270 blocks a chunk), and is its costliest feature (about 20 ms a chunk): off by default.
+		voxyLithosStrata = false
+		#Lithos's layered stone in the LODs (with voxyLithos on): its stone bands, mostly under the surface the LODs show
+		#(about 5 ms a chunk): off by default.
+		voxyLithosLayeredStone = false
+		#Lithos's cliff stone in the LODs (with voxyLithos on): stone on steep ground.
+		voxyLithosCliffStone = true
+		#Lithos's ground cover in the LODs (with voxyLithos on): the surface blocks and what lies on them.
+		voxyLithosGroundCover = true
+		#Lithos's vegetation fill in the LODs (with voxyLithos on): the plants it adds.
+		voxyLithosVegetationFill = true
+		#Conquest of Arborea's forests in the LODs (with voxyTrees on): its own tree feature run as it is.
+		voxyArboreaForests = true
+		#Plants: each biome's own plant features (flowers, grass, bushes; Conquest's ground cover and shore plants), run
+		#as they are with their own placement, into the empty cells over the ground (under trees and rock). A run costs what
+		#it costs the game. ALL: the far rings too, once per sample (with Lithos's) laid on the chunks around it.
+		#Allowed Values: OFF, NEAR, ALL
+		voxyPlants = "NEAR"
+		#AronaLayers (with its LayersApi.placeLayers, API version 2): its layers on the LODs' ground, placed by
+		#AronaLayers itself on a stand-in chunk of each LOD chunk (its own settings and backend: TerraForged, Tellus or the
+		#vanilla density). Layer Supported LOD (LSL) then draws them at their real height. ALL: the far rings too (their
+		#ground is interpolated, so AronaLayers may leave many far columns bare).
+		#Allowed Values: OFF, NEAR, ALL
+		voxyAronaLayers = "NEAR"

@@ -14,6 +14,12 @@
   ],
   "structures": [
     {
+      "name": "irons_spellbooks:mangrove_hut",
+      "terrain_adaptation": "beard_thin",
+      "override_global_flatness_check": true,
+      "flatness_check_mode": "AUTO"
+    },
+    {
       "name": "dungeons_arise:kisegi_sanctuary",
       "override_global_flatness_check": true,
       "enable_flatness_check": true,

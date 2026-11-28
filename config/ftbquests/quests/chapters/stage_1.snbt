@@ -94,7 +94,7 @@
 				item: { count: 1, id: "createmechanisms:wooden_mechanism" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 8.0d
 			y: -1.0d
 		}
 		{
@@ -112,6 +112,7 @@
 			dependencies: [
 				"2442447044A16165"
 				"1CC27F80B7B400C9"
+				"3EFF7A7A6D7EB709"
 			]
 			id: "742A25491026A3F1"
 			tasks: [{
@@ -127,6 +128,7 @@
 			dependencies: [
 				"1CC27F80B7B400C9"
 				"3C802CC49F9270FC"
+				"3EFF7A7A6D7EB709"
 			]
 			id: "768026E9760EBB56"
 			tasks: [{
@@ -146,8 +148,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item_tag(c:ores/salt))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.0d
+			x: 8.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -164,10 +166,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"158C585DDD3379D6"
-				"5F32BA75A9A96CC4"
-			]
+			dependencies: ["158C585DDD3379D6"]
 			id: "2180036C534CBFB3"
 			tasks: [{
 				fluid: {
@@ -177,8 +176,8 @@
 				id: "6B9A0F844F6335A7"
 				type: "fluid"
 			}]
-			x: 10.0d
-			y: -3.5d
+			x: 11.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -191,8 +190,8 @@
 				item: { count: 1, id: "modern_industrialization:bronze_mixer" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: -4.5d
+			x: 10.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7F97F3A158EBADAB"]
@@ -203,19 +202,22 @@
 				item: { count: 1, id: "modern_industrialization:forge_hammer" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: -3.5d
+			x: 9.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["34F4D5FF08C35A06"]
+			dependencies: [
+				"34F4D5FF08C35A06"
+				"3EFF7A7A6D7EB709"
+			]
 			id: "2A5B944687FD7358"
 			tasks: [{
 				id: "354DE03DFD3FECA7"
 				item: { count: 1, id: "modern_industrialization:bronze_boiler" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -4.5d
+			x: 7.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2A5B944687FD7358"]
@@ -228,8 +230,8 @@
 				id: "241CE6D3317B0529"
 				type: "fluid"
 			}]
-			x: 6.0d
-			y: -5.0d
+			x: 8.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3CF9B11120F88DF3"]
@@ -240,8 +242,8 @@
 				item: { count: 1, id: "create:crushing_wheel" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: -3.0d
+			x: 5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["742A25491026A3F1"]
@@ -253,6 +255,18 @@
 			}]
 			x: 12.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["5F32BA75A9A96CC4"]
+			id: "3EFF7A7A6D7EB709"
+			tasks: [{
+				count: 8L
+				id: "096C26ADA93598EE"
+				item: { count: 1, id: "alltheores:bronze_ingot" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
 		}
 	]
 }
