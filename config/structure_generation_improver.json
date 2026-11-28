@@ -15,7 +15,7 @@
   "Blend radius per block of height": 1.5,
   "Flat margin": 4,
   "comment_irregularity": "Shape irregularity (0-1) makes the outline of the shaped terrain irregular. It is still a circle (a rounded oval for elongated pieces) through the structure corners plus \u0027Flat margin\u0027 plus the blend radius of each direction, never less; depending on direction the slope reaches further, by up to 60% of the blend radius times the irregularity plus \u0027Shape extra width\u0027 blocks, so it is long and gentle and fills the whole circle. The flat plateau next to the structure stays about \u0027Flat margin\u0027 wide. Near the vanilla limit of 8 chunks from the structure start, the slope is shortened, not cut. 0 keeps a regular outline.",
-  "Shape irregularity": 0.8,
+  "Shape irregularity": 1.0,
   "Shape extra width": 10,
   "comment_shell": "Shell settings format: \"modid:structure_file\": { radius, verticalOffset, exponentialSpeed }",
   "Shell settings": {},
