@@ -1,8 +1,0 @@
-* text=auto
-*.java text eol=lf
-*.gradle text eol=lf
-gradlew text eol=lf
-gradlew.bat text eol=crlf
-SHA256SUMS text eol=lf
-*.jar -text
-*.nbt -text
