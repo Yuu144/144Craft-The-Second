@@ -1,0 +1,272 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stage_1"
+	group: ""
+	id: "6A01E7B8C8F2BFF2"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "31BF6EDE1E20C4CA"
+			tasks: [{
+				id: "17BE98C07ACD63B4"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31BF6EDE1E20C4CA"]
+			disable_toast: true
+			id: "7F97F3A158EBADAB"
+			rewards: [{
+				id: "53AC050D135BCB7F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5C69804D51DA656B"
+				item: { count: 1, id: "minecraft:stone_pickaxe" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F97F3A158EBADAB"]
+			id: "2D031315006568BD"
+			tasks: [{
+				count: 32L
+				id: "7FA2BC46BBBF13CD"
+				item: { count: 1, id: "minecraft:andesite" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7F97F3A158EBADAB"]
+			id: "2FCD587EFF4D2A3B"
+			tasks: [{
+				count: 8L
+				id: "3EDE04E7668F2ACF"
+				item: { count: 1, id: "minecraft:raw_iron" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2D031315006568BD"
+				"2FCD587EFF4D2A3B"
+			]
+			id: "3CF9B11120F88DF3"
+			tasks: [{
+				count: 32L
+				id: "2912877267C9C23C"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3CF9B11120F88DF3"]
+			id: "1824FE3FB0B9A6D7"
+			tasks: [{
+				count: 4L
+				id: "1C747B4F6DD55C49"
+				item: { count: 1, id: "create:andesite_casing" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3CF9B11120F88DF3"]
+			id: "1CC27F80B7B400C9"
+			tasks: [{
+				count: 5L
+				id: "42335DBFCA1B881C"
+				item: { count: 1, id: "createmechanisms:wooden_mechanism" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1824FE3FB0B9A6D7"]
+			id: "2442447044A16165"
+			tasks: [{
+				id: "7503B7DA786ADBDA"
+				item: { count: 1, id: "create:deployer" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2442447044A16165"
+				"1CC27F80B7B400C9"
+				"3EFF7A7A6D7EB709"
+			]
+			id: "742A25491026A3F1"
+			tasks: [{
+				count: 5L
+				id: "2FC7CAC624352ED1"
+				item: { count: 1, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1CC27F80B7B400C9"
+				"3C802CC49F9270FC"
+				"3EFF7A7A6D7EB709"
+			]
+			id: "768026E9760EBB56"
+			tasks: [{
+				id: "387475C1E5BA46DA"
+				item: { count: 1, id: "createmechanisms:fluid_mechanism" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7F97F3A158EBADAB"]
+			hide_dependency_lines: true
+			id: "3C802CC49F9270FC"
+			tasks: [{
+				id: "56C86E0253E08EE7"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(c:ores/salt))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"768026E9760EBB56"
+				"2180036C534CBFB3"
+			]
+			id: "5EA23BD8785AB214"
+			tasks: [{
+				id: "49DE238E8929DD09"
+				item: { count: 1, id: "create_sa:hydraulic_engine" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["158C585DDD3379D6"]
+			id: "2180036C534CBFB3"
+			tasks: [{
+				fluid: {
+					amount: 500
+					id: "modern_industrialization:raw_synthetic_oil"
+				}
+				id: "6B9A0F844F6335A7"
+				type: "fluid"
+			}]
+			x: 11.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"34F4D5FF08C35A06"
+				"660EB1E7B172B67A"
+			]
+			id: "158C585DDD3379D6"
+			tasks: [{
+				id: "240071D9E9667CDD"
+				item: { count: 1, id: "modern_industrialization:bronze_mixer" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7F97F3A158EBADAB"]
+			hide_dependency_lines: true
+			id: "34F4D5FF08C35A06"
+			tasks: [{
+				id: "3B70C0143007FF46"
+				item: { count: 1, id: "modern_industrialization:forge_hammer" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"34F4D5FF08C35A06"
+				"3EFF7A7A6D7EB709"
+			]
+			id: "2A5B944687FD7358"
+			tasks: [{
+				id: "354DE03DFD3FECA7"
+				item: { count: 1, id: "modern_industrialization:bronze_boiler" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2A5B944687FD7358"]
+			id: "660EB1E7B172B67A"
+			tasks: [{
+				fluid: {
+					amount: 1000
+					id: "modern_industrialization:steam"
+				}
+				id: "241CE6D3317B0529"
+				type: "fluid"
+			}]
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3CF9B11120F88DF3"]
+			id: "5F32BA75A9A96CC4"
+			tasks: [{
+				count: 2L
+				id: "29F684F5B4845653"
+				item: { count: 1, id: "create:crushing_wheel" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["742A25491026A3F1"]
+			id: "23C467E2557E1395"
+			tasks: [{
+				id: "7F5FB1362FA6D57B"
+				item: { count: 1, id: "storagedrawers:upgrade_template" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5F32BA75A9A96CC4"]
+			id: "3EFF7A7A6D7EB709"
+			tasks: [{
+				count: 8L
+				id: "096C26ADA93598EE"
+				item: { count: 1, id: "alltheores:bronze_ingot" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+	]
+}

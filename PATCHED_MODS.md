@@ -1,48 +1,69 @@
 ﻿# Patched mods
 
-Check this file before updating mods. Preserve each backup folder. A patched JAR must be checked or repatched before it is installed again.
+Check this file before updating or reinstalling patched mods. Keep all retained patch archives.
 
-| Mod | Original version | Patch | Client/server location | Status |
+| Mod | Original version | Installed filename | Location | Status |
 | --- | --- | --- | --- | --- |
-| Voxy Server Side (VSS) | 0.3.5-neoforge-1.21.1 | patch-1 | Client and remote server; removed 2026-11-21 | **DO NOT UPDATE** if reinstalling until checked or reapplied |
-| Structure Generation Improver (SGI) | 2.1.0 NeoForge 1.21.1 | original installed; diagnostics archived | Client `mods/structure_generation_improver-2.1.0-neoforge-1.21.1.jar`; separate server archive | **DO NOT UPDATE** until diagnostics are checked or reapplied |
+| Voxy Server Side (VSS) | 0.3.5-neoforge-1.21.1 | `mods/vss-0.3.5-neoforge-1.21.1.jar` | Remote server; removed 2026-11-21 | **DO NOT UPDATE** if reinstalling until checked or reapplied |
 
 ## VSS patch-1
 
-- Installed filename on both sides: `vss-0.3.5-neoforge-1.21.1.jar`.
-- Purpose: prevent shadow passes from clearing the main view's Voxy coverage; skip visibility frame work when prediction is inactive, with cleanup when disabling it. Server LOD transfer and ingestion were unchanged.
-- The client JAR and the remote server JAR had the same patched SHA-256. The earlier note that the server JAR was unmodified was incorrect.
-- Client archive: `patched-mods/vss/0.3.5-neoforge-1.21.1/`.
-- Server archive: `/home/container/patched-mods/vss/0.3.5-neoforge-1.21.1/` in the remote checkout.
-- Original JAR: `original.jar`; installed patched JAR copies: `patch-1/patched.jar`, `patch-1/installed-client.jar`, and `patch-1/server-installed.jar`.
-- Patch source, diff, build script, and restore instructions are in `patch-1/source/`, `patch-1/PatchVss.java`, and `patch-1/README.md`.
+- Patch purpose: prevent shadow passes from clearing the main view's Voxy coverage; skip visibility frame work when prediction is inactive, with cleanup when disabling it. Server LOD transfer and ingestion were unchanged.
+- Server archive: `patched-mods/vss/0.3.5-neoforge-1.21.1/`.
+- Original JAR: `original.jar`. Installed server JAR copy: `patch-1/server-installed.jar`; it matches `patch-1/patched.jar`.
+- Source diff, patched source, patch/build scripts, and restore instructions are retained under `patch-1/`.
 - Original SHA-256: `6abc84e84cc40030d49f974f3e40055020b5121bcc1a72193cef7a69677a7559`.
 - Patched SHA-256: `4fa98a2ce28ccb90b3fee8660e4affc6b926ff33ae5fe80c64c2acfcc1cf055f`.
-- The removed client configs are retained in `removed-config/vss-client-config.json` and `removed-config/vss-server-config.json`. The server config is archived separately in the remote server checkout.
-- Previous runtime note: `patched-mods/vss/0.3.5-neoforge-1.21.1/patch-1/RUNTIME_CHECK.md`. LOD transfer, prediction toggles, reconnect/dimension/singleplayer checks, and controlled FPS comparison remain pending.
-
-## SGI diagnostics-1
-
-- Purpose: investigate chunk-edge terrain seams; logs reference visibility, filter decisions,
-  shaper setup, cached noise state, density-wrapper installation and sampled edge profiles.
-- Original version: 2.1.0, NeoForge 1.21.1. Installed filename:
-  `mods/structure_generation_improver-2.1.0-neoforge-1.21.1.jar`.
-- Local archive: `patched-mods/structure_generation_improver/2.1.0/`.
-  Original: `original.jar`; patched backup: `diagnostics-1/patched.jar`.
-- Source, ASM patcher, bundled build dependencies, build/restore scripts, changed-class list
-  and instructions: `diagnostics-1/`. Original and patched hashes: `diagnostics-1/SHA256SUMS`.
-- Original SHA-256: `344dade71609f73dcb68ce06c535b82b54055019cfa9df877c052b276b0fab1a`.
-- Patched SHA-256: `13ebd3f24d1219c2c1251f69de974303a2bd29127f5809d037545e77e9279dab`.
-- Server documentation, backups and enabled/disabled installation state are maintained
-  separately in the remote checkout. No terrain behavior fix is claimed by this patch.
-- **DO NOT UPDATE** until diagnostics have been checked or reapplied.
+- The VSS server config removed with the JAR is retained at `patched-mods/vss/0.3.5-neoforge-1.21.1/removed-config/vss-server-config.json`.
 
 
-## WGAccel sgi-compat-2 - DO NOT UPDATE
+## SGI diagnostics-1 - DO NOT UPDATE
 
-- Worldgen Accelerator 0.70.5+mc1.21.1; client: mods/wgaccel-neoforge-0.70.5+mc1.21.1.jar.
-- Quiet SGI compatibility fallback. Original SGI 2.1.0 is installed on the client.
-- Backup, original JAR, hashes, source, build and restore instructions: patched-mods/wgaccel/0.70.5-mc1.21.1/sgi-compat-2/README.md.
-- Original SHA-256: d1cad121843252ad3ee777d50e1aea849fbcadb2942a0af26321c555238e7816.
-- Patched SHA-256: 760f8837f6c9126086160313060ee9c6641143112b12b7294ab4d3f022aab9f9.
+- Mod: Structure Generation Improver 2.1.0 NeoForge 1.21.1.
+- Installed: mods/structure_generation_improver-2.1.0-neoforge-1.21.1.jar. Enabled at user request; restart required to load the diagnostics.
+- Purpose: diagnostic-only logging of references, filter decisions, shaper setup, cached noise state, wrapper installation and edge profiles. Not a terrain fix.
+- Server archive: patched-mods/structure_generation_improver/2.1.0/. Original: original.jar; patched backup: diagnostics-1/patched.jar.
+- Source and reproducible build/restore: diagnostics-1/README.md, PatchSgi.java, SgiDiagnostics.java, build.py, install.py and lib/.
+- Original SHA256: 344dade71609f73dcb68ce06c535b82b54055019cfa9df877c052b276b0fab1a.
+- Patched SHA256: 13ebd3f24d1219c2c1251f69de974303a2bd29127f5809d037545e77e9279dab.
+- Rebuilt on server using Java 21; hash matches client. Full-pack runtime verification pending.
+- Logs: logs/sgi-diagnostics.log and rotations .1, .2, .3.
+- DO NOT UPDATE until diagnostics have been checked or reapplied. Retain backups.
+
+
+## SGI diagnostics-2 - DO NOT UPDATE
+
+- Supersedes diagnostics-1; old backup retained. Original SGI 2.1.0 NeoForge 1.21.1.
+- Installed filename: mods/structure_generation_improver-2.1.0-neoforge-1.21.1.jar. Enabled/disabled state preserved. Restart required; no restart performed.
+- Purpose: before/after block snapshots at noise, surface, carvers and features stages. Diagnostic only; no terrain changes.
+- Server backup/source/build/restore: patched-mods/structure_generation_improver/2.1.0/diagnostics-2/. See README.md, build.py, install.py, PatchSgi.java, SgiDiagnostics.java, StageTrace.java and StageDiagnosticsMixin.java.
+- Versioned patched backup: diagnostics-2/patched.jar; original: patched-mods/structure_generation_improver/2.1.0/original.jar. Hashes: diagnostics-2/SHA256SUMS.
+- Original SHA256: 344dade71609f73dcb68ce06c535b82b54055019cfa9df877c052b276b0fab1a.
+- Patched SHA256: 2f10f31a0b4bae0187eeccf4b8d192655c9b2a0e8deba4d8eaed805e8997a356. Rebuilt directly on server; matches client build.
+- Default focus: overworld chunk 76,432 radius 3; logs/sgi-stages.log plus rotations .1, .2, .3.
+- Isolated server stage test passed; full-pack reproduction pending. WGA settings unchanged.
 - DO NOT UPDATE until checked or reapplied.
+
+
+## WGA sgi-compat-1 - DO NOT UPDATE
+
+- Worldgen Accelerator 0.70.5+mc1.21.1 NeoForge. Installed: mods/wgaccel-neoforge-0.70.5+mc1.21.1.jar. Restart required; not restarted.
+- Purpose: detect SGI 2.1.0 TerrainShaper wrappers in ModTerrain.top/shapes. Only affected chunks use full-height CPU noise filling; ordinary behavior/config unchanged.
+- Server archive: patched-mods/wgaccel/0.70.5-mc1.21.1/. Original: original.jar; versioned patch: sgi-compat-1/patched.jar; installation input: sgi-compat-1/installed-before.jar.
+- Source, exact ASM transform, dependencies, tests, hashes and build/restore: sgi-compat-1/README.md, PatchWga.java, SgiTerrainCompat.java, TestCompat.java, ProbeTest.java, build.py, install.py, lib/, SHA256SUMS.
+- Original SHA256: d1cad121843252ad3ee777d50e1aea849fbcadb2942a0af26321c555238e7816.
+- Patched SHA256: 969b4d5a5c7e14aa20efef7d6fd3a05d743ec789d14b1d4f89343fc5170746b0. Rebuilt and tested directly on server; matches client build.
+- Isolated real-SGI-wrapper test passed; full FreeTerraForged/GPU cutoff reproduction pending.
+- DO NOT UPDATE until checked/reapplied; recheck when updating SGI too.
+
+
+## WGA sgi-compat-2 - quiet - DO NOT UPDATE
+
+- Supersedes WGA sgi-compat-1. Worldgen Accelerator 0.70.5+mc1.21.1; installed mods/wgaccel-neoforge-0.70.5+mc1.21.1.jar.
+- Same SGI-only full-height CPU fallback, with added runtime messages/tracking removed. Original mod logging unchanged.
+- Server source/backup/build/restore: patched-mods/wgaccel/0.70.5-mc1.21.1/sgi-compat-2/; see README.md, patched.jar, SHA256SUMS and scripts. Original remains ../original.jar; old patches retained.
+- Original SHA256: d1cad121843252ad3ee777d50e1aea849fbcadb2942a0af26321c555238e7816.
+- Quiet patched SHA256: 760f8837f6c9126086160313060ee9c6641143112b12b7294ab4d3f022aab9f9. Rebuilt on server; regression tests passed; matches client build.
+- SGI diagnostic patches are now archived only: original SGI 2.1.0 restored to mods/structure_generation_improver-2.1.0-neoforge-1.21.1.jar. Its SHA256 is 344dade71609f73dcb68ce06c535b82b54055019cfa9df877c052b276b0fab1a.
+- Restart required to stop the running diagnostics. No restart performed. Logs, configs and worlds unchanged.
+- DO NOT UPDATE WGA until checked/reapplied; recheck when updating SGI.
